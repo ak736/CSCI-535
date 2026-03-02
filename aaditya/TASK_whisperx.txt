@@ -1,0 +1,45 @@
+TASK: WhisperX Transcription
+Owner: Aaditya
+
+GOAL:
+Generate aligned transcript with timestamps.
+
+INPUT LOCATION:
+Datasets/amicorpus/ESXXXX/audio/ESXXXX.Mix-Headset.wav
+
+Example:
+Datasets/amicorpus/ES2002a/audio/ES2002a.Mix-Headset.wav
+
+TOOL:
+WhisperX
+
+STEPS:
+
+1. Install WhisperX
+2. Run aligned transcription
+3. Extract:
+   - segment_id
+   - start
+   - end
+   - transcript
+   - asr_confidence (if available)
+
+OUTPUT FORMAT (CSV):
+
+segment_id,start,end,transcript,asr_confidence
+0,0.00,2.31,"Okay let's start",0.93
+1,2.31,5.10,"I think we should",0.89
+
+OUTPUT LOCATION:
+
+outputs/transcripts/ES2002a_transcript.csv
+
+RULES:
+- Time must be in seconds
+- Same time base as diarization
+- One CSV per meeting part
+- Do NOT add speaker column
+- Do NOT modify raw data
+
+DELIVERABLE:
+Transcript CSV for every meeting part.

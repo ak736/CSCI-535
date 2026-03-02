@@ -1,0 +1,36 @@
+TASK: Merge Diarization + Transcript
+Owner: Aniket
+
+GOAL:
+Attach speaker_id to each transcript segment.
+
+INPUT FILES:
+
+outputs/diarization/ES2002a_diarization.csv
+outputs/transcripts/ES2002a_transcript.csv
+
+LOGIC:
+
+For each transcript row:
+- Find overlapping diarization segment
+- Assign speaker_id of the segment with highest overlap
+
+OUTPUT FORMAT:
+
+segment_id,start,end,speaker_id,transcript,asr_confidence
+
+Example:
+0,0.00,2.31,SPEAKER_00,"Okay let's start",0.93
+
+OUTPUT LOCATION:
+
+outputs/merged/ES2002a_merged.csv
+
+RULES:
+- Preserve original timestamps
+- No row duplication
+- No missing speaker_id
+- One merged CSV per meeting part
+
+DELIVERABLE:
+Merged CSV for each meeting part.

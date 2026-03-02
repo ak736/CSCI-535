@@ -1,0 +1,6 @@
+# Ignore everything inside dataset folder
+Datasets/*
+
+# But do NOT ignore these two files
+!Datasets/Dataset.md
+!Datasets/dataset.sh

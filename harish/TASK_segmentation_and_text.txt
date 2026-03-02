@@ -1,0 +1,54 @@
+TASK: Segmentation + Text Embeddings
+Owner: Harish
+
+PART 1 — Create 3-Second Windows
+
+INPUT:
+outputs/merged/ES2002a_merged.csv
+
+WINDOW SETTINGS:
+Window size = 3 seconds
+Hop size = 1.5 seconds
+
+RULES:
+- Only single-speaker windows
+- Remove windows < 1.5s
+- Remove windows with < 3 words
+
+OUTPUT FORMAT:
+
+segment_id,start,end,speaker_id,transcript,asr_confidence
+
+OUTPUT LOCATION:
+
+outputs/segments/ES2002a_segments.csv
+
+-----------------------------------------------------
+
+PART 2 — Text Emotion Embeddings
+
+INPUT:
+outputs/segments/ES2002a_segments.csv
+
+GOAL:
+For each transcript compute:
+
+P_text = [p_happy, p_angry, p_sad, p_neutral]
+
+Use pretrained HuggingFace emotion model.
+
+OUTPUT FORMAT:
+
+segment_id,p_happy,p_angry,p_sad,p_neutral
+
+OUTPUT LOCATION:
+
+outputs/embeddings/ES2002a_text_emotions.csv
+
+RULES:
+- Probabilities must sum to 1
+- No missing rows
+- segment_id must match segments.csv
+
+DELIVERABLE:
+Segments CSV + Text Emotion CSV for each meeting part.

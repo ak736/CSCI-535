@@ -1,0 +1,47 @@
+TASK: Speaker Diarization
+Owner: Charan
+
+GOAL:
+Detect who spoke when for each meeting audio file.
+
+INPUT LOCATION:
+Datasets/amicorpus/ESXXXX/audio/ESXXXX.Mix-Headset.wav
+
+Example:
+Datasets/amicorpus/ES2002a/audio/ES2002a.Mix-Headset.wav
+
+IMPORTANT:
+Use ONLY Mix-Headset.wav for diarization.
+
+TOOL:
+pyannote.audio
+
+STEPS:
+
+1. Install pyannote.audio
+2. Run diarization on Mix-Headset.wav
+3. Extract segments with:
+   - segment_id
+   - start (seconds)
+   - end (seconds)
+   - speaker_id
+
+OUTPUT FORMAT (CSV):
+
+segment_id,start,end,speaker_id
+0,0.00,2.31,SPEAKER_00
+1,2.31,5.10,SPEAKER_01
+
+OUTPUT LOCATION:
+
+outputs/diarization/ES2002a_diarization.csv
+
+RULES:
+- Time must be in seconds (float)
+- No overlaps
+- Sorted by start time
+- One CSV per meeting part (ES2002a, ES2002b, etc.)
+- Do NOT modify raw data
+
+DELIVERABLE:
+A diarization CSV for every downloaded meeting part.
