@@ -1,0 +1,202 @@
+segment_id,start,end,transcript,asr_confidence
+0,4.77,7.98,"My gosh, you've already produced a PowerPoint presentation.",0.5756
+1,8.0,9.43,"I think it's already on, actually.",0.8102
+2,12.6,16.15,"God, how do I make this thing work?",0.4689
+3,39.82,40.84,"Okay, right.",0.5045
+4,41.74,50.96,Okay.,0.74
+5,53.73,54.29,Right.,0.443
+6,55.95,59.34,"Well, this is the kickoff meeting for our project.",0.7289
+7,60.0,66.81,And this is just what we're going to be doing over the next 25 minutes.,0.7265
+8,68.71,74.55,"So first of all, just to kind of make sure that we all know each other, I'm Laura, and I'm the project manager.",0.7578
+9,75.13,77.36,Do you want to introduce yourself again?,0.6903
+10,77.56,81.02,"Hi, I'm David, and I'm supposed to be an industrial designer.",0.5912
+11,81.04,84.54,"OK. And I'm Andrew, and I'm our marketing",0.6041
+12,85.94,88.61,"I'm Greg, and I'm user interface.",0.5912
+13,89.35,89.75,Great.,0.828
+14,90.11,90.49,OK.,0.779
+15,92.88,94.42,So we're designing a new remote control.,0.5997
+16,94.46,98.2,"And oh, I have to record who's here, actually.",0.771
+17,98.7,104.98,"So that's David, Andrew, and Craig, isn't it?",0.5843
+18,105.0,106.28,And you all arrived on time.,0.7417
+19,108.69,115.8,"Yeah, so design in your remote control, as you can see, it's supposed to be original, trendy, and user-friendly.",0.6994
+20,118.24,119.92,So that's kind of our brief.,0.8243
+21,120.83,125.63,And so there are three different stages to the design.,0.7673
+22,125.69,131.28,I'm not really sure what you guys have already received in your emails.,0.6802
+23,131.32,132.18,What did you get?,0.8387
+24,132.48,139.99,I just got the project announcement.,0.8578
+25,140.29,153.19,So we're gonna have like individual work and then a meeting about it and repeat that process three times.,0.7373
+26,154.47,157.34,"And at this point, you get to try out the whiteboard over there.",0.8271
+27,157.38,165.59,So you get to draw your favorite animal and sum up your favorite characteristics of it.,0.8497
+28,165.97,167.37,So who would like to go first?,0.6184
+29,167.39,167.85,I will go.,0.1837
+30,167.87,168.41,Very good.,0.7975
+31,174.34,176.22,All right.,0.5465
+32,176.24,182.35,"So this one here, right?",0.8348
+33,183.23,204.09,"Alright, my favorite animal is like a beagle.",0.8504
+34,211.69,215.36,"Favorite characteristics of it, is that right?",0.8599
+35,216.96,228.52,High priority for any animal for me is that they be willing to take a lot of physical affection from their family.,0.8671
+36,231.28,235.63,They have lots of personality.,0.8696
+37,235.61,237.57,Be fit and in robust good health.,0.842
+38,238.03,238.89,So this is Blue.,0.5902
+39,239.87,240.41,Blue Beagle.,0.72
+40,241.45,242.29,My family's beagle.,0.8557
+41,244.66,244.78,Right.,0.014
+42,244.8,255.33,Lovely.,0.695
+43,255.39,257.07,My favourite animal would be a monkey.,0.6081
+44,267.99,269.95,The small cute and furry.,0.6396
+45,270.13,273.46,"And when Planet of the Apes becomes real, I'm going to be up there with them.",0.4766
+46,286.01,290.48,You can take as long over this as you like because we haven't got an awful lot to discuss.,0.8444
+47,290.52,291.28,"Oh, we do, we do.",0.5926
+48,291.86,293.76,Don't feel like you're in a rush anyway.,0.6699
+49,295.99,298.13,I could have told you a whole lot more about beagles.,0.5623
+50,298.23,303.52,"I don't know what mine is, I'm going to have to think on the spot.",0.5789
+51,307.19,309.89,Impressionist.,0.943
+52,312.14,312.78,Is that a whale?,0.8688
+53,313.18,315.24,Yeah.,0.736
+54,318.56,323.95,"Well, I don't know, it's just the first animal I can think of off the top of my head.",0.7196
+55,325.07,328.41,I guess the big reason is because I'm allergic to most animals.,0.5997
+56,328.61,331.21,Fish was a natural choice.,0.8182
+57,333.16,334.02,And I kind of like whales.,0.6028
+58,334.36,338.44,They come in and eat everything in sight.,0.5353
+59,338.46,342.83,They're quite harmless and mild and interesting.,0.5971
+60,343.91,346.95,I still don't know what I'm going to write about.,0.409
+61,349.66,350.88,"It's a superb sketch, by the way.",0.6759
+62,355.09,359.64,"I was going to choose a dog as well, but I'll just draw a different kind of dog.",0.7699
+63,360.46,362.84,My favorite animal is my own dog at home.,0.8508
+64,367.06,368.63,"That doesn't really look like him, actually.",0.8091
+65,373.37,376.3,"He looks more like a pig, actually.",0.5117
+66,378.45,379.38,I see a dog in there.,0.8688
+67,379.54,379.94,Do you?,0.58
+68,379.98,381.02,That's very good of you.,0.7012
+69,382.88,383.66,Now I see a rooster.,0.7432
+70,393.46,394.08,What kind is it?,0.746
+71,394.62,398.26,He's a mixture of various things.,0.8692
+72,400.05,401.27,And what do I like about him?,0.7769
+73,403.29,405.33,That's supposed to suggest that his tail wags.,0.768
+74,405.95,412.74,He's very friendly and cheery and always pleased to see you and very kind of affectionate.,0.8396
+75,416.62,422.33,"And he's quite wee as well, so he doesn't take up too much space.",0.8281
+76,425.57,430.31,And he does a funny thing where he chases his tail as well.,0.6507
+77,430.33,431.25,This is quite amusing.,0.7288
+78,431.36,433.44,Is he aware that this is his own tail that he's chasing?,0.5772
+79,433.92,434.2,It is.,0.8005
+80,434.26,434.7,I think it is.,0.9032
+81,434.74,436.28,He only does it after he's had his dinner.,0.7082
+82,437.04,443.89,And he'll just all of a sudden just get up and start chasing his tail just around the living room.,0.695
+83,444.07,448.68,"Probably when he was little, he got lots of attention for doing it and has forever been conditioned.",0.7305
+84,449.1,449.5,Maybe.,0.851
+85,451.66,452.34,Where did you find this?,0.8504
+86,452.38,453.7,Just down here?,0.7517
+87,455.49,461.32,OK. What are we doing next?,0.584
+88,465.63,470.76,OK. We now need to discuss the project finance.,0.6868
+89,472.36,481.16,"So according to the brief, we're going to be selling this remote control for €25, and we're aiming to make €50 million.",0.8435
+90,483.34,494.72,"So we're going to be selling this on an international scale, and we don't want it to cost any more than €1,250, so 50% of the selling price.",0.7746
+91,496.66,497.64,Can we just go over that again?,0.6026
+92,498.19,498.5,Sure.,0.782
+93,499.14,505.33,"So basically, alright, yeah.",0.29
+94,505.35,507.68,"So cost, like production cost is?",0.88
+95,508.3,508.9,All together.,0.8185
+96,509.34,512.21,"But selling prices, is that wholesale or retail?",0.8538
+97,513.13,513.87,Like on the shelf?,0.9383
+98,514.89,518.98,"I don't know, I imagine that's a good question.",0.5148
+99,519.22,523.02,"I imagine it probably is our sale actually, because it's probably up to the",0.8056
+100,524.22,529.77,the retailer to sell it for whatever price they want.,0.7354
+101,531.87,532.5,But I don't know.,0.6385
+102,532.52,538.15,"I mean, do you think the fact that it's going to be sold internationally will have a bearing on how we design it at all?",0.8098
+103,538.85,539.09,Yes.,0.502
+104,539.31,546.14,I think it will.,0.6547
+105,548.27,553.57,"Right away I'm wondering if there's, like with DVD players, if there are zones.",0.835
+106,553.97,555.6,"Oh yeah, regions and stuff.",0.6396
+107,555.62,556.48,Frequencies or something.,0.8093
+108,558.56,565.59,"As well as characters, different keypad styles and symbols.",0.8509
+109,566.13,567.89,"For remote control, do you think that will be...",0.7447
+110,568.41,571.12,I suppose it depends on how complicated our remote control is.,0.6832
+111,571.1,580.17,It does make sense from maybe the design point of view because if you have more complicated characters like European languages then you need more buttons.,0.4973
+112,580.49,583.84,Yeah.,0.787
+113,584.22,588.89,"And then the other thing, international, on the topic of price, I'm thinking",0.8406
+114,590.98,596.55,"the price might appeal to a certain market in one region, whereas in another it'll be different.",0.7732
+115,598.03,600.21,Just in terms of the wealth of the country?,0.5866
+116,600.51,603.06,Like how much money people have to spend on things?,0.7827
+117,603.08,606.46,Or just like basic product positioning.,0.8163
+118,606.5,617.44,"The 25 euro remote control might be a big hit in London, might not be such a big hit in Greece, who knows?",0.7857
+119,619.01,624.43,marketing good marketing thoughts oh gosh I should be writing all this down,0.7483
+120,655.44,668.0,"Right away, I'm making some kind of assumptions about what information we're given here, thinking, OK, trendy probably means something other than just basic, something other than just standard.",0.8088
+121,670.4,676.39,"So I'm wondering right away, is selling 25 euros, is this going to be like the premium product?",0.8514
+122,677.25,680.97,"Yeah, yeah, like how much does a remote control cost?",0.6895
+123,681.66,687.89,"Well, 25 euro, I mean, that's about like 18 pounds or something, isn't it?",0.7236
+124,687.91,689.13,"Or no, is it as much as that?",0.7672
+125,689.83,691.2,"16, 17, 18 pounds.",0.6945
+126,691.27,692.88,"Yeah, I'd say so, yeah.",0.4182
+127,693.9,694.18,I don't know.,0.3887
+128,694.2,699.0,"I've never bought a remote control, so I don't know how good a remote control that would get you.",0.6573
+129,702.05,705.03,"But yeah, I suppose it has to look kind of cool and gimmicky.",0.6617
+130,708.72,709.0,Right.,0.924
+131,710.26,710.32,OK.,0.333
+132,711.51,712.88,Let me just scoot on ahead here.,0.4601
+133,713.88,721.45,"OK. Well, does anybody have anything to add to the finance issue at all?",0.8423
+134,722.83,726.96,Do we have any other background information on how that compares to other?,0.8704
+135,727.78,728.4,"No, actually.",0.5665
+136,728.42,732.11,"That would be useful, though, wouldn't it, if you knew what your money would get you?",0.7993
+137,732.77,735.73,No.,0.863
+138,753.65,767.22,"The interesting thing about discussing the production of remote control for me is that, as you point out, I just don't think remote control is being something people consciously assess in their purchasing habits.",0.8585
+139,767.94,772.27,It's just like getting shoelaces with shoes or something.,0.7906
+140,772.87,774.05,Five minutes to end of meeting?,0.6813
+141,774.29,776.12,"Oh, OK. We're a bit behind.",0.503
+142,776.1,779.76,Do you know what I mean?,0.617
+143,779.82,786.18,"One way of looking at it would be, well, the people producing television sets, maybe they have to buy remote controls.",0.7209
+144,786.61,793.65,"Or another way is maybe people who have TV sets are really fed up with their remote control, and they really want a better one or something.",0.7843
+145,794.51,800.94,My parents went and bought remote controls because they got fed up of having four or five different remote controls for each house.,0.5857
+146,800.96,804.38,"So for them it was just, how many devices is a control?",0.5252
+147,804.45,810.4,"Right, so in function one of the priorities might be to combine as many uses.",0.7356
+148,811.6,814.59,"Right, so do you think that should be like a main design aim of remote control?",0.7816
+149,814.69,815.47,I think so.,0.7043
+150,816.05,819.74,Your satellite and your regular telly and your VCR and everything.,0.7193
+151,819.87,827.75,Like maybe what we could use as a sort of like an example of a successful other piece of technology is Palm Pilots.,0.7782
+152,828.31,834.89,"They're going from being just like little sort of scribble boards to cameras, MP3 players, telephones.",0.8513
+153,834.87,842.4,"everything, agenda, so I wonder if we might add something new to the remote control market, such as the lighting in your house.",0.8523
+154,842.62,851.29,"Or even new notes about what you want to watch, like you might put in there, oh, I want to watch such and such, and that's a good idea.",0.6733
+155,851.61,853.79,So extra functionalities.,0.697
+156,854.15,862.6,"Personally, for me, at home, I've combined the audio, video of my television set and my DVD player and my CD player",0.8535
+157,862.58,866.95,"So they all work, actually function together, but I have different remote controls for each of them.",0.7462
+158,866.97,876.16,"So it's sort of ironic that in their sound and everything, it's just one system.",0.7087
+159,876.5,879.31,But each one's got its own little part.,0.8822
+160,882.58,885.16,Okay.,0.528
+161,886.14,890.11,I'm going to have to wrap up pretty quickly in the next couple of minutes.,0.7974
+162,890.17,891.31,I'll just check if nothing else.,0.8498
+163,892.01,892.27,Okay.,0.578
+164,893.81,898.28,So anything else anybody wants to add about what they don't like about remote controls they've used?,0.801
+165,898.3,902.56,What they would really like to be part of this new one at all?,0.8355
+166,904.69,905.57,You keep losing them.,0.8885
+167,905.77,906.29,Okay.,0.711
+168,906.39,922.57,You get those ones where you can if you like whistle or make a really high-pitched noise they beep yeah there I mean is that something we'd want to include do you think,0.7182
+169,924.29,952.85,I remember when the first remote control my my family had was on a cable actually the cable between in the TV and big like buttons that sort of like like on a blender or something my goodness and you know and I think about what they are now it's better but actually it's still kind of I don't know like a massive junky thing on the table still we could think about how could be more you know streamlined maybe like a touchscreen or something,0.7789
+170,953.05,954.29,"Something like that, yeah.",0.676
+171,954.31,956.33,Or whatever would be technologically reasonable.,0.674
+172,957.69,969.15,"Because it could be that functionally that doesn't make it any better, but that just the appeal of not having, you know, these days things in people's homes are becoming more and more, like, chic, you know?",0.8077
+173,970.43,973.0,"Nicer materials, and might be.",0.8316
+174,975.2,985.04,"So just to wrap up, the next meeting is going to be in 30 minutes, so that's about 10 to 12 by my watch.",0.7296
+175,986.25,996.49,"So in between now and then, as the industrial designer, you're going to be working on the actual working design of it, so you know what you're doing there.",0.7313
+176,996.47,1004.22,"For user interface, technical functions, I guess that's what we've been talking about, what it'll actually do.",0.8671
+177,1005.26,1015.83,"And marketing executive, you'll be just thinking about what requirements it has to fulfill.",0.8566
+178,1016.61,1022.54,"And you'll get instructions emailed to you, I guess.",0.8016
+179,1026.17,1031.42,"Yeah, so it's the functional design stage is next, I guess.",0.7311
+180,1034.66,1037.69,And that's the end of the meeting.,0.7601
+181,1039.61,1042.64,I got that little message a lot sooner than I thought I would.,0.7432
+182,1047.12,1059.21,"Before we wrap up, just to make sure we're all on the same page here, we were given sort of an example of a coffee machine or something, right?",0.7192
+183,1060.98,1066.84,Are we right now on the assumption that our television remote control may have features which go beyond the television?,0.8313
+184,1067.8,1073.21,Or are we keeping sort of like a design commitment to television features?,0.8262
+185,1073.69,1077.18,"Okay, well just very quickly because we're supposed to finish now.",0.6989
+186,1077.16,1079.0,I guess that's up to us.,0.7628
+187,1079.16,1082.09,"I mean, you probably want some kind of unique selling point of it.",0.7786
+188,1082.11,1087.15,I think one factor would be production cost.,0.5564
+189,1087.17,1089.07,There's a cap there.,0.8228
+190,1089.09,1093.22,It depends on how much you can cram into that price.,0.7878
+191,1096.2,1099.48,I think that's the main factor.,0.4522
+192,1099.5,1100.28,"Right, okay.",0.444
+193,1100.3,1106.43,"Well, that's the end of the meeting then.",0.6298
+194,1106.41,1107.41,Thank you all for coming.,0.8106
+195,1111.14,1115.73,"God, I hope that was what they wanted us to do, wasn't it?",0.7078
+196,1118.43,1118.8,Right.,0.764
+197,1148.59,1151.87,Uh-huh.,0.5
+198,1151.89,1154.44,"Oh, there it is.",0.6525
+199,1154.46,1155.32,Thank goodness.,0.359
+200,1155.4,1157.17,OK. All right.,0.331
