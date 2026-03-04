@@ -4,3 +4,21 @@ Datasets/*
 # But do NOT ignore these two files
 !Datasets/Dataset.md
 !Datasets/dataset.sh
+
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Claude Code local config (machine-specific, not for teammates)
+.claude/
+
+# Temp/local scripts (not part of pipeline spec)
+run.sh
