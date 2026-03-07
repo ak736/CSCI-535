@@ -1,0 +1,1270 @@
+segment_id,start,end,speaker_id,transcript,asr_confidence
+0,12.0,15.0,SPEAKER_03,All right. OK.,0.5527
+1,15.0,18.0,SPEAKER_03,So we'll start off,0.7968
+2,16.5,19.5,SPEAKER_03,So we'll start off with a quick overview of the minutes.,0.7777
+3,18.0,21.0,SPEAKER_03,with a quick overview of the minutes. I think,0.8023
+4,19.5,22.5,SPEAKER_03,I think to sum up the last,0.8269
+5,21.0,24.0,SPEAKER_03,to sum up the last meeting would be to,0.8269
+6,22.5,25.5,SPEAKER_03,meeting would be to say the requirements that we've,0.8269
+7,24.0,27.0,SPEAKER_03,say the requirements that we've set out.,0.8269
+8,25.5,28.5,SPEAKER_03,"set out. Those are, we",0.8148
+9,27.0,30.0,SPEAKER_03,"Those are, we were going to go",0.8027
+10,28.5,31.5,SPEAKER_03,were going to go for what seemed to,0.8027
+11,30.0,33.0,SPEAKER_03,for what seemed to be a fairly minimal,0.8027
+12,31.5,34.5,SPEAKER_03,be a fairly minimal design based on,0.8027
+13,33.0,36.0,SPEAKER_03,design based on a small joystick.,0.8027
+14,34.5,37.5,SPEAKER_03,a small joystick. LCD,0.7928
+15,36.0,39.0,SPEAKER_03,LCD and a couple,0.7828
+16,37.5,40.5,SPEAKER_03,and a couple of other buttons,0.7828
+17,39.0,42.0,SPEAKER_03,of other buttons for navigation,0.7828
+18,40.5,43.5,SPEAKER_03,for navigation with power being,0.7828
+19,42.0,45.0,SPEAKER_03,with power being one of the,0.7828
+20,43.5,46.5,SPEAKER_03,one of the main single purpose,0.7828
+21,45.0,48.0,SPEAKER_03,main single purpose buttons.,0.7828
+22,46.5,49.5,SPEAKER_03,buttons. We were also,0.772
+23,48.0,51.0,SPEAKER_03,We were also going to use a novelty,0.7612
+24,49.5,52.5,SPEAKER_03,going to use a novelty of being able to locate,0.7612
+25,51.0,54.0,SPEAKER_03,of being able to locate the remote control again via,0.7612
+26,52.5,55.5,SPEAKER_03,the remote control again via a small transmitter with any,0.7612
+27,54.0,57.0,SPEAKER_03,"a small transmitter with any luck, the idea to try",0.7612
+28,55.5,58.5,SPEAKER_03,"luck, the idea to try and separate us, and",0.7612
+29,57.0,60.0,SPEAKER_03,"and separate us, and also because of the minimal",0.7612
+30,58.5,61.5,SPEAKER_03,also because of the minimal design. It looks like we'll,0.8015
+31,60.0,63.0,SPEAKER_03,design. It looks like we'll be able to be fairly,0.8015
+32,61.5,64.5,SPEAKER_03,be able to be fairly adventurous in the actual physical,0.8419
+33,63.0,66.0,SPEAKER_03,adventurous in the actual physical shape of our remote control,0.8419
+34,64.5,67.5,SPEAKER_03,shape of our remote control with any luck.,0.8419
+35,66.0,69.0,SPEAKER_03,with any luck.,0.8419
+36,67.5,70.5,SPEAKER_03,Pretty much sums up,0.803
+37,69.0,72.0,SPEAKER_03,Pretty much sums up the last one.,0.803
+38,70.5,73.5,SPEAKER_03,the last one. So we'll just crack,0.7643
+39,72.0,75.0,SPEAKER_03,So we'll just crack on. I'd like,0.7439
+40,73.5,76.5,SPEAKER_03,on. I'd like to maybe start with,0.7439
+41,75.0,78.0,SPEAKER_03,to maybe start with the industrial designer if,0.7621
+42,76.5,79.5,SPEAKER_03,the industrial designer if it's possible.,0.7621
+43,81.0,84.0,SPEAKER_03,"Today is the conceptual, today.",0.8616
+44,82.5,85.5,SPEAKER_03,"the conceptual, today. This meeting",0.8338
+45,84.0,87.0,SPEAKER_03,This meeting is a,0.806
+46,85.5,88.5,SPEAKER_03,is a conceptual design,0.806
+47,87.0,90.0,SPEAKER_03,conceptual design phase and is,0.806
+48,88.5,91.5,SPEAKER_03,phase and is And it's,0.7853
+49,90.0,93.0,SPEAKER_03,And it's to cover things,0.7853
+50,91.5,94.5,SPEAKER_03,to cover things like what,0.7647
+51,93.0,96.0,SPEAKER_03,like what the parts,0.7647
+52,94.5,97.5,SPEAKER_03,the parts might be made,0.7647
+53,96.0,99.0,SPEAKER_03,"might be made of, can",0.7647
+54,97.5,100.5,SPEAKER_03,"of, can we outsource",0.7647
+55,99.0,102.0,SPEAKER_03,we outsource these from elsewhere,0.7647
+56,100.5,103.5,SPEAKER_03,these from elsewhere or will,0.7647
+57,102.0,105.0,SPEAKER_03,or will we have to,0.7647
+58,103.5,106.5,SPEAKER_03,we have to construct the,0.7647
+59,105.0,108.0,SPEAKER_03,construct the items ourselves?,0.7647
+60,108.0,111.0,SPEAKER_00,"I have a presentation area, I'll just save it",0.7365
+61,112.5,115.5,SPEAKER_03,"okay, I'll just",0.5209
+62,114.0,117.0,SPEAKER_03,just upload it,0.5209
+63,115.5,118.5,SPEAKER_03,upload it up then.,0.5209
+64,117.0,120.0,SPEAKER_03,up then. Which one?,0.7075
+65,121.5,124.5,SPEAKER_03,"Oh, interface concept, that's",0.7094
+66,123.0,126.0,SPEAKER_03,"concept, that's you. We've got trend watching, that's",0.6401
+67,124.5,127.5,SPEAKER_03,"you. We've got trend watching, that's you.",0.6401
+68,139.5,142.5,SPEAKER_00,OK. All right.,0.4712
+69,141.0,144.0,SPEAKER_00,right. So the,0.4712
+70,142.5,145.5,SPEAKER_00,"So the case,",0.7133
+71,144.0,147.0,SPEAKER_00,"case, that's what",0.7133
+72,145.5,148.5,SPEAKER_00,that's what I wrote.,0.7133
+73,147.0,150.0,SPEAKER_00,"I wrote. First of all, it could",0.6665
+74,148.5,151.5,SPEAKER_00,"First of all, it could be plastic, or plastic.",0.6665
+75,150.0,153.0,SPEAKER_00,"could be plastic, or plastic. But later on,",0.7189
+76,151.5,154.5,SPEAKER_00,"But later on, we found out that",0.8181
+77,153.0,156.0,SPEAKER_00,we found out that it can be rubber,0.8181
+78,154.5,157.5,SPEAKER_00,"it can be rubber as well, or titanium,",0.8181
+79,156.0,159.0,SPEAKER_00,"as well, or titanium, or even wood.",0.8181
+80,157.5,160.5,SPEAKER_00,or even wood. So we've decided,0.7501
+81,159.0,162.0,SPEAKER_00,So we've decided what it's going,0.6821
+82,160.5,163.5,SPEAKER_00,"what it's going to be, probably",0.6821
+83,162.0,165.0,SPEAKER_00,"to be, probably plastic.",0.6821
+84,163.5,166.5,SPEAKER_00,plastic. We need the infrared,0.7449
+85,165.0,168.0,SPEAKER_00,We need the infrared transmitter. Get that,0.8394
+86,166.5,169.5,SPEAKER_00,transmitter. Get that off the shelf. Joystick,0.791
+87,168.0,171.0,SPEAKER_00,"off the shelf. Joystick will probably, if",0.7827
+88,169.5,172.5,SPEAKER_00,"will probably, if we're going to",0.6941
+89,171.0,174.0,SPEAKER_00,"we're going to use it, could",0.6941
+90,172.5,175.5,SPEAKER_00,"use it, could be plastic or",0.6941
+91,174.0,177.0,SPEAKER_00,be plastic or rubber even as,0.6941
+92,175.5,178.5,SPEAKER_00,rubber even as well.,0.6941
+93,178.5,181.5,SPEAKER_00,If you go on to the,0.8261
+94,180.0,183.0,SPEAKER_00,"you go on to the next slide,",0.806
+95,181.5,184.5,SPEAKER_00,"next slide, But if you go",0.806
+96,183.0,186.0,SPEAKER_00,"But if you go on to findings, it's",0.7859
+97,184.5,187.5,SPEAKER_00,"on to findings, it's like two or three",0.7859
+98,186.0,189.0,SPEAKER_00,like two or three slides down.,0.7859
+99,187.5,190.5,SPEAKER_00,slides down. So this is,0.8049
+100,189.0,192.0,SPEAKER_00,So this is what a fan we,0.8239
+101,190.5,193.5,SPEAKER_00,what a fan we can use.,0.8239
+102,192.0,195.0,SPEAKER_00,can use. Three different,0.8672
+103,193.5,196.5,SPEAKER_00,Three different types of,0.9106
+104,195.0,198.0,SPEAKER_00,types of batteries.,0.9106
+105,198.0,201.0,SPEAKER_00,can either use,0.7279
+106,199.5,202.5,SPEAKER_00,can either use a hand,0.7279
+107,201.0,204.0,SPEAKER_00,a hand dynamo or the,0.7279
+108,202.5,205.5,SPEAKER_00,dynamo or the kinetic type ones,0.7279
+109,204.0,207.0,SPEAKER_00,kinetic type ones you know that,0.7279
+110,205.5,208.5,SPEAKER_00,you know that they use,0.7279
+111,207.0,210.0,SPEAKER_00,they use in watches or,0.7279
+112,208.5,211.5,SPEAKER_00,in watches or else a solid,0.7279
+113,213.0,216.0,SPEAKER_03,"No, the kinetic one.",0.753
+114,214.5,217.5,SPEAKER_03,kinetic one. because that's the one,0.6714
+115,216.0,219.0,SPEAKER_03,because that's the one where the movement causes it.,0.6714
+116,217.5,220.5,SPEAKER_03,where the movement causes it. The,0.7375
+117,219.0,222.0,SPEAKER_03,The battery for a,0.8854
+118,220.5,223.5,SPEAKER_03,battery for a watch wouldn't require a,0.8854
+119,222.0,225.0,SPEAKER_03,watch wouldn't require a lot of power would,0.8854
+120,223.5,226.5,SPEAKER_03,lot of power would be my one,0.8854
+121,225.0,228.0,SPEAKER_03,be my one query. Is a,0.8357
+122,226.5,229.5,SPEAKER_03,query. Is a kinetic one going to,0.8357
+123,228.0,231.0,SPEAKER_03,kinetic one going to be able to supply enough,0.7859
+124,232.5,235.5,SPEAKER_02,a watch moves around a great deal,0.8103
+125,237.0,240.0,SPEAKER_00,don't think it would. And,0.6987
+126,238.5,241.5,SPEAKER_00,"And solar cells,",0.6246
+127,240.0,243.0,SPEAKER_00,"solar cells, I",0.6246
+128,241.5,244.5,SPEAKER_00,I don't know,0.6246
+129,243.0,246.0,SPEAKER_00,don't know about that.,0.6246
+130,246.0,249.0,SPEAKER_00,We should probably,0.552
+131,247.5,250.5,SPEAKER_00,We should probably just use conventional batteries.,0.4794
+132,249.0,252.0,SPEAKER_00,just use conventional batteries.,0.4794
+133,252.0,255.0,SPEAKER_00,And just like in usual,0.6115
+134,256.5,259.5,SPEAKER_03,"I suppose as well would allow us to go off the shelf again, you two?",0.7896
+135,259.5,262.5,SPEAKER_00,Yeah. These are three,0.6324
+136,261.0,264.0,SPEAKER_00,"These are three different types, or",0.7139
+137,262.5,265.5,SPEAKER_00,"different types, or two different types,",0.7139
+138,264.0,267.0,SPEAKER_00,"two different types, three different types",0.7139
+139,265.5,268.5,SPEAKER_00,three different types of shapes. You can have,0.737
+140,267.0,270.0,SPEAKER_00,"of shapes. You can have one as a flat one, and",0.737
+141,268.5,271.5,SPEAKER_00,"one as a flat one, and then more original ones are",0.7602
+142,270.0,273.0,SPEAKER_00,"then more original ones are a single curved one, or one",0.7602
+143,271.5,274.5,SPEAKER_00,"a single curved one, or one with a double curved.",0.7602
+144,273.0,276.0,SPEAKER_00,with a double curved.,0.7602
+145,274.5,277.5,SPEAKER_00,"The materials are there, as",0.7426
+146,276.0,279.0,SPEAKER_00,"The materials are there, as you can see, but you",0.7426
+147,277.5,280.5,SPEAKER_00,"you can see, but you can't have a titanium one",0.7426
+148,279.0,282.0,SPEAKER_00,can't have a titanium one for a double curved.,0.7426
+149,282.0,285.0,SPEAKER_01,"Titanium, they're really strong metal.",0.8
+150,283.5,286.5,SPEAKER_01,they're really strong metal. Is,0.7405
+151,285.0,288.0,SPEAKER_01,Is it also expensive?,0.7405
+152,289.5,292.5,SPEAKER_00,"as well, yeah. They might meant by",0.4391
+153,291.0,294.0,SPEAKER_00,They might meant by Xenodad. So it's really light as,0.4109
+154,295.5,298.5,SPEAKER_03,"I don't know if you'd be able to, off the top of your head or not,",0.7442
+155,297.0,300.0,SPEAKER_03,"to, off the top of your head or not, the single curved or the double curved.",0.7442
+156,298.5,301.5,SPEAKER_03,the single curved or the double curved. Would you be able to give an example?,0.7758
+157,300.0,303.0,SPEAKER_03,Would you be able to give an example?,0.8074
+158,303.0,306.0,SPEAKER_03,Could you maybe draw something? It,0.6811
+159,304.5,307.5,SPEAKER_03,maybe draw something? It doesn't have to be perfect. It's just,0.7317
+160,306.0,309.0,SPEAKER_03,doesn't have to be perfect. It's just because I'm not quite sure if I,0.728
+161,307.5,310.5,SPEAKER_03,because I'm not quite sure if I understand the difference between the two.,0.8329
+162,309.0,312.0,SPEAKER_03,understand the difference between the two.,0.8329
+163,313.5,316.5,SPEAKER_00,"Well. For curves,",0.7641
+164,315.0,318.0,SPEAKER_00,"For curves, well, I",0.6583
+165,316.5,319.5,SPEAKER_00,"well, I was thinking to",0.6583
+166,318.0,321.0,SPEAKER_00,was thinking to sit in,0.6583
+167,319.5,322.5,SPEAKER_00,sit in the palm of,0.6583
+168,321.0,324.0,SPEAKER_00,"the palm of your hand,",0.6583
+169,322.5,325.5,SPEAKER_00,"your hand, maybe like",0.6583
+170,324.0,327.0,SPEAKER_00,maybe like this with the,0.6583
+171,325.5,328.5,SPEAKER_00,this with the joy pod,0.6583
+172,327.0,330.0,SPEAKER_00,"joy pod here, joystick here,",0.6583
+173,328.5,331.5,SPEAKER_00,"here, joystick here, and maybe",0.6583
+174,331.5,334.5,SPEAKER_00,and OK button around,0.7058
+175,333.0,336.0,SPEAKER_00,and OK button around here so that the thumb can,0.7058
+176,334.5,337.5,SPEAKER_00,here so that the thumb can use it quite easily.,0.7058
+177,336.0,339.0,SPEAKER_00,use it quite easily. I,0.8081
+178,337.5,340.5,SPEAKER_00,I don't exactly,0.9104
+179,339.0,342.0,SPEAKER_00,don't exactly double curves.,0.9104
+180,340.5,343.5,SPEAKER_00,double curves. It,0.8534
+181,342.0,345.0,SPEAKER_00,It probably means,0.8534
+182,343.5,346.5,SPEAKER_00,probably means this is probably,0.7963
+183,345.0,348.0,SPEAKER_00,"this is probably double curves, whereas",0.7963
+184,346.5,349.5,SPEAKER_00,"double curves, whereas a single curve",0.7963
+185,348.0,351.0,SPEAKER_00,a single curve would be,0.7963
+186,349.5,352.5,SPEAKER_00,"would be like that, I",0.7963
+187,351.0,354.0,SPEAKER_00,"like that, I guess.",0.7963
+188,352.5,355.5,SPEAKER_00,"guess. Or no, sorry.",0.7263
+189,357.0,360.0,SPEAKER_03,might literally just be two curves. OK.,0.7609
+190,360.0,363.0,SPEAKER_00,"Yeah, like that, whereas this",0.5011
+191,361.5,364.5,SPEAKER_00,"that, whereas this is two curves.",0.5011
+192,363.0,366.0,SPEAKER_00,is two curves. So,0.6564
+193,364.5,367.5,SPEAKER_00,So I guess that's,0.8117
+194,366.0,369.0,SPEAKER_00,I guess that's what they mean,0.8117
+195,367.5,370.5,SPEAKER_00,what they mean by a double,0.8117
+196,369.0,372.0,SPEAKER_00,"by a double curve, which it",0.8117
+197,370.5,373.5,SPEAKER_00,"curve, which it looks better than",0.8117
+198,372.0,375.0,SPEAKER_00,"looks better than a single curve,",0.8117
+199,373.5,376.5,SPEAKER_00,"a single curve, but you can't",0.8117
+200,375.0,378.0,SPEAKER_00,but you can't have it in,0.8117
+201,376.5,379.5,SPEAKER_00,"have it in titanium, which is",0.8117
+202,378.0,381.0,SPEAKER_00,"titanium, which is a nice material.",0.8117
+203,379.5,382.5,SPEAKER_00,a nice material.,0.8117
+204,382.5,385.5,SPEAKER_00,And for the,0.9083
+205,384.0,387.0,SPEAKER_00,"for the buttons, you",0.9083
+206,385.5,388.5,SPEAKER_00,"buttons, you can have",0.9083
+207,387.0,390.0,SPEAKER_00,can have the scroll,0.9083
+208,388.5,391.5,SPEAKER_00,"the scroll wheel, which",0.9083
+209,390.0,393.0,SPEAKER_00,"wheel, which they use",0.9083
+210,391.5,394.5,SPEAKER_00,they use in mouses.,0.9083
+211,394.5,397.5,SPEAKER_00,And it requires,0.8869
+212,396.0,399.0,SPEAKER_00,And it requires a more,0.8869
+213,397.5,400.5,SPEAKER_00,a more expensive chip,0.8869
+214,399.0,402.0,SPEAKER_00,expensive chip to use. And,0.7393
+215,400.5,403.5,SPEAKER_00,"to use. And if you want to use LCD, it's even",0.7393
+216,402.0,405.0,SPEAKER_00,"if you want to use LCD, it's even more expensive. So",0.5343
+217,403.5,406.5,SPEAKER_00,more expensive. So you have to decide to,0.5343
+218,405.0,408.0,SPEAKER_00,you have to decide to trade offs there.,0.4767
+219,406.5,409.5,SPEAKER_00,trade offs there.,0.4767
+220,409.5,412.5,SPEAKER_00,If you have a double,0.8031
+221,411.0,414.0,SPEAKER_00,have a double curved control on,0.8031
+222,412.5,415.5,SPEAKER_00,"curved control on its rubber,",0.8031
+223,414.0,417.0,SPEAKER_00,"its rubber, then you have",0.8031
+224,415.5,418.5,SPEAKER_00,then you have to use rubber,0.8031
+225,417.0,420.0,SPEAKER_00,to use rubber buttons as well.,0.8031
+226,418.5,421.5,SPEAKER_00,buttons as well. I reckon you're,0.7753
+227,420.0,423.0,SPEAKER_00,I reckon you're going to have to,0.7753
+228,421.5,424.5,SPEAKER_00,going to have to have a number keypad,0.7475
+229,423.0,426.0,SPEAKER_00,have a number keypad anyway. For the amount of channels,0.7574
+230,424.5,427.5,SPEAKER_00,"anyway. For the amount of channels these days, you wouldn't want to just",0.7574
+231,426.0,429.0,SPEAKER_00,"these days, you wouldn't want to just have to scroll through all the",0.7674
+232,427.5,430.5,SPEAKER_00,have to scroll through all the channels together when you want. You want,0.7157
+233,429.0,432.0,SPEAKER_00,channels together when you want. You want to enter just a number if,0.7157
+234,430.5,433.5,SPEAKER_00,to enter just a number if you know it. So I,0.6543
+235,432.0,435.0,SPEAKER_00,you know it. So I reckon we're,0.6543
+236,433.5,436.5,SPEAKER_00,reckon we're going to have,0.6445
+237,435.0,438.0,SPEAKER_00,going to have to have a,0.6445
+238,436.5,439.5,SPEAKER_00,to have a number keypad,0.6445
+239,438.0,441.0,SPEAKER_00,number keypad anyway. Do you think?,0.5661
+240,441.0,444.0,SPEAKER_03,"OK, that's definitely something we",0.693
+241,442.5,445.5,SPEAKER_03,definitely something we can talk,0.693
+242,444.0,447.0,SPEAKER_03,can talk about.,0.693
+243,445.5,448.5,SPEAKER_03,about. So you've got,0.6734
+244,447.0,450.0,SPEAKER_03,So you've got a little bit about,0.6538
+245,448.5,451.5,SPEAKER_03,a little bit about the chip that we might,0.6538
+246,454.5,457.5,SPEAKER_00,So it depends where,0.6378
+247,456.0,459.0,SPEAKER_00,it depends where you're going,0.6378
+248,457.5,460.5,SPEAKER_00,you're going to spend,0.6378
+249,459.0,462.0,SPEAKER_00,to spend the money if,0.6378
+250,460.5,463.5,SPEAKER_00,the money if you want,0.6378
+251,462.0,465.0,SPEAKER_00,you want a fancy LCD,0.6378
+252,463.5,466.5,SPEAKER_00,a fancy LCD display.,0.6378
+253,466.5,469.5,SPEAKER_03,Do you have,0.7905
+254,468.0,471.0,SPEAKER_03,"Do you have any idea, so far,",0.7905
+255,469.5,472.5,SPEAKER_03,"any idea, so far, when we're saying that we",0.7905
+256,471.0,474.0,SPEAKER_03,when we're saying that we need an advanced chip,0.7905
+257,472.5,475.5,SPEAKER_03,"need an advanced chip for an LCD, does",0.7905
+258,474.0,477.0,SPEAKER_03,"for an LCD, does that shoot a cost up",0.7905
+259,475.5,478.5,SPEAKER_03,that shoot a cost up by a drastic amount?,0.7905
+260,478.5,481.5,SPEAKER_01,Do you need an advanced chip for the,0.5176
+261,483.0,486.0,SPEAKER_03,"compared to, say, this pressing of buttons.",0.8065
+262,484.5,487.5,SPEAKER_03,this pressing of buttons. If you press,0.7337
+263,486.0,489.0,SPEAKER_03,If you press a button it sends,0.7337
+264,487.5,490.5,SPEAKER_03,a button it sends a certain transmission through,0.6608
+265,489.0,492.0,SPEAKER_03,a certain transmission through the infrared whereas I,0.6608
+266,490.5,493.5,SPEAKER_03,the infrared whereas I think if we're,0.6608
+267,492.0,495.0,SPEAKER_03,think if we're controlling the LCD we,0.6608
+268,493.5,496.5,SPEAKER_03,controlling the LCD we definitely require a much,0.6608
+269,495.0,498.0,SPEAKER_03,definitely require a much more powerful chip. Just,0.7114
+270,496.5,499.5,SPEAKER_03,more powerful chip. Just compared to the chip you,0.7114
+271,498.0,501.0,SPEAKER_03,compared to the chip you would use for pushing buttons,0.7619
+272,499.5,502.5,SPEAKER_03,would use for pushing buttons I think to see the,0.7619
+273,501.0,504.0,SPEAKER_03,I think to see the point being made if I've,0.7619
+274,502.5,505.5,SPEAKER_03,point being made if I've not overstepped.,0.7619
+275,505.5,508.5,SPEAKER_03,Should I go,0.792
+276,507.0,510.0,SPEAKER_03,Should I go on or go back?,0.792
+277,508.5,511.5,SPEAKER_03,on or go back?,0.792
+278,511.5,514.5,SPEAKER_03,If we only have 12,0.7509
+279,513.0,516.0,SPEAKER_03,we only have 12 pounds 50 12,0.7509
+280,514.5,517.5,SPEAKER_03,pounds 50 12 euros not even 12,0.7509
+281,516.0,519.0,SPEAKER_03,euros not even 12 pounds 12 yours was,0.7509
+282,517.5,520.5,SPEAKER_03,pounds 12 yours was that like 8 pounds,0.7509
+283,519.0,522.0,SPEAKER_03,"that like 8 pounds isn't like that Well,",0.7509
+284,520.5,523.5,SPEAKER_03,"isn't like that Well, we'd also be relying",0.7509
+285,522.0,525.0,SPEAKER_03,we'd also be relying on the the bulk,0.7509
+286,523.5,526.5,SPEAKER_03,on the the bulk buying and Producemen and,0.7509
+287,525.0,528.0,SPEAKER_03,"buying and Producemen and such okay, that's I",0.7509
+288,526.5,529.5,SPEAKER_03,"such okay, that's I assume we have to",0.7509
+289,528.0,531.0,SPEAKER_03,assume we have to look into the cost,0.7509
+290,529.5,532.5,SPEAKER_03,look into the cost of those so Sorry.,0.537
+291,534.0,537.0,SPEAKER_00,slides just explain what's in the internal,0.8638
+292,535.5,538.5,SPEAKER_00,in the internal components of the remote,0.8638
+293,537.0,540.0,SPEAKER_00,components of the remote control if you,0.8638
+294,538.5,541.5,SPEAKER_00,control if you go to one before,0.8638
+295,540.0,543.0,SPEAKER_00,go to one before that. So it just says what,0.7393
+296,541.5,544.5,SPEAKER_00,that. So it just says what it does. Translate the,0.771
+297,543.0,546.0,SPEAKER_00,it does. Translate the key press into an infrared signal,0.7246
+298,544.5,547.5,SPEAKER_00,key press into an infrared signal and this is received by the,0.8342
+299,546.0,549.0,SPEAKER_00,and this is received by the TV.,0.8342
+300,547.5,550.5,SPEAKER_00,TV. The chip just needs,0.7688
+301,549.0,552.0,SPEAKER_00,The chip just needs to detect the signal or,0.7033
+302,550.5,553.5,SPEAKER_00,to detect the signal or detect the key press,0.7033
+303,552.0,555.0,SPEAKER_00,detect the key press and then it'll send,0.7033
+304,553.5,556.5,SPEAKER_00,and then it'll send it to the amplifier.,0.7033
+305,558.0,561.0,SPEAKER_00,And then the,0.7082
+306,559.5,562.5,SPEAKER_00,then the next slide just,0.7082
+307,561.0,564.0,SPEAKER_00,next slide just shows how,0.7082
+308,562.5,565.5,SPEAKER_00,shows how the copper,0.7082
+309,564.0,567.0,SPEAKER_00,the copper wires interact with,0.7082
+310,565.5,568.5,SPEAKER_00,wires interact with the rubber,0.7082
+311,567.0,570.0,SPEAKER_00,the rubber buttons to,0.7082
+312,568.5,571.5,SPEAKER_00,buttons to get sent to,0.7082
+313,570.0,573.0,SPEAKER_00,get sent to the chip.,0.7082
+314,574.5,577.5,SPEAKER_00,So that's just how the control,0.8353
+315,576.0,579.0,SPEAKER_00,that's just how the control works inside.,0.8353
+316,579.0,582.0,SPEAKER_00,We have to decide,0.5246
+317,580.5,583.5,SPEAKER_00,We have to decide on what buttons we're going,0.5246
+318,582.0,585.0,SPEAKER_00,on what buttons we're going to use.,0.5246
+319,588.0,591.0,SPEAKER_03,OK. You just got a section for,0.3647
+320,589.5,592.5,SPEAKER_03,You just got a section for personal preferences.,0.3964
+321,594.0,597.0,SPEAKER_03,So in the information,0.8173
+322,595.5,598.5,SPEAKER_03,"So in the information that you've been supplied,",0.8173
+323,597.0,600.0,SPEAKER_03,"that you've been supplied, how feasible would you",0.8173
+324,598.5,601.5,SPEAKER_03,how feasible would you say that the,0.8173
+325,600.0,603.0,SPEAKER_03,say that the idea of using an,0.8173
+326,601.5,604.5,SPEAKER_03,idea of using an LCD looks?,0.8173
+327,604.5,607.5,SPEAKER_00,I think we,0.7052
+328,606.0,609.0,SPEAKER_00,think we can do,0.7052
+329,607.5,610.5,SPEAKER_00,can do it if,0.7052
+330,609.0,612.0,SPEAKER_00,it if we use conventional,0.7052
+331,610.5,613.5,SPEAKER_00,we use conventional batteries and,0.7052
+332,612.0,615.0,SPEAKER_00,batteries and not have,0.7052
+333,613.5,616.5,SPEAKER_00,not have solar cells or,0.7052
+334,615.0,618.0,SPEAKER_00,solar cells or kinetic.,0.7052
+335,616.5,619.5,SPEAKER_00,kinetic. Maybe use,0.7497
+336,618.0,621.0,SPEAKER_00,Maybe use a single curved,0.7942
+337,619.5,622.5,SPEAKER_00,"a single curved case, because",0.7942
+338,621.0,624.0,SPEAKER_00,"case, because you might need",0.7942
+339,622.5,625.5,SPEAKER_00,you might need it to be,0.7942
+340,624.0,627.0,SPEAKER_00,it to be curved for the,0.7942
+341,625.5,628.5,SPEAKER_00,curved for the thumb to use,0.7942
+342,627.0,630.0,SPEAKER_00,thumb to use the joystick easily.,0.7942
+343,628.5,631.5,SPEAKER_00,the joystick easily. And,0.7273
+344,630.0,633.0,SPEAKER_00,And then you'll need,0.6604
+345,631.5,634.5,SPEAKER_00,then you'll need the advanced chip,0.6604
+346,633.0,636.0,SPEAKER_00,the advanced chip for the LCD.,0.6604
+347,634.5,637.5,SPEAKER_00,for the LCD.,0.6604
+348,637.5,640.5,SPEAKER_03,"I mean, that sounds like quite a good",0.7379
+349,639.0,642.0,SPEAKER_03,that sounds like quite a good requirement to me.,0.7793
+350,640.5,643.5,SPEAKER_03,requirement to me. Conventional battery would seem to make,0.7793
+351,642.0,645.0,SPEAKER_03,Conventional battery would seem to make sense. I'm,0.8206
+352,643.5,646.5,SPEAKER_03,sense. I'm not sure if there's,0.8206
+353,645.0,648.0,SPEAKER_03,not sure if there's any cost differences between single,0.8204
+354,646.5,649.5,SPEAKER_03,any cost differences between single and double curved.,0.8204
+355,648.0,651.0,SPEAKER_03,and double curved. And I don't know,0.8372
+356,649.5,652.5,SPEAKER_03,"And I don't know about anybody else, but plastic",0.854
+357,651.0,654.0,SPEAKER_03,"about anybody else, but plastic or rubber as a traditional",0.854
+358,652.5,655.5,SPEAKER_03,or rubber as a traditional form of casing would,0.854
+359,654.0,657.0,SPEAKER_03,form of casing would seem to be a good,0.854
+360,658.5,661.5,SPEAKER_02,I'm actually going to be bold,0.6086
+361,660.0,663.0,SPEAKER_02,to be bold and go straight,0.6086
+362,661.5,664.5,SPEAKER_02,and go straight for rubber for,0.6086
+363,663.0,666.0,SPEAKER_02,for rubber for reasons I'll go,0.6086
+364,669.0,672.0,SPEAKER_03,"well, based on my reasons.",0.6818
+365,670.5,673.5,SPEAKER_03,"my reasons. Yeah,",0.7259
+366,672.0,675.0,SPEAKER_03,"Yeah, well, we move",0.7701
+367,673.5,676.5,SPEAKER_03,"well, we move on to user",0.7701
+368,675.0,678.0,SPEAKER_03,"on to user interface and, yeah. OK.",0.6935
+369,676.5,679.5,SPEAKER_03,"interface and, yeah. OK. That's right, as long",0.6935
+370,678.0,681.0,SPEAKER_03,"That's right, as long as we use.",0.6483
+371,679.5,682.5,SPEAKER_03,"as we use. Yeah,",0.6483
+372,690.0,693.0,SPEAKER_02,I'm going to have to work between,0.7712
+373,691.5,694.5,SPEAKER_02,have to work between the slides and the.,0.7712
+374,693.0,696.0,SPEAKER_02,the slides and the. Yeah.,0.6611
+375,694.5,697.5,SPEAKER_02,Yeah. and the white,0.6558
+376,696.0,699.0,SPEAKER_02,and the white board because I actually have,0.5981
+377,697.5,700.5,SPEAKER_02,board because I actually have some fairly concrete things.,0.6452
+378,699.0,702.0,SPEAKER_02,some fairly concrete things.,0.6452
+379,702.0,705.0,SPEAKER_02,It's time. I was,0.7501
+380,703.5,706.5,SPEAKER_02,I was given an HTML file,0.8277
+381,705.0,708.0,SPEAKER_02,given an HTML file giving various ideas,0.8277
+382,706.5,709.5,SPEAKER_02,giving various ideas from other previous,0.8277
+383,708.0,711.0,SPEAKER_02,"from other previous remote control designs,",0.8277
+384,709.5,712.5,SPEAKER_02,"remote control designs, and pretty much",0.8277
+385,711.0,714.0,SPEAKER_02,and pretty much decided to just,0.8277
+386,712.5,715.5,SPEAKER_02,decided to just dump them all.,0.8535
+387,714.0,717.0,SPEAKER_02,dump them all. I wasn't very impressed by,0.8535
+388,715.5,718.5,SPEAKER_02,"I wasn't very impressed by them, and nothing I saw",0.8792
+389,717.0,720.0,SPEAKER_02,"them, and nothing I saw seemed to meet the sorts",0.8792
+390,718.5,721.5,SPEAKER_02,seemed to meet the sorts of design specifications that we're,0.8792
+391,720.0,723.0,SPEAKER_02,of design specifications that we're going for today.,0.8792
+392,721.5,724.5,SPEAKER_02,going for today.,0.8792
+393,723.0,726.0,SPEAKER_02,So rather than looking,0.8148
+394,724.5,727.5,SPEAKER_02,"So rather than looking at other remotes, it",0.8148
+395,726.0,729.0,SPEAKER_02,"at other remotes, it would be better to simply",0.8148
+396,727.5,730.5,SPEAKER_02,would be better to simply look at the human,0.8148
+397,729.0,732.0,SPEAKER_02,look at the human hand. and try and,0.8183
+398,730.5,733.5,SPEAKER_02,hand. and try and figure out a,0.8183
+399,732.0,735.0,SPEAKER_02,figure out a way of laying out,0.8219
+400,733.5,736.5,SPEAKER_02,way of laying out the elements we've,0.8219
+401,735.0,738.0,SPEAKER_02,the elements we've already decided on so,0.8219
+402,736.5,739.5,SPEAKER_02,"already decided on so that the fingers,",0.8219
+403,738.0,741.0,SPEAKER_02,"that the fingers, each finger or thumb",0.8219
+404,739.5,742.5,SPEAKER_02,each finger or thumb is wherever it,0.8219
+405,741.0,744.0,SPEAKER_02,is wherever it needs to be already.,0.8219
+406,742.5,745.5,SPEAKER_02,needs to be already.,0.8219
+407,745.5,748.5,SPEAKER_02,"So, next slide, if",0.8878
+408,747.0,750.0,SPEAKER_02,"next slide, if you please. And",0.8024
+409,748.5,751.5,SPEAKER_02,you please. And what we basically,0.8024
+410,750.0,753.0,SPEAKER_02,what we basically decided on was,0.7171
+411,751.5,754.5,SPEAKER_02,"decided on was the joystick, two",0.7171
+412,753.0,756.0,SPEAKER_02,"the joystick, two function buttons and the",0.7171
+413,754.5,757.5,SPEAKER_02,"function buttons and the LCD, just keep",0.7171
+414,756.0,759.0,SPEAKER_02,"LCD, just keep it paired down",0.7171
+415,757.5,760.5,SPEAKER_02,it paired down to the absolute,0.7171
+416,759.0,762.0,SPEAKER_02,to the absolute minimum. I,0.7468
+417,760.5,763.5,SPEAKER_02,minimum. I don't actually think,0.7468
+418,762.0,765.0,SPEAKER_02,don't actually think we need the,0.7765
+419,763.5,766.5,SPEAKER_02,we need the numeric keypad because,0.7765
+420,765.0,768.0,SPEAKER_02,numeric keypad because one of the,0.7765
+421,766.5,769.5,SPEAKER_02,one of the menus that we,0.7765
+422,768.0,771.0,SPEAKER_02,menus that we could have available,0.7765
+423,769.5,772.5,SPEAKER_02,could have available via the,0.7765
+424,771.0,774.0,SPEAKER_02,via the LCD is one,0.7765
+425,772.5,775.5,SPEAKER_02,LCD is one where you scroll,0.7765
+426,774.0,777.0,SPEAKER_02,where you scroll through channels.,0.7765
+427,775.5,778.5,SPEAKER_02,through channels. So if there's something.,0.7328
+428,777.0,780.0,SPEAKER_02,So if there's something. And bear,0.7109
+429,778.5,781.5,SPEAKER_02,"And bear in mind, since",0.8329
+430,780.0,783.0,SPEAKER_02,"in mind, since this isn't",0.8329
+431,781.5,784.5,SPEAKER_02,this isn't meant to,0.8329
+432,783.0,786.0,SPEAKER_02,meant to work for,0.8329
+433,784.5,787.5,SPEAKER_02,work for digital or for,0.8329
+434,786.0,789.0,SPEAKER_02,digital or for cable or,0.8329
+435,787.5,790.5,SPEAKER_02,"cable or whatever, you're",0.8329
+436,789.0,792.0,SPEAKER_02,"whatever, you're basically looking at",0.8329
+437,790.5,793.5,SPEAKER_02,basically looking at four or,0.8329
+438,792.0,795.0,SPEAKER_02,four or five terrestrial,0.8329
+439,793.5,796.5,SPEAKER_02,five terrestrial channels and,0.8329
+440,795.0,798.0,SPEAKER_02,channels and then the channel,0.8329
+441,796.5,799.5,SPEAKER_02,then the channel for your,0.8329
+442,798.0,801.0,SPEAKER_02,for your VCR and,0.8329
+443,799.5,802.5,SPEAKER_02,VCR and our DVD player,0.8329
+444,801.0,804.0,SPEAKER_02,our DVD player and our,0.8329
+445,802.5,805.5,SPEAKER_02,and our set-top box.,0.8307
+446,804.0,807.0,SPEAKER_02,set-top box. So I'm not really,0.8307
+447,805.5,808.5,SPEAKER_02,So I'm not really excessively concerned about that.,0.8286
+448,807.0,810.0,SPEAKER_02,excessively concerned about that. You,0.8216
+449,808.5,811.5,SPEAKER_02,You also have,0.8216
+450,810.0,813.0,SPEAKER_02,"also have two modes, basic",0.8146
+451,811.5,814.5,SPEAKER_02,"two modes, basic mode where",0.8146
+452,813.0,816.0,SPEAKER_02,"mode where the joysticks, left",0.8146
+453,814.5,817.5,SPEAKER_02,"the joysticks, left right for",0.8146
+454,816.0,819.0,SPEAKER_02,"right for channels up, down",0.8146
+455,817.5,820.5,SPEAKER_02,"channels up, down for volume,",0.8146
+456,819.0,822.0,SPEAKER_02,"for volume, and menu mode",0.8146
+457,820.5,823.5,SPEAKER_02,and menu mode for further,0.8146
+458,822.0,825.0,SPEAKER_02,for further functions. The reason I,0.8023
+459,823.5,826.5,SPEAKER_02,functions. The reason I was particularly interested in,0.8023
+460,825.0,828.0,SPEAKER_02,was particularly interested in using rubber for this is,0.79
+461,826.5,829.5,SPEAKER_02,using rubber for this is if we're going to,0.79
+462,828.0,831.0,SPEAKER_02,if we're going to have a highly ergonomic design,0.79
+463,829.5,832.5,SPEAKER_02,have a highly ergonomic design it needs to be,0.79
+464,831.0,834.0,SPEAKER_02,it needs to be ergonomic for left or,0.79
+465,832.5,835.5,SPEAKER_02,ergonomic for left or right handed people.,0.79
+466,835.5,838.5,SPEAKER_03,Can I just jump in slightly there?,0.776
+467,837.0,840.0,SPEAKER_03,I just jump in slightly there? That would suggest that double,0.7697
+468,838.5,841.5,SPEAKER_03,That would suggest that double curved design is probably going to,0.7635
+469,844.5,847.5,SPEAKER_02,"Basically, what this would",0.8052
+470,846.0,849.0,SPEAKER_02,"what this would be having,",0.8052
+471,847.5,850.5,SPEAKER_02,"be having, I would say",0.8052
+472,849.0,852.0,SPEAKER_02,I would say the whole thing,0.8052
+473,850.5,853.5,SPEAKER_02,the whole thing articulated at two,0.8052
+474,852.0,855.0,SPEAKER_02,articulated at two points so,0.8052
+475,853.5,856.5,SPEAKER_02,points so that if you're,0.8052
+476,855.0,858.0,SPEAKER_02,that if you're handing it from,0.8052
+477,856.5,859.5,SPEAKER_02,handing it from a left or,0.8052
+478,858.0,861.0,SPEAKER_02,a left or a right,0.8052
+479,859.5,862.5,SPEAKER_02,"a right handed user, you",0.8052
+480,861.0,864.0,SPEAKER_02,"handed user, you can adjust it",0.8052
+481,862.5,865.5,SPEAKER_02,can adjust it so that the,0.8052
+482,864.0,867.0,SPEAKER_02,so that the LCD and the,0.8052
+483,865.5,868.5,SPEAKER_02,LCD and the joystick would,0.8052
+484,867.0,870.0,SPEAKER_02,joystick would be in the,0.8052
+485,868.5,871.5,SPEAKER_02,be in the right place.,0.8052
+486,870.0,873.0,SPEAKER_02,"right place. Also, it",0.7829
+487,871.5,874.5,SPEAKER_02,"Also, it seems to be",0.7605
+488,873.0,876.0,SPEAKER_02,seems to be a rather nice,0.7605
+489,874.5,877.5,SPEAKER_02,a rather nice design gimmick that the,0.7605
+490,876.0,879.0,SPEAKER_02,design gimmick that the whole thing should,0.7605
+491,877.5,880.5,SPEAKER_02,whole thing should have sort of organic,0.7605
+492,879.0,882.0,SPEAKER_02,"have sort of organic feel to it,",0.7605
+493,880.5,883.5,SPEAKER_02,"feel to it, that it should",0.7605
+494,882.0,885.0,SPEAKER_02,that it should be soft to touch,0.7605
+495,883.5,886.5,SPEAKER_02,be soft to touch and can be,0.7605
+496,885.0,888.0,SPEAKER_02,and can be moved around.,0.6809
+497,886.5,889.5,SPEAKER_02,moved around. It's,0.6809
+498,891.0,894.0,SPEAKER_02,"nice. OK, on to the",0.6451
+499,895.5,898.5,SPEAKER_03,"you know, we're probably quite tight for time as well. Because",0.7975
+500,897.0,900.0,SPEAKER_03,time as well. Because I think you've probably got a lot you'd like,0.7975
+501,903.0,906.0,SPEAKER_02,"Basically, I can",0.8896
+502,904.5,907.5,SPEAKER_02,can add pretty,0.8896
+503,906.0,909.0,SPEAKER_02,add pretty pictures,0.8896
+504,913.5,916.5,SPEAKER_02,Assuming the hand to,0.7764
+505,915.0,918.0,SPEAKER_02,hand to be in this,0.7764
+506,916.5,919.5,SPEAKER_02,"be in this position, or",0.7764
+507,918.0,921.0,SPEAKER_02,"position, or holding the remote,",0.7764
+508,919.5,922.5,SPEAKER_02,"holding the remote, the joystick",0.7764
+509,921.0,924.0,SPEAKER_02,the joystick unit should rest,0.7764
+510,922.5,925.5,SPEAKER_02,unit should rest over the,0.7764
+511,924.0,927.0,SPEAKER_02,over the joint of the,0.7764
+512,925.5,928.5,SPEAKER_02,joint of the forefinger so,0.7764
+513,927.0,930.0,SPEAKER_02,forefinger so that it's directly,0.7764
+514,928.5,931.5,SPEAKER_02,that it's directly accessible for,0.7764
+515,930.0,933.0,SPEAKER_02,accessible for the thumb.,0.7764
+516,931.5,934.5,SPEAKER_02,the thumb. And,0.8311
+517,933.0,936.0,SPEAKER_02,And it would need to,0.8858
+518,934.5,937.5,SPEAKER_02,it would need to be articulated just,0.8858
+519,936.0,939.0,SPEAKER_02,be articulated just below that so,0.8858
+520,937.5,940.5,SPEAKER_02,below that so that it could be,0.8858
+521,939.0,942.0,SPEAKER_02,that it could be switched around for,0.8858
+522,940.5,943.5,SPEAKER_02,switched around for left or right-handed,0.8858
+523,942.0,945.0,SPEAKER_02,left or right-handed users.,0.8858
+524,949.5,952.5,SPEAKER_02,You then have the,0.7914
+525,951.0,954.0,SPEAKER_02,then have the grip section that,0.7914
+526,952.5,955.5,SPEAKER_02,grip section that can be more,0.7914
+527,954.0,957.0,SPEAKER_02,can be more or less the,0.7914
+528,955.5,958.5,SPEAKER_02,or less the same irrespective of,0.7914
+529,957.0,960.0,SPEAKER_02,same irrespective of handedness. You just have,0.8357
+530,958.5,961.5,SPEAKER_02,handedness. You just have two big buttons that cover,0.8357
+531,960.0,963.0,SPEAKER_02,"two big buttons that cover most of the area, so",0.88
+532,961.5,964.5,SPEAKER_02,"most of the area, so it can, in the upper part,",0.88
+533,963.0,966.0,SPEAKER_02,"it can, in the upper part, one for the forefinger, one",0.88
+534,964.5,967.5,SPEAKER_02,"one for the forefinger, one for the middle finger.",0.88
+535,966.0,969.0,SPEAKER_02,for the middle finger. Is this a,0.669
+536,967.5,970.5,SPEAKER_02,Is this a joystick? This part,0.6305
+537,969.0,972.0,SPEAKER_02,joystick? This part here is,0.6305
+538,970.5,973.5,SPEAKER_02,here is the joystick.,0.8372
+539,972.0,975.0,SPEAKER_02,the joystick. This would be the,0.8372
+540,973.5,976.5,SPEAKER_02,This would be the actual grip. Probably where,0.778
+541,975.0,978.0,SPEAKER_02,actual grip. Probably where you'd want to have the,0.778
+542,976.5,979.5,SPEAKER_02,you'd want to have the battery as well.,0.6848
+543,978.0,981.0,SPEAKER_02,battery as well. That would be probably,0.7268
+544,979.5,982.5,SPEAKER_02,That would be probably the bulkiest part.,0.8138
+545,981.0,984.0,SPEAKER_02,the bulkiest part. And you then have,0.8138
+546,982.5,985.5,SPEAKER_02,And you then have at the bottom the,0.859
+547,984.0,987.0,SPEAKER_02,"at the bottom the LCD, and this would",0.859
+548,985.5,988.5,SPEAKER_02,"LCD, and this would need to be",0.859
+549,987.0,990.0,SPEAKER_02,need to be articulated as well. And,0.7713
+550,988.5,991.5,SPEAKER_02,articulated as well. And basically I'd want this to rest,0.7713
+551,990.0,993.0,SPEAKER_02,basically I'd want this to rest here right at the base of,0.6837
+552,991.5,994.5,SPEAKER_02,here right at the base of the wrist so it would,0.6837
+553,993.0,996.0,SPEAKER_02,the wrist so it would fit just nicely in the hand.,0.6837
+554,994.5,997.5,SPEAKER_02,"fit just nicely in the hand. And again, this part",0.7572
+555,996.0,999.0,SPEAKER_02,"And again, this part could be",0.8307
+556,1000.5,1003.5,SPEAKER_02,rotated so it,0.7636
+557,1002.0,1005.0,SPEAKER_02,it can be,0.7636
+558,1003.5,1006.5,SPEAKER_02,can be adjusted,0.7636
+559,1006.5,1009.5,SPEAKER_02,to either left,0.7636
+560,1008.0,1011.0,SPEAKER_02,either left or,0.7636
+561,1009.5,1012.5,SPEAKER_02,or right handed,0.7636
+562,1011.0,1014.0,SPEAKER_02,right handed user.,0.7636
+563,1015.5,1018.5,SPEAKER_02,So the top function,0.8817
+564,1017.0,1020.0,SPEAKER_02,So the top function button in basic mode,0.8817
+565,1018.5,1021.5,SPEAKER_02,button in basic mode would be the on-off,0.8817
+566,1020.0,1023.0,SPEAKER_02,"would be the on-off switch, and menu mode",0.8817
+567,1021.5,1024.5,SPEAKER_02,"switch, and menu mode would be the enter button,",0.8817
+568,1023.0,1026.0,SPEAKER_02,"would be the enter button, and then the bottom",0.8817
+569,1024.5,1027.5,SPEAKER_02,and then the bottom function button switches between,0.8817
+570,1026.0,1029.0,SPEAKER_02,function button switches between modes.,0.8817
+571,1027.5,1030.5,SPEAKER_02,"modes. Now programming it,",0.8101
+572,1029.0,1032.0,SPEAKER_02,"Now programming it, actually this is one",0.7385
+573,1030.5,1033.5,SPEAKER_02,actually this is one thing I found,0.7385
+574,1032.0,1035.0,SPEAKER_02,thing I found with the replacement,0.7385
+575,1033.5,1036.5,SPEAKER_02,with the replacement remote controls. Programming them,0.8256
+576,1035.0,1038.0,SPEAKER_02,remote controls. Programming them can be a bright,0.8256
+577,1036.5,1039.5,SPEAKER_02,can be a bright pain. So I thought,0.8438
+578,1038.0,1041.0,SPEAKER_02,pain. So I thought the simplest way,0.8438
+579,1039.5,1042.5,SPEAKER_02,the simplest way around that would,0.7751
+580,1041.0,1044.0,SPEAKER_02,around that would be to have,0.7751
+581,1042.5,1045.5,SPEAKER_02,be to have a cable connected,0.7751
+582,1044.0,1047.0,SPEAKER_02,"a cable connected to the computer,",0.7751
+583,1045.5,1048.5,SPEAKER_02,"to the computer, some fairly simple",0.7751
+584,1047.0,1050.0,SPEAKER_02,some fairly simple software on your,0.7751
+585,1048.5,1051.5,SPEAKER_02,software on your home computer just,0.7751
+586,1050.0,1053.0,SPEAKER_02,home computer just so that you,0.7751
+587,1051.5,1054.5,SPEAKER_02,so that you could program it,0.7751
+588,1053.0,1056.0,SPEAKER_02,could program it in a rather,0.7751
+589,1054.5,1057.5,SPEAKER_02,in a rather more comfortable interface.,0.7898
+590,1056.0,1059.0,SPEAKER_02,more comfortable interface. And you could,0.7898
+591,1057.5,1060.5,SPEAKER_02,And you could download programs,0.8046
+592,1059.0,1062.0,SPEAKER_02,download programs for TVs from,0.8046
+593,1060.5,1063.5,SPEAKER_02,for TVs from all sort,0.8046
+594,1062.0,1065.0,SPEAKER_02,all sort of main manufacturers.,0.8046
+595,1063.5,1066.5,SPEAKER_02,of main manufacturers. though it,0.8247
+596,1065.0,1068.0,SPEAKER_02,though it would be,0.8247
+597,1066.5,1069.5,SPEAKER_02,would be necessary to,0.8448
+598,1068.0,1071.0,SPEAKER_02,necessary to have a,0.8448
+599,1069.5,1072.5,SPEAKER_02,have a mode for,0.8448
+600,1071.0,1074.0,SPEAKER_02,mode for programming it,0.8448
+601,1072.5,1075.5,SPEAKER_02,programming it without the computer,0.8448
+602,1074.0,1077.0,SPEAKER_02,without the computer just in,0.8448
+603,1075.5,1078.5,SPEAKER_02,just in case there,0.8448
+604,1077.0,1080.0,SPEAKER_02,case there are still,0.8448
+605,1078.5,1081.5,SPEAKER_02,are still people left,0.8448
+606,1080.0,1083.0,SPEAKER_02,people left out there,0.8448
+607,1081.5,1084.5,SPEAKER_02,out there who don't,0.8448
+608,1083.0,1086.0,SPEAKER_02,who don't have them,0.8448
+609,1084.5,1087.5,SPEAKER_02,have them yet.,0.8448
+610,1087.5,1090.5,SPEAKER_02,OK. That's my,0.8878
+611,1089.0,1092.0,SPEAKER_02,OK. That's my idea.,0.8878
+612,1108.5,1111.5,SPEAKER_01,So to gather my,0.8005
+613,1110.0,1113.0,SPEAKER_01,"to gather my research, two",0.8005
+614,1111.5,1114.5,SPEAKER_01,"research, two basic methods. We compared",0.8186
+615,1113.0,1116.0,SPEAKER_01,basic methods. We compared whether people want the remote control,0.8186
+616,1114.5,1117.5,SPEAKER_01,whether people want the remote control to do a lot of,0.8367
+617,1116.0,1119.0,SPEAKER_01,to do a lot of stuff or they want it to,0.8367
+618,1117.5,1120.5,SPEAKER_01,stuff or they want it to look cool.,0.8367
+619,1119.0,1122.0,SPEAKER_01,look cool. And then we researched,0.8347
+620,1120.5,1123.5,SPEAKER_01,And then we researched fashion trends in Europe.,0.8327
+621,1122.0,1125.0,SPEAKER_01,fashion trends in Europe. What's the new black,0.851
+622,1123.5,1126.5,SPEAKER_01,What's the new black as it goes?,0.8694
+623,1125.0,1128.0,SPEAKER_01,as it goes?,0.8694
+624,1128.0,1131.0,SPEAKER_01,"Next slide, please. We found in order",0.6478
+625,1129.5,1132.5,SPEAKER_01,please. We found in order of importance people want the,0.6478
+626,1131.0,1134.0,SPEAKER_01,of importance people want the remote control to look cool More,0.8475
+627,1132.5,1135.5,SPEAKER_01,remote control to look cool More than they wanted to be,0.8475
+628,1134.0,1137.0,SPEAKER_01,than they wanted to be cool as in they wanted to,0.8475
+629,1135.5,1138.5,SPEAKER_01,cool as in they wanted to do a lot of good,0.8475
+630,1137.0,1140.0,SPEAKER_01,do a lot of good They wanted to look like it,0.8475
+631,1138.5,1141.5,SPEAKER_01,They wanted to look like it does a lot and if,0.8475
+632,1140.0,1143.0,SPEAKER_01,"does a lot and if it does do a lot, that's",0.8475
+633,1141.5,1144.5,SPEAKER_01,"it does do a lot, that's a bonus, but they don't",0.8475
+634,1143.0,1146.0,SPEAKER_01,"a bonus, but they don't care so much, you know they",0.8036
+635,1144.5,1147.5,SPEAKER_01,"care so much, you know they want it to be. That sounds",0.7893
+636,1146.0,1149.0,SPEAKER_01,want it to be. That sounds a bit like a,0.7602
+637,1147.5,1150.5,SPEAKER_01,a bit like a contradiction.,0.8133
+638,1153.5,1156.5,SPEAKER_01,"People want it to be that,",0.8236
+639,1155.0,1158.0,SPEAKER_01,"People want it to be that, but still, they care more about",0.7813
+640,1156.5,1159.5,SPEAKER_01,"but still, they care more about the way it looks than what it",0.7813
+641,1158.0,1161.0,SPEAKER_01,the way it looks than what it does. So,0.802
+642,1159.5,1162.5,SPEAKER_01,does. So the interface is,0.802
+643,1161.0,1164.0,SPEAKER_01,the interface is really important.,0.8297
+644,1162.5,1165.5,SPEAKER_01,really important. And easy to use. It,0.8138
+645,1164.0,1167.0,SPEAKER_01,And easy to use. It just so happens that,0.8094
+646,1165.5,1168.5,SPEAKER_01,just so happens that from the second,0.782
+647,1167.0,1170.0,SPEAKER_01,from the second point to the third,0.782
+648,1168.5,1171.5,SPEAKER_01,point to the third point is twice as,0.782
+649,1170.0,1173.0,SPEAKER_01,"point is twice as important. I mean, the second point",0.7779
+650,1171.5,1174.5,SPEAKER_01,"important. I mean, the second point is twice as important as the third",0.7779
+651,1173.0,1176.0,SPEAKER_01,is twice as important as the third point. People want it.,0.7476
+652,1174.5,1177.5,SPEAKER_01,point. People want it.,0.7476
+653,1176.0,1179.0,SPEAKER_01,It has to,0.8131
+654,1177.5,1180.5,SPEAKER_01,"It has to be cooler than easy to use, you",0.8131
+655,1179.0,1182.0,SPEAKER_01,"be cooler than easy to use, you know, if it has the newest",0.8131
+656,1180.5,1183.5,SPEAKER_01,"know, if it has the newest features, even if it's difficult to",0.8131
+657,1182.0,1185.0,SPEAKER_01,"features, even if it's difficult to use, to prefer it to have the",0.8131
+658,1183.5,1186.5,SPEAKER_01,"use, to prefer it to have the newest features.",0.8131
+659,1185.0,1188.0,SPEAKER_01,"newest features. And if it's easy to use,",0.7739
+660,1186.5,1189.5,SPEAKER_01,"And if it's easy to use, that's a bonus.",0.7828
+661,1188.0,1191.0,SPEAKER_01,"that's a bonus. The fashion now, this",0.7828
+662,1189.5,1192.5,SPEAKER_01,"The fashion now, this seems a bit odd",0.8308
+663,1191.0,1194.0,SPEAKER_01,"seems a bit odd to me, but fruit",0.8308
+664,1192.5,1195.5,SPEAKER_01,"to me, but fruit and veg is the",0.8308
+665,1194.0,1197.0,SPEAKER_01,"and veg is the new black for furniture,",0.8308
+666,1195.5,1198.5,SPEAKER_01,"new black for furniture, for clothes, for shoes. How",0.7666
+667,1197.0,1200.0,SPEAKER_01,"for clothes, for shoes. How that relates to remote control, I",0.7666
+668,1198.5,1201.5,SPEAKER_01,"that relates to remote control, I don't know. But I",0.7722
+669,1200.0,1203.0,SPEAKER_01,don't know. But I see. I'll come on to,0.7498
+670,1201.5,1204.5,SPEAKER_01,see. I'll come on to that in the next slide.,0.7734
+671,1203.0,1206.0,SPEAKER_01,that in the next slide. Spongy.,0.789
+672,1204.5,1207.5,SPEAKER_01,Spongy. I've also been saying everything is a new,0.7447
+673,1206.0,1209.0,SPEAKER_01,"I've also been saying everything is a new black. Well, spongy is a new",0.6807
+674,1207.5,1210.5,SPEAKER_01,"black. Well, spongy is a new black as well. So we had the",0.7527
+675,1209.0,1212.0,SPEAKER_01,black as well. So we had the choice between rubber and plastic.,0.801
+676,1210.5,1213.5,SPEAKER_01,choice between rubber and plastic. If it's a type of,0.7913
+677,1212.0,1215.0,SPEAKER_01,"If it's a type of rubber that you can squeeze, You",0.7449
+678,1216.5,1219.5,SPEAKER_00,I forgot to mention that the rubber,0.7403
+679,1218.0,1221.0,SPEAKER_00,that the rubber material is the,0.7403
+680,1219.5,1222.5,SPEAKER_00,material is the type of stress ball,0.7403
+681,1221.0,1224.0,SPEAKER_00,"type of stress ball material, not just",0.7403
+682,1225.5,1228.5,SPEAKER_01,"Okay, so kind of spongy material.",0.8235
+683,1227.0,1230.0,SPEAKER_01,of spongy material. So,0.8337
+684,1230.0,1233.0,SPEAKER_01,"my personal opinion,",0.8438
+685,1234.5,1237.5,SPEAKER_01,We want something fancy,0.7518
+686,1236.0,1239.0,SPEAKER_01,something fancy and technologically,0.7518
+687,1237.5,1240.5,SPEAKER_01,"and technologically innovative, obviously.",0.7518
+688,1239.0,1242.0,SPEAKER_01,"innovative, obviously. But what we",0.8129
+689,1240.5,1243.5,SPEAKER_01,But what we need is something that looks,0.874
+690,1242.0,1245.0,SPEAKER_01,"need is something that looks like it's from the future,",0.874
+691,1243.5,1246.5,SPEAKER_01,"like it's from the future, that looks cool, that's",0.874
+692,1245.0,1248.0,SPEAKER_01,"that looks cool, that's different. Everyone has a",0.8457
+693,1246.5,1249.5,SPEAKER_01,"different. Everyone has a white remote control, a black",0.8457
+694,1248.0,1251.0,SPEAKER_01,"white remote control, a black remote control. You need something cool.",0.7096
+695,1249.5,1252.5,SPEAKER_01,remote control. You need something cool. Like,0.7669
+696,1251.0,1254.0,SPEAKER_01,"Like titanium is cool, but",0.7416
+697,1252.5,1255.5,SPEAKER_01,"titanium is cool, but it's expensive. And maybe",0.869
+698,1254.0,1257.0,SPEAKER_01,it's expensive. And maybe it's a bit of overkill,0.869
+699,1255.5,1258.5,SPEAKER_01,it's a bit of overkill for a remote control.,0.8388
+700,1257.0,1260.0,SPEAKER_01,"for a remote control. Now, the fruit and",0.8388
+701,1258.5,1261.5,SPEAKER_01,"Now, the fruit and veg options, either we",0.8211
+702,1260.0,1263.0,SPEAKER_01,"veg options, either we go in that direction",0.8211
+703,1261.5,1264.5,SPEAKER_01,go in that direction or we stay totally away,0.8211
+704,1263.0,1266.0,SPEAKER_01,or we stay totally away from it.,0.8211
+705,1264.5,1267.5,SPEAKER_01,"from it. I mean, a research did",0.7955
+706,1266.0,1269.0,SPEAKER_01,"I mean, a research did come up with fruit and veg,",0.77
+707,1267.5,1270.5,SPEAKER_01,"come up with fruit and veg, so maybe it is important up",0.77
+708,1269.0,1272.0,SPEAKER_01,so maybe it is important up to the interface guy.,0.77
+709,1270.5,1273.5,SPEAKER_01,"to the interface guy. So if we stay away from it,",0.8406
+710,1272.0,1275.0,SPEAKER_01,"So if we stay away from it, stay away from it.",0.9111
+711,1273.5,1276.5,SPEAKER_01,stay away from it. But if we're gonna go,0.8763
+712,1275.0,1278.0,SPEAKER_01,"But if we're gonna go along with it, then it",0.8415
+713,1276.5,1279.5,SPEAKER_01,"along with it, then it doesn't necessarily have to be",0.8415
+714,1278.0,1281.0,SPEAKER_01,doesn't necessarily have to be like an apple or something,0.8415
+715,1279.5,1282.5,SPEAKER_01,like an apple or something like that or a kiwi,0.8415
+716,1281.0,1284.0,SPEAKER_01,like that or a kiwi fruit. It could be something,0.7544
+717,1282.5,1285.5,SPEAKER_01,"fruit. It could be something like I say potato feeler,",0.7965
+718,1284.0,1287.0,SPEAKER_01,"like I say potato feeler, but I'm sure you",0.774
+719,1285.5,1288.5,SPEAKER_01,but I'm sure you guys have a much cooler,0.8807
+720,1287.0,1290.0,SPEAKER_01,guys have a much cooler idea than I do.,0.8807
+721,1288.5,1291.5,SPEAKER_01,idea than I do. So I think cool is the,0.8122
+722,1290.0,1293.0,SPEAKER_01,So I think cool is the key. A few,0.826
+723,1291.5,1294.5,SPEAKER_01,key. A few questions about a,0.826
+724,1293.0,1296.0,SPEAKER_01,questions about a spongy remote control.,0.9084
+725,1294.5,1297.5,SPEAKER_01,spongy remote control. I've never seen one before. I've,0.8525
+726,1296.0,1299.0,SPEAKER_01,I've never seen one before. I've seen plastic remote controls.,0.8246
+727,1297.5,1300.5,SPEAKER_01,seen plastic remote controls. I think maybe they were...,0.768
+728,1299.0,1302.0,SPEAKER_01,I think maybe they were...,0.7378
+729,1300.5,1303.5,SPEAKER_01,"I don't know, back",0.8126
+730,1302.0,1305.0,SPEAKER_01,"I don't know, back in the day when they first",0.8126
+731,1303.5,1306.5,SPEAKER_01,"in the day when they first came up with remote controls,",0.8126
+732,1305.0,1308.0,SPEAKER_01,"came up with remote controls, they had a reason for it",0.8126
+733,1306.5,1309.5,SPEAKER_01,"they had a reason for it being... sturdy, you",0.8328
+734,1308.0,1311.0,SPEAKER_01,"being... sturdy, you know, for being strong",0.8328
+735,1309.5,1312.5,SPEAKER_01,"know, for being strong and sturdy. So",0.8528
+736,1311.0,1314.0,SPEAKER_01,and sturdy. So if we want something strong,0.8528
+737,1312.5,1315.5,SPEAKER_01,"if we want something strong and sturdy, I say stable",0.8524
+738,1314.0,1317.0,SPEAKER_01,"and sturdy, I say stable plastic or titanium.",0.8524
+739,1315.5,1318.5,SPEAKER_01,plastic or titanium. But if we go with,0.8537
+740,1317.0,1320.0,SPEAKER_01,"But if we go with spongy, we can stress that you",0.8549
+741,1318.5,1321.5,SPEAKER_01,"spongy, we can stress that you can drop this as many",0.8549
+742,1320.0,1323.0,SPEAKER_01,"can drop this as many times as you want. It doesn't matter,",0.7933
+743,1321.5,1324.5,SPEAKER_01,"times as you want. It doesn't matter, spongy material is not going to break, you",0.7933
+744,1323.0,1326.0,SPEAKER_01,"spongy material is not going to break, you know. I",0.7515
+745,1324.5,1327.5,SPEAKER_01,know. I just don't know how the,0.7515
+746,1326.0,1329.0,SPEAKER_01,just don't know how the LED and the lights are,0.7714
+747,1327.5,1330.5,SPEAKER_01,LED and the lights are going to fit into,0.7714
+748,1329.0,1332.0,SPEAKER_01,going to fit into a spongy material because it's,0.7714
+749,1330.5,1333.5,SPEAKER_01,a spongy material because it's not going to be completely,0.7714
+750,1332.0,1335.0,SPEAKER_01,not going to be completely squeezable. So how do things fit,0.7937
+751,1333.5,1336.5,SPEAKER_01,squeezable. So how do things fit in? And if we are,0.7683
+752,1335.0,1338.0,SPEAKER_01,"in? And if we are going to use spongy, we can say it's",0.7667
+753,1336.5,1339.5,SPEAKER_01,"going to use spongy, we can say it's long-lasting. It's",0.7583
+754,1338.0,1341.0,SPEAKER_01,long-lasting. It's damage resistant and,0.7583
+755,1339.5,1342.5,SPEAKER_01,damage resistant and stuff like,0.7991
+756,1341.0,1344.0,SPEAKER_01,stuff like that. So just,0.7523
+757,1342.5,1345.5,SPEAKER_01,"that. So just to summarize, people",0.7523
+758,1344.0,1347.0,SPEAKER_01,"to summarize, people want stuff that's",0.7054
+759,1345.5,1348.5,SPEAKER_01,"want stuff that's cool, that looks",0.7054
+760,1347.0,1350.0,SPEAKER_01,"cool, that looks like it's cool.",0.7054
+761,1348.5,1351.5,SPEAKER_01,like it's cool. And if it is called,0.7405
+762,1350.0,1353.0,SPEAKER_01,And if it is called NASA bonus where it doesn't,0.7405
+763,1351.5,1354.5,SPEAKER_01,NASA bonus where it doesn't have to be people like,0.7756
+764,1353.0,1356.0,SPEAKER_01,"have to be people like Fruit and Veg, we can either",0.7756
+765,1354.5,1357.5,SPEAKER_01,"Fruit and Veg, we can either go down that alley or",0.7756
+766,1356.0,1359.0,SPEAKER_01,go down that alley or stay totally away from it.,0.7756
+767,1357.5,1360.5,SPEAKER_01,stay totally away from it. People like,0.7654
+768,1359.0,1362.0,SPEAKER_01,"People like Spongy Material, if we're going to",0.7552
+769,1360.5,1363.5,SPEAKER_01,"Spongy Material, if we're going to use Spongy Material, we have to",0.7552
+770,1362.0,1365.0,SPEAKER_01,"use Spongy Material, we have to think of how practical it is",0.7552
+771,1363.5,1366.5,SPEAKER_01,think of how practical it is and how we can further promote,0.7552
+772,1365.0,1368.0,SPEAKER_01,and how we can further promote that idea. And also this,0.7787
+773,1366.5,1369.5,SPEAKER_01,that idea. And also this was this year. So,0.7704
+774,1368.0,1371.0,SPEAKER_01,was this year. So things change all the,0.778
+775,1369.5,1372.5,SPEAKER_01,"things change all the time every year, you know,",0.7538
+776,1371.0,1374.0,SPEAKER_01,"time every year, you know, they always talk about",0.7538
+777,1372.5,1375.5,SPEAKER_01,they always talk about this year This is,0.7538
+778,1374.0,1377.0,SPEAKER_01,this year This is a new black or,0.7538
+779,1375.5,1378.5,SPEAKER_01,a new black or next year something else is,0.7538
+780,1377.0,1380.0,SPEAKER_01,next year something else is gonna be the new,0.7538
+781,1378.5,1381.5,SPEAKER_01,gonna be the new black and we're stuck,0.7538
+782,1380.0,1383.0,SPEAKER_01,black and we're stuck with last year's fruit,0.7538
+783,1381.5,1384.5,SPEAKER_01,with last year's fruit and veg That's me,0.7538
+784,1383.0,1386.0,SPEAKER_01,and veg That's me,0.7538
+785,1386.0,1389.0,SPEAKER_03,"Well, I would say that",0.8422
+786,1387.5,1390.5,SPEAKER_03,"Well, I would say that the most you could probably hope",0.8422
+787,1389.0,1392.0,SPEAKER_03,the most you could probably hope for is gaining a year's lead,0.8422
+788,1390.5,1393.5,SPEAKER_03,for is gaining a year's lead on most people anyway.,0.8315
+789,1392.0,1395.0,SPEAKER_03,on most people anyway. You always have to bring,0.8315
+790,1393.5,1396.5,SPEAKER_03,"You always have to bring out new designs, so",0.8207
+791,1395.0,1398.0,SPEAKER_03,"out new designs, so if we can get",0.8207
+792,1396.5,1399.5,SPEAKER_03,"if we can get next year, then that's possibly",0.8207
+793,1398.0,1401.0,SPEAKER_03,"next year, then that's possibly a good place to",0.8207
+794,1399.5,1402.5,SPEAKER_03,a good place to start anyway.,0.8207
+795,1407.0,1410.0,SPEAKER_03,seems like a lot of the,0.8376
+796,1408.5,1411.5,SPEAKER_03,"like a lot of the components could be off the shelf,",0.8376
+797,1410.0,1413.0,SPEAKER_03,"components could be off the shelf, so I don't know exactly",0.8376
+798,1411.5,1414.5,SPEAKER_03,so I don't know exactly what cost would be incurred. I,0.8504
+799,1413.0,1416.0,SPEAKER_03,what cost would be incurred. I can see your point,0.8504
+800,1414.5,1417.5,SPEAKER_03,"can see your point about the numbered keybat,",0.8632
+801,1416.0,1419.0,SPEAKER_03,"about the numbered keybat, but I would say",0.8632
+802,1417.5,1420.5,SPEAKER_03,but I would say that we can probably,0.8632
+803,1419.0,1422.0,SPEAKER_03,that we can probably incorporate it into the,0.8632
+804,1420.5,1423.5,SPEAKER_03,incorporate it into the menu system if you,0.8632
+805,1422.0,1425.0,SPEAKER_03,menu system if you need to do traversal,0.8632
+806,1423.5,1426.5,SPEAKER_03,need to do traversal of a large number,0.8632
+807,1425.0,1428.0,SPEAKER_03,of a large number of channels. My feeling,0.8038
+808,1426.5,1429.5,SPEAKER_03,of channels. My feeling would be that even if,0.8038
+809,1428.0,1431.0,SPEAKER_03,would be that even if at a later date this,0.7444
+810,1429.5,1432.5,SPEAKER_03,at a later date this was to be taking control of,0.7444
+811,1431.0,1434.0,SPEAKER_03,"was to be taking control of set-top boxes as well, having",0.7444
+812,1432.5,1435.5,SPEAKER_03,"set-top boxes as well, having the use of the LCD",0.7444
+813,1434.0,1437.0,SPEAKER_03,the use of the LCD and a joystick would probably,0.7444
+814,1435.5,1438.5,SPEAKER_03,and a joystick would probably allow you to manipulate enough,0.7444
+815,1437.0,1440.0,SPEAKER_03,allow you to manipulate enough channel numbers for you to,0.7444
+816,1441.5,1444.5,SPEAKER_02,"you've got a lot of channels, the",0.8374
+817,1443.0,1446.0,SPEAKER_02,"of channels, the numbered keypad can be",0.8374
+818,1444.5,1447.5,SPEAKER_02,numbered keypad can be quite annoying as,0.8374
+819,1446.0,1449.0,SPEAKER_02,"quite annoying as well, because if you're",0.8374
+820,1447.5,1450.5,SPEAKER_02,"well, because if you're trying to remember",0.8374
+821,1449.0,1452.0,SPEAKER_02,trying to remember what number is,0.8374
+822,1459.5,1462.5,SPEAKER_01,You can use music like they do,0.6949
+823,1464.0,1467.0,SPEAKER_03,Yeah. So what it looks like to,0.626
+824,1465.5,1468.5,SPEAKER_03,what it looks like to me is we'll use a large,0.8599
+825,1467.0,1470.0,SPEAKER_03,me is we'll use a large number of standard components.,0.8599
+826,1468.5,1471.5,SPEAKER_03,number of standard components.,0.8599
+827,1471.5,1474.5,SPEAKER_03,Say something like,0.8328
+828,1473.0,1476.0,SPEAKER_03,"something like lithium ion battery,",0.8328
+829,1474.5,1477.5,SPEAKER_03,"lithium ion battery, the kind",0.8328
+830,1476.0,1479.0,SPEAKER_03,the kind that you find,0.8328
+831,1477.5,1480.5,SPEAKER_03,that you find in most,0.8328
+832,1479.0,1482.0,SPEAKER_03,in most small handheld devices,0.8328
+833,1480.5,1483.5,SPEAKER_03,small handheld devices now. Looks like we're,0.7989
+834,1482.0,1485.0,SPEAKER_03,now. Looks like we're going for a double curved,0.7989
+835,1483.5,1486.5,SPEAKER_03,going for a double curved design. I don't know,0.7408
+836,1485.0,1488.0,SPEAKER_03,design. I don't know what cost implications there are in,0.7408
+837,1486.5,1489.5,SPEAKER_03,what cost implications there are in that.,0.7167
+838,1489.5,1492.5,SPEAKER_03,Looks like we're pretty much decided on,0.9087
+839,1491.0,1494.0,SPEAKER_03,like we're pretty much decided on some kind of flexible rubber.,0.9087
+840,1492.5,1495.5,SPEAKER_03,some kind of flexible rubber. So I'd have to,0.8811
+841,1494.0,1497.0,SPEAKER_03,"So I'd have to say, depending on how flexible",0.8535
+842,1495.5,1498.5,SPEAKER_03,"say, depending on how flexible it is, we might need",0.8535
+843,1497.0,1500.0,SPEAKER_03,"it is, we might need to have some kind of inner",0.8535
+844,1501.5,1504.5,SPEAKER_02,"I would say definitely. I mean,",0.7324
+845,1503.0,1506.0,SPEAKER_02,"I mean, the idea",0.7535
+846,1504.5,1507.5,SPEAKER_02,the idea of having,0.7535
+847,1506.0,1509.0,SPEAKER_02,"of having it articulated, there",0.7535
+848,1507.5,1510.5,SPEAKER_02,"it articulated, there would be",0.7535
+849,1509.0,1512.0,SPEAKER_02,would be basically two,0.7535
+850,1510.5,1513.5,SPEAKER_02,basically two points of,0.7535
+851,1512.0,1515.0,SPEAKER_02,"points of articulation, one",0.7535
+852,1513.5,1516.5,SPEAKER_02,"articulation, one below and one",0.7535
+853,1515.0,1518.0,SPEAKER_02,below and one above the,0.7535
+854,1516.5,1519.5,SPEAKER_02,above the main grip.,0.7535
+855,1521.0,1524.0,SPEAKER_03,way we could maybe remove the articulation? I can see,0.7314
+856,1522.5,1525.5,SPEAKER_03,"the articulation? I can see why it looks appealing, but",0.7314
+857,1524.0,1527.0,SPEAKER_03,"why it looks appealing, but it could be a weak",0.8358
+858,1525.5,1528.5,SPEAKER_03,"it could be a weak point in the structure, do",0.8358
+859,1527.0,1530.0,SPEAKER_03,"point in the structure, do you think? That would",0.854
+860,1528.5,1531.5,SPEAKER_03,you think? That would be a worry of mine.,0.854
+861,1531.5,1534.5,SPEAKER_00,"If you're going with the fruit and veg thing, it looks",0.3486
+862,1536.0,1539.0,SPEAKER_02,don't think it would be,0.7816
+863,1537.5,1540.5,SPEAKER_02,it would be a structural,0.7816
+864,1539.0,1542.0,SPEAKER_02,a structural weakness. If you,0.8383
+865,1540.5,1543.5,SPEAKER_02,weakness. If you have a firm,0.8383
+866,1542.0,1545.0,SPEAKER_02,"have a firm substructure, you can then",0.895
+867,1543.5,1546.5,SPEAKER_02,"substructure, you can then incorporate articulation into that.",0.895
+868,1545.0,1548.0,SPEAKER_02,incorporate articulation into that. If you,0.8588
+869,1546.5,1549.5,SPEAKER_02,If you then have an,0.8226
+870,1548.0,1551.0,SPEAKER_02,then have an outer skin of,0.8226
+871,1549.5,1552.5,SPEAKER_02,"outer skin of flexible, spongy rubber,",0.8226
+872,1551.0,1554.0,SPEAKER_02,"flexible, spongy rubber, then you have",0.8226
+873,1552.5,1555.5,SPEAKER_02,then you have something that is very,0.8226
+874,1554.0,1557.0,SPEAKER_02,something that is very much organic and,0.8226
+875,1555.5,1558.5,SPEAKER_02,much organic and I think would,0.8226
+876,1557.0,1560.0,SPEAKER_02,I think would look... I,0.7775
+877,1558.5,1561.5,SPEAKER_02,"look... I mean, rather cool.",0.7775
+878,1560.0,1563.0,SPEAKER_02,"mean, rather cool. I mean, my drawing there doesn't",0.7121
+879,1561.5,1564.5,SPEAKER_02,"I mean, my drawing there doesn't do it justice. It",0.6661
+880,1563.0,1566.0,SPEAKER_02,do it justice. It makes you look a,0.6329
+881,1564.5,1567.5,SPEAKER_02,makes you look a little bit more like,0.5741
+882,1566.0,1569.0,SPEAKER_02,little bit more like a vibrator than,0.5741
+883,1567.5,1570.5,SPEAKER_02,"a vibrator than a remote control. Yeah,",0.6477
+884,1569.0,1572.0,SPEAKER_02,"a remote control. Yeah, we won't add that",0.6477
+885,1570.5,1573.5,SPEAKER_02,we won't add that functionality.,0.7213
+886,1573.5,1576.5,SPEAKER_03,"One interesting point is, I don't know how",0.7964
+887,1575.0,1578.0,SPEAKER_03,"I don't know how serious you were there,",0.7964
+888,1576.5,1579.5,SPEAKER_03,"serious you were there, but if we take some",0.7964
+889,1578.0,1581.0,SPEAKER_03,but if we take some of the ideas of,0.7964
+890,1579.5,1582.5,SPEAKER_03,"of the ideas of a banana, why don't",0.7964
+891,1581.0,1584.0,SPEAKER_03,"a banana, why don't we make this damn thing",0.7964
+892,1582.5,1585.5,SPEAKER_03,we make this damn thing yellow to incorporate the,0.7964
+893,1584.0,1587.0,SPEAKER_03,yellow to incorporate the color of the logo?,0.7773
+894,1585.5,1588.5,SPEAKER_03,color of the logo? sure yeah I don't,0.7773
+895,1587.0,1590.0,SPEAKER_03,sure yeah I don't know it's certainly a,0.7582
+896,1588.5,1591.5,SPEAKER_03,know it's certainly a different color from your average,0.7582
+897,1590.0,1593.0,SPEAKER_03,different color from your average um,0.7582
+898,1593.0,1596.0,SPEAKER_02,"Make it harder to lose, as well.",0.7837
+899,1596.0,1599.0,SPEAKER_01,Yeah. That's true. Was there anything in,0.3378
+900,1597.5,1600.5,SPEAKER_01,true. Was there anything in your research? The,0.623
+901,1599.0,1602.0,SPEAKER_01,your research? The noise for when you,0.8392
+902,1600.5,1603.5,SPEAKER_01,noise for when you lose the banana.,0.9276
+903,1602.0,1605.0,SPEAKER_01,"lose the banana. Yeah, for",0.7495
+904,1603.5,1606.5,SPEAKER_01,"Yeah, for when you lose the remote",0.5715
+905,1605.0,1608.0,SPEAKER_01,when you lose the remote control. It could be like,0.6643
+906,1606.5,1609.5,SPEAKER_01,control. It could be like a monkey noise or,0.6643
+907,1608.0,1611.0,SPEAKER_01,"a monkey noise or something like that, rather than",0.7572
+908,1609.5,1612.5,SPEAKER_01,"something like that, rather than a standard V. You",0.7572
+909,1611.0,1614.0,SPEAKER_01,"a standard V. You know, you lose the monkey,",0.7572
+910,1612.5,1615.5,SPEAKER_01,"know, you lose the monkey, that banana. You lose",0.4704
+911,1614.0,1617.0,SPEAKER_01,that banana. You lose the monkey. You lose the,0.5887
+912,1615.5,1618.5,SPEAKER_01,"the monkey. You lose the banana, you press a button, and",0.5045
+913,1617.0,1620.0,SPEAKER_01,"banana, you press a button, and you hear like monkey screams",0.8252
+914,1618.5,1621.5,SPEAKER_01,you hear like monkey screams or something like that to direct,0.8252
+915,1623.0,1626.0,SPEAKER_02,think that's something that could perhaps be,0.6314
+916,1624.5,1627.5,SPEAKER_02,"that could perhaps be programmable, though maybe",0.6314
+917,1626.0,1629.0,SPEAKER_02,"programmable, though maybe we have monkey",0.6314
+918,1630.5,1633.5,SPEAKER_01,was going to talk about the programmable remote control.,0.8166
+919,1632.0,1635.0,SPEAKER_01,"the programmable remote control. Now, I think it would be cool if",0.7716
+920,1633.5,1636.5,SPEAKER_01,"Now, I think it would be cool if you had one remote control that can work with",0.7267
+921,1635.0,1638.0,SPEAKER_01,"you had one remote control that can work with all TVs. You know, you",0.7804
+922,1636.5,1639.5,SPEAKER_01,"all TVs. You know, you click a button and",0.7804
+923,1638.0,1641.0,SPEAKER_01,click a button and it finds the frequency that,0.8341
+924,1639.5,1642.5,SPEAKER_01,it finds the frequency that works with your particular,0.8341
+925,1641.0,1644.0,SPEAKER_01,works with your particular television. But why you'd,0.8621
+926,1642.5,1645.5,SPEAKER_01,television. But why you'd need to program it?,0.846
+927,1644.0,1647.0,SPEAKER_01,"need to program it? Like as a standard feature,",0.8519
+928,1648.5,1651.5,SPEAKER_02,"basically, for each manufacturer,",0.8348
+929,1650.0,1653.0,SPEAKER_02,"each manufacturer, we'll have",0.8348
+930,1651.5,1654.5,SPEAKER_02,we'll have a particular,0.8348
+931,1653.0,1656.0,SPEAKER_02,a particular command set,0.8348
+932,1654.5,1657.5,SPEAKER_02,command set that the,0.8348
+933,1656.0,1659.0,SPEAKER_02,that the TV responds,0.8348
+934,1657.5,1660.5,SPEAKER_02,TV responds to. It's,0.7954
+935,1659.0,1662.0,SPEAKER_02,to. It's not simply a,0.7954
+936,1660.5,1663.5,SPEAKER_02,not simply a matter of frequency.,0.7559
+937,1662.0,1665.0,SPEAKER_02,matter of frequency.,0.7559
+938,1663.5,1666.5,SPEAKER_02,Usually what's done,0.8476
+939,1665.0,1668.0,SPEAKER_02,Usually what's done is you have this,0.8476
+940,1666.5,1669.5,SPEAKER_02,is you have this big booklet full,0.8476
+941,1668.0,1671.0,SPEAKER_02,big booklet full of different possibilities.,0.8316
+942,1669.5,1672.5,SPEAKER_02,of different possibilities. You'll have all of them,0.8316
+943,1671.0,1674.0,SPEAKER_02,You'll have all of them programmed into the remote,0.8155
+944,1672.5,1675.5,SPEAKER_02,programmed into the remote and you'll have this,0.8155
+945,1674.0,1677.0,SPEAKER_02,and you'll have this little booklet of codes.,0.8155
+946,1675.5,1678.5,SPEAKER_02,little booklet of codes. You then,0.8268
+947,1677.0,1680.0,SPEAKER_02,You then find your manufacturer,0.8381
+948,1678.5,1681.5,SPEAKER_02,find your manufacturer and try the,0.8381
+949,1680.0,1683.0,SPEAKER_02,and try the different codes that,0.8381
+950,1681.5,1684.5,SPEAKER_02,different codes that come under that,0.8381
+951,1683.0,1686.0,SPEAKER_02,come under that manufacturer's name until,0.8381
+952,1684.5,1687.5,SPEAKER_02,manufacturer's name until you find the,0.8381
+953,1689.0,1692.0,SPEAKER_01,televisions don't give the remote control any type of feedback when you,0.7262
+954,1690.5,1693.5,SPEAKER_01,any type of feedback when you send it.,0.7262
+955,1693.5,1696.5,SPEAKER_02,That's quite annoying and,0.8484
+956,1695.0,1698.0,SPEAKER_02,quite annoying and we probably would still,0.8484
+957,1696.5,1699.5,SPEAKER_02,we probably would still have to do,0.8484
+958,1698.0,1701.0,SPEAKER_02,have to do that but if we,0.8484
+959,1699.5,1702.5,SPEAKER_02,that but if we had some sort,0.8484
+960,1701.0,1704.0,SPEAKER_02,had some sort of hookup to your,0.8484
+961,1702.5,1705.5,SPEAKER_02,of hookup to your computer as an,0.8484
+962,1704.0,1707.0,SPEAKER_02,computer as an option then if you've,0.8484
+963,1705.5,1708.5,SPEAKER_02,option then if you've got a computer,0.8484
+964,1707.0,1710.0,SPEAKER_02,got a computer you can avoid that,0.8484
+965,1711.5,1714.5,SPEAKER_03,point is that if the person doesn't have the computer,0.8007
+966,1713.0,1716.0,SPEAKER_03,person doesn't have the computer we can still make,0.8007
+967,1714.5,1717.5,SPEAKER_03,we can still make the process easier because instead,0.8007
+968,1716.0,1719.0,SPEAKER_03,the process easier because instead of having to look up,0.8007
+969,1717.5,1720.5,SPEAKER_03,of having to look up codes maybe we can have,0.8007
+970,1719.0,1722.0,SPEAKER_03,codes maybe we can have it for one of,0.8007
+971,1720.5,1723.5,SPEAKER_03,it for one of the options they have is,0.8007
+972,1722.0,1725.0,SPEAKER_03,the options they have is that they look up the,0.8007
+973,1723.5,1726.5,SPEAKER_03,that they look up the name of a company on,0.8007
+974,1725.0,1728.0,SPEAKER_03,name of a company on the LCD and then maybe,0.8007
+975,1726.5,1729.5,SPEAKER_03,the LCD and then maybe look up different names,0.8007
+976,1728.0,1731.0,SPEAKER_03,look up different names of the different actual units,0.8007
+977,1729.5,1732.5,SPEAKER_03,of the different actual units that have been produced or,0.8007
+978,1731.0,1734.0,SPEAKER_03,that have been produced or we have the remote control,0.8007
+979,1732.5,1735.5,SPEAKER_03,we have the remote control just go through them,0.8007
+980,1734.0,1737.0,SPEAKER_03,just go through them until it's like does this,0.8007
+981,1735.5,1738.5,SPEAKER_03,until it's like does this do the correct function and,0.8007
+982,1740.0,1743.0,SPEAKER_01,book of names to digits or is it like a few,0.7536
+983,1747.5,1750.5,SPEAKER_01,"was just thinking, if we were to store this information, some",0.7033
+984,1749.0,1752.0,SPEAKER_01,"were to store this information, some type of mapping, this person",0.7033
+985,1750.5,1753.5,SPEAKER_01,"type of mapping, this person probably need to use this feature",0.7033
+986,1752.0,1755.0,SPEAKER_01,"probably need to use this feature like once, you know, when",0.7033
+987,1753.5,1756.5,SPEAKER_01,"like once, you know, when they first buy the remote control",0.7033
+988,1755.0,1758.0,SPEAKER_01,they first buy the remote control or whenever they buy a new,0.7033
+989,1756.5,1759.5,SPEAKER_01,or whenever they buy a new television. So once there is...,0.6452
+990,1758.0,1761.0,SPEAKER_01,"television. So once there is... It doesn't have to be used very often,",0.5216
+991,1762.5,1765.5,SPEAKER_02,it's a nuisance. And it's,0.7349
+992,1764.0,1767.0,SPEAKER_02,And it's a nuisance very,0.8785
+993,1765.5,1768.5,SPEAKER_02,a nuisance very close to actually,0.8785
+994,1767.0,1770.0,SPEAKER_02,close to actually purchasing it.,0.8785
+995,1768.5,1771.5,SPEAKER_02,purchasing it. So it's something you'd like to,0.8798
+996,1770.0,1773.0,SPEAKER_02,So it's something you'd like to be thinking about. If,0.8836
+997,1771.5,1774.5,SPEAKER_02,be thinking about. If there's one in,0.8836
+998,1773.0,1776.0,SPEAKER_02,there's one in the shop,0.886
+999,1774.5,1777.5,SPEAKER_02,the shop that says it,0.886
+1000,1776.0,1779.0,SPEAKER_02,that says it can avoid,0.886
+1001,1777.5,1780.5,SPEAKER_02,can avoid much of that,0.886
+1002,1779.0,1782.0,SPEAKER_02,"much of that nuisance, you",0.886
+1003,1780.5,1783.5,SPEAKER_02,"nuisance, you might be favorably",0.886
+1004,1782.0,1785.0,SPEAKER_02,might be favorably inclined towards,0.886
+1005,1783.5,1786.5,SPEAKER_02,inclined towards it.,0.886
+1006,1786.5,1789.5,SPEAKER_03,"OK, this is just to give us a rough",0.693
+1007,1788.0,1791.0,SPEAKER_03,just to give us a rough idea of what we're meant,0.693
+1008,1789.5,1792.5,SPEAKER_03,idea of what we're meant to be doing for the next,0.693
+1009,1791.0,1794.0,SPEAKER_03,to be doing for the next stage. I'm pretty sure,0.6767
+1010,1792.5,1795.5,SPEAKER_03,stage. I'm pretty sure that you got that anyway.,0.6767
+1011,1794.0,1797.0,SPEAKER_03,that you got that anyway. This was a conceptual one.,0.7035
+1012,1795.5,1798.5,SPEAKER_03,This was a conceptual one. I,0.7506
+1013,1797.0,1800.0,SPEAKER_03,I think we've covered,0.8449
+1014,1798.5,1801.5,SPEAKER_03,think we've covered everything we need,0.8449
+1015,1800.0,1803.0,SPEAKER_03,everything we need to here. I,0.8609
+1016,1801.5,1804.5,SPEAKER_03,to here. I think we've decided,0.8609
+1017,1803.0,1806.0,SPEAKER_03,think we've decided on standard items for,0.877
+1018,1804.5,1807.5,SPEAKER_03,"on standard items for most of them,",0.877
+1019,1806.0,1809.0,SPEAKER_03,"most of them, rubber and such.",0.877
+1020,1807.5,1810.5,SPEAKER_03,rubber and such. So we're,0.8143
+1021,1809.0,1812.0,SPEAKER_03,So we're now looking at the detail,0.8143
+1022,1810.5,1813.5,SPEAKER_03,now looking at the detail design and what we need,0.7516
+1023,1812.0,1815.0,SPEAKER_03,design and what we need to be doing for the next,0.7516
+1024,1813.5,1816.5,SPEAKER_03,to be doing for the next meeting.,0.7516
+1025,1816.5,1819.5,SPEAKER_03,"So for example, we'll",0.52
+1026,1818.0,1821.0,SPEAKER_03,"So for example, we'll just start at the top.",0.52
+1027,1819.5,1822.5,SPEAKER_03,just start at the top. You've got yourself and the,0.6661
+1028,1821.0,1824.0,SPEAKER_03,You've got yourself and the industrial and designer going to,0.6661
+1029,1822.5,1825.5,SPEAKER_03,industrial and designer going to be working quite closely at,0.8122
+1030,1824.0,1827.0,SPEAKER_03,be working quite closely at this stage because it'll be hard,0.8122
+1031,1825.5,1828.5,SPEAKER_03,"this stage because it'll be hard not to, obviously.",0.8122
+1032,1827.0,1830.0,SPEAKER_03,"not to, obviously.",0.8122
+1033,1831.5,1834.5,SPEAKER_03,Looking for photo,0.6985
+1034,1833.0,1836.0,SPEAKER_03,Looking for photo typing of some,0.6985
+1035,1834.5,1837.5,SPEAKER_03,typing of some of this description using,0.6985
+1036,1836.0,1839.0,SPEAKER_03,of this description using clay. I,0.7395
+1037,1837.5,1840.5,SPEAKER_03,clay. I suppose you'll be told a,0.7395
+1038,1839.0,1842.0,SPEAKER_03,suppose you'll be told a lot more about that as we,0.7806
+1039,1840.5,1843.5,SPEAKER_03,lot more about that as we progress.,0.7806
+1040,1845.0,1848.0,SPEAKER_03,The user interface design,0.6
+1041,1846.5,1849.5,SPEAKER_03,user interface design,0.6
+1042,1848.0,1851.0,SPEAKER_03,It looks like the,0.7759
+1043,1849.5,1852.5,SPEAKER_03,It looks like the idea of push forward,0.7759
+1044,1851.0,1854.0,SPEAKER_03,idea of push forward so far is maybe,0.7759
+1045,1852.5,1855.5,SPEAKER_03,so far is maybe more of a physical one,0.7759
+1046,1854.0,1857.0,SPEAKER_03,"more of a physical one there, whereas possibly be",0.7759
+1047,1855.5,1858.5,SPEAKER_03,"there, whereas possibly be more interested in maybe",0.7759
+1048,1857.0,1860.0,SPEAKER_03,more interested in maybe how the LCD is,0.7759
+1049,1858.5,1861.5,SPEAKER_03,"how the LCD is going to incorporate, do you",0.7759
+1050,1860.0,1863.0,SPEAKER_03,"going to incorporate, do you think?",0.7759
+1051,1861.5,1864.5,SPEAKER_03,think? Or do you perceive,0.7387
+1052,1863.0,1866.0,SPEAKER_03,Or do you perceive that most of the design,0.7014
+1053,1864.5,1867.5,SPEAKER_03,that most of the design decisions still need to be,0.7014
+1054,1866.0,1869.0,SPEAKER_03,decisions still need to be based on the physical layout?,0.7014
+1055,1869.0,1872.0,SPEAKER_02,"Well, I think",0.7923
+1056,1870.5,1873.5,SPEAKER_02,I think other than,0.7923
+1057,1872.0,1875.0,SPEAKER_02,other than getting a,0.7923
+1058,1873.5,1876.5,SPEAKER_02,getting a more aesthetically,0.7923
+1059,1875.0,1878.0,SPEAKER_02,more aesthetically pleasing form,0.7923
+1060,1876.5,1879.5,SPEAKER_02,"pleasing form for it,",0.7923
+1061,1878.0,1881.0,SPEAKER_02,"for it, most of",0.7923
+1062,1879.5,1882.5,SPEAKER_02,most of the layout,0.7923
+1063,1881.0,1884.0,SPEAKER_02,the layout design decisions,0.7923
+1064,1882.5,1885.5,SPEAKER_02,"design decisions are made, I",0.7923
+1065,1884.0,1887.0,SPEAKER_02,"are made, I would say.",0.7923
+1066,1885.5,1888.5,SPEAKER_02,would say. But then,0.8027
+1067,1887.0,1890.0,SPEAKER_02,"But then again, the menu",0.8027
+1068,1888.5,1891.5,SPEAKER_02,"again, the menu structure, to a",0.8131
+1069,1890.0,1893.0,SPEAKER_02,"structure, to a considerable extent, that's",0.8131
+1070,1891.5,1894.5,SPEAKER_02,"considerable extent, that's going to vary",0.8131
+1071,1893.0,1896.0,SPEAKER_02,going to vary according to the model,0.8131
+1072,1894.5,1897.5,SPEAKER_02,according to the model of television and,0.8131
+1073,1896.0,1899.0,SPEAKER_02,of television and also any customizations,0.8131
+1074,1897.5,1900.5,SPEAKER_02,also any customizations that the user,0.8131
+1075,1899.0,1902.0,SPEAKER_02,that the user might wish to,0.8131
+1076,1900.5,1903.5,SPEAKER_02,might wish to incorporate.,0.8131
+1077,1902.0,1905.0,SPEAKER_02,incorporate. And one of the,0.781
+1078,1903.5,1906.5,SPEAKER_02,And one of the nice things about having,0.7489
+1079,1905.0,1908.0,SPEAKER_02,nice things about having an LCD and a,0.7489
+1080,1906.5,1909.5,SPEAKER_02,an LCD and a menu structure is that,0.7489
+1081,1908.0,1911.0,SPEAKER_02,menu structure is that there is that flexibility,0.7489
+1082,1909.5,1912.5,SPEAKER_02,there is that flexibility to it.,0.7489
+1083,1918.5,1921.5,SPEAKER_03,I've got product evaluation as,0.8652
+1084,1923.0,1926.0,SPEAKER_01,Some of these things kind of logically,0.6704
+1085,1924.5,1927.5,SPEAKER_01,things kind of logically follow the others.,0.6704
+1086,1926.0,1929.0,SPEAKER_01,follow the others. The product evaluation,0.6225
+1087,1927.5,1930.5,SPEAKER_01,The product evaluation doesn't come after,0.5747
+1088,1929.0,1932.0,SPEAKER_01,doesn't come after what I've actually,0.5747
+1089,1933.5,1936.5,SPEAKER_03,"I think would be yeah, no it'd be more",0.7909
+1090,1935.0,1938.0,SPEAKER_03,"yeah, no it'd be more case of how do",0.7909
+1091,1936.5,1939.5,SPEAKER_03,case of how do you envisage us performing,0.7909
+1092,1938.0,1941.0,SPEAKER_03,you envisage us performing the product evaluation once we,0.7909
+1093,1939.5,1942.5,SPEAKER_03,the product evaluation once we have a Model to,0.7909
+1094,1941.0,1944.0,SPEAKER_03,"have a Model to test with oh, that's the",0.7909
+1095,1942.5,1945.5,SPEAKER_03,"test with oh, that's the okay sure So it'd",0.7909
+1096,1944.0,1947.0,SPEAKER_03,okay sure So it'd be a case of do,0.7909
+1097,1945.5,1948.5,SPEAKER_03,be a case of do you think that just,0.7909
+1098,1947.0,1950.0,SPEAKER_03,you think that just bringing users in to,0.7909
+1099,1948.5,1951.5,SPEAKER_03,bringing users in to have them test it out?,0.7909
+1100,1950.0,1953.0,SPEAKER_03,have them test it out? Maybe putting,0.8041
+1101,1951.5,1954.5,SPEAKER_03,Maybe putting a certain number of products into,0.8041
+1102,1953.0,1956.0,SPEAKER_03,"a certain number of products into the field in certain places, which",0.8172
+1103,1954.5,1957.5,SPEAKER_03,"the field in certain places, which I suppose is quite similar or",0.7332
+1104,1956.0,1959.0,SPEAKER_03,I suppose is quite similar or or just hitting the,0.7332
+1105,1957.5,1960.5,SPEAKER_03,"or just hitting the streets and saying, this",0.6493
+1106,1959.0,1962.0,SPEAKER_03,"streets and saying, this is a new remote",0.6493
+1107,1960.5,1963.5,SPEAKER_03,"is a new remote control, what do",0.6493
+1108,1962.0,1965.0,SPEAKER_03,"control, what do you think of the",0.6493
+1109,1963.5,1966.5,SPEAKER_03,you think of the look of it?,0.6493
+1110,1966.5,1969.5,SPEAKER_01,"At this stage, we",0.6928
+1111,1968.0,1971.0,SPEAKER_01,"At this stage, we still have no target",0.6928
+1112,1969.5,1972.5,SPEAKER_01,still have no target audience?,0.6928
+1113,1972.5,1975.5,SPEAKER_03,I think the target audience is pretty,0.8729
+1114,1974.0,1977.0,SPEAKER_03,target audience is pretty much anybody under,0.8729
+1115,1975.5,1978.5,SPEAKER_03,"much anybody under the age of, say,",0.8729
+1116,1977.0,1980.0,SPEAKER_03,"the age of, say, maybe 60 or",0.8729
+1117,1978.5,1981.5,SPEAKER_03,maybe 60 or something ludicrous.,0.8729
+1118,1981.5,1984.5,SPEAKER_03,The reason I'm saying that,0.7673
+1119,1983.0,1986.0,SPEAKER_03,The reason I'm saying that is that we're just looking,0.7673
+1120,1984.5,1987.5,SPEAKER_03,"is that we're just looking at a replacement remote control, something",0.7673
+1121,1986.0,1989.0,SPEAKER_03,"at a replacement remote control, something that's stylish. So",0.7989
+1122,1987.5,1990.5,SPEAKER_03,"that's stylish. So maybe you're even just, maybe",0.7989
+1123,1989.0,1992.0,SPEAKER_03,"maybe you're even just, maybe you're narrowing down your target audience",0.8305
+1124,1990.5,1993.5,SPEAKER_03,you're narrowing down your target audience simply by saying. It's,0.6507
+1125,1992.0,1995.0,SPEAKER_03,simply by saying. It's stylish. If they're buying,0.6907
+1126,1993.5,1996.5,SPEAKER_03,stylish. If they're buying it that often or,0.6209
+1127,1995.0,1998.0,SPEAKER_03,it that often or they're maybe looking to,0.7707
+1128,1996.5,1999.5,SPEAKER_03,they're maybe looking to replace something then they've,0.7707
+1129,1998.0,2001.0,SPEAKER_03,replace something then they've got a bit of,0.7707
+1130,1999.5,2002.5,SPEAKER_03,got a bit of free cash that puts,0.7707
+1131,2001.0,2004.0,SPEAKER_03,free cash that puts them potentially in the,0.7707
+1132,2002.5,2005.5,SPEAKER_03,them potentially in the younger age bracket maybe,0.7707
+1133,2004.0,2007.0,SPEAKER_03,younger age bracket maybe even single just for,0.7707
+1134,2005.5,2008.5,SPEAKER_03,even single just for the reasons of excess,0.7707
+1135,2007.0,2010.0,SPEAKER_03,the reasons of excess cash flow.,0.7707
+1136,2008.5,2011.5,SPEAKER_03,cash flow. Of course I,0.7261
+1137,2010.0,2013.0,SPEAKER_03,Of course I mean at 25 Euros I,0.6815
+1138,2011.5,2014.5,SPEAKER_03,mean at 25 Euros I don't think we're looking at charging,0.6815
+1139,2013.0,2016.0,SPEAKER_03,don't think we're looking at charging the air for the device,0.6815
+1140,2014.5,2017.5,SPEAKER_03,the air for the device as well as the normal bracket.,0.6815
+1141,2016.0,2019.0,SPEAKER_03,as well as the normal bracket.,0.6815
+1142,2019.0,2022.0,SPEAKER_03,Your idea of USB I think would,0.8519
+1143,2020.5,2023.5,SPEAKER_03,of USB I think would largely depend on the cost.,0.8519
+1144,2022.0,2025.0,SPEAKER_03,largely depend on the cost. USB is definitely one of,0.806
+1145,2023.5,2026.5,SPEAKER_03,USB is definitely one of the cheapest interfaces out there,0.7601
+1146,2025.0,2028.0,SPEAKER_03,the cheapest interfaces out there but it might push,0.7601
+1147,2026.5,2029.5,SPEAKER_03,but it might push the cost of the overall,0.7601
+1148,2028.0,2031.0,SPEAKER_03,the cost of the overall unit up because it would,0.7601
+1149,2029.5,2032.5,SPEAKER_03,unit up because it would require not just the connection,0.7601
+1150,2031.0,2034.0,SPEAKER_03,require not just the connection but the chip for communicating,0.7601
+1151,2032.5,2035.5,SPEAKER_03,but the chip for communicating with the rest of the,0.7601
+1152,2034.0,2037.0,SPEAKER_03,with the rest of the system.,0.7601
+1153,2035.5,2038.5,SPEAKER_03,system. That one might have to,0.6484
+1154,2041.5,2044.5,SPEAKER_03,The idea was that maybe it could connect,0.7939
+1155,2043.0,2046.0,SPEAKER_03,that maybe it could connect ups for allowing a software,0.7939
+1156,2044.5,2047.5,SPEAKER_03,ups for allowing a software interface on the PC,0.7939
+1157,2046.0,2049.0,SPEAKER_03,interface on the PC for a larger programming due,0.7939
+1158,2047.5,2050.5,SPEAKER_03,for a larger programming due to the fact that we've,0.7939
+1159,2049.0,2052.0,SPEAKER_03,to the fact that we've gone for such a,0.7939
+1160,2050.5,2053.5,SPEAKER_03,gone for such a nice easy minimal design normally.,0.7939
+1161,2052.0,2055.0,SPEAKER_03,nice easy minimal design normally.,0.7939
+1162,2059.5,2062.5,SPEAKER_03,"It's just for TV, but",0.7849
+1163,2061.0,2064.0,SPEAKER_03,"It's just for TV, but for different programming it",0.7849
+1164,2062.5,2065.5,SPEAKER_03,"for different programming it to use your TV, you",0.7849
+1165,2064.0,2067.0,SPEAKER_03,"to use your TV, you might hook it up",0.7849
+1166,2065.5,2068.5,SPEAKER_03,might hook it up to the PC.,0.8293
+1167,2067.0,2070.0,SPEAKER_03,"to the PC. I'm not sure, but",0.8293
+1168,2068.5,2071.5,SPEAKER_03,"I'm not sure, but I'm thinking maybe that",0.8737
+1169,2070.0,2073.0,SPEAKER_03,I'm thinking maybe that the additional cost of,0.8737
+1170,2071.5,2074.5,SPEAKER_03,the additional cost of USB might be prohibitive. We,0.8443
+1171,2073.0,2076.0,SPEAKER_03,USB might be prohibitive. We don't know unless it would,0.8443
+1172,2077.5,2080.5,SPEAKER_01,going to need some type of flash memory or something.,0.6595
+1173,2079.0,2082.0,SPEAKER_01,"of flash memory or something. Well, something that doesn't, you",0.7103
+1174,2080.5,2083.5,SPEAKER_01,"Well, something that doesn't, you wouldn't have to redo the whole",0.7103
+1175,2082.0,2085.0,SPEAKER_01,"wouldn't have to redo the whole thing once the batteries are changed,",0.761
+1176,2086.5,2089.5,SPEAKER_02,"I mean, it would need to",0.7159
+1177,2088.0,2091.0,SPEAKER_02,would need to have some sort,0.7159
+1178,2089.5,2092.5,SPEAKER_02,have some sort of onboard memory,0.7159
+1179,2091.0,2094.0,SPEAKER_02,of onboard memory in any way.,0.7159
+1180,2092.5,2095.5,SPEAKER_02,in any way.,0.7159
+1181,2095.5,2098.5,SPEAKER_02,"For one thing, because I",0.7098
+1182,2097.0,2100.0,SPEAKER_02,"thing, because I do think the",0.7098
+1183,2098.5,2101.5,SPEAKER_02,do think the menu system should,0.7098
+1184,2100.0,2103.0,SPEAKER_02,"menu system should be, I mean, although,",0.7098
+1185,2101.5,2104.5,SPEAKER_02,"be, I mean, although, you know it's",0.7377
+1186,2103.0,2106.0,SPEAKER_02,you know it's not going to be,0.7377
+1187,2104.5,2107.5,SPEAKER_02,not going to be terribly complicated it's just,0.7656
+1188,2106.0,2109.0,SPEAKER_02,terribly complicated it's just controlling one device the,0.7656
+1189,2107.5,2110.5,SPEAKER_02,controlling one device the menu system ought to,0.7656
+1190,2109.0,2112.0,SPEAKER_02,menu system ought to be um ought to,0.7656
+1191,2110.5,2113.5,SPEAKER_02,be um ought to be customizable and different,0.7656
+1192,2112.0,2115.0,SPEAKER_02,be customizable and different languages and different,0.7656
+1193,2113.5,2116.5,SPEAKER_02,languages and different skins and stuff like,0.7656
+1194,2115.0,2118.0,SPEAKER_02,skins and stuff like that how you won't,0.7656
+1195,2116.5,2119.5,SPEAKER_02,that how you won't say the um the,0.7656
+1196,2118.0,2121.0,SPEAKER_02,say the um the menu structure for flicking,0.7656
+1197,2119.5,2122.5,SPEAKER_02,menu structure for flicking through channels if you've,0.7656
+1198,2121.0,2124.0,SPEAKER_02,through channels if you've got lots of,0.7656
+1199,2122.5,2125.5,SPEAKER_02,got lots of channels so if it,0.7656
+1200,2124.0,2127.0,SPEAKER_02,channels so if it was customizable as in,0.7656
+1201,2125.5,2128.5,SPEAKER_02,was customizable as in different languages and stuff,0.7656
+1202,2127.0,2130.0,SPEAKER_02,different languages and stuff that does open it,0.7656
+1203,2128.5,2131.5,SPEAKER_02,that does open it is supposed to be,0.7656
+1204,2133.0,2136.0,SPEAKER_03,would make sense to. It would make sense to. I would say to.,0.527
+1205,2134.5,2137.5,SPEAKER_03,sense to. I would say to. And we better be careful,0.5133
+1206,2136.0,2139.0,SPEAKER_03,And we better be careful about the time as well.,0.8114
+1207,2137.5,2140.5,SPEAKER_03,about the time as well. We've already had a five,0.7604
+1208,2139.0,2142.0,SPEAKER_03,We've already had a five minute warning so.,0.7094
+1209,2140.5,2143.5,SPEAKER_03,minute warning so. I would say,0.7008
+1210,2142.0,2145.0,SPEAKER_03,I would say yeah.,0.6923
+1211,2143.5,2146.5,SPEAKER_03,yeah. International would,0.7534
+1212,2145.0,2148.0,SPEAKER_03,International would make sense.,0.7895
+1213,2146.5,2149.5,SPEAKER_03,make sense. You're going to look at product,0.7895
+1214,2148.0,2151.0,SPEAKER_03,You're going to look at product evaluation. I'd better start writing up a,0.5817
+1215,2149.5,2152.5,SPEAKER_03,evaluation. I'd better start writing up a hell of a lot of crap.,0.5817
+1216,2151.0,2154.0,SPEAKER_03,hell of a lot of crap.,0.3987
+1217,2152.5,2155.5,SPEAKER_03,You're going to look a bit,0.6416
+1218,2154.0,2157.0,SPEAKER_03,You're going to look a bit more at the physical makeup.,0.6416
+1219,2155.5,2158.5,SPEAKER_03,more at the physical makeup. It looks like,0.6486
+1220,2157.0,2160.0,SPEAKER_03,It looks like we're going to need,0.6556
+1221,2158.5,2161.5,SPEAKER_03,we're going to need maybe a prototype in clay.,0.6556
+1222,2160.0,2163.0,SPEAKER_03,maybe a prototype in clay.,0.6556
+1223,2161.5,2164.5,SPEAKER_03,We'll see how that goes.,0.7316
+1224,2163.0,2166.0,SPEAKER_03,We'll see how that goes. Are we going to,0.7324
+1225,2164.5,2167.5,SPEAKER_03,Are we going to be supplied with the clay?,0.6571
+1226,2166.0,2169.0,SPEAKER_03,be supplied with the clay? Where is the clay?,0.7519
+1227,2167.5,2170.5,SPEAKER_03,"Where is the clay? So, I think we've got",0.8282
+1228,2169.0,2172.0,SPEAKER_03,"So, I think we've got an idea of where we",0.8282
+1229,2170.5,2173.5,SPEAKER_03,an idea of where we need to go for the,0.8097
+1230,2172.0,2175.0,SPEAKER_03,"need to go for the next meeting, would you say?",0.8097
+1231,2176.5,2179.5,SPEAKER_00,they're gone with the fashion thing. Like the fruit,0.6358
+1232,2178.0,2181.0,SPEAKER_00,Like the fruit and veg. The design.,0.6846
+1233,2179.5,2182.5,SPEAKER_00,"and veg. The design. Spongy, proper.",0.6902
+1234,2182.5,2185.5,SPEAKER_03,"Yeah, I would say that would be",0.7066
+1235,2187.0,2190.0,SPEAKER_02,"Actually, I still clear the whole",0.5672
+1236,2188.5,2191.5,SPEAKER_02,still clear the whole fruit and veg,0.5672
+1237,2190.0,2193.0,SPEAKER_02,whole fruit and veg thing.,0.5672
+1238,2191.5,2194.5,SPEAKER_02,veg thing. But,0.6812
+1239,2193.0,2196.0,SPEAKER_02,"But the spongy, I like",0.7951
+1240,2194.5,2197.5,SPEAKER_02,"the spongy, I like it a lot.",0.7951
+1241,2199.0,2202.0,SPEAKER_03,have quite a general consensus that the idea of,0.7706
+1242,2200.5,2203.5,SPEAKER_03,that the idea of the rubber could be,0.7706
+1243,2202.0,2205.0,SPEAKER_03,the rubber could be quite... Yeah.,0.7706
+1244,2205.0,2208.0,SPEAKER_02,"I don't know much about having bright yellow,",0.45
+1245,2206.5,2209.5,SPEAKER_02,"much about having bright yellow, I think that's quite",0.45
+1246,2208.0,2211.0,SPEAKER_02,I think that's quite a good idea. Maybe,0.6106
+1247,2209.5,2212.5,SPEAKER_02,a good idea. Maybe we could have options for colours as,0.6106
+1248,2211.0,2214.0,SPEAKER_02,we could have options for colours as well.,0.7712
+1249,2215.5,2218.5,SPEAKER_02,"And again, this has the advantage of being harder to",0.8051
+1250,2220.0,2223.0,SPEAKER_01,"we are trying to promote remote control, but we want to keep",0.8064
+1251,2221.5,2224.5,SPEAKER_01,"control, but we want to keep the company brand as well.",0.8064
+1252,2224.5,2227.5,SPEAKER_03,Yeah. So we always need to remember that somewhere we're meant to be,0.6887
+1253,2226.0,2229.0,SPEAKER_03,need to remember that somewhere we're meant to be getting a slogan on.,0.7714
+1254,2227.5,2230.5,SPEAKER_03,"getting a slogan on. Possibly,",0.7656
+1255,2229.0,2232.0,SPEAKER_03,"Possibly, I'm not sure, but I'm",0.7598
+1256,2230.5,2233.5,SPEAKER_03,"I'm not sure, but I'm seeing a little bit of space",0.7598
+1257,2232.0,2235.0,SPEAKER_03,"seeing a little bit of space around maybe the joystick area,",0.7598
+1258,2233.5,2236.5,SPEAKER_03,"around maybe the joystick area, which could be used.",0.7598
+1259,2235.0,2238.0,SPEAKER_03,which could be used.,0.7598
+1260,2236.5,2239.5,SPEAKER_02,Like I said,0.6626
+1261,2238.0,2241.0,SPEAKER_02,"Like I said before, I think we",0.6626
+1262,2239.5,2242.5,SPEAKER_02,"before, I think we should have the RR on",0.6626
+1263,2241.0,2244.0,SPEAKER_02,should have the RR on the top function button.,0.6626
+1264,2242.5,2245.5,SPEAKER_02,the top function button.,0.6626
+1265,2244.0,2247.0,SPEAKER_03,"Okay, and I think that",0.7038
+1266,2245.5,2248.5,SPEAKER_03,"Okay, and I think that says it all really. I think",0.6268
+1267,2247.0,2250.0,SPEAKER_03,"says it all really. I think so too. Right, we'll",0.644
+1268,2248.5,2251.5,SPEAKER_03,"so too. Right, we'll see everybody in a half",0.6141

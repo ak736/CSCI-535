@@ -1,0 +1,484 @@
+=============================
+Harish batch start: Fri Mar  6 21:52:37 PST 2026
+  merged_dir:    /Users/harishdukkipati/Downloads/CSCI-535/outputs/merged
+  segments_dir: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments
+  embeddings:   /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings
+=============================
+
+--- Phase 1: Merged → Segments ---
+[RUNNING] ES2002a (segments) — 21:52:37
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2002a_segments.csv 496 rows (Part 1)
+[DONE]    ES2002a (segments) — 21:52:44
+[RUNNING] ES2002b (segments) — 21:52:44
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2002b_segments.csv 1151 rows (Part 1)
+[DONE]    ES2002b (segments) — 21:52:51
+[RUNNING] ES2002c (segments) — 21:52:51
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2002c_segments.csv 1281 rows (Part 1)
+[DONE]    ES2002c (segments) — 21:53:00
+[RUNNING] ES2002d (segments) — 21:53:00
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2002d_segments.csv 1178 rows (Part 1)
+[DONE]    ES2002d (segments) — 21:53:11
+[RUNNING] ES2003a (segments) — 21:53:11
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2003a_segments.csv 435 rows (Part 1)
+[DONE]    ES2003a (segments) — 21:53:12
+[RUNNING] ES2003b (segments) — 21:53:12
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2003b_segments.csv 1189 rows (Part 1)
+[DONE]    ES2003b (segments) — 21:53:19
+[RUNNING] ES2003c (segments) — 21:53:19
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2003c_segments.csv 1269 rows (Part 1)
+[DONE]    ES2003c (segments) — 21:53:25
+[RUNNING] ES2003d (segments) — 21:53:25
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2003d_segments.csv 1208 rows (Part 1)
+[DONE]    ES2003d (segments) — 21:53:32
+[RUNNING] ES2004a (segments) — 21:53:32
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2004a_segments.csv 460 rows (Part 1)
+[DONE]    ES2004a (segments) — 21:53:34
+[RUNNING] ES2004b (segments) — 21:53:34
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2004b_segments.csv 1216 rows (Part 1)
+[DONE]    ES2004b (segments) — 21:53:41
+[RUNNING] ES2004c (segments) — 21:53:41
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2004c_segments.csv 1203 rows (Part 1)
+[DONE]    ES2004c (segments) — 21:53:49
+[RUNNING] ES2004d (segments) — 21:53:49
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2004d_segments.csv 990 rows (Part 1)
+[DONE]    ES2004d (segments) — 21:53:57
+
+--- Phase 2: Segments → Embeddings ---
+[RUNNING] ES2002a (embeddings) — 21:53:57
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 56002.28it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Traceback (most recent call last):
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 298, in <module>
+    main()
+    ~~~~^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 278, in main
+    run_part2_embeddings(args.segments, embeddings_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 230, in run_part2_embeddings
+    lab = item["label"].strip().lower()
+          ~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[FAILED]  ES2002a (embeddings)
+[RUNNING] ES2002b (embeddings) — 21:54:28
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 41032.51it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Traceback (most recent call last):
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 298, in <module>
+    main()
+    ~~~~^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 278, in main
+    run_part2_embeddings(args.segments, embeddings_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 230, in run_part2_embeddings
+    lab = item["label"].strip().lower()
+          ~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[FAILED]  ES2002b (embeddings)
+[RUNNING] ES2002c (embeddings) — 21:54:31
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 40575.08it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Traceback (most recent call last):
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 298, in <module>
+    main()
+    ~~~~^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 278, in main
+    run_part2_embeddings(args.segments, embeddings_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 230, in run_part2_embeddings
+    lab = item["label"].strip().lower()
+          ~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[FAILED]  ES2002c (embeddings)
+[RUNNING] ES2002d (embeddings) — 21:54:34
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 40414.97it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Traceback (most recent call last):
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 298, in <module>
+    main()
+    ~~~~^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 278, in main
+    run_part2_embeddings(args.segments, embeddings_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 230, in run_part2_embeddings
+    lab = item["label"].strip().lower()
+          ~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[FAILED]  ES2002d (embeddings)
+[RUNNING] ES2003a (embeddings) — 21:54:37
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 41665.27it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Traceback (most recent call last):
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 298, in <module>
+    main()
+    ~~~~^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 278, in main
+    run_part2_embeddings(args.segments, embeddings_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 230, in run_part2_embeddings
+    lab = item["label"].strip().lower()
+          ~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[FAILED]  ES2003a (embeddings)
+[RUNNING] ES2003b (embeddings) — 21:54:39
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 48857.55it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Traceback (most recent call last):
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 298, in <module>
+    main()
+    ~~~~^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 278, in main
+    run_part2_embeddings(args.segments, embeddings_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 230, in run_part2_embeddings
+    lab = item["label"].strip().lower()
+          ~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[FAILED]  ES2003b (embeddings)
+[RUNNING] ES2003c (embeddings) — 21:54:42
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 37741.19it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Traceback (most recent call last):
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 298, in <module>
+    main()
+    ~~~~^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 278, in main
+    run_part2_embeddings(args.segments, embeddings_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 230, in run_part2_embeddings
+    lab = item["label"].strip().lower()
+          ~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[FAILED]  ES2003c (embeddings)
+[RUNNING] ES2003d (embeddings) — 21:54:45
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 29914.54it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Traceback (most recent call last):
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 298, in <module>
+    main()
+    ~~~~^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 278, in main
+    run_part2_embeddings(args.segments, embeddings_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 230, in run_part2_embeddings
+    lab = item["label"].strip().lower()
+          ~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[FAILED]  ES2003d (embeddings)
+[RUNNING] ES2004a (embeddings) — 21:54:47
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 48862.97it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Traceback (most recent call last):
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 298, in <module>
+    main()
+    ~~~~^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 278, in main
+    run_part2_embeddings(args.segments, embeddings_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 230, in run_part2_embeddings
+    lab = item["label"].strip().lower()
+          ~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[FAILED]  ES2004a (embeddings)
+[RUNNING] ES2004b (embeddings) — 21:54:50
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 44319.40it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Traceback (most recent call last):
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 298, in <module>
+    main()
+    ~~~~^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 278, in main
+    run_part2_embeddings(args.segments, embeddings_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 230, in run_part2_embeddings
+    lab = item["label"].strip().lower()
+          ~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[FAILED]  ES2004b (embeddings)
+[RUNNING] ES2004c (embeddings) — 21:54:53
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 25022.84it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Traceback (most recent call last):
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 298, in <module>
+    main()
+    ~~~~^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 278, in main
+    run_part2_embeddings(args.segments, embeddings_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 230, in run_part2_embeddings
+    lab = item["label"].strip().lower()
+          ~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[FAILED]  ES2004c (embeddings)
+[RUNNING] ES2004d (embeddings) — 21:54:55
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 41406.72it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Traceback (most recent call last):
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 298, in <module>
+    main()
+    ~~~~^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 278, in main
+    run_part2_embeddings(args.segments, embeddings_path)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/harishdukkipati/Downloads/CSCI-535/harish/harish_segmentation_and_text.py", line 230, in run_part2_embeddings
+    lab = item["label"].strip().lower()
+          ~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[FAILED]  ES2004d (embeddings)
+
+=============================
+Harish batch end: Fri Mar  6 21:54:58 PST 2026
+FAILED: ES2002a (phase2) ES2002b (phase2) ES2002c (phase2) ES2002d (phase2) ES2003a (phase2) ES2003b (phase2) ES2003c (phase2) ES2003d (phase2) ES2004a (phase2) ES2004b (phase2) ES2004c (phase2) ES2004d (phase2)
+=============================
+Harish batch start: Fri Mar  6 21:59:14 PST 2026
+  merged_dir:    /Users/harishdukkipati/Downloads/CSCI-535/outputs/merged
+  segments_dir: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments
+  embeddings:   /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings
+=============================
+
+--- Phase 1: Merged → Segments ---
+[SKIP]    ES2002a — segments already exist: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2002a_segments.csv
+[SKIP]    ES2002b — segments already exist: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2002b_segments.csv
+[SKIP]    ES2002c — segments already exist: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2002c_segments.csv
+[SKIP]    ES2002d — segments already exist: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2002d_segments.csv
+[SKIP]    ES2003a — segments already exist: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2003a_segments.csv
+[SKIP]    ES2003b — segments already exist: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2003b_segments.csv
+[SKIP]    ES2003c — segments already exist: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2003c_segments.csv
+[SKIP]    ES2003d — segments already exist: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2003d_segments.csv
+[SKIP]    ES2004a — segments already exist: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2004a_segments.csv
+[SKIP]    ES2004b — segments already exist: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2004b_segments.csv
+[SKIP]    ES2004c — segments already exist: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2004c_segments.csv
+[SKIP]    ES2004d — segments already exist: /Users/harishdukkipati/Downloads/CSCI-535/outputs/segments/ES2004d_segments.csv
+
+--- Phase 2: Segments → Embeddings ---
+[RUNNING] ES2002a (embeddings) — 21:59:14
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 40713.87it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings/ES2002a_text_emotions.csv 496 rows (Part 2)
+[DONE]    ES2002a (embeddings) — 21:59:22
+[RUNNING] ES2002b (embeddings) — 21:59:22
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 45411.62it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings/ES2002b_text_emotions.csv 1151 rows (Part 2)
+[DONE]    ES2002b (embeddings) — 21:59:30
+[RUNNING] ES2002c (embeddings) — 21:59:30
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 40582.56it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings/ES2002c_text_emotions.csv 1281 rows (Part 2)
+[DONE]    ES2002c (embeddings) — 21:59:39
+[RUNNING] ES2002d (embeddings) — 21:59:39
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 43716.69it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings/ES2002d_text_emotions.csv 1178 rows (Part 2)
+[DONE]    ES2002d (embeddings) — 21:59:48
+[RUNNING] ES2003a (embeddings) — 21:59:48
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 42765.77it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings/ES2003a_text_emotions.csv 435 rows (Part 2)
+[DONE]    ES2003a (embeddings) — 21:59:53
+[RUNNING] ES2003b (embeddings) — 21:59:53
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 42633.29it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings/ES2003b_text_emotions.csv 1189 rows (Part 2)
+[DONE]    ES2003b (embeddings) — 22:00:02
+[RUNNING] ES2003c (embeddings) — 22:00:02
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 51096.64it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings/ES2003c_text_emotions.csv 1269 rows (Part 2)
+[DONE]    ES2003c (embeddings) — 22:00:11
+[RUNNING] ES2003d (embeddings) — 22:00:11
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 53766.56it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings/ES2003d_text_emotions.csv 1208 rows (Part 2)
+[DONE]    ES2003d (embeddings) — 22:00:20
+[RUNNING] ES2004a (embeddings) — 22:00:20
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 46338.59it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings/ES2004a_text_emotions.csv 460 rows (Part 2)
+[DONE]    ES2004a (embeddings) — 22:00:25
+[RUNNING] ES2004b (embeddings) — 22:00:25
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 51569.31it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings/ES2004b_text_emotions.csv 1216 rows (Part 2)
+[DONE]    ES2004b (embeddings) — 22:00:34
+[RUNNING] ES2004c (embeddings) — 22:00:34
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 38730.27it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings/ES2004c_text_emotions.csv 1203 rows (Part 2)
+[DONE]    ES2004c (embeddings) — 22:00:43
+[RUNNING] ES2004d (embeddings) — 22:00:43
+Loading HuggingFace emotion model: j-hartmann/emotion-english-distilroberta-base
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 41847.39it/s]
+[1mRobertaForSequenceClassification LOAD REPORT[0m from: j-hartmann/emotion-english-distilroberta-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+WROTE /Users/harishdukkipati/Downloads/CSCI-535/outputs/embeddings/ES2004d_text_emotions.csv 990 rows (Part 2)
+[DONE]    ES2004d (embeddings) — 22:00:51
+
+=============================
+Harish batch end: Fri Mar  6 22:00:51 PST 2026
+All meetings completed successfully.

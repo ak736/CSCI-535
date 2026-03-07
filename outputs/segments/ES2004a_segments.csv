@@ -1,0 +1,461 @@
+segment_id,start,end,speaker_id,transcript,asr_confidence
+0,10.5,13.5,SPEAKER_02,Are we? We're not like,0.5429
+1,12.0,15.0,SPEAKER_02,"We're not like the dim lights, so",0.5122
+2,13.5,16.5,SPEAKER_02,"the dim lights, so we can see",0.5122
+3,15.0,18.0,SPEAKER_02,we can see that a bit better.,0.5122
+4,16.5,19.5,SPEAKER_02,that a bit better. Yeah.,0.478
+5,18.0,21.0,SPEAKER_02,Yeah. OK. That's,0.478
+6,19.5,22.5,SPEAKER_02,OK. That's fine.,0.6297
+7,21.0,24.0,SPEAKER_02,fine. Am I supposed to be standing up there?,0.6297
+8,24.0,27.0,SPEAKER_03,So we've got both of these clipped on.,0.6016
+9,25.5,28.5,SPEAKER_03,got both of these clipped on.,0.6016
+10,28.5,31.5,SPEAKER_03,"Is she going to answer me? Yeah,",0.3337
+11,30.0,33.0,SPEAKER_03,"going to answer me? Yeah, I've got both of them.",0.3337
+12,31.5,34.5,SPEAKER_03,I've got both of them.,0.2017
+13,82.5,85.5,SPEAKER_02,"everybody. I'm Sarah,",0.7876
+14,84.0,87.0,SPEAKER_02,"I'm Sarah, the project",0.8015
+15,85.5,88.5,SPEAKER_02,the project manager and this,0.8015
+16,87.0,90.0,SPEAKER_02,manager and this is our first,0.8015
+17,88.5,91.5,SPEAKER_02,"is our first meeting, surprisingly enough.",0.8015
+18,90.0,93.0,SPEAKER_02,"meeting, surprisingly enough. Okay,",0.7471
+19,91.5,94.5,SPEAKER_02,"Okay, this is",0.6928
+20,93.0,96.0,SPEAKER_02,this is our agenda. We will,0.7113
+21,94.5,97.5,SPEAKER_02,"our agenda. We will do some stuff, get to",0.7113
+22,96.0,99.0,SPEAKER_02,"do some stuff, get to know each other a",0.7299
+23,97.5,100.5,SPEAKER_02,"know each other a bit better, feel more comfortable",0.7299
+24,99.0,102.0,SPEAKER_02,"bit better, feel more comfortable with each other.",0.7299
+25,100.5,103.5,SPEAKER_02,with each other. Then we'll go,0.7781
+26,102.0,105.0,SPEAKER_02,"Then we'll go do tool training,",0.8262
+27,103.5,106.5,SPEAKER_02,"do tool training, talk about the",0.8262
+28,105.0,108.0,SPEAKER_02,"talk about the project plan, discuss our",0.8262
+29,106.5,109.5,SPEAKER_02,"project plan, discuss our own ideas and",0.8262
+30,108.0,111.0,SPEAKER_02,own ideas and everything. And,0.8122
+31,109.5,112.5,SPEAKER_02,everything. And we've got 25 minutes,0.8122
+32,111.0,114.0,SPEAKER_02,we've got 25 minutes to do that as,0.7981
+33,112.5,115.5,SPEAKER_02,to do that as far as I can,0.7981
+34,114.0,117.0,SPEAKER_02,far as I can understand.,0.7981
+35,115.5,118.5,SPEAKER_02,"understand. Now, we're developing",0.6795
+36,117.0,120.0,SPEAKER_02,"Now, we're developing remote control, which you",0.5609
+37,118.5,121.5,SPEAKER_02,"remote control, which you probably already know.",0.5609
+38,120.0,123.0,SPEAKER_02,probably already know. We,0.6522
+39,121.5,124.5,SPEAKER_02,We want it to be,0.7436
+40,123.0,126.0,SPEAKER_02,"want it to be original, something that people",0.7436
+41,124.5,127.5,SPEAKER_02,"original, something that people haven't thought of. It's not out",0.7477
+42,126.0,129.0,SPEAKER_02,haven't thought of. It's not out in the shops.,0.7477
+43,127.5,130.5,SPEAKER_02,"in the shops. Trendy, appealing",0.8001
+44,129.0,132.0,SPEAKER_02,"Trendy, appealing to a wide market,",0.8484
+45,130.5,133.5,SPEAKER_02,"to a wide market, but not a",0.8484
+46,132.0,135.0,SPEAKER_02,but not a hunk of metal.,0.8484
+47,133.5,136.5,SPEAKER_02,"hunk of metal. And user-friendly,",0.8181
+48,135.0,138.0,SPEAKER_02,"And user-friendly, grannies to kids,",0.7878
+49,136.5,139.5,SPEAKER_02,"grannies to kids, maybe even pooches, should",0.7878
+50,138.0,141.0,SPEAKER_02,"maybe even pooches, should be able to",0.7878
+51,139.5,142.5,SPEAKER_02,be able to use it.,0.7878
+52,141.0,144.0,SPEAKER_02,"use it. Okay, first",0.7847
+53,142.5,145.5,SPEAKER_02,"Okay, first is the functional",0.7817
+54,144.0,147.0,SPEAKER_02,is the functional design. This,0.7832
+55,145.5,148.5,SPEAKER_02,design. This is where we all go off and do,0.7832
+56,147.0,150.0,SPEAKER_02,is where we all go off and do our individual work.,0.7847
+57,148.5,151.5,SPEAKER_02,our individual work. What needs need,0.8016
+58,150.0,153.0,SPEAKER_02,What needs need to be fulfilled by,0.8186
+59,151.5,154.5,SPEAKER_02,"to be fulfilled by the product, what effect the",0.8186
+60,153.0,156.0,SPEAKER_02,"the product, what effect the product has to have,",0.8186
+61,154.5,157.5,SPEAKER_02,"product has to have, and how it's actually going",0.8186
+62,156.0,159.0,SPEAKER_02,and how it's actually going to do that.,0.8186
+63,157.5,160.5,SPEAKER_02,"to do that. Conceptual design,",0.81
+64,159.0,162.0,SPEAKER_02,"Conceptual design, what we're thinking, how it's going",0.8015
+65,160.5,163.5,SPEAKER_02,"what we're thinking, how it's going to go, and then the",0.8015
+66,162.0,165.0,SPEAKER_02,"to go, and then the detailed design, how we're actually",0.8015
+67,163.5,166.5,SPEAKER_02,"detailed design, how we're actually going to put it into",0.8015
+68,165.0,168.0,SPEAKER_02,going to put it into practice and make it work.,0.8015
+69,166.5,169.5,SPEAKER_02,practice and make it work.,0.8015
+70,169.5,172.5,SPEAKER_02,OK. Right. We're,0.8176
+71,171.0,174.0,SPEAKER_02,Right. We're going to practice with,0.8176
+72,172.5,175.5,SPEAKER_02,going to practice with the pens and,0.7467
+73,174.0,177.0,SPEAKER_02,the pens and draw our favourite animal,0.7467
+74,175.5,178.5,SPEAKER_02,draw our favourite animal on the whiteboard.,0.7849
+75,177.0,180.0,SPEAKER_02,on the whiteboard. I'll go first.,0.8002
+76,178.5,181.5,SPEAKER_02,I'll go first. And sum up the,0.8269
+77,180.0,183.0,SPEAKER_02,And sum up the characteristics of that,0.8309
+78,181.5,184.5,SPEAKER_02,characteristics of that animal.,0.7836
+79,184.5,187.5,SPEAKER_02,OK. At least,0.7363
+80,186.0,189.0,SPEAKER_02,At least space,0.7363
+81,241.5,244.5,SPEAKER_02,We're running out of blue.,0.357
+82,243.0,246.0,SPEAKER_02,We're running out of blue.,0.357
+83,246.0,249.0,SPEAKER_02,OK. I'm not going to ask you to guess.,0.6783
+84,247.5,250.5,SPEAKER_02,I'm not going to ask you to guess. I'm going to tell you that's supposed to be a,0.622
+85,249.0,252.0,SPEAKER_02,I'm going to tell you that's supposed to be a tiger. And,0.7667
+86,250.5,253.5,SPEAKER_02,tiger. And I,0.7667
+87,271.5,274.5,SPEAKER_02,No. Who would like to go next?,0.7424
+88,283.5,286.5,SPEAKER_01,Where does this come from?,0.5312
+89,286.5,289.5,SPEAKER_02,There you go.,0.4933
+90,292.5,295.5,SPEAKER_01,Maybe you can guess what,0.8621
+91,294.0,297.0,SPEAKER_01,Maybe you can guess what I'm trying to make.,0.8621
+92,295.5,298.5,SPEAKER_01,I'm trying to make.,0.8621
+93,304.5,307.5,SPEAKER_03,A kind of talk.,0.8095
+94,306.0,309.0,SPEAKER_03,A kind of talk.,0.8095
+95,312.0,315.0,SPEAKER_01,It's actually sitting.,0.73
+96,313.5,316.5,SPEAKER_01,It's actually sitting. Sorry.,0.73
+97,315.0,318.0,SPEAKER_01,Sorry. It's sitting. It's,0.8167
+98,316.5,319.5,SPEAKER_01,It's sitting. It's not standing. Okay.,0.7968
+99,318.0,321.0,SPEAKER_01,not standing. Okay. I see it as one thing. It's,0.8117
+100,319.5,322.5,SPEAKER_01,I see it as one thing. It's very supportive.,0.8042
+101,322.5,325.5,SPEAKER_01,It's your best friend in you.,0.9
+102,324.0,327.0,SPEAKER_01,It's your best friend in you. You can talk to a dog.,0.8498
+103,325.5,328.5,SPEAKER_01,You can talk to a dog. It can be a best friend. It doesn't discriminate,0.8414
+104,327.0,330.0,SPEAKER_01,It can be a best friend. It doesn't discriminate between you based on what,0.8414
+105,328.5,331.5,SPEAKER_01,between you based on what you are.,0.7898
+106,330.0,333.0,SPEAKER_01,"you are. Second, it's",0.7942
+107,331.5,334.5,SPEAKER_01,"Second, it's loyal.",0.7987
+108,334.5,337.5,SPEAKER_01,"And third thing, it's",0.8963
+109,336.0,339.0,SPEAKER_01,"third thing, it's got intuition.",0.8963
+110,340.5,343.5,SPEAKER_01,Dogs can sometimes make out between,0.8328
+111,342.0,345.0,SPEAKER_01,sometimes make out between a thief and a,0.8328
+112,343.5,346.5,SPEAKER_01,"a thief and a person. So basically, these",0.8531
+113,345.0,348.0,SPEAKER_01,"person. So basically, these are the three unique features I",0.8531
+114,346.5,349.5,SPEAKER_01,are the three unique features I think belong to a dog.,0.8734
+115,348.0,351.0,SPEAKER_01,think belong to a dog.,0.8734
+116,352.5,355.5,SPEAKER_03,Please leave me a,0.7096
+117,354.0,357.0,SPEAKER_03,Please leave me a space at the,0.7096
+118,355.5,358.5,SPEAKER_03,"space at the bottom, I'm little, I",0.7096
+119,357.0,360.0,SPEAKER_03,"bottom, I'm little, I can get to the",0.7096
+120,358.5,361.5,SPEAKER_03,can get to the top. I'll be standing on,0.7004
+121,363.0,366.0,SPEAKER_00,"have chosen the ones I wanted to do, I have to",0.5595
+122,364.5,367.5,SPEAKER_00,"to do, I have to go for something a bit",0.5595
+123,366.0,369.0,SPEAKER_00,go for something a bit random.,0.5595
+124,370.5,373.5,SPEAKER_00,And also my drawing skill isn't that,0.7721
+125,379.5,382.5,SPEAKER_00,going to have to change what it was originally going to be,0.6169
+126,381.0,384.0,SPEAKER_00,it was originally going to be because that looks like a,0.6169
+127,382.5,385.5,SPEAKER_00,because that looks like a beak now.,0.6169
+128,393.0,396.0,SPEAKER_00,"Yeah, it can be a crocodile.",0.8227
+129,394.5,397.5,SPEAKER_00,can be a crocodile. It can be a crocodile.,0.8227
+130,396.0,399.0,SPEAKER_00,It can be a crocodile.,0.853
+131,399.0,402.0,SPEAKER_00,"Firstly, it was an attempt at a",0.701
+132,400.5,403.5,SPEAKER_00,"was an attempt at a T-rex, and then it",0.701
+133,402.0,405.0,SPEAKER_00,"T-rex, and then it sort of changed into a",0.701
+134,403.5,406.5,SPEAKER_00,"sort of changed into a pelican, but it can",0.701
+135,405.0,408.0,SPEAKER_00,"pelican, but it can be a crocodile.",0.701
+136,406.5,409.5,SPEAKER_00,be a crocodile.,0.701
+137,423.0,426.0,SPEAKER_00,on the spot of things that it is.,0.7798
+138,424.5,427.5,SPEAKER_00,that it is.,0.7798
+139,438.0,441.0,SPEAKER_00,"Yeah, that's about it,",0.3392
+140,439.5,442.5,SPEAKER_00,"that's about it, I think.",0.3392
+141,442.5,445.5,SPEAKER_03,I'm very impressed with your artistic skills.,0.8139
+142,444.0,447.0,SPEAKER_03,impressed with your artistic skills. Minds are dreadful.,0.8139
+143,445.5,448.5,SPEAKER_03,"Minds are dreadful. Oops, this",0.7597
+144,447.0,450.0,SPEAKER_03,"Oops, this is now coming apart. Let me",0.7643
+145,448.5,451.5,SPEAKER_03,is now coming apart. Let me just put the top in.,0.7643
+146,450.0,453.0,SPEAKER_03,just put the top in.,0.7644
+147,453.0,456.0,SPEAKER_03,I hope that clicks in. I'll hold it,0.7667
+148,454.5,457.5,SPEAKER_03,that clicks in. I'll hold it on.,0.7667
+149,456.0,459.0,SPEAKER_03,"on. Oops, oh dear.",0.769
+150,457.5,460.5,SPEAKER_03,"Oops, oh dear. What happened there?",0.6493
+151,463.5,466.5,SPEAKER_03,Hopefully I'll stay on.,0.8442
+152,465.0,468.0,SPEAKER_03,Hopefully I'll stay on. Two-handed,0.8171
+153,472.5,475.5,SPEAKER_03,"Again, this is off the top",0.8551
+154,474.0,477.0,SPEAKER_03,"Again, this is off the top of my head. I was going to do a",0.8013
+155,475.5,478.5,SPEAKER_03,of my head. I was going to do a big cat too.,0.8013
+156,477.0,480.0,SPEAKER_03,big cat too.,0.7474
+157,480.0,483.0,SPEAKER_03,It doesn't look like what I want it to,0.7852
+158,481.5,484.5,SPEAKER_03,doesn't look like what I want it to be.,0.7852
+159,489.0,492.0,SPEAKER_03,It's not a vampire,0.783
+160,490.5,493.5,SPEAKER_03,"a vampire bat, honestly.",0.7942
+161,492.0,495.0,SPEAKER_03,"bat, honestly. Somewhere there's a body behind.",0.7942
+162,493.5,496.5,SPEAKER_03,Somewhere there's a body behind.,0.8054
+163,496.5,499.5,SPEAKER_03,"That's my dreadful, that's the",0.8833
+164,498.0,501.0,SPEAKER_03,"my dreadful, that's the worst, yeah. It's meant to",0.7999
+165,499.5,502.5,SPEAKER_03,"worst, yeah. It's meant to be an eagle. You can",0.7967
+166,501.0,504.0,SPEAKER_03,be an eagle. You can tell it's a flying,0.7534
+167,502.5,505.5,SPEAKER_03,tell it's a flying animal.,0.7903
+168,504.0,507.0,SPEAKER_03,"animal. Could have been a seagull, I never",0.7643
+169,505.5,508.5,SPEAKER_03,"Could have been a seagull, I never thought of a seagull. Again,",0.8195
+170,507.0,510.0,SPEAKER_03,"thought of a seagull. Again, I'm thinking on my",0.8195
+171,508.5,511.5,SPEAKER_03,"I'm thinking on my feet, goodness.",0.9006
+172,510.0,513.0,SPEAKER_03,"feet, goodness. Suppose they're also",0.8691
+173,511.5,514.5,SPEAKER_03,"Suppose they're also independent, I put",0.8377
+174,513.0,516.0,SPEAKER_03,"independent, I put that one down",0.8377
+175,514.5,517.5,SPEAKER_03,that one down again.,0.8377
+176,517.5,520.5,SPEAKER_03,They're good at,0.5655
+177,519.0,522.0,SPEAKER_03,"good at golf. Independent,",0.7195
+178,520.5,523.5,SPEAKER_03,"golf. Independent, right? Did you",0.6908
+179,522.0,525.0,SPEAKER_03,right? Did you say they're good at golf? Yeah.,0.6295
+180,523.5,526.5,SPEAKER_03,say they're good at golf? Yeah. Are they? Eagle.,0.5391
+181,525.0,528.0,SPEAKER_03,"Are they? Eagle. Oh, right, okay.",0.6329
+182,526.5,529.5,SPEAKER_03,"Oh, right, okay. I'm not good at golf.",0.6926
+183,528.0,531.0,SPEAKER_03,I'm not good at golf. I'll say they're,0.7762
+184,529.5,532.5,SPEAKER_03,"I'll say they're quite free spirited,",0.8031
+185,531.0,534.0,SPEAKER_03,"quite free spirited, flying around",0.8031
+186,532.5,535.5,SPEAKER_03,"flying around everywhere, doing their",0.8031
+187,534.0,537.0,SPEAKER_03,"everywhere, doing their own thing.",0.8031
+188,540.0,543.0,SPEAKER_03,And birds of,0.8352
+189,541.5,544.5,SPEAKER_03,"And birds of prey, aren't",0.8352
+190,543.0,546.0,SPEAKER_03,"prey, aren't they? Oh dear.",0.8294
+191,544.5,547.5,SPEAKER_03,they? Oh dear. Intrepid.,0.8602
+192,552.0,555.0,SPEAKER_03,There we go. I,0.8382
+193,553.5,556.5,SPEAKER_03,There we go. I hope that,0.8382
+194,555.0,558.0,SPEAKER_03,hope that pen is,0.7331
+195,556.5,559.5,SPEAKER_03,pen is going to,0.7331
+196,558.0,561.0,SPEAKER_03,going to be OK. Whoops.,0.7331
+197,562.5,565.5,SPEAKER_02,That was fine. Right.,0.6892
+198,564.0,567.0,SPEAKER_02,"fine. Right. Finance wise,",0.7417
+199,565.5,568.5,SPEAKER_02,"Finance wise, we've got a selling price",0.8467
+200,567.0,570.0,SPEAKER_02,"we've got a selling price at 25 euros, which",0.8467
+201,568.5,571.5,SPEAKER_02,"at 25 euros, which I don't actually know what",0.8467
+202,570.0,573.0,SPEAKER_02,I don't actually know what that is in pounds,0.8467
+203,571.5,574.5,SPEAKER_02,that is in pounds at all.,0.8467
+204,576.0,579.0,SPEAKER_01,17. Yeah. 1.4 euro would,0.6957
+205,577.5,580.5,SPEAKER_01,1.4 euro would make a bond,0.6422
+206,579.0,582.0,SPEAKER_01,make a bond or something,0.6422
+207,580.5,583.5,SPEAKER_01,or something like that.,0.6422
+208,583.5,586.5,SPEAKER_00,"Yeah, yeah, something like that. Yeah, about 17 pounds.",0.3352
+209,585.0,588.0,SPEAKER_00,"like that. Yeah, about 17 pounds. OK. That's expensive.",0.3801
+210,595.5,598.5,SPEAKER_00,"said that though, if you want to get one of those,",0.758
+211,597.0,600.0,SPEAKER_00,"want to get one of those, the ones on the market at",0.758
+212,598.5,601.5,SPEAKER_00,"the ones on the market at the moment, they're about 20",0.758
+213,600.0,603.0,SPEAKER_00,"the moment, they're about 20 pounds anyway.",0.758
+214,601.5,604.5,SPEAKER_00,pounds anyway. Right.,0.6115
+215,603.0,606.0,SPEAKER_00,"Right. Yeah, we have",0.5585
+216,604.5,607.5,SPEAKER_00,"Yeah, we have to buy one.",0.652
+217,609.0,612.0,SPEAKER_03,"it depends if we want to undercut the price, or is it going",0.7853
+218,610.5,613.5,SPEAKER_03,"the price, or is it going to make our product look a cheapy",0.7853
+219,615.0,618.0,SPEAKER_02,"production costs at 12.50, so",0.8472
+220,616.5,619.5,SPEAKER_02,"12.50, so half of the",0.8472
+221,618.0,621.0,SPEAKER_02,half of the selling price is,0.8472
+222,619.5,622.5,SPEAKER_02,selling price is taken out by,0.8472
+223,621.0,624.0,SPEAKER_02,taken out by building it.,0.8472
+224,622.5,625.5,SPEAKER_02,building it. And profit,0.8188
+225,624.0,627.0,SPEAKER_02,And profit aim is 50,0.7904
+226,625.5,628.5,SPEAKER_02,"aim is 50 million euros,",0.7904
+227,627.0,630.0,SPEAKER_02,"million euros, which is...",0.7904
+228,633.0,636.0,SPEAKER_02,"Yeah, I presume",0.7745
+229,634.5,637.5,SPEAKER_02,I presume so.,0.7745
+230,637.5,640.5,SPEAKER_03,"You've got Market Range International, and you",0.8681
+231,639.0,642.0,SPEAKER_03,"Range International, and you did say earlier it's got",0.8681
+232,640.5,643.5,SPEAKER_03,did say earlier it's got to be accessible and usable,0.8681
+233,642.0,645.0,SPEAKER_03,to be accessible and usable by all age groups.,0.8681
+234,643.5,646.5,SPEAKER_03,by all age groups. We're,0.8454
+235,645.0,648.0,SPEAKER_03,"We're not focusing on business market,",0.8227
+236,646.5,649.5,SPEAKER_03,"not focusing on business market, any particular thing. It's",0.7761
+237,648.0,651.0,SPEAKER_03,"any particular thing. It's everyone,",0.7761
+238,649.5,652.5,SPEAKER_03,"everyone, user-friendly to",0.7294
+239,651.0,654.0,SPEAKER_03,user-friendly to everyone. Big target,0.7176
+240,655.5,658.5,SPEAKER_02,I don't think we have,0.8468
+241,657.0,660.0,SPEAKER_02,think we have to I don't,0.8325
+242,658.5,661.5,SPEAKER_02,to I don't think it's a,0.8325
+243,660.0,663.0,SPEAKER_02,think it's a case of worrying,0.8325
+244,661.5,664.5,SPEAKER_02,case of worrying about different,0.8325
+245,663.0,666.0,SPEAKER_02,about different languages and things,0.8325
+246,664.5,667.5,SPEAKER_02,languages and things like that Making,0.8325
+247,666.0,669.0,SPEAKER_02,like that Making that key point,0.8325
+248,667.5,670.5,SPEAKER_02,that key point just that it's,0.8325
+249,669.0,672.0,SPEAKER_02,just that it's going to,0.8325
+250,670.5,673.5,SPEAKER_02,going to be an international,0.8325
+251,672.0,675.0,SPEAKER_02,be an international market like Australia,0.8325
+252,673.5,676.5,SPEAKER_02,market like Australia America things like,0.8325
+253,675.0,678.0,SPEAKER_02,America things like that Okay What,0.8325
+254,676.5,679.5,SPEAKER_02,that Okay What I,0.8212
+255,678.0,681.0,SPEAKER_02,"I mean, we had",0.8212
+256,679.5,682.5,SPEAKER_02,"mean, we had three videos, a",0.8099
+257,681.0,684.0,SPEAKER_02,"three videos, a TV and a",0.8099
+258,682.5,685.5,SPEAKER_02,TV and a sort of,0.8099
+259,684.0,687.0,SPEAKER_02,sort of amp thing all,0.8099
+260,685.5,688.5,SPEAKER_02,amp thing all set up.,0.7929
+261,687.0,690.0,SPEAKER_02,set up. So we got one of,0.7929
+262,688.5,691.5,SPEAKER_02,So we got one of the universal remote controls,0.7759
+263,690.0,693.0,SPEAKER_02,the universal remote controls that you program each of,0.7759
+264,691.5,694.5,SPEAKER_02,that you program each of your things into.,0.7759
+265,693.0,696.0,SPEAKER_02,your things into. But that kept losing,0.7982
+266,694.5,697.5,SPEAKER_02,"But that kept losing the signals, so we'd have",0.8204
+267,696.0,699.0,SPEAKER_02,"the signals, so we'd have to reprogram it every now and",0.8204
+268,697.5,700.5,SPEAKER_02,to reprogram it every now and again. I think it was quite cheapy,0.7971
+269,699.0,702.0,SPEAKER_02,again. I think it was quite cheapy as well. So that might have had,0.7936
+270,700.5,703.5,SPEAKER_02,as well. So that might have had something to do with it. But that was quite,0.7201
+271,702.0,705.0,SPEAKER_02,"something to do with it. But that was quite good, the fact that you could",0.6933
+272,703.5,706.5,SPEAKER_02,"good, the fact that you could used all the ones you",0.6329
+273,705.0,708.0,SPEAKER_02,used all the ones you didn't have six remote controls.,0.6657
+274,708.0,711.0,SPEAKER_01,You want to integrate everything into one.,0.7291
+275,709.5,712.5,SPEAKER_01,want to integrate everything into one.,0.7291
+276,711.0,714.0,SPEAKER_03,My experience has,0.8451
+277,712.5,715.5,SPEAKER_03,My experience has only been given the,0.8451
+278,714.0,717.0,SPEAKER_03,only been given the remote control with the object,0.8451
+279,715.5,718.5,SPEAKER_03,"remote control with the object I buy, not doing",0.8451
+280,717.0,720.0,SPEAKER_03,"I buy, not doing any tampering with it and",0.8451
+281,718.5,721.5,SPEAKER_03,"any tampering with it and programming, using it to",0.8451
+282,720.0,723.0,SPEAKER_03,"programming, using it to program TV videos and",0.8451
+283,721.5,724.5,SPEAKER_03,"program TV videos and things, but basically on-off volume",0.8451
+284,723.0,726.0,SPEAKER_03,"things, but basically on-off volume up and down, channel",0.8451
+285,724.5,727.5,SPEAKER_03,"up and down, channel one to that basic function.",0.8451
+286,726.0,729.0,SPEAKER_03,one to that basic function. I don't think I could go any,0.8696
+287,727.5,730.5,SPEAKER_03,"I don't think I could go any further with it. than that, so",0.8407
+288,729.0,732.0,SPEAKER_03,"further with it. than that, so I suppose it's got to",0.8386
+289,730.5,733.5,SPEAKER_03,I suppose it's got to be something usable by,0.7831
+290,732.0,735.0,SPEAKER_03,be something usable by someone like me as well.,0.7831
+291,735.0,738.0,SPEAKER_02,"Yeah, that's the main stuff anyway. I mean,",0.8057
+292,736.5,739.5,SPEAKER_02,"stuff anyway. I mean, and you don't want",0.8057
+293,738.0,741.0,SPEAKER_02,"and you don't want to, I hate looking at",0.7777
+294,739.5,742.5,SPEAKER_02,"to, I hate looking at a control and seeing",0.7777
+295,741.0,744.0,SPEAKER_02,a control and seeing a million tiny little buttons,0.7777
+296,742.5,745.5,SPEAKER_02,a million tiny little buttons with tiny little words,0.7777
+297,744.0,747.0,SPEAKER_02,with tiny little words saying what they all do,0.7777
+298,745.5,748.5,SPEAKER_02,saying what they all do and just sitting there,0.7777
+299,747.0,750.0,SPEAKER_02,and just sitting there searching for the text button,0.7777
+300,751.5,754.5,SPEAKER_03,"And symbols that you don't necessarily understand, symbols",0.6121
+301,753.0,756.0,SPEAKER_03,"don't necessarily understand, symbols you're meant to understand",0.6121
+302,757.5,760.5,SPEAKER_02,when you've got the main things on the,0.8392
+303,759.0,762.0,SPEAKER_02,main things on the front of it and,0.8392
+304,760.5,763.5,SPEAKER_02,front of it and a section opens up,0.8392
+305,762.0,765.0,SPEAKER_02,a section opens up or something to the,0.8392
+306,763.5,766.5,SPEAKER_02,or something to the other functions when you,0.8392
+307,765.0,768.0,SPEAKER_02,other functions when you can do sound or,0.8392
+308,766.5,769.5,SPEAKER_02,can do sound or options kind of recording,0.8392
+309,768.0,771.0,SPEAKER_02,options kind of recording things like that inside it,0.8392
+310,769.5,772.5,SPEAKER_02,things like that inside it because it doesn't make,0.8392
+311,771.0,774.0,SPEAKER_02,because it doesn't make when you pick it,0.8392
+312,772.5,775.5,SPEAKER_02,when you pick it up it doesn't make,0.8392
+313,774.0,777.0,SPEAKER_02,up it doesn't make it really complicated to,0.8392
+314,775.5,778.5,SPEAKER_02,it really complicated to look at it's obvious,0.8392
+315,780.0,783.0,SPEAKER_03,that just raises a point. I wonder what our design people think.,0.746
+316,781.5,784.5,SPEAKER_03,what our design people think. But you know on a mobile,0.7643
+317,783.0,786.0,SPEAKER_03,"But you know on a mobile phone, you can press a key",0.8129
+318,784.5,787.5,SPEAKER_03,"phone, you can press a key and it gives you a menu. It's",0.6119
+319,786.0,789.0,SPEAKER_03,and it gives you a menu. It's got a menu display. I wonder,0.6869
+320,787.5,790.5,SPEAKER_03,got a menu display. I wonder if incorporating that into the design,0.624
+321,789.0,792.0,SPEAKER_03,if incorporating that into the design of a remote control might,0.8371
+322,790.5,793.5,SPEAKER_03,of a remote control might be useful. So you've got,0.8064
+323,795.0,798.0,SPEAKER_01,"I was thinking on the same lines, you instead of having too",0.835
+324,796.5,799.5,SPEAKER_01,"lines, you instead of having too many buttons and make it complicated",0.835
+325,798.0,801.0,SPEAKER_01,many buttons and make it complicated for the user. Maybe have an,0.6775
+326,799.5,802.5,SPEAKER_01,for the user. Maybe have an LCD display or something like,0.6775
+327,801.0,804.0,SPEAKER_01,"LCD display or something like that, like a mobile.",0.647
+328,802.5,805.5,SPEAKER_01,"that, like a mobile. With menus.",0.647
+329,804.0,807.0,SPEAKER_01,With menus. And if it's somewhat,0.7726
+330,805.5,808.5,SPEAKER_01,And if it's somewhat similar to what you have on mobile,0.7726
+331,807.0,810.0,SPEAKER_01,"similar to what you have on mobile phone, people might find it easier to",0.7711
+332,811.5,814.5,SPEAKER_02,What about the older generation? What about Granny,0.6595
+333,813.0,816.0,SPEAKER_02,the older generation? What about Granny and Granddad's?,0.6595
+334,814.5,817.5,SPEAKER_02,and Granddad's? My Granddad,0.6158
+335,816.0,819.0,SPEAKER_02,My Granddad can answer his mobile,0.6492
+336,817.5,820.5,SPEAKER_02,"can answer his mobile phone, but he couldn't",0.6492
+337,819.0,822.0,SPEAKER_02,"phone, but he couldn't even dream of texting or",0.6492
+338,820.5,823.5,SPEAKER_02,even dream of texting or something like that.,0.6492
+339,823.5,826.5,SPEAKER_03,Can he program his remote controller? Is he,0.806
+340,825.0,828.0,SPEAKER_03,his remote controller? Is he basic with that too?,0.806
+341,831.0,834.0,SPEAKER_00,is actually better than me at using teletext.,0.5056
+342,834.0,837.0,SPEAKER_03,So that's a problem regardless of any,0.8867
+343,835.5,838.5,SPEAKER_03,problem regardless of any design modifications you come up,0.8867
+344,837.0,840.0,SPEAKER_03,design modifications you come up with. That's going,0.8254
+345,838.5,841.5,SPEAKER_03,with. That's going to be a problem anyway with,0.8254
+346,840.0,843.0,SPEAKER_03,to be a problem anyway with the older generation perhaps and that's,0.764
+347,841.5,844.5,SPEAKER_03,the older generation perhaps and that's another issue how we tackle,0.764
+348,846.0,849.0,SPEAKER_00,to be as long as it's sort of self-intuitive and you,0.5658
+349,847.5,850.5,SPEAKER_00,sort of self-intuitive and you can work out,0.5658
+350,849.0,852.0,SPEAKER_00,can work out why everything's doing.,0.6974
+351,850.5,853.5,SPEAKER_00,"why everything's doing. Because I mean,",0.7601
+352,852.0,855.0,SPEAKER_00,"Because I mean, menus on phones now,",0.6913
+353,853.5,856.5,SPEAKER_00,"menus on phones now, they've got all",0.6913
+354,855.0,858.0,SPEAKER_00,"they've got all these pictures and stuff,",0.6913
+355,856.5,859.5,SPEAKER_00,"these pictures and stuff, which makes it fairly",0.6913
+356,858.0,861.0,SPEAKER_00,which makes it fairly obvious what you're,0.6913
+357,862.5,865.5,SPEAKER_02,I don't know how.,0.793
+358,864.0,867.0,SPEAKER_02,know how. I don't,0.8218
+359,865.5,868.5,SPEAKER_02,I don't like the new phones,0.8507
+360,867.0,870.0,SPEAKER_02,like the new phones that kind of got,0.8507
+361,868.5,871.5,SPEAKER_02,that kind of got a windows-based running system.,0.8507
+362,870.0,873.0,SPEAKER_02,a windows-based running system.,0.8507
+363,871.5,874.5,SPEAKER_02,I find it really confusing.,0.8558
+364,873.0,876.0,SPEAKER_02,I find it really confusing. I kept getting,0.8221
+365,874.5,877.5,SPEAKER_02,I kept getting lost in the phone. I have,0.7931
+366,876.0,879.0,SPEAKER_02,"lost in the phone. I have not got a new one, but my friend got",0.7592
+367,877.5,880.5,SPEAKER_02,"not got a new one, but my friend got a new one. I was",0.7481
+368,879.0,882.0,SPEAKER_02,a new one. I was trying to do things with,0.7481
+369,880.5,883.5,SPEAKER_02,"trying to do things with it, and I just",0.7611
+370,882.0,885.0,SPEAKER_02,"it, and I just kept getting lost. That's just me.",0.8219
+371,886.5,889.5,SPEAKER_00,don't know how for 25 or 12 euros,0.7551
+372,888.0,891.0,SPEAKER_00,25 or 12 euros 50 how much,0.7551
+373,889.5,892.5,SPEAKER_00,50 how much of an excellent screen,0.7551
+374,891.0,894.0,SPEAKER_00,of an excellent screen you could get. You'd,0.7309
+375,892.5,895.5,SPEAKER_00,you could get. You'd have to sort of keep,0.7309
+376,894.0,897.0,SPEAKER_00,have to sort of keep it down to a,0.7067
+377,895.5,898.5,SPEAKER_00,it down to a black and white LCD thing.,0.7067
+378,898.5,901.5,SPEAKER_03,Is it possible that for the older generation you could have like an,0.8408
+379,900.0,903.0,SPEAKER_03,older generation you could have like an extra button that you press for large,0.8408
+380,901.5,904.5,SPEAKER_03,extra button that you press for large print like you do in large print,0.8408
+381,903.0,906.0,SPEAKER_03,print like you do in large print books? Obviously,0.811
+382,904.5,907.5,SPEAKER_03,books? Obviously it displays less on the screen.,0.811
+383,906.0,909.0,SPEAKER_03,it displays less on the screen. It displays less,0.8461
+384,907.5,910.5,SPEAKER_03,It displays less on the screen but as long as they,0.8461
+385,912.0,915.0,SPEAKER_02,Yeah. What about,0.6843
+386,913.5,916.5,SPEAKER_02,What about kind of a,0.8545
+387,915.0,918.0,SPEAKER_02,kind of a dual function in,0.8545
+388,916.5,919.5,SPEAKER_02,dual function in that you've got the,0.8545
+389,918.0,921.0,SPEAKER_02,that you've got the basic buttons just,0.8545
+390,919.5,922.5,SPEAKER_02,"basic buttons just for your play,",0.8545
+391,921.0,924.0,SPEAKER_02,"for your play, volume, program, things.",0.8545
+392,922.5,925.5,SPEAKER_02,"volume, program, things. And also,",0.8551
+393,924.0,927.0,SPEAKER_02,"And also, and then a menu",0.8556
+394,925.5,928.5,SPEAKER_02,and then a menu to go into,0.8556
+395,927.0,930.0,SPEAKER_02,"to go into with obvious pictures, obvious",0.8556
+396,928.5,931.5,SPEAKER_02,"with obvious pictures, obvious symbols, and that's",0.8556
+397,930.0,933.0,SPEAKER_02,"symbols, and that's where you control",0.8556
+398,931.5,934.5,SPEAKER_02,where you control recording and things like,0.8556
+399,936.0,939.0,SPEAKER_03,"is, just tacking into mobile phone design features again,",0.8402
+400,937.5,940.5,SPEAKER_03,"mobile phone design features again, you could have a flip",0.8402
+401,939.0,942.0,SPEAKER_03,you could have a flip top remote control so,0.8402
+402,940.5,943.5,SPEAKER_03,top remote control so that when you flip over,0.8402
+403,942.0,945.0,SPEAKER_03,"that when you flip over the top, you can have",0.8402
+404,943.5,946.5,SPEAKER_03,"the top, you can have a bigger screen in",0.8402
+405,945.0,948.0,SPEAKER_03,a bigger screen in the flip over.,0.8402
+406,951.0,954.0,SPEAKER_01,much we're going to know about. It might save a bit,0.4824
+407,952.5,955.5,SPEAKER_01,about. It might save a bit of space. Instead of,0.4907
+408,954.0,957.0,SPEAKER_01,"of space. Instead of looking bulky, it might look",0.5028
+409,955.5,958.5,SPEAKER_01,"looking bulky, it might look small. But it might have",0.5795
+410,960.0,963.0,SPEAKER_03,there's no reason we need to make it look as fashionable and stylish as,0.7592
+411,961.5,964.5,SPEAKER_03,it look as fashionable and stylish as a mobile phone. It can,0.7723
+412,963.0,966.0,SPEAKER_03,a mobile phone. It can still be lightweight,0.7723
+413,964.5,967.5,SPEAKER_03,"still be lightweight plastic, something that's",0.7854
+414,966.0,969.0,SPEAKER_03,"plastic, something that's easily molded and produced.",0.7854
+415,967.5,970.5,SPEAKER_03,easily molded and produced. Sorry I'm,0.7799
+416,969.0,972.0,SPEAKER_03,Sorry I'm trading on your,0.7799
+417,970.5,973.5,SPEAKER_03,trading on your territory guys.,0.7744
+418,973.5,976.5,SPEAKER_02,"Right, okay we've got half an hour before the next",0.6856
+419,975.0,978.0,SPEAKER_02,an hour before the next meeting so we're all going,0.6856
+420,976.5,979.5,SPEAKER_02,meeting so we're all going to go off and do our,0.6856
+421,978.0,981.0,SPEAKER_02,to go off and do our individual things.,0.6856
+422,979.5,982.5,SPEAKER_02,individual things. I think that's,0.7362
+423,981.0,984.0,SPEAKER_02,I think that's probably about it and,0.7868
+424,982.5,985.5,SPEAKER_02,probably about it and then we'll come back,0.7868
+425,984.0,987.0,SPEAKER_02,then we'll come back in days again and,0.7868
+426,985.5,988.5,SPEAKER_02,in days again and I get to do,0.7868
+427,990.0,993.0,SPEAKER_00,"Just a quick thing about the, what you're",0.8566
+428,991.5,994.5,SPEAKER_00,"about the, what you're saying about the, it",0.8566
+429,993.0,996.0,SPEAKER_00,"saying about the, it doesn't need to",0.8566
+430,994.5,997.5,SPEAKER_00,doesn't need to be fashionable.,0.8174
+431,996.0,999.0,SPEAKER_00,be fashionable. So I had a quick,0.8174
+432,997.5,1000.5,SPEAKER_00,So I had a quick look at the company website,0.7781
+433,999.0,1002.0,SPEAKER_00,look at the company website and it's like the we,0.7972
+434,1000.5,1003.5,SPEAKER_00,and it's like the we put the,0.7972
+435,1002.0,1005.0,SPEAKER_00,put the fashion into electronics.,0.8162
+436,1003.5,1006.5,SPEAKER_00,fashion into electronics. So I,0.7868
+437,1005.0,1008.0,SPEAKER_00,So I think the whole design,0.7573
+438,1006.5,1009.5,SPEAKER_00,"think the whole design thing might be quite,",0.7573
+439,1008.0,1011.0,SPEAKER_00,"thing might be quite, I mean you can",0.7573
+440,1009.5,1012.5,SPEAKER_00,I mean you can still have plastic and,0.7573
+441,1011.0,1014.0,SPEAKER_00,still have plastic and it'd look quite,0.7573
+442,1015.5,1018.5,SPEAKER_03,"mean it doesn't have to be, that was my main",0.6357
+443,1017.0,1020.0,SPEAKER_03,"be, that was my main point, we do have to",0.6357
+444,1018.5,1021.5,SPEAKER_03,"point, we do have to use metal, I don't know",0.6357
+445,1020.0,1023.0,SPEAKER_03,"use metal, I don't know if using plastic does make",0.6357
+446,1021.5,1024.5,SPEAKER_03,"if using plastic does make it cheaper, I presume it",0.6357
+447,1026.0,1029.0,SPEAKER_02,controls and everything. They're kind of molded and look a,0.7272
+448,1027.5,1030.5,SPEAKER_02,of molded and look a bit different than the tele-west,0.7713
+449,1029.0,1032.0,SPEAKER_02,bit different than the tele-west remote controls. So silver,0.7662
+450,1030.5,1033.5,SPEAKER_02,remote controls. So silver plastic which looks,0.7662
+451,1032.0,1035.0,SPEAKER_02,plastic which looks a bit smarter.,0.7611
+452,1033.5,1036.5,SPEAKER_02,"a bit smarter. So yeah, I",0.6762
+453,1035.0,1038.0,SPEAKER_02,"So yeah, I guess that's it.",0.4746
+454,1036.5,1039.5,SPEAKER_02,guess that's it. Okay. Okay.,0.5411
+455,1038.0,1041.0,SPEAKER_02,Okay. Okay. So let's break it,0.5836
+456,1039.5,1042.5,SPEAKER_02,So let's break it up there.,0.7188
+457,1041.0,1044.0,SPEAKER_02,up there. Okay. So see you in half an,0.5469
+458,1042.5,1045.5,SPEAKER_02,Okay. So see you in half an hour.,0.4609
+459,1045.5,1048.5,SPEAKER_03,Do we go back to our room?,0.7954
