@@ -1,0 +1,462 @@
+segment_id,start,end,speaker_id,transcript,asr_confidence
+0,0.03,15.49,SPEAKER_02,I'll wait until you're all picked up.,0.2149
+1,15.51,19.9,SPEAKER_02,"Oh, good grief.",0.177
+2,47.42,50.61,SPEAKER_02,He's been poked in his cup.,0.5015
+3,78.08,81.41,SPEAKER_02,Welcome back everybody.,0.8853
+4,81.43,83.73,SPEAKER_02,I hope you've had fun.,0.7214
+5,83.79,85.82,SPEAKER_02,Right.,0.9
+6,86.64,88.67,SPEAKER_02,This is our conceptual design meeting.,0.838
+7,89.85,94.6,SPEAKER_02,I think we're slightly ahead of ourselves.,0.8631
+8,94.73,95.75,SPEAKER_02,from the last meeting.,0.874
+9,96.16,98.24,SPEAKER_00,"Yeah, I was getting the impression as well.",0.4925
+10,98.26,98.9,SPEAKER_02,"I think, yeah.",0.792
+11,101.1,111.53,SPEAKER_02,"This is where we talk about properties, materials, user interface, and trend watching.",0.8284
+12,112.85,121.26,SPEAKER_02,"So I think we've touched on a few things to that already, but we'll just go over it.",0.8633
+13,122.95,133.72,SPEAKER_02,"The minutes from last time, we had a couple of changes in our plans in that we couldn't use teletext.",0.8192
+14,133.78,136.18,SPEAKER_02,It wasn't going to be a control for everything.,0.8193
+15,137.1,143.57,SPEAKER_02,And that we had to incorporate the image of the company into it somehow.,0.8911
+16,143.55,150.72,SPEAKER_02,We have decided on leaving out the voice recognition.,0.8296
+17,151.68,159.57,SPEAKER_02,We've decided on there being a flip design and a different shape from what's normal.,0.8469
+18,160.52,164.22,SPEAKER_02,"We were thinking a shell, but something along those lines, just a different shape from what's normal.",0.7143
+19,169.11,172.19,SPEAKER_02,You were going to look into the rechargeable batteries.,0.8624
+20,172.29,172.75,SPEAKER_00,Yep.,0.516
+21,173.49,178.82,SPEAKER_02,And we're going to think about the port and alarm for getting it lost and things like that.,0.7026
+22,179.7,187.63,SPEAKER_02,And our market was going to be young business kind of range.,0.7964
+23,188.76,191.3,SPEAKER_02,"OK, so should we start with the first presentation?",0.698
+24,191.32,192.0,SPEAKER_02,Shall I?,0.3745
+25,192.02,193.32,SPEAKER_02,"Yes, if you feel.",0.4123
+26,193.34,194.42,SPEAKER_03,We'll just connect up.,0.6877
+27,201.24,201.56,SPEAKER_03,Thank you.,0.392
+28,218.9,227.12,SPEAKER_03,"Okay, so we decided on our market and so this feedback from the marketing department is really about trend watching.",0.8674
+29,228.42,232.56,SPEAKER_03,The methods we use to decide on,0.867
+30,234.59,236.46,SPEAKER_03,"current trends and so on, market trends.",0.8593
+31,237.04,250.15,SPEAKER_03,"We did our usual market research study with our hundred subjects and the general feedback from them is that the most, I'm sorry, I'm slightly tongue tied after lunch, sorry.",0.8262
+32,251.46,256.58,SPEAKER_03,We decided on the most important aspect required in a remote control device and we'll come to that later.,0.8383
+33,256.62,258.1,SPEAKER_03,So that was one of the first things we did.,0.8737
+34,258.08,268.68,SPEAKER_03,"Also, with our company being forerunners in putting fashion into technology, we also looked at a fashion update using our consultants on fashion and design in Paris and Milan.",0.8607
+35,270.84,278.47,SPEAKER_03,"So the general findings from that was in the market trends, the most important aspects for remote controls were",0.8941
+36,278.45,285.14,SPEAKER_03,People want a fancy look and feel rather than the current functional look and feel of remote controls.,0.8522
+37,286.04,293.83,SPEAKER_03,They also want a remote control to be technologically innovative and of course as we predicted that it should be easy to use.,0.7911
+38,294.27,299.8,SPEAKER_03,"Now I should point out that the first of those findings, fancy look and feel, is the most important.",0.8376
+39,299.82,306.75,SPEAKER_03,It's twice as important as the second technologically innovative which is in turn twice as important as being easy to use.,0.808
+40,306.73,311.32,SPEAKER_03,So possibly that the feature that we put first is actually third.,0.8193
+41,311.38,316.26,SPEAKER_03,It's still important but it's third in order of preference for the subject group we looked at.,0.7939
+42,317.08,317.54,SPEAKER_03,Okay.,0.648
+43,317.56,323.92,SPEAKER_03,Now the fashion update which relates to very personal preferences among our subject group,0.7836
+44,323.9,334.72,SPEAKER_03,"We found from our consultants in Paris and Milan who attended all the design and fashion fairs then that fruit and vegetables are going to be the theme for clothes, shoes and furniture.",0.8445
+45,335.12,339.69,SPEAKER_03,So should we be thinking of using something like that in our remote control design too?,0.8188
+46,339.67,346.92,SPEAKER_03,There also seems to be a trend towards a spongy feel to materials again in contrast to last year.,0.8363
+47,347.94,353.73,SPEAKER_03,"So a lot of interesting feedback, they're both from our market research departments and from our people in Paris and Milan.",0.7016
+48,354.17,357.5,SPEAKER_03,It would be interesting to see what our design people make of that.,0.664
+49,357.54,358.48,SPEAKER_02,"Okay, thank you very much.",0.7372
+50,361.62,364.25,SPEAKER_02,Let's start from the inside and work our way out.,0.8231
+51,364.23,365.53,SPEAKER_03,"Yeah, okay.",0.2765
+52,365.55,367.85,SPEAKER_03,"Unless anyone has any questions about that, not yet.",0.7553
+53,372.18,383.38,SPEAKER_00,"Yes, thank you.",0.4503
+54,388.51,404.6,SPEAKER_02,"I hate those little things, especially if you do them on too tight and you can't get the leverage on them to undo them.",0.6671
+55,410.84,411.2,SPEAKER_00,OK.,0.767
+56,412.52,420.41,SPEAKER_00,This is all about the design of the entry components and the availability of the components we have in stock at the moment.,0.8419
+57,422.67,435.37,SPEAKER_00,"OK. First, into the method, the main idea of the whole thing is just so you just press buttons and it should activate things on the TV.",0.8023
+58,435.53,438.95,SPEAKER_00,And we discussed last meeting that it should be easy to find.,0.7123
+59,438.93,450.5,SPEAKER_00,Also in this study I've looked into the availability of some of the materials because some of the things that we looked at last time unfortunately aren't available.,0.7858
+60,453.54,455.73,SPEAKER_00,"Findings, I've got my nice little picture there.",0.8722
+61,455.71,473.6,SPEAKER_00,This is the chip called the TA-11835 which is what's used in pretty much every remote control because it sends out standard signals based on your input and it's pretty much used for all TV remotes at the moment.,0.8418
+62,475.94,479.81,SPEAKER_00,And then we're looking into battery options.,0.8303
+63,479.79,484.17,SPEAKER_00,There's actually no rechargeable option available.,0.8103
+64,484.69,493.52,SPEAKER_00,"So I saw the standard AA and AAA, which we thought were a bit too bulky at the moment.",0.8185
+65,493.8,498.65,SPEAKER_00,"Dynamo charging, I thought that might be a bit silly to be honest.",0.8247
+66,498.81,501.59,SPEAKER_00,It's basically like wind up radio.,0.9085
+67,502.31,504.92,SPEAKER_00,So you wind up your remote control before you use it.,0.7338
+68,504.9,508.06,SPEAKER_02,How long can you get out of that?,0.8135
+69,508.28,512.23,SPEAKER_02,Can you pick it up and then wind it for two minutes and then that's it for the night?,0.8537
+70,512.83,527.36,SPEAKER_00,"Yeah, I presume you wouldn't have to wind it for very long but I don't think it's really necessary when you think of the next two options like the solar charging",0.8218
+71,527.34,532.39,SPEAKER_00,"Because most people have the light on in the room anyway, so they could get when you've got PV.",0.7667
+72,532.57,534.36,SPEAKER_03,Does the light charge as sunlight does?,0.488
+73,535.0,537.32,SPEAKER_02,Artificial light?,0.496
+74,537.34,537.56,SPEAKER_00,No.,0.606
+75,537.58,538.09,SPEAKER_00,Is it?,0.721
+76,538.11,538.89,SPEAKER_00,"Oh, right.",0.416
+77,539.14,545.95,SPEAKER_01,"Regarding the sizes, which one you think will be like because we have to take into consideration size also.",0.7209
+78,546.11,551.52,SPEAKER_01,So maybe it's standard triple A might take less space and dynamo might take more space.,0.6789
+79,551.54,552.64,SPEAKER_00,"Yeah, it would.",0.466
+80,553.06,557.15,SPEAKER_00,The dynamo would take more space because you'd actually need a physical sort of handle to wind up.,0.5951
+81,557.17,559.83,SPEAKER_02,I'm pretty sure that solar is from the sun.,0.8147
+82,559.85,560.11,SPEAKER_02,Yeah.,0.689
+83,560.84,563.76,SPEAKER_02,I don't think it counts.,0.7954
+84,563.74,568.41,SPEAKER_02,"But I mean, you don't want to limit your market.",0.8287
+85,568.43,571.16,SPEAKER_02,"I mean, people who live in basement flats, there's not that many people.",0.8424
+86,571.26,572.92,SPEAKER_02,"I know, different parts of the world.",0.5796
+87,573.68,575.23,SPEAKER_03,If we're for marketing internationally.,0.8166
+88,575.31,580.5,SPEAKER_00,"Yeah, and most people also watch TV in the night anyway.",0.7324
+89,580.57,582.75,SPEAKER_02,But then it would be charging through the day.,0.8648
+90,582.77,587.17,SPEAKER_02,I think the point is it charges through the day and then you've got it charged.,0.8224
+91,587.49,590.66,SPEAKER_00,I think the next one's the best anyway.,0.8394
+92,591.08,598.3,SPEAKER_00,The kinetic charging which is like you get it in wristwatches and you don't even notice it.,0.7547
+93,598.46,603.73,SPEAKER_00,I mean the amount of probably moving around you'd be doing all the time would charge it up.,0.7879
+94,603.99,608.07,SPEAKER_00,I don't think you'd ever need to actually physically start shaking it up to make it work.,0.8113
+95,608.51,611.62,SPEAKER_01,And what is the life of the kinetic battery?,0.6816
+96,611.72,613.86,SPEAKER_01,It runs for a long time?,0.6878
+97,614.2,614.82,SPEAKER_00,Yeah.,0.622
+98,615.48,621.71,SPEAKER_00,"It charges into some form of a smaller cell, which it charges into.",0.8616
+99,621.75,628.36,SPEAKER_00,"And the size of a watch battery, because they use them quite frequently in watches.",0.6877
+100,628.9,634.87,SPEAKER_00,"And that would last for,",0.8434
+101,634.85,639.36,SPEAKER_00,"Well, I'm not entirely sure how long it would last, but I've never seen one run out.",0.782
+102,640.08,644.92,SPEAKER_02,"But then if you think about watch, it's on your wrist, so it's on your whole body, it's on your body the whole time.",0.8797
+103,645.22,645.48,SPEAKER_00,Yeah.,0.681
+104,646.02,648.08,SPEAKER_02,"So you're walking around, you're doing things.",0.8207
+105,648.14,649.68,SPEAKER_02,It is moving a lot of the time.,0.8539
+106,649.99,650.57,SPEAKER_00,Yeah.,0.733
+107,650.93,655.43,SPEAKER_02,"I mean, you switch the TV on, then you put it on the side, then you pick it up to change it, and then you put it on the side.",0.6977
+108,655.45,664.86,SPEAKER_00,"Yeah, but then again, I think it is because if you think about it, the watch, although it's only a tiny amount, it's",0.7598
+109,664.84,672.39,SPEAKER_00,"It's always moving for the whole day, and they don't run out overnight when you leave them on the side.",0.865
+110,673.51,681.48,SPEAKER_00,"And for the same reason, you're only using it for an incredibly short amount of time just to send the signal, and then you're finished with it.",0.8585
+111,681.92,683.46,SPEAKER_00,"So it's not the draw on it, is it?",0.3092
+112,683.48,686.85,SPEAKER_00,"No, no, I don't think the draw on it would be.",0.5297
+113,686.83,691.32,SPEAKER_03,"Referring back to solar charging, is that compatible with standard batteries?",0.8444
+114,691.4,697.26,SPEAKER_03,"I mean, could people put standard batteries in but, you know, they could leave it in the sunlight for solar charging or the two things not compatible?",0.79
+115,697.78,705.85,SPEAKER_00,"Yeah, I think you could have a dual power thing, but the thing with the solar cells is you would need to put them on the case.",0.795
+116,707.01,715.61,SPEAKER_00,"Because on a calculator, they're quite big and they all look identical.",0.7781
+117,715.67,717.91,SPEAKER_02,So that affects the exterior design?,0.4052
+118,717.97,718.82,SPEAKER_00,Expensive as well.,0.4417
+119,718.84,720.06,SPEAKER_02,What kind of price are we looking at?,0.1836
+120,720.04,723.06,SPEAKER_02,I presume that normal batteries are the cheapest.,0.4203
+121,723.08,725.04,SPEAKER_00,"Yeah, the normal batteries would be the cheapest.",0.704
+122,725.24,728.87,SPEAKER_00,I'd presume that then it would actually be the solar charging ones.,0.7715
+123,729.89,737.44,SPEAKER_00,But I think they're not very resistant to dropping.,0.8719
+124,737.96,743.99,SPEAKER_00,"Because if you drop stuff, yeah, if you have the size you'd need to charge a remote, it wouldn't be that big.",0.8245
+125,744.05,748.9,SPEAKER_00,"But I mean, if remotes always get thrown around and stuff.",0.8332
+126,748.88,751.8,SPEAKER_00,"I think, yeah, practically.",0.7695
+127,751.82,758.5,SPEAKER_00,"I mean, calculators you don't really throw around a lot, whereas remotes you do.",0.7832
+128,759.18,760.52,SPEAKER_02,They can turn.,0.6057
+129,760.6,762.72,SPEAKER_02,"Yeah, they do.",0.6437
+130,763.06,767.17,SPEAKER_00,"They've got dual things, but the batteries are smaller I think.",0.8178
+131,767.15,771.7,SPEAKER_01,"And the question is, which one would last the longest?",0.6846
+132,771.74,776.87,SPEAKER_01,Because we don't want customers to be charging a mobile phone every day or remote control.,0.6009
+133,777.04,779.39,SPEAKER_01,So we just look at the life also.,0.7622
+134,779.77,791.4,SPEAKER_00,"Yeah, if you had something using the standard batteries and the solar charging, I don't think you'd",0.7744
+135,791.38,796.93,SPEAKER_00,"I think that it would, well, you know how long the standard double A's would last in or triple A's would last.",0.6141
+136,796.99,799.47,SPEAKER_03,It would just attract from the attractiveness of the whole feature.,0.591
+137,799.51,800.91,SPEAKER_03,"Yeah, I think it would.",0.5422
+138,801.42,806.24,SPEAKER_02,"Okay, can we add in an attachment to clothing feature?",0.8768
+139,807.88,807.98,SPEAKER_02,Okay.,0.0
+140,808.0,809.02,SPEAKER_02,Can we think about that?,0.8394
+141,809.81,811.25,SPEAKER_02,Because if we're doing the kinetic thing.,0.7777
+142,811.85,812.39,SPEAKER_02,Yeah.,0.738
+143,812.43,815.53,SPEAKER_03,Shouldn't we do some market research on that first before we add it in?,0.7789
+144,815.59,817.55,SPEAKER_02,We'll add it in to think about.,0.6369
+145,817.77,819.2,SPEAKER_03,"Right, okay.",0.8385
+146,821.86,824.22,SPEAKER_02,"because, where am I?",0.851
+147,825.23,839.64,SPEAKER_02,"If it is the kinetic thing and it is small and it is portable and it is a different shape and the kinetic is something people don't do, kind of, we're doing something original and different.",0.7955
+148,840.15,848.36,SPEAKER_02,"But if you wore it, if it's something you could just clip on your pocket, then you would have that less, you wouldn't lose it so much.",0.77
+149,848.34,857.23,SPEAKER_02,But then maybe that's looking at someone who's just sitting on their own rather than the eternal battle for control of the control.,0.7618
+150,857.25,862.02,SPEAKER_03,It's not something that's come up in any of our focus groups and market research.,0.8511
+151,862.08,866.47,SPEAKER_03,"It's not a thing that people are looking for when we throw open to the field, yeah.",0.6909
+152,868.11,870.29,SPEAKER_03,But it's something to put on the side to think about maybe.,0.7976
+153,871.61,875.15,SPEAKER_00,"Okay, well I'll move on.",0.6502
+154,875.22,888.94,SPEAKER_00,"My second part of my findings, the most current remotes use this silicon PCB board which printed circuit board.",0.8818
+155,888.92,917.78,SPEAKER_00,which basically has these contacts that are really close together and then when you press down on the rubber button it'll connect the circuit and each switch is connected to two different legs on the chip and so sends a different message and that then gets translated by the chip into a code and then it's fired out of this LED in a sequence of on and off bursts,0.8277
+156,918.15,920.09,SPEAKER_02,What kind of things do we have to consider there?,0.803
+157,921.45,925.54,SPEAKER_02,Does it come in varying sizes or is it just one size?,0.7904
+158,926.1,937.56,SPEAKER_00,The thing about it is they can be as big or as small as you want them to be because you can print a circuit board like that.,0.814
+159,938.24,943.35,SPEAKER_00,It's simply spaced like that so you can fit the size of the nine buttons in.,0.7999
+160,943.33,953.56,SPEAKER_00,"If you see how thin the tracks are, you could put them virtually right next to each other and have a much smaller switch on each one if you wanted to.",0.8179
+161,954.63,968.93,SPEAKER_00,"But there is an option to do it like that, or you could have some sort of array of switches which I'll speak about in the next bit.",0.8618
+162,968.91,976.32,SPEAKER_00,"And then to conserve battery life, the remote should be in a standby mode while not being used.",0.7094
+163,976.72,984.33,SPEAKER_00,"And what I was thinking about that was because sometimes when you have these things, they've got little lights on behind the buttons.",0.7834
+164,984.81,987.46,SPEAKER_00,So you can see what all the buttons are like on a mobile phone.,0.8145
+165,987.48,990.56,SPEAKER_00,They do it more often than on a mobile phone.,0.5761
+166,990.54,1002.94,SPEAKER_00,than on a TV remote but you could have lights behind the buttons and after like 5 or 10 seconds of not being used I'd have that turned off if we decided to go for buttons that could light up.,0.8336
+167,1005.85,1014.14,SPEAKER_00,"The case material, I've been sent what the factory can actually give us.",0.8742
+168,1014.12,1032.31,SPEAKER_00,"there's the plastic which I think we were going to go for anyway as the main case housing and the main problems with the, well you could go for wood but I think it would be a bit impractical",0.8219
+169,1032.29,1061.35,SPEAKER_00,titanium very expensive just the process which to make it is expensive and rubber well you're saying that people like this spongy feel this year so perhaps something made of rubber but I was thinking more of the buttons because the buttons which they've said that they've put across,0.8516
+170,1061.33,1069.11,SPEAKER_00,are what is used in some stressful manufacture and it's meant to be anti-RSI.,0.7691
+171,1070.05,1078.6,SPEAKER_00,I'm not sure how that would work because surely your fingers would still be moving over the short distances but that's what they said.,0.8694
+172,1080.18,1085.97,SPEAKER_00,The problem with the casing is that there's,0.8142
+173,1085.95,1094.15,SPEAKER_00,There's quite a few design restrictions that they've got on the shape of the case.,0.8791
+174,1094.29,1097.52,SPEAKER_00,"If you go for titanium, they can only do a standard box shape.",0.8345
+175,1098.28,1104.59,SPEAKER_00,"Whereas if you come to plastic, they can be a little more, they can do sort of curved shapes.",0.8701
+176,1105.05,1109.28,SPEAKER_00,"But whether or not, because we'd have it in two separate units,",0.8851
+177,1111.22,1134.07,SPEAKER_01,so for the flip phone yeah and second question is like mobile you can change the cover yeah skin or whatever so in this case if you're looking at like a customer can change the color like from green parrot green to chili red or something like that yeah so is that feature available in like titanium or it's like only specific to yeah in in titanium i don't i don't think it would be available at all really the just,0.6797
+178,1134.05,1144.71,SPEAKER_00,"Well, you could make it available in the titanium, it's just it would be so expensive to buy a new case for it because of the expense of how much titanium is.",0.8536
+179,1145.43,1151.14,SPEAKER_00,It's light and strong but I think it should be left for aircraft design rather than for,0.8799
+180,1152.07,1153.53,SPEAKER_03,"It does mark quite easily, too.",0.6822
+181,1153.59,1156.53,SPEAKER_03,"If you let it fall, I've got a mobile phone myself, which is titanium.",0.7594
+182,1156.57,1158.8,SPEAKER_03,And it does mark very easily if you drop it.,0.7044
+183,1159.48,1166.36,SPEAKER_03,"I was just wondering if we make the basic mold out of plastic, but have like a rubber cover that comes over that would give the spongy feel.",0.7902
+184,1166.66,1168.83,SPEAKER_03,That also allows us to kind of have different functions.,0.7559
+185,1168.85,1170.13,SPEAKER_03,"And you can peel them off, yeah.",0.5103
+186,1170.15,1175.99,SPEAKER_02,"So instead of the fascia that comes off being plastic, the fascia that comes off would be the rubber most.",0.6222
+187,1176.33,1181.64,SPEAKER_02,Like those pens that you get with a grip that you can pull that off.,0.6815
+188,1181.62,1183.97,SPEAKER_01,It would be comfortable to hold on also.,0.5635
+189,1184.69,1188.34,SPEAKER_03,Very cheap way of changing the look of it and people can just buy a new one if they want to.,0.6895
+190,1188.83,1193.28,SPEAKER_02,Well that's been really popular with mobile phones so I don't see why not.,0.7648
+191,1193.72,1203.59,SPEAKER_00,"Also, just going back to the interface designs with the buttons, we were planning to do some sort of touch screen.",0.8262
+192,1204.91,1211.96,SPEAKER_00,"Now what I was saying before about, instead of having, you could have just a bare PCB circuit board.",0.8096
+193,1212.86,1215.58,SPEAKER_00,And I'm sure you could probably get it in different colors.,0.8301
+194,1215.74,1220.7,SPEAKER_00,"And so just by touching it with your finger, it would make the connection.",0.7543
+195,1220.68,1222.65,SPEAKER_00,over if you had them close enough.,0.8167
+196,1222.69,1224.07,SPEAKER_00,That would be one option.,0.8042
+197,1225.45,1237.74,SPEAKER_00,"The second option, they offer rubber buttons, but I thought that an LCD type of screen, because one, they're incredibly thin and don't take up much space.",0.8382
+198,1238.41,1244.05,SPEAKER_00,"Two, you can have them in a sort of a rain.",0.9273
+199,1244.09,1249.78,SPEAKER_00,You could arrange the buttons on the screen in a sort of sat thing and you could have them like a touch.,0.8486
+200,1249.76,1258.83,SPEAKER_01,I didn't get the meaning of it completely.,0.7023
+201,1259.31,1263.48,SPEAKER_00,"On the LCD screen, you could fit it.",0.8406
+202,1263.5,1269.63,SPEAKER_00,"The problem with it, basically, is that it's flat and so you can't do lots of curve things with it.",0.8468
+203,1272.41,1276.78,SPEAKER_00,"With the LCD, you'd have the wires coming off.",0.7239
+204,1276.8,1279.36,SPEAKER_00,You wouldn't have that with the,0.8367
+205,1279.34,1283.83,SPEAKER_00,"With the LCD, you'd only have that with the printed circuit board.",0.8273
+206,1285.15,1286.79,SPEAKER_00,I'm sorry to interrupt.,0.456
+207,1286.83,1288.77,SPEAKER_03,I don't see why the curved thing is a problem.,0.8498
+208,1288.85,1293.96,SPEAKER_03,"If we, for example, had a shell, once we open that, it could have a flat screen inside.",0.6833
+209,1294.16,1299.07,SPEAKER_00,But I'm just wondering whether we want an LCD screen inside.,0.7481
+210,1299.17,1300.79,SPEAKER_00,It wouldn't be like full colour.,0.832
+211,1300.97,1302.21,SPEAKER_00,It would just be black and white.,0.8306
+212,1303.17,1305.3,SPEAKER_00,But there'd be touch buttons.,0.8726
+213,1305.84,1307.24,SPEAKER_00,They wouldn't be pressing down on them.,0.8141
+214,1308.06,1312.29,SPEAKER_00,"Or we could have rubber buttons, which are made of this material, which is anti-RSI.",0.797
+215,1312.27,1317.7,SPEAKER_02,I think it would be good to have a contrast between if the whole thing is going to be this rubber thing.,0.7152
+216,1317.74,1321.99,SPEAKER_02,It would be good to open it up and see something quite fancy looking inside.,0.8161
+217,1322.49,1324.75,SPEAKER_02,Now how would you distinguish if you had a bear?,0.8747
+218,1324.81,1327.14,SPEAKER_02,How'd you distinguish where you had to press?,0.8384
+219,1327.18,1327.66,SPEAKER_02,I mean,0.649
+220,1328.38,1330.44,SPEAKER_00,"Yeah, I hadn't really thought of that.",0.5813
+221,1330.7,1345.04,SPEAKER_03,"Yeah, you could have some sort of stylist that you could pull out, but...",0.4893
+222,1345.02,1349.07,SPEAKER_00,I think they could get a bit easily lost.,0.699
+223,1349.61,1350.43,SPEAKER_00,Yeah.,0.618
+224,1350.45,1352.49,SPEAKER_01,They're easy to replace as well.,0.5127
+225,1352.55,1360.24,SPEAKER_01,"A person who switches channels very often or does use a particular function very often, he'll find it very irritating to use early, you know?",0.6725
+226,1360.26,1360.54,SPEAKER_01,Yeah.,0.692
+227,1361.06,1367.49,SPEAKER_01,And he might spoil your touchpad very fast compared to a button like if you keep punching with a point or whatever.,0.7349
+228,1367.81,1368.49,SPEAKER_01,"Yeah, okay.",0.4135
+229,1368.59,1369.23,SPEAKER_03,Just a thought.,0.525
+230,1369.25,1371.86,SPEAKER_03,"They wouldn't actually need one and they could use anything they've got, couldn't they?",0.7186
+231,1371.9,1372.7,SPEAKER_03,A pencil or a pen?,0.5942
+232,1373.08,1374.08,SPEAKER_03,So they wouldn't really need a,0.6927
+233,1374.35,1375.81,SPEAKER_02,"Okay, we'll talk about that.",0.8762
+234,1376.15,1378.74,SPEAKER_02,"So if you finish here, and come back to that.",0.701
+235,1378.76,1380.82,SPEAKER_00,"Yeah, that that's the end of it.",0.7433
+236,1381.3,1384.47,SPEAKER_01,Before like you're this thing regarding the circuit since we have having a flip top.,0.7766
+237,1385.15,1389.26,SPEAKER_01,"Yeah, customize the two circuits for different type of buttons like we are keeping the standard buttons on the top.",0.7368
+238,1390.24,1393.18,SPEAKER_01,"Oh, yeah, complex buttons and other things so we can divide the circuit like you know,",0.5684
+239,1393.62,1395.62,SPEAKER_00,"Yeah, yeah, that would be fairly simple.",0.7747
+240,1395.74,1406.34,SPEAKER_00,"I mean, you'd actually have two separate, you'd have two separate circuit boards, but they'd be joined by wires or like some cabling between them.",0.8162
+241,1407.44,1411.11,SPEAKER_00,Because in the actual flip that you'd have some linking.,0.8482
+242,1413.26,1414.29,SPEAKER_03,I just raised another point.,0.767
+243,1414.31,1418.48,SPEAKER_03,"Well, it kind of applies to both our designers here, because I'm not sure how it would fit in.",0.5839
+244,1419.14,1427.16,SPEAKER_03,"If we flip open, now you know how you've got some mirrors in nightclubs that are mirrors when you turn to them and you turn away and it gives like an advertising display?",0.8662
+245,1427.22,1428.82,SPEAKER_03,Have you seen those?,0.6575
+246,1428.8,1431.05,SPEAKER_03,and they kind of respond to the turn of your body.,0.8593
+247,1431.47,1441.05,SPEAKER_03,"Is it possible that when we open our flip top shell, it's a little compact mirror, and when you press a button it then goes on to the phone display, the remote control display thing?",0.8431
+248,1441.69,1444.83,SPEAKER_02,We are marketing to guys as much as we are to women.,0.7947
+249,1445.39,1447.8,SPEAKER_03,They don't look at themselves?,0.8634
+250,1447.82,1448.5,SPEAKER_03,Just a thought.,0.6437
+251,1448.75,1449.93,SPEAKER_02,"Well, it's remote control.",0.6995
+252,1449.95,1451.08,SPEAKER_02,You were sitting watching TV.,0.9168
+253,1451.15,1451.5,SPEAKER_02,Yeah.,0.618
+254,1451.62,1453.4,SPEAKER_02,Are you going to want to sort of open it and see?,0.6032
+255,1453.5,1454.24,SPEAKER_03,I know what you mean.,0.8184
+256,1454.36,1460.96,SPEAKER_03,"So without using the ideas from mobile phones, I've kind of got sidetracked onto that, I think.",0.6095
+257,1461.18,1464.65,SPEAKER_03,OK. We're just trying to think of other features we can build in that wouldn't cost too much.,0.7192
+258,1464.73,1466.09,SPEAKER_03,But we'll maybe leave that one on the side.,0.6566
+259,1466.43,1468.21,SPEAKER_03,Yeah.,0.732
+260,1468.23,1468.29,SPEAKER_03,OK.,0.333
+261,1469.34,1478.37,SPEAKER_00,"I mean you can, you could do it, you could have a, because if you just put the full charge through an LCD display or completely blank it out.",0.8553
+262,1479.26,1481.36,SPEAKER_00,But I don't know if you could get any mirror effect on it.,0.7379
+263,1481.38,1489.03,SPEAKER_03,"I think we'll forget about the mirror, that was just a very quick passing thought.",0.4475
+264,1489.01,1491.66,SPEAKER_01,I would like to share something which I did here.,0.7811
+265,1492.46,1503.02,SPEAKER_01,"First thing is basically on design, we just took the input from the previous meeting, especially from the marketing and industrial design to check on the customer needs and feasibility.",0.815
+266,1503.04,1504.44,SPEAKER_01,Second is we checked into competitors.,0.5868
+267,1504.46,1507.77,SPEAKER_01,The picture here shows what are the standard models offered by competitors here.,0.6589
+268,1507.74,1526.56,SPEAKER_01,So you generally see there's not much of variety and like marketing team said people need trendy they are bored of black and white So you generally see rectangular shape very monotonous kind of designs here and Second thing is there's too much of confusion here.,0.7942
+269,1527.57,1529.13,SPEAKER_01,No particular remote is standard,0.7772
+270,1531.17,1534.93,SPEAKER_01,like some people have here.,0.8804
+271,1535.27,1535.71,SPEAKER_01,You see this?,0.98
+272,1536.06,1543.05,SPEAKER_01,"This is all, I found that the only common feature is the channel control and the volume control.",0.7544
+273,1543.07,1549.16,SPEAKER_01,"Rest other buttons, they are in a very disorganized and they are not consistent with other models and all.",0.8248
+274,1549.14,1557.37,SPEAKER_01,"Okay, and second, as already discussed with William, we are going to have maybe a GUI interface in the middle of the flip top.",0.7807
+275,1557.63,1558.81,SPEAKER_01,"Sorry, what does that mean?",0.3878
+276,1558.83,1564.5,SPEAKER_01,"Graphic user interface, basically, which is what we do in computer, have icons or touchpad or whatever.",0.7256
+277,1564.76,1568.46,SPEAKER_00,"Yeah, if you have buttons that appear on the screen in this LCD screen.",0.6786
+278,1568.85,1576.38,SPEAKER_01,"like you have on all icons are something you have is a good example of GUI, Graphic User Interface.",0.7146
+279,1576.4,1583.65,SPEAKER_01,"So basically, a person need not point or click or press any particular device, he just has to click on that particular icon to simplify.",0.7036
+280,1584.47,1590.98,SPEAKER_01,"And on the top, repetitive buttons which are like volume or channel changing and all could be on the pointing device.",0.8055
+281,1591.0,1592.06,SPEAKER_01,That means user button.,0.8003
+282,1592.92,1598.11,SPEAKER_01,So he need not use a pointer to keep changing the channel if a person is frequent server.,0.7447
+283,1598.09,1600.6,SPEAKER_01,So we are having a combination of both.,0.6764
+284,1600.84,1607.6,SPEAKER_01,"So on the simpler board on the top, we have this button, rubber buttons to keep frequently changing the channels.",0.8216
+285,1609.51,1610.55,SPEAKER_02,Can we swap that round?,0.8538
+286,1610.73,1614.21,SPEAKER_02,So the ones that we use all the time are on the bottom part?,0.8135
+287,1615.51,1623.34,SPEAKER_02,"In fact, if you're thinking about holding it, you would be using your thumbs to press, just like a mobile phone.",0.7462
+288,1623.36,1624.94,SPEAKER_03,"No, you'd flip it open and you'd be",0.7071
+289,1627.0,1627.44,SPEAKER_03,Wouldn't you?,0.949
+290,1627.52,1628.24,SPEAKER_03,Isn't that the idea?,0.8213
+291,1628.28,1636.39,SPEAKER_03,"If we just use the shell as an example again, you open that, you've got your LCD display there, and you've got the buttons there, so you're holding it in the palm of your hand.",0.6956
+292,1636.41,1637.19,SPEAKER_02,That's what I was just saying.,0.0895
+293,1637.21,1638.47,SPEAKER_02,"Yeah, but you can't do it with your thumb.",0.1017
+294,1638.49,1644.36,SPEAKER_02,"And then have the LCD at the top, and then be able to touch that for the other controls.",0.7524
+295,1644.42,1651.39,SPEAKER_02,"So have the volume and the program, things like that on the lower side.",0.8175
+296,1651.47,1652.35,SPEAKER_02,Perfect.,0.451
+297,1655.57,1657.59,SPEAKER_01,So the findings are too many cluttered buttons.,0.8624
+298,1658.65,1664.04,SPEAKER_01,"The repetition of certain patterns, which I already explained, example the volume and channel control buttons.",0.759
+299,1664.06,1665.8,SPEAKER_01,All are confusing and inconsistent.,0.8448
+300,1666.24,1668.55,SPEAKER_01,"Okay, we had a latest finding of voice recognition.",0.7909
+301,1668.59,1674.74,SPEAKER_01,There was a mail which mentions that our division has developed a new speech recognition feature.,0.8895
+302,1675.64,1682.39,SPEAKER_01,"We have to check into the financial feasibility, whether we can incorporate this at a low cost.",0.7988
+303,1682.37,1690.44,SPEAKER_01,but for like we had response from the customers that they would like to have the feature of finding it.,0.8851
+304,1691.3,1692.8,SPEAKER_01,"So it could be like, where is the remote?",0.7099
+305,1692.96,1694.24,SPEAKER_01,"And the remote answers, I am here.",0.7581
+306,1695.38,1699.62,SPEAKER_01,Some kind of thing or it gives a blip sound or some kind of sound.,0.8233
+307,1700.25,1706.63,SPEAKER_01,"And if this can be incorporated, this would be more, you can say trendy also and technologically innovative also.",0.8582
+308,1708.63,1708.91,SPEAKER_00,Yeah.,0.349
+309,1708.98,1712.46,SPEAKER_01,So we can check into the financial feasibility of incorporating this.,0.8525
+310,1716.18,1722.97,SPEAKER_01,"My personal preferences would be, as already highlighted by marketing department, they want something to do with fruit.",0.7881
+311,1723.08,1724.98,SPEAKER_01,So I wouldn't say the design should be like a fruit.,0.8509
+312,1725.6,1734.03,SPEAKER_01,"But yeah, we can take inspiration from fruit colors, like the vibrant colors, red, chili, tomato red, or whatever.",0.7532
+313,1734.91,1738.06,SPEAKER_01,And second thing is certain standard buttons we should have.,0.8599
+314,1738.88,1743.0,SPEAKER_01,"For example, if you see the previous slide,",0.9227
+315,1743.51,1746.21,SPEAKER_01,"Well, yeah.",0.5895
+316,1746.23,1751.23,SPEAKER_01,I think most of the users would now be well acquainted with this central pattern here.,0.8261
+317,1751.26,1751.6,SPEAKER_01,Yeah.,0.599
+318,1751.62,1757.2,SPEAKER_01,So we would not change that particular pattern because this is the most consistent thing in all remote controls.,0.8142
+319,1757.54,1758.1,SPEAKER_02,I can't see that.,0.7515
+320,1758.12,1760.27,SPEAKER_02,Is that play and stop and things?,0.5791
+321,1760.29,1761.31,SPEAKER_01,This is the central one.,0.5142
+322,1761.33,1763.51,SPEAKER_01,Is that volume and channel?,0.5478
+323,1764.49,1768.72,SPEAKER_01,So keep that standardized because that's the most common feature across all models.,0.8743
+324,1769.58,1771.2,SPEAKER_01,"If you look at all the models, it's here.",0.8491
+325,1773.63,1781.58,SPEAKER_01,voice recognition.,0.8735
+326,1787.95,1798.42,SPEAKER_02,I'm not sure how long we've got left but we need to make a decision about,0.8083
+327,1801.13,1812.19,SPEAKER_02,things we've discussed so we agree on do we agree on the battery kinetic kinetic yeah,0.7896
+328,1813.03,1820.74,SPEAKER_02,"That means that there's no function for the port, you know, that it sits in, then pressing the button, then having.",0.8028
+329,1821.26,1823.92,SPEAKER_02,So we could incorporate voice recognition for finding it.,0.779
+330,1824.04,1826.49,SPEAKER_02,It's like a gadget.,0.8028
+331,1827.53,1828.83,SPEAKER_00,It's a selling point.,0.789
+332,1828.87,1830.25,SPEAKER_00,It's quite a cool feature to have.,0.7374
+333,1830.41,1838.06,SPEAKER_00,"And also, if they've got these parts already in stock, then it won't be cheap to remanufacture them.",0.8225
+334,1838.04,1840.72,SPEAKER_00,"It will be cheap, sorry, to remanufacture.",0.7896
+335,1841.62,1843.39,SPEAKER_00,So do you reckon that's a good idea that?,0.7238
+336,1844.31,1846.33,SPEAKER_00,Where's the remote I'm here thing?,0.7492
+337,1846.71,1848.99,SPEAKER_00,I think that would be quite fun.,0.6497
+338,1849.01,1855.16,SPEAKER_02,I think the only pitfall that we would have would be how much it's going to cost.,0.8849
+339,1855.5,1857.93,SPEAKER_02,That means we have to cut down somewhere else.,0.9048
+340,1858.35,1860.57,SPEAKER_02,But I think pretty much we've,0.7883
+341,1860.55,1864.93,SPEAKER_02,"use cheap, relatively cheap and simple things.",0.7127
+342,1865.21,1866.54,SPEAKER_02,The LCD is not cheap.,0.6174
+343,1866.65,1875.86,SPEAKER_00,"Well, it's not as expensive as it would be if it was full color, because if it just got a black and white one, I mean, they used them in calculators.",0.6837
+344,1877.57,1879.27,SPEAKER_01,Maybe we could start with the black and white.,0.8627
+345,1880.11,1880.35,SPEAKER_00,Yeah.,0.56
+346,1880.83,1881.97,SPEAKER_01,That would be good.,0.602
+347,1882.35,1883.23,SPEAKER_01,Upgrade later on.,0.5597
+348,1884.73,1886.31,SPEAKER_03,We talked about kinetic charging.,0.7766
+349,1886.35,1887.57,SPEAKER_03,We seem to have decided on that.,0.8927
+350,1887.59,1889.6,SPEAKER_03,Did we decide on double or triple A batteries?,0.7276
+351,1890.27,1893.93,SPEAKER_00,Do you want like a backup?,0.76
+352,1893.95,1898.82,SPEAKER_03,"No, one of the decisions we had to make was whether we had AA batteries because they've still got to be charged this way, haven't they?",0.7195
+353,1899.6,1904.97,SPEAKER_00,"No, the kinetic ones come with a sort of battery that goes in the watch.",0.7087
+354,1905.17,1906.21,SPEAKER_00,"Right, okay, got you.",0.7065
+355,1906.27,1908.31,SPEAKER_00,So it's a lot smaller.,0.8022
+356,1908.43,1910.98,SPEAKER_03,"Got you on that, okay.",0.8226
+357,1912.68,1915.08,SPEAKER_02,"Okay, so we've got the battery.",0.546
+358,1915.94,1920.67,SPEAKER_02,"The inside components is pretty standardized across the board, isn't it?",0.8575
+359,1921.35,1922.03,SPEAKER_00,Yeah.,0.653
+360,1922.05,1924.46,SPEAKER_02,So there's not really a decision to be made there.,0.8209
+361,1928.14,1931.33,SPEAKER_02,"The buttons, what did you give us as a",0.9187
+362,1934.72,1936.34,SPEAKER_02,The bareboard LCD.,0.804
+363,1936.52,1939.46,SPEAKER_00,"Yeah, I think we're going for the LCD on that one.",0.7375
+364,1939.98,1940.6,SPEAKER_00,On the buttons.,0.9547
+365,1941.48,1944.01,SPEAKER_00,On the top one.,0.7468
+366,1944.03,1944.81,SPEAKER_00,On the top one.,0.8362
+367,1944.83,1946.53,SPEAKER_02,"OK, you've got the touch.",0.571
+368,1946.73,1946.99,SPEAKER_00,Yeah.,0.684
+369,1947.71,1952.62,SPEAKER_00,"OK. And then... On the bottom, we're going to have the rubber ones.",0.7255
+370,1953.12,1955.12,SPEAKER_00,The anti-RSI ones.,0.855
+371,1956.68,1958.56,SPEAKER_02,OK. OK.,0.849
+372,1959.76,1962.12,SPEAKER_03,"Sorry, could you repeat that last part?",0.8136
+373,1962.59,1965.31,SPEAKER_00,"Okay, I've got the flip screen.",0.6255
+374,1965.35,1970.41,SPEAKER_00,The top one is going to be the LCD and the bottom one is going to be the rubberised button.,0.7698
+375,1971.69,1974.24,SPEAKER_01,"No, it's fine.",0.4697
+376,1977.07,1978.88,SPEAKER_01,"For the body design, I think plastic.",0.7767
+377,1980.26,1981.02,SPEAKER_00,Plastic.,0.783
+378,1981.04,1981.54,SPEAKER_01,Yeah.,0.422
+379,1981.56,1982.56,SPEAKER_01,For the inside.,0.4793
+380,1982.72,1983.31,SPEAKER_01,For the inside.,0.832
+381,1983.33,1987.94,SPEAKER_01,"And rubber as a padding or for the grip, something like to add to the design.",0.8147
+382,1989.5,1993.29,SPEAKER_03,"So we decided on a rubber casing for the plastic shell, a variety of designs.",0.8679
+383,1993.51,1994.17,SPEAKER_03,OK.,0.69
+384,1995.92,2001.81,SPEAKER_03,"And it is just, although it's rubberized and spongy, apart from that, we're just going to go for vegetable and fruit colors.",0.7659
+385,2001.83,2007.23,SPEAKER_03,We're not going to try and make it actually a vegetable or fruit design or anything else like a shell that we discussed.,0.658
+386,2007.25,2012.86,SPEAKER_02,"No, I think we don't want to be tacky if we've got a different shape anyway.",0.7282
+387,2014.94,2018.09,SPEAKER_02,"The fact, the material that we would be using would be cheap.",0.8502
+388,2018.63,2020.11,SPEAKER_02,So we could make it red.,0.8758
+389,2020.15,2024.17,SPEAKER_02,We could make it psychedelic.,0.8294
+390,2024.15,2036.71,SPEAKER_02,"You know we can make it black and white zebra stripes, but that's not really what we're focusing on what we're focusing on is the you know the feel yes So just pick anything",0.8223
+391,2037.6,2048.76,SPEAKER_03,"Is that going to be this image I've got in my head of something kind of shaped like that, maybe about that size, made of plastic, fits into the palm of the hand, rubberized cover that's spongy?",0.8495
+392,2049.28,2055.15,SPEAKER_03,"Is that really going to fit fancy look and feel, which was the major thing that people wanted market research?",0.8379
+393,2055.19,2055.79,SPEAKER_03,Is that fancy?,0.73
+394,2055.81,2056.55,SPEAKER_02,It's just different.,0.3413
+395,2057.55,2059.01,SPEAKER_02,It's just different from everything else.,0.8592
+396,2059.47,2067.42,SPEAKER_02,"I mean, I'm trying to imagine clean looking houses, sort of beige and black.",0.8441
+397,2067.71,2080.91,SPEAKER_02,"So you either want something that goes with that, which is what's on the market anyway, or you want something that contrasts as, you know, like you get clocks now that are more of a talking point than an actual clock.",0.8263
+398,2080.93,2081.67,SPEAKER_02,Yeah.,0.657
+399,2081.69,2082.45,SPEAKER_02,Because they're so interesting.,0.479
+400,2082.47,2085.07,SPEAKER_03,I'm just kind of pushing it that to see if you came out with anything else.,0.7819
+401,2085.2,2086.48,SPEAKER_03,"But I mean, I totally agree.",0.8072
+402,2086.92,2087.84,SPEAKER_03,We looked at those remotes.,0.824
+403,2087.86,2090.5,SPEAKER_03,"I mean, they are kind of anonymous, very similar looking things.",0.8318
+404,2090.88,2092.25,SPEAKER_03,This would definitely be different enough.,0.829
+405,2092.27,2094.29,SPEAKER_03,I just wondered if anybody could come up with something even more.,0.707
+406,2094.27,2099.3,SPEAKER_02,And you would just have a cross that you would have so many different options you could do.,0.8144
+407,2100.18,2102.7,SPEAKER_02,You could have a plain black one.,0.8821
+408,2102.96,2105.64,SPEAKER_02,You could have sparkly pink.,0.845
+409,2105.66,2117.7,SPEAKER_03,"The thing is the rubberized covers are going to be so relatively cheap to produce that if in a year's time we get feedback from the design fears that show something else is coming, it's so easy for us to just produce that and it can be slipped on, which is another beauty of it.",0.7473
+410,2117.72,2120.99,SPEAKER_02,And the ones that have rubbery spikes,0.5543
+411,2120.97,2141.08,SPEAKER_01,you know just goes so far like a puffer fish you could just you could take it wherever so I think that's quite a yeah flexible and finally the body should be detachable maybe you can change the body of the case casing the case outside yes it should be molded with the design in such a way you can change it every time,0.7386
+412,2141.3,2151.73,SPEAKER_00,"Yeah, yeah, with these rubber, these rubberized, not the actual plastic outside case, just the rubber thing that goes around the outside.",0.7447
+413,2152.22,2153.44,SPEAKER_02,"OK, we've got five minutes.",0.3778
+414,2154.66,2157.03,SPEAKER_02,Or that might have been up for a while.,0.5243
+415,2157.26,2159.01,SPEAKER_03,"So can I just recap, Sarah?",0.6298
+416,2159.97,2170.8,SPEAKER_03,"For the decisions that we've made, kinetic charging, the watch type batteries, LCD display on the top side of the flip top, rubberized buttons on the bottom side.",0.8682
+417,2171.08,2173.39,SPEAKER_03,We're going to use fruit and vegetable colors for the rubber cover.,0.6151
+418,2173.45,2174.97,SPEAKER_03,The case itself is plastic.,0.8536
+419,2175.91,2176.83,SPEAKER_03,That's how far we've got.,0.8452
+420,2176.85,2178.72,SPEAKER_03,What else do we have to add to our decisions here?,0.7438
+421,2180.25,2180.99,SPEAKER_01,Fine.,0.791
+422,2181.53,2183.21,SPEAKER_01,We were talking of voice recognition also.,0.7191
+423,2184.07,2189.84,SPEAKER_01,Because we have not addressed the issue of how to locate remote control if it's lost.,0.6954
+424,2191.3,2194.31,SPEAKER_03,"It was just a cost issue with that, but it's a good idea.",0.6846
+425,2194.33,2195.95,SPEAKER_03,We just need to check on the cost.,0.6696
+426,2195.97,2199.74,SPEAKER_01,"Maybe like William was suggesting in the last thing, some devices you put on key chains.",0.7932
+427,2201.54,2203.02,SPEAKER_01,"Oh, yeah, yeah, the whistle ones.",0.5262
+428,2203.12,2203.6,SPEAKER_01,The whistle.,0.7385
+429,2204.46,2207.15,SPEAKER_01,"So we can, financially, voice recognition is not feasible.",0.8569
+430,2207.17,2208.23,SPEAKER_01,We could go for a whistle.,0.826
+431,2217.02,2219.58,SPEAKER_03,And incorporating the company logo.,0.8874
+432,2221.7,2225.37,SPEAKER_01,We'll be incorporating in the design.,0.7447
+433,2226.57,2230.28,SPEAKER_03,Because I took it from the feedback you gave in the last meeting from your report.,0.8046
+434,2230.72,2233.28,SPEAKER_03,It's not just a case of having a little RR hidden somewhere.,0.8693
+435,2233.32,2235.53,SPEAKER_03,They do want it to be obvious that it's our product.,0.7173
+436,2235.63,2238.41,SPEAKER_02,"Well, they do, but I think we can...",0.8919
+437,2238.43,2241.05,SPEAKER_03,"Since it's the only one of its kind on the market, it's obviously going to be ours.",0.6665
+438,2241.07,2241.32,SPEAKER_02,"Well, it is.",0.2227
+439,2241.34,2244.24,SPEAKER_02,I think you just address that with advertising.,0.8499
+440,2244.22,2250.37,SPEAKER_02,"You associate the name with the individual product that it is, and that does the work for you.",0.85
+441,2250.41,2254.22,SPEAKER_02,"Obviously, you'll have a logo on it just like everything, but everything else has a logo on it.",0.779
+442,2254.26,2256.8,SPEAKER_02,The point is that it's got to stand out somehow differently.,0.8892
+443,2257.36,2261.03,SPEAKER_02,"But I think it does without that, so I'm not worried about that.",0.5838
+444,2261.01,2262.09,SPEAKER_03,Did we...,0.926
+445,2262.19,2264.36,SPEAKER_03,I know at the last meeting we spoke about a beeper.,0.7855
+446,2264.38,2266.1,SPEAKER_03,I think that was you talked about a beeper for a location.,0.6562
+447,2266.14,2268.26,SPEAKER_03,Have we just rejected that in favour of voice recognition?,0.6505
+448,2268.3,2271.66,SPEAKER_00,"Depending on how... Yeah, depending on the expense of it.",0.5706
+449,2271.68,2277.97,SPEAKER_02,"I mean, we've got this memo saying that it's something that the company's looking into, so... And they've got in stock, so, yeah.",0.7178
+450,2278.47,2286.16,SPEAKER_02,"That seems to make sense, but if it turns out that it's huge expensive, we'd have to cut down somewhere else, then it's worth thinking about.",0.7497
+451,2287.07,2289.31,SPEAKER_02,But I think we'll find out more about cost.,0.731
+452,2289.57,2289.67,SPEAKER_02,Yeah.,0.2
+453,2290.27,2290.87,SPEAKER_02,afterwards.,0.876
+454,2291.55,2293.3,SPEAKER_02,"Right, I'm going to wrap it up there.",0.4389
+455,2296.36,2297.89,SPEAKER_02,I've got our end meeting now.,0.5027
+456,2298.09,2303.58,SPEAKER_02,So again a question here.,0.593
+457,2305.26,2308.67,SPEAKER_02,"So I think we've probably got, instead of exposing, we have 40 minutes.",0.7884
+458,2309.55,2312.53,SPEAKER_02,So I think we've probably got about that time before we come back.,0.6518
+459,2313.95,2323.79,SPEAKER_02,I think we're pretty going in a clear direction now.,0.5527
+460,2325.99,2332.12,SPEAKER_02,Is everyone happy?,0.6587

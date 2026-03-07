@@ -1,0 +1,161 @@
+segment_id,start,end,speaker_id,transcript,asr_confidence
+0,2.11,3.65,SPEAKER_00,"Okay, well, I think we're ready to begin.",0.7815
+1,3.67,6.69,SPEAKER_00,Right.,0.594
+2,6.71,7.57,SPEAKER_00,My name's Adam Dugard.,0.67
+3,7.59,9.01,SPEAKER_00,We're here because of real reaction.,0.8653
+4,10.54,12.52,SPEAKER_00,We have in the group.,0.8786
+5,13.72,15.36,SPEAKER_01,"Ebenezer, I demonstrate.",0.6857
+6,15.88,16.74,SPEAKER_01,Would you like me to support it?,0.344
+7,19.18,21.41,SPEAKER_01,"Yeah, go for it, mate.",0.59
+8,22.07,22.49,SPEAKER_01,NEZ.,0.67
+9,23.17,23.33,SPEAKER_01,NEZ.,0.475
+10,23.57,23.65,SPEAKER_01,ER.,0.834
+11,24.55,26.47,SPEAKER_01,"Ebenezer, and your role is?",0.7196
+12,26.49,28.55,SPEAKER_01,I'm the marketing expert.,0.8605
+13,28.57,29.67,SPEAKER_01,You're the marketing expert.,0.7105
+14,29.73,30.38,SPEAKER_01,Okay.,0.457
+15,33.33,39.65,SPEAKER_00,"Next we have Tara Grammar, T-A-R-I-K. T-R-I-K. And your role in this is?",0.6792
+16,39.91,40.76,SPEAKER_00,Industrial designer.,0.805
+17,41.03,41.92,SPEAKER_00,Industrial designer.,0.781
+18,47.88,50.77,SPEAKER_00,And lastly we have Dave Cochran.,0.843
+19,53.15,56.52,SPEAKER_00,And you're going to be the user interface designer.,0.6911
+20,62.11,64.56,SPEAKER_00,"Right, this is the agenda for today's meeting.",0.7471
+21,64.72,69.25,SPEAKER_00,"As you can see, we're opening, acquaintance, toll training, project plan, discussion, and closing.",0.6837
+22,71.6,74.64,SPEAKER_00,We've already gone through opening and partially through acquaintance.,0.7649
+23,75.97,80.06,SPEAKER_00,"So the reason we're here, we're going to design a new remote control, as you probably all know.",0.7395
+24,80.03,84.7,SPEAKER_00,"The very broad overview is original, trendy and user-friendly.",0.7561
+25,85.28,95.16,SPEAKER_00,"Of course we'll have to go into a bit more detail than that, but personally I think that the original is going to be a very key aspect of this design.",0.7382
+26,96.26,100.41,SPEAKER_00,There's a lot of remote controls out there anyway so we're going to need something that's really going to set it apart.,0.6291
+27,105.55,107.73,SPEAKER_00,This is how today seems to be going to work.,0.8346
+28,107.75,112.9,SPEAKER_00,"We now have the 3K faces, as you've probably already been told, the functional, conceptual, and the detailed design.",0.7425
+29,119.2,122.92,SPEAKER_00,"First one's going to be covering the user requirements spec, technical functions, working design.",0.8047
+30,123.81,126.99,SPEAKER_00,"Second seems to be conceptual components, properties, materials.",0.8157
+31,127.09,131.75,SPEAKER_00,And the last one is a detailed analysis of our design so far.,0.7539
+32,131.93,134.92,SPEAKER_00,"Of course, you've all got the similar emails, I believe.",0.8633
+33,138.12,138.7,SPEAKER_00,What can I say?,0.749
+34,139.42,142.7,SPEAKER_00,"Every user, do you want to draw your favorite animal?",0.752
+35,143.72,144.05,SPEAKER_00,Sure.,0.946
+36,148.15,148.35,SPEAKER_01,OK.,0.688
+37,148.37,162.73,SPEAKER_01,I'm going to make this quick since we don't have much time.,0.7847
+38,212.3,214.75,SPEAKER_01,"Okay, so it's not the best picture in the world.",0.7646
+39,216.13,217.09,SPEAKER_01,Here we have an elephant.,0.8864
+40,218.35,221.61,SPEAKER_01,"First point begins with an E, same like Ebenezer.",0.8167
+41,223.38,226.62,SPEAKER_01,"Also elephants have a very good memory, much like myself.",0.8365
+42,227.6,232.81,SPEAKER_01,"And I can't remember back when I used to live in Nigeria, but I think I used to have a pet elephant.",0.835
+43,234.67,238.35,SPEAKER_01,"So elephants are big, strong, and gentle, and they have great memories.",0.7923
+44,238.85,241.94,SPEAKER_01,"And it begins with a letter E, just like Ebenezer.",0.655
+45,243.67,244.41,SPEAKER_00,brilliantly done.,0.906
+46,244.83,245.15,SPEAKER_00,Thank you.,0.915
+47,247.6,252.44,SPEAKER_00,"Derek, would you like to have a shot at a bit of artistry?",0.5595
+48,253.92,255.02,SPEAKER_03,"It's supposed to come all the way, is it?",0.3327
+49,256.32,257.89,SPEAKER_00,"Oh, you can clip them to your belt.",0.4755
+50,257.91,258.77,SPEAKER_00,"Oh, thank you.",0.5657
+51,259.07,262.59,SPEAKER_00,You should also have your lapel mic on as well.,0.8247
+52,264.05,266.54,SPEAKER_01,"Oh, that's good.",0.5983
+53,266.56,267.32,SPEAKER_01,We can clip them on.,0.9148
+54,267.94,269.9,SPEAKER_01,"OK. Yeah, there's this microphone as well that's you.",0.4726
+55,273.2,291.36,SPEAKER_00,"it's just across here, that's it",0.4453
+56,299.92,301.36,SPEAKER_03,Is this supposed to clip this off?,0.2287
+57,301.38,301.78,SPEAKER_00,I think so.,0.4893
+58,301.8,305.11,SPEAKER_00,"Yeah, I'll follow you if you...",0.5757
+59,305.13,308.4,SPEAKER_00,There you go.,0.3507
+60,308.42,310.0,SPEAKER_00,I'm probably just sticking it in your pocket for now.,0.4162
+61,310.02,310.82,SPEAKER_00,I wouldn't worry too much.,0.7204
+62,310.84,312.11,SPEAKER_00,I should have a good drink.,0.4205
+63,317.26,318.92,SPEAKER_03,"Yeah, I'm destroying your outfit here.",0.5593
+64,393.88,396.29,SPEAKER_03,all right here we have a tiger,0.5427
+65,397.89,398.97,SPEAKER_03,I've always loved tigers.,0.559
+66,399.54,401.12,SPEAKER_03,They're the biggest cats.,0.7218
+67,402.0,404.04,SPEAKER_03,They're a project on cats in the wild when I was a kid.,0.6679
+68,404.72,408.25,SPEAKER_03,And it was my favorite cat just because it looks the best.,0.6961
+69,408.89,410.03,SPEAKER_03,"The stripes, orange.",0.8907
+70,410.13,411.19,SPEAKER_03,My dad used to talk about it.,0.676
+71,411.21,414.51,SPEAKER_03,"He's from Bangladesh, so he used to tell me all about it when I was a kid.",0.6162
+72,415.35,421.48,SPEAKER_03,And they're just the most feared of animals in the wild.,0.8771
+73,421.7,422.98,SPEAKER_03,So that's why I like them.,0.4668
+74,424.2,427.53,SPEAKER_03,"Doesn't seem to end up like me really, but.",0.4363
+75,427.51,429.21,SPEAKER_00,"Excellent, thank you very much.",0.3856
+76,429.73,441.96,SPEAKER_00,"Dave, if you'd like to have a dash.",0.505
+77,561.19,562.45,SPEAKER_02,The monkey.,0.8465
+78,564.24,569.58,SPEAKER_02,"There's a somewhat oblique reference, in fact, to...",0.787
+79,570.2,574.85,SPEAKER_02,I have a three-year-old daughter who is affectionately known as Miss Monkey.,0.7767
+80,575.57,579.95,SPEAKER_02,"Monkeys have attitude, which I think is a good thing.",0.7854
+81,579.99,590.74,SPEAKER_02,"And from the point of view of the study of human evolution, they and other privates are terribly interesting.",0.8069
+82,590.72,606.52,SPEAKER_02,This one seems to have perhaps more attitude than most.,0.8493
+83,656.54,658.86,SPEAKER_00,"Hardly what I'd call the best drawing in the world, but it'll do for now.",0.5838
+84,659.72,664.85,SPEAKER_00,"Also not quite as feared as your average tiger, but cats are one of my favorite animals.",0.8354
+85,664.99,666.51,SPEAKER_00,They're very independent.,0.7677
+86,666.83,668.86,SPEAKER_00,They're snotty as hell at the best of times.,0.8479
+87,670.48,672.22,SPEAKER_00,And what can you say?,0.4944
+88,672.24,674.33,SPEAKER_00,You've got all of those qualities in an animal.,0.7698
+89,680.45,680.77,SPEAKER_00,Right.,0.809
+90,681.55,684.22,SPEAKER_00,I think we've all managed to master every whiteboard there by looks of it.,0.8394
+91,685.38,688.0,SPEAKER_00,"So onto it, project finance.",0.763
+92,688.59,692.63,SPEAKER_00,"As you can see, 2.5 euros per unit.",0.8346
+93,693.96,695.96,SPEAKER_00,That's not a terrible lot as far as I'm aware.,0.7721
+94,696.56,697.72,SPEAKER_00,And we're hoping to sell them for 25.,0.7574
+95,697.94,702.15,SPEAKER_00,"If we're aiming for 50 million euros, we're going to have to be selling an awful lot of them.",0.5026
+96,705.58,710.1,SPEAKER_01,"Oh, that was profit aim, that was an amount, so that's the amount made.",0.6899
+97,710.12,711.14,SPEAKER_00,"Yeah, okay.",0.4595
+98,711.16,718.81,SPEAKER_00,"Well, 50 million and if you're making 12.5 euros in each one then, yeah, awful lot need to be sold.",0.8218
+99,721.27,725.11,SPEAKER_00,"Okay, now we better actually just get on with the meat of the project.",0.7731
+100,725.99,728.44,SPEAKER_00,So I'm gonna guess that we've all used remote controls.,0.6705
+101,730.96,735.14,SPEAKER_00,Any ideas of where you think a new remote control could go into this market?,0.7915
+102,736.96,755.85,SPEAKER_02,"Well, one thing I'm aware of is that at the sort of very high price end of the market there's an emerging market for touch screen LCD remotes that can be programmed in much more sophisticated ways in the sort of conventional model so you get the sort of",0.7471
+103,755.83,773.25,SPEAKER_02,"You can redesign the interface to your own needs, you can program in macros, and you get a much greater degree, I mean you get these three and one five and one whatever, but you can get integration between the different",0.8081
+104,773.23,792.55,SPEAKER_02,"The different things that are designed to control to a much greater extent, you can have one macro to turn the TV to the right channel, rewind the tape and the VCR and get it to play once it's rewind, for instance.",0.8076
+105,792.53,811.37,SPEAKER_02,It occurs to me there might be a niche for a remote that aimed towards some of that sort of functionality but using a conventional push button design and therefore putting it into a much lower price bracket.,0.8367
+106,812.63,814.37,SPEAKER_00,"Okay, that's true.",0.7003
+107,814.53,820.21,SPEAKER_00,"With the price range we're looking at, going for a touch screen would probably be possible.",0.7424
+108,821.35,825.68,SPEAKER_00,"But you think, again, something to control multiple units in a simple fashion.",0.8558
+109,825.96,835.3,SPEAKER_02,"Yeah, I mean you get ones that you can switch between multiple units, but something that could operate between multiple units in a more integrated fashion.",0.7748
+110,836.48,844.8,SPEAKER_02,And ideally something into which we should have some at least limited facility for running macros.,0.8624
+111,845.6,853.35,SPEAKER_00,"Would the idea of something along the lines of one on-button would turn on, say, the video recorded to TV, maybe the sound system as well, all in one go?",0.7289
+112,853.47,855.65,SPEAKER_00,Is that for instance?,0.8307
+113,855.67,862.1,SPEAKER_02,"For instance, I say, oh, oh, oh.",0.388
+114,862.12,868.61,SPEAKER_02,"Or you press, say, the play button for the DVD player, and it turns the TV on and on to the right channel as well.",0.7719
+115,871.05,875.39,SPEAKER_00,"OK. That sounds like a good, strong idea.",0.8384
+116,877.73,879.56,SPEAKER_00,Any Texanish?,0.801
+117,879.58,884.86,SPEAKER_01,"Well, I've noticed that gaming is becoming quite popular with television.",0.852
+118,886.07,893.48,SPEAKER_01,"When I was younger, we used to play games using the cable, using the cable, subscribed cable providers.",0.7018
+119,894.58,896.72,SPEAKER_01,But our remote controls get worn out really easily.,0.7561
+120,897.36,902.95,SPEAKER_01,And the remote control is not a great kind of keypad for playing games.,0.778
+121,903.41,904.86,SPEAKER_01,So perhaps one that was more,0.8152
+122,906.44,909.14,SPEAKER_01,specialized for game playing or interactive television.,0.7167
+123,910.04,917.22,SPEAKER_01,They recently brought out this new remote control for people to set their favorite channels or to record things.,0.8463
+124,917.72,926.91,SPEAKER_01,"Instead of people entering in what time things start, you simply slide a bar to say what time it begins and slide another bar to say what time it ends.",0.8137
+125,927.19,930.4,SPEAKER_00,"You know, that's... Yeah, I've heard I've seen the barcode design before, yeah.",0.4882
+126,930.82,932.36,SPEAKER_01,It's taken out the,0.8202
+127,933.93,937.75,SPEAKER_01,You don't have to be really clever to use a remote control.,0.8263
+128,937.77,942.5,SPEAKER_01,"And I think for gaming, you want some big buttons for up, down, left, and right, and shoot.",0.7537
+129,945.01,952.46,SPEAKER_01,"You want to be able to change angles and interact with television, so you need buttons to change the camera angles and stuff like that.",0.6982
+130,953.03,956.6,SPEAKER_00,"Okay, well, we're beginning to run out of time now, so we've got a couple of ideas.",0.7744
+131,956.62,959.56,SPEAKER_00,We'll have to work fast.,0.7474
+132,961.32,972.42,SPEAKER_00,"As you can see, we've got 30 minutes until the next meeting, so we'll have to try and decide on some of the basic functionality, how the user interface might work.",0.6867
+133,972.82,982.41,SPEAKER_00,"That'll be a key aspect, especially if the idea of some kind of macro facility, because you have to program it, you have to have a lot of response back, or at least some kind.",0.7849
+134,982.39,992.03,SPEAKER_00,And we're going to maybe try and have to figure out what the user wants.,0.5013
+135,992.17,993.35,SPEAKER_00,"What the user wants, yes.",0.7908
+136,993.67,993.81,SPEAKER_00,OK.,0.521
+137,996.34,996.72,SPEAKER_00,Right.,0.824
+138,997.04,1001.17,SPEAKER_00,"Has anybody got anything they'd like to add at this stage, anything they think that might have been missed so far?",0.7267
+139,1002.51,1006.15,SPEAKER_03,"Well, when you're talking about game and stuff, do you think they should have some sort of",0.5001
+140,1007.18,1009.29,SPEAKER_03,stick on it rather than buttons.,0.6135
+141,1009.55,1010.21,SPEAKER_03,"Oh, okay, that's it.",0.3772
+142,1010.23,1017.24,SPEAKER_03,"Like, control pads, you know, of games, but is that a bit ridiculous?",0.5545
+143,1017.26,1018.06,SPEAKER_00,I don't see why not.,0.924
+144,1018.1,1023.03,SPEAKER_00,"Almost everybody's probably used to a console by now, and all of them incorporate small d-pads on them.",0.7755
+145,1023.39,1026.17,SPEAKER_00,"In fact, even the mobile phones these days are beginning to use them as well.",0.7653
+146,1026.23,1031.38,SPEAKER_00,So it's probably an interface that most people are used to.,0.8382
+147,1033.15,1037.85,SPEAKER_00,and that could allow easy navigation users a joystick as well.,0.7633
+148,1045.64,1070.74,SPEAKER_02,"Maybe the other key feature that there would be a good idea of building is to make something fairly sort of ergonomic, something that just fits as comfortably as possible into the hand, which of course also allows for the possibility of a more sort of slightly unconventional, attractive",0.7196
+149,1072.4,1074.4,SPEAKER_02,shape for it overall.,0.8813
+150,1075.69,1081.49,SPEAKER_00,"So small, stylish, and something that's just a little bit different.",0.6154
+151,1081.51,1087.72,SPEAKER_02,"Slightly sort of biomorphic in forms, which would need to be sort of conformed to the shape of the hand more efficiently anyway.",0.7574
+152,1088.68,1092.2,SPEAKER_00,"Okay, that's definitely something that we should be able to do quite easily.",0.788
+153,1093.6,1094.67,SPEAKER_00,I would have hoped so anyway.,0.7872
+154,1096.55,1097.13,SPEAKER_00,Right.,0.714
+155,1100.32,1109.11,SPEAKER_00,"I'd say we finish this one up, we'll get started, I'll write up what we've kind of quickly done, and I'll get that out to everybody.",0.7386
+156,1110.27,1110.73,SPEAKER_00,OK. Yeah?,0.5575
+157,1111.27,1111.81,SPEAKER_00,Sure.,0.378
+158,1111.83,1119.18,SPEAKER_01,"OK. Me and Gideon, I guess.",0.502
+159,1119.27,1127.86,SPEAKER_00,"As far as I'm aware, we leave the microphones here, unless we're told otherwise, and just take the laptop for us.",0.7205
