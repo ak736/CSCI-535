@@ -1,0 +1,169 @@
+================================================================
+ANNOTATION INSTRUCTIONS
+Text vs Audio Incongruence — AMI Meeting Corpus
+================================================================
+
+GOAL
+----
+Label whether a speaker's WORDS match their TONE for each 3-second segment.
+
+    0 = ALIGNED      — voice tone matches the words
+    1 = INCONGRUENT  — voice tone conflicts with the words
+
+If unsure → choose 0.
+
+----------------------------------------------------------------
+
+ANNOTATOR ASSIGNMENTS
+---------------------
+    Aaditya → annotator_1
+    Charan  → annotator_2
+    Harish  → annotator_3
+
+Files you will use:
+    annotations/annotated_segments.csv     ← your label sheet
+    Datasets/amicorpus/<meeting_id>/audio/<meeting_id>.Mix-Headset.wav
+
+Use the MIX-HEADSET file for ALL annotations in this round.
+    Why: single file, synchronized timestamps, no headset mapping needed.
+
+Deadline: [insert date]
+
+----------------------------------------------------------------
+
+STEP-BY-STEP (do this for each row)
+-------------------------------------
+
+1. Open annotated_segments.csv. Find your first unlabeled row.
+   Note: meeting_id, start, end, transcript.
+
+   Time format is  MM:SS.mmm  (minutes:seconds.milliseconds)
+   Example:  24:46.500  means  24 minutes and 46.5 seconds into the file.
+
+2. Open the Mix-Headset file for that meeting:
+       Datasets/amicorpus/<meeting_id>/audio/<meeting_id>.Mix-Headset.wav
+
+3. Extract or play the clip between start and end.
+
+   OPTION A — VLC (fast, no install needed):
+       Open file in VLC → press Ctrl+T (or Cmd+T on Mac) to jump to time
+       Enter the start time → play until end time.
+
+   OPTION B — ffmpeg (CLI, recommended for batch):
+       Convert MM:SS.mmm to seconds first, then run:
+
+       ffmpeg -ss <start_seconds> -to <end_seconds> \
+           -i "Datasets/amicorpus/ES2002d/audio/ES2002d.Mix-Headset.wav" \
+           -c copy clip.wav
+
+       Example for start=24:46.500 (= 1486.5s), end=24:49.500 (= 1489.5s):
+           ffmpeg -ss 1486.5 -to 1489.5 \
+               -i "Datasets/amicorpus/ES2002d/audio/ES2002d.Mix-Headset.wav" \
+               -c copy clip.wav
+
+   OPTION C — Python (no ffmpeg needed):
+
+       python3 - <<'PY'
+       import soundfile as sf
+       audio, sr = sf.read('Datasets/amicorpus/ES2002d/audio/ES2002d.Mix-Headset.wav')
+       start, end = 1486.5, 1489.5       # replace with your values in seconds
+       clip = audio[int(start*sr):int(end*sr)]
+       sf.write('clip.wav', clip, sr)
+       PY
+
+   To convert MM:SS.mmm → seconds:
+       seconds = minutes * 60 + seconds_part
+       Example: 24:46.500 → 24 * 60 + 46.5 = 1486.5
+
+4. Listen once or twice. Read the transcript while listening.
+
+5. Decide:
+       0 = ALIGNED      — voice tone matches the words
+       1 = INCONGRUENT  — voice tone conflicts with the words
+       If unsure        → choose 0
+
+6. Enter your label in YOUR column only (e.g. annotator_1).
+   Do not edit any other column.
+
+7. If clip is silent or corrupt, enter 0 and write a short note
+   in the notes column.
+
+8. Move to the next row.
+   Target pace: ~60–80 segments per hour at a comfortable pace.
+
+----------------------------------------------------------------
+
+LABEL DEFINITIONS
+-----------------
+0 (ALIGNED) — the emotional tone of the voice matches what the words say:
+    - Speaker sounds calm/neutral and says something neutral
+    - Speaker sounds happy and says something positive
+    - Speaker sounds frustrated and says something critical
+    - The voice and the words tell the SAME emotional story
+
+1 (INCONGRUENT) — the emotional tone of the voice CONFLICTS with the words:
+    - "That's fine." said with an angry or tense voice
+    - "I disagree." said in a cheerful, light tone
+    - Sarcasm: enthusiastic words with flat or cold delivery
+    - Polite or positive words with clearly tense vocal quality
+    - The voice and the words tell DIFFERENT emotional stories
+
+EDGE CASES:
+    - Short fillers ("Okay", "Right", "Hmm") → almost always 0
+      unless the tone is dramatically unexpected
+    - Very short or partial words → if you cannot tell, label 0
+    - Background noise → label based on what you can hear of the speaker
+
+----------------------------------------------------------------
+
+WHAT NOT TO JUDGE
+-----------------
+Do NOT evaluate:
+    * Whether the idea or proposal is good or bad
+    * Whether the speaker is correct or wrong
+    * Whether the sentence makes logical sense
+    * Whether the topic is interesting or boring
+
+Only judge: does the voice TONE match the WORDS?
+
+----------------------------------------------------------------
+
+WHAT TO LISTEN FOR (tone checklist)
+-------------------------------------
+    Pitch:    high vs low
+    Intensity: loud vs soft
+    Speed:    fast vs slow
+    Prosody:  rising/falling intonation, monotone
+    Vocal cues: breathiness, tightness, laughter, sarcasm markers
+
+Label 1 ONLY when the mismatch is CLEAR.
+When in doubt, default to 0.
+
+----------------------------------------------------------------
+
+IMPORTANT RULES
+---------------
+* Use Mix-Headset for ALL annotations (not individual headsets).
+* Do NOT view other annotators' labels until everyone has finished.
+* Do NOT modify: annotation_id, meeting_id, segment_id, transcript, start, end.
+* If you find an obvious ASR error (wrong words), label based on what you
+  HEAR in the audio — not what the transcript says.
+* Save the CSV after every 25 entries and upload to the shared drive.
+* Do NOT replay a segment more than 2-3 times. Trust your first instinct.
+  Consistency matters more than perfection.
+
+----------------------------------------------------------------
+
+WHAT HAPPENS AFTER YOU FINISH
+------------------------------
+Aniket will:
+    - Compute majority vote (final ground truth per segment)
+    - Compute Krippendorff's alpha (inter-rater agreement)
+        alpha >= 0.7  → strong agreement
+        alpha >= 0.6  → acceptable
+        alpha <  0.4  → recalibration needed (relabel small subset)
+    - Run evaluation scripts: ROC-AUC, Precision, Recall, F1
+    - Compare JS method vs valence-difference baseline
+    - Share results + next steps for the midterm report
+
+================================================================

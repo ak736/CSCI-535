@@ -1,0 +1,1152 @@
+segment_id,start,end,speaker_id,transcript,incongruence_score,confidence_weight,final_score
+0,9.0,12.0,SPEAKER_00,OK. Is that,0.661806,0.7283,0.481993
+1,10.5,13.5,SPEAKER_00,Is that all,0.710568,0.7283,0.517507
+2,12.0,15.0,SPEAKER_00,all right now?,0.550891,0.7283,0.401214
+3,16.5,19.5,SPEAKER_03,OK. That's cool. Someone turned these on.,0.365397,0.5069,0.18522
+4,22.5,25.5,SPEAKER_00,OK. Everybody all set to start the meeting?,0.089193,0.79,0.070462
+5,24.0,27.0,SPEAKER_00,set to start the meeting? OK. We've got,0.035078,0.79,0.027711
+6,25.5,28.5,SPEAKER_00,OK. We've got half an hour,0.11696,0.8309,0.097182
+7,27.0,30.0,SPEAKER_00,half an hour for this one,0.284472,0.8309,0.236368
+8,28.5,31.5,SPEAKER_00,for this one to discuss the functional,0.322371,0.8309,0.267858
+9,30.0,33.0,SPEAKER_00,to discuss the functional design. OK.,0.391546,0.6629,0.259556
+10,34.5,37.5,SPEAKER_00,"All ready to go? OK. So hopefully, if I've",0.420245,0.7358,0.309217
+11,36.0,39.0,SPEAKER_00,"So hopefully, if I've been working away, and",0.568955,0.7992,0.454709
+12,37.5,40.5,SPEAKER_00,"been working away, and I've put the minutes",0.219845,0.7992,0.1757
+13,39.0,42.0,SPEAKER_00,I've put the minutes of the last meeting,0.131621,0.7992,0.105191
+14,40.5,43.5,SPEAKER_00,of the last meeting in the project folder.,0.485173,0.7992,0.38775
+15,42.0,45.0,SPEAKER_00,in the project folder.,0.212828,0.7992,0.170092
+16,45.0,48.0,SPEAKER_00,So I guess just to recap on,0.032645,0.9195,0.030017
+17,46.5,49.5,SPEAKER_00,guess just to recap on what we did last time.,0.008977,0.9195,0.008254
+18,48.0,51.0,SPEAKER_00,what we did last time. I got to,0.055949,0.8372,0.046841
+19,49.5,52.5,SPEAKER_00,I got to know each other,0.020255,0.8372,0.016957
+20,51.0,54.0,SPEAKER_00,"know each other a little bit, and",0.035458,0.7548,0.026763
+21,52.5,55.5,SPEAKER_00,"a little bit, and got familiar with",0.011946,0.7548,0.009016
+22,54.0,57.0,SPEAKER_00,"got familiar with all the equipment, and",0.009989,0.7548,0.00754
+23,55.5,58.5,SPEAKER_00,"all the equipment, and started to discuss",0.064708,0.7548,0.048842
+24,57.0,60.0,SPEAKER_00,started to discuss a bit about,0.055646,0.7548,0.042002
+25,58.5,61.5,SPEAKER_00,"a bit about the project cost-wise, how",0.039327,0.7548,0.029684
+26,60.0,63.0,SPEAKER_00,"the project cost-wise, how much money we",0.114634,0.7548,0.086526
+27,61.5,64.5,SPEAKER_00,much money we had to spend,0.617534,0.7548,0.466115
+28,63.0,66.0,SPEAKER_00,had to spend,0.864257,0.7548,0.652341
+29,99.0,102.0,SPEAKER_00,just want to,0.213339,0.8552,0.182448
+30,100.5,103.5,SPEAKER_00,just want to tell you that,0.030897,0.8552,0.026423
+31,102.0,105.0,SPEAKER_00,tell you that we have three,0.153142,0.8552,0.130967
+32,103.5,106.5,SPEAKER_00,"we have three new requirements, which is",0.063273,0.8552,0.054111
+33,105.0,108.0,SPEAKER_00,"new requirements, which is the first one",0.023564,0.8552,0.020152
+34,106.5,109.5,SPEAKER_00,the first one is that the companies,0.25244,0.8552,0.215886
+35,108.0,111.0,SPEAKER_00,is that the companies decided that tele-text,0.051264,0.8552,0.043841
+36,109.5,112.5,SPEAKER_00,decided that tele-text is outdated because of,0.096022,0.8552,0.082118
+37,111.0,114.0,SPEAKER_00,is outdated because of how popular the,0.053746,0.8552,0.045963
+38,112.5,115.5,SPEAKER_00,how popular the internet is. Nobody uses,0.018925,0.8606,0.016287
+39,114.0,117.0,SPEAKER_00,"internet is. Nobody uses tele-text very much anymore, so",0.05878,0.8606,0.050586
+40,115.5,118.5,SPEAKER_00,"tele-text very much anymore, so we don't really need to consider",0.226667,0.8661,0.196316
+41,117.0,120.0,SPEAKER_00,we don't really need to consider that in the functionality of,0.230461,0.8661,0.199602
+42,118.5,121.5,SPEAKER_00,that in the functionality of the of the remote control.,0.179258,0.8599,0.154144
+43,120.0,123.0,SPEAKER_00,the of the remote control. And they've also,0.205619,0.8359,0.171877
+44,121.5,124.5,SPEAKER_00,And they've also suggested that we only,0.042878,0.8208,0.035194
+45,123.0,126.0,SPEAKER_00,suggested that we only use the remote control,0.019203,0.7878,0.015128
+46,124.5,127.5,SPEAKER_00,use the remote control to control the,0.063006,0.7878,0.049636
+47,126.0,129.0,SPEAKER_00,"to control the television, not the VCR,",0.078354,0.7878,0.061727
+48,127.5,130.5,SPEAKER_00,"television, not the VCR, DVD or anything else.",0.06369,0.7878,0.050175
+49,129.0,132.0,SPEAKER_00,DVD or anything else. I think the,0.099236,0.819,0.081274
+50,130.5,133.5,SPEAKER_00,I think the worry is that if the,0.021943,0.819,0.017971
+51,132.0,135.0,SPEAKER_00,worry is that if the project becomes too complex,0.021731,0.8502,0.018475
+52,133.5,136.5,SPEAKER_00,project becomes too complex then it'll affect how,0.019317,0.8502,0.016423
+53,135.0,138.0,SPEAKER_00,then it'll affect how long it takes us to,0.111051,0.8502,0.094416
+54,136.5,139.5,SPEAKER_00,"long it takes us to get it into production,",0.053869,0.8502,0.045799
+55,138.0,141.0,SPEAKER_00,"get it into production, the time to market.",0.027227,0.8502,0.023149
+56,139.5,142.5,SPEAKER_00,the time to market. So we're just,0.021797,0.8144,0.017752
+57,141.0,144.0,SPEAKER_00,So we're just going to keep it simple and,0.048244,0.7787,0.037567
+58,142.5,145.5,SPEAKER_00,going to keep it simple and it'll just control the TV. The,0.16023,0.826,0.13235
+59,144.0,147.0,SPEAKER_00,it'll just control the TV. The other thing was that the company,0.060489,0.826,0.049964
+60,145.5,148.5,SPEAKER_00,other thing was that the company wanted the corporate color and slogan,0.091102,0.8734,0.079568
+61,147.0,150.0,SPEAKER_00,wanted the corporate color and slogan to be implemented in the,0.275697,0.8734,0.240794
+62,148.5,151.5,SPEAKER_00,to be implemented in the new design.,0.191074,0.8734,0.166884
+63,150.0,153.0,SPEAKER_00,new design. I'm not,0.199933,0.8682,0.173582
+64,151.5,154.5,SPEAKER_00,I'm not entirely sure what the corporate color is.,0.149011,0.863,0.128596
+65,153.0,156.0,SPEAKER_00,entirely sure what the corporate color is. It might be yellow because there,0.27335,0.7946,0.217204
+66,154.5,157.5,SPEAKER_00,It might be yellow because there seems to be a lot of yellow,0.179137,0.7946,0.142343
+67,159.0,162.0,SPEAKER_03,"actual written slogan, or just to embody the idea",0.008391,0.8353,0.007009
+68,163.5,166.5,SPEAKER_00,that's the thing. I'm not sure.,0.023416,0.8328,0.019501
+69,166.5,169.5,SPEAKER_00,Because on the company,0.269838,0.7529,0.203161
+70,168.0,171.0,SPEAKER_00,"Because on the company website, what does it",0.060437,0.7529,0.045503
+71,175.5,178.5,SPEAKER_00,something they want actually written on it? Because it's quite,0.157371,0.7744,0.121868
+72,177.0,180.0,SPEAKER_00,"written on it? Because it's quite long. Or yeah, just",0.604255,0.767,0.463464
+73,178.5,181.5,SPEAKER_00,"long. Or yeah, just the idea that I'm",0.339807,0.7933,0.269569
+74,180.0,183.0,SPEAKER_00,the idea that I'm not sure. Is that something,0.279946,0.7907,0.221353
+75,181.5,184.5,SPEAKER_00,not sure. Is that something we can discuss as well?,0.044905,0.7822,0.035125
+76,183.0,186.0,SPEAKER_00,we can discuss as well? So these are the,0.08571,0.7973,0.068336
+77,184.5,187.5,SPEAKER_00,"So these are the three things, just",0.018719,0.7651,0.014322
+78,186.0,189.0,SPEAKER_00,"three things, just not to worry about",0.021234,0.7651,0.016246
+79,187.5,190.5,SPEAKER_00,"not to worry about teletext, only control",0.021165,0.7651,0.016193
+80,189.0,192.0,SPEAKER_00,"teletext, only control the TV and",0.131186,0.7651,0.100371
+81,190.5,193.5,SPEAKER_00,the TV and incorporate the color and,0.210185,0.7651,0.160812
+82,192.0,195.0,SPEAKER_00,incorporate the color and slogan of the,0.488009,0.7651,0.373376
+83,193.5,196.5,SPEAKER_00,slogan of the company.,0.439956,0.7651,0.33661
+84,196.5,199.5,SPEAKER_00,So. Is everybody okay,0.06593,0.7125,0.046975
+85,198.0,201.0,SPEAKER_00,So. Is everybody okay with any of that or,0.342611,0.7125,0.24411
+86,199.5,202.5,SPEAKER_00,with any of that or do you want me to recap,0.258424,0.4609,0.119108
+87,201.0,204.0,SPEAKER_00,do you want me to recap at all?,0.377522,0.4609,0.174
+88,202.5,205.5,SPEAKER_00,at all? That time for,0.307805,0.6751,0.207799
+89,204.0,207.0,SPEAKER_00,That time for presentations and he would like,0.077696,0.8893,0.069095
+90,205.5,208.5,SPEAKER_00,presentations and he would like to go first.,0.187274,0.8893,0.166543
+91,207.0,210.0,SPEAKER_00,to go first.,0.082567,0.8893,0.073427
+92,210.0,213.0,SPEAKER_02,Can I steal,0.243331,0.4469,0.108745
+93,211.5,214.5,SPEAKER_02,I steal this,0.861641,0.4469,0.385067
+94,213.0,216.0,SPEAKER_02,this from the,0.698747,0.4469,0.31227
+95,214.5,217.5,SPEAKER_02,from the back,0.301873,0.4469,0.134907
+96,216.0,219.0,SPEAKER_02,back of your,0.127545,0.4469,0.057
+97,258.0,261.0,SPEAKER_02,So this is the,0.137155,0.3797,0.052078
+98,259.5,262.5,SPEAKER_02,is the technical function design.,0.349675,0.3797,0.132772
+99,261.0,264.0,SPEAKER_02,technical function design.,0.642845,0.3797,0.244088
+100,264.0,267.0,SPEAKER_02,"To do the design,",0.025666,0.612,0.015708
+101,265.5,268.5,SPEAKER_02,"To do the design, I've had a look",0.036484,0.612,0.022328
+102,267.0,270.0,SPEAKER_02,"I've had a look online, I've had",0.12186,0.612,0.074578
+103,268.5,271.5,SPEAKER_02,"online, I've had a look at the",0.04698,0.612,0.028752
+104,270.0,273.0,SPEAKER_02,"a look at the homepage, which has given",0.004294,0.612,0.002628
+105,271.5,274.5,SPEAKER_02,"homepage, which has given us some inspiration from",0.190227,0.612,0.116419
+106,273.0,276.0,SPEAKER_02,us some inspiration from previous products. I've had a,0.138734,0.6562,0.091037
+107,274.5,277.5,SPEAKER_02,previous products. I've had a look at the previous products to see what they,0.005723,0.6562,0.003755
+108,276.0,279.0,SPEAKER_02,look at the previous products to see what they offer.,0.003819,0.7005,0.002675
+109,277.5,280.5,SPEAKER_02,offer. I would like,0.075715,0.7549,0.057157
+110,279.0,282.0,SPEAKER_02,I would like to ask you guys for your,0.194868,0.8093,0.157707
+111,280.5,283.5,SPEAKER_02,to ask you guys for your ideas about the design at the end,0.012085,0.8093,0.00978
+112,282.0,285.0,SPEAKER_02,ideas about the design at the end of the meeting.,0.043273,0.6687,0.028937
+113,283.5,286.5,SPEAKER_02,"of the meeting. Unfortunately, we're not allowed",0.45345,0.6687,0.303222
+114,285.0,288.0,SPEAKER_02,"Unfortunately, we're not allowed to talk outside the",0.238813,0.5281,0.126117
+115,286.5,289.5,SPEAKER_02,to talk outside the meeting room. Having a,0.262063,0.6348,0.166358
+116,288.0,291.0,SPEAKER_02,meeting room. Having a look at the existing,0.096107,0.6348,0.061008
+117,289.5,292.5,SPEAKER_02,"look at the existing products, I found out",0.053076,0.7415,0.039356
+118,291.0,294.0,SPEAKER_02,"products, I found out that it tends",0.069456,0.7415,0.051501
+119,292.5,295.5,SPEAKER_02,that it tends to come into extremes.,0.138567,0.7415,0.102748
+120,294.0,297.0,SPEAKER_02,to come into extremes. There's either a very complicated,0.020388,0.6754,0.01377
+121,295.5,298.5,SPEAKER_02,"There's either a very complicated one that's got lots of buttons,",0.05847,0.6093,0.035626
+122,297.0,300.0,SPEAKER_02,"one that's got lots of buttons, lots of colors, very confusing.",0.089557,0.598,0.053555
+123,298.5,301.5,SPEAKER_02,"lots of colors, very confusing. You don't know what",0.099351,0.598,0.059412
+124,300.0,303.0,SPEAKER_02,"You don't know what you're doing. In that case,",0.123012,0.6421,0.078986
+125,301.5,304.5,SPEAKER_02,"you're doing. In that case, the labeling tends to be very bad.",0.118516,0.6421,0.076099
+126,303.0,306.0,SPEAKER_02,the labeling tends to be very bad. There's an,0.097019,0.6368,0.061781
+127,304.5,307.5,SPEAKER_02,There's an example I'll,0.016892,0.6368,0.010757
+128,306.0,309.0,SPEAKER_02,example I'll show you at,0.156533,0.5761,0.090178
+129,307.5,310.5,SPEAKER_02,show you at the end.,0.626709,0.5761,0.361047
+130,313.5,316.5,SPEAKER_02,So you see,0.062755,0.6736,0.042272
+131,315.0,318.0,SPEAKER_02,So you see a button there and there.,0.064779,0.6736,0.043635
+132,316.5,319.5,SPEAKER_02,a button there and there. This one's prog.,0.389773,0.6998,0.272763
+133,318.0,321.0,SPEAKER_02,"This one's prog. Sorry, that one's prog and",0.632522,0.6098,0.385712
+134,319.5,322.5,SPEAKER_02,"Sorry, that one's prog and that one's prog. And it",0.581197,0.5436,0.315939
+135,321.0,324.0,SPEAKER_02,that one's prog. And it doesn't really tell you what it does.,0.040271,0.5436,0.021891
+136,322.5,325.5,SPEAKER_02,doesn't really tell you what it does.,0.083318,0.6576,0.05479
+137,333.0,336.0,SPEAKER_02,I'm not sure if you had,0.055831,0.6408,0.035776
+138,334.5,337.5,SPEAKER_02,I'm not sure if you had a look at the other,0.116179,0.6408,0.074448
+139,336.0,339.0,SPEAKER_02,a look at the other control in that example.,0.031833,0.6408,0.020399
+140,337.5,340.5,SPEAKER_02,control in that example. It's a very simple one. It's,0.004352,0.6643,0.002891
+141,339.0,342.0,SPEAKER_02,It's a very simple one. It's got only the basic functions.,0.005348,0.6761,0.003616
+142,340.5,343.5,SPEAKER_02,got only the basic functions. But it's the,0.024359,0.7319,0.017828
+143,342.0,345.0,SPEAKER_02,But it's the same size as the,0.073052,0.7756,0.056659
+144,343.5,346.5,SPEAKER_02,same size as the hard to use,0.173682,0.7756,0.134708
+145,345.0,348.0,SPEAKER_02,hard to use one.,0.589691,0.7756,0.457364
+146,346.5,349.5,SPEAKER_02,one. It looks a bit clunky.,0.215516,0.7442,0.160387
+147,348.0,351.0,SPEAKER_02,It looks a bit clunky. It's very big and,0.072971,0.6926,0.05054
+148,349.5,352.5,SPEAKER_02,It's very big and not very much used,0.123989,0.6724,0.083371
+149,351.0,354.0,SPEAKER_02,not very much used for access to buttons.,0.094224,0.6724,0.063356
+150,352.5,355.5,SPEAKER_02,for access to buttons. And it's,0.017528,0.7177,0.01258
+151,354.0,357.0,SPEAKER_02,And it's very hard to access the advanced,0.407694,0.7177,0.292602
+152,355.5,358.5,SPEAKER_02,"very hard to access the advanced functions. There's nothing, for instance, for",0.100736,0.7406,0.074605
+153,357.0,360.0,SPEAKER_02,"functions. There's nothing, for instance, for a slow motion button.",0.061651,0.7406,0.045659
+154,358.5,361.5,SPEAKER_02,a slow motion button.,0.288096,0.7181,0.206882
+155,361.5,364.5,SPEAKER_02,"My own preferences, I prefer the",0.050805,0.8135,0.04133
+156,363.0,366.0,SPEAKER_02,"preferences, I prefer the clunky one.",0.019062,0.8135,0.015507
+157,364.5,367.5,SPEAKER_02,"clunky one. It's very easy to use,",0.378873,0.7711,0.292149
+158,366.0,369.0,SPEAKER_02,"It's very easy to use, but unfortunately it does",0.782935,0.7287,0.570525
+159,367.5,370.5,SPEAKER_02,"but unfortunately it does lack the advanced functions, which",0.654372,0.7287,0.476841
+160,369.0,372.0,SPEAKER_02,"lack the advanced functions, which I quite like having on",0.258608,0.7287,0.188447
+161,370.5,373.5,SPEAKER_02,I quite like having on the controls.,0.530581,0.7287,0.386635
+162,372.0,375.0,SPEAKER_02,the controls. So I,0.044566,0.6731,0.029997
+163,373.5,376.5,SPEAKER_02,So I believe that the advanced functions should maybe be hidden,0.008611,0.6175,0.005318
+164,375.0,378.0,SPEAKER_02,believe that the advanced functions should maybe be hidden in a drawer or something like that. It,0.006809,0.5337,0.003634
+165,376.5,379.5,SPEAKER_02,in a drawer or something like that. It could be pulled,0.125408,0.5337,0.06693
+166,378.0,381.0,SPEAKER_02,could be pulled out from the bottom,0.143779,0.4499,0.064686
+167,379.5,382.5,SPEAKER_02,out from the bottom of it. So that's,0.437224,0.552,0.241348
+168,381.0,384.0,SPEAKER_02,of it. So that's for your preferences.,0.035055,0.552,0.01935
+169,382.5,385.5,SPEAKER_02,for your preferences. I'm not sure how,0.010387,0.5692,0.005912
+170,387.0,390.0,SPEAKER_00,"we can chat away for five minutes or so,",0.016109,0.657,0.010583
+171,388.5,391.5,SPEAKER_00,"for five minutes or so, I think, at most,",0.034668,0.657,0.022777
+172,390.0,393.0,SPEAKER_00,"I think, at most, just a couple of minutes",0.106363,0.657,0.06988
+173,394.5,397.5,SPEAKER_03,"Yeah, like a lot of what I've read and",0.061017,0.7624,0.04652
+174,396.0,399.0,SPEAKER_03,what I've read and prepared for this meeting,0.415551,0.7624,0.316816
+175,397.5,400.5,SPEAKER_03,prepared for this meeting fits in really closely,0.174243,0.7624,0.132843
+176,399.0,402.0,SPEAKER_03,fits in really closely with what Craig's just,0.297955,0.7624,0.227161
+177,400.5,403.5,SPEAKER_03,"with what Craig's just gone over. So in part,",0.439896,0.7851,0.345362
+178,402.0,405.0,SPEAKER_03,"gone over. So in part, I could give you",0.201248,0.7851,0.158
+179,403.5,406.5,SPEAKER_03,"I could give you some of my personal preferences,",0.040049,0.8078,0.032351
+180,405.0,408.0,SPEAKER_03,"some of my personal preferences, but I could also add",0.359278,0.8078,0.290225
+181,406.5,409.5,SPEAKER_03,"but I could also add some to this, which is",0.437283,0.8078,0.353237
+182,408.0,411.0,SPEAKER_03,"some to this, which is just about sort of",0.459074,0.8078,0.37084
+183,409.5,412.5,SPEAKER_03,just about sort of market research. But anyway.,0.470498,0.7616,0.358331
+184,415.5,418.5,SPEAKER_03,clunky one is the one on the right. Clunky in,0.363974,0.8237,0.299805
+185,417.0,420.0,SPEAKER_03,"Clunky in what sense? Like, heavier",0.073008,0.8497,0.062035
+186,421.5,424.5,SPEAKER_02,"think it's supposed to be the same size, but it's got",0.028209,0.636,0.017941
+187,423.0,426.0,SPEAKER_02,"the same size, but it's got much fewer buttons.",0.029161,0.636,0.018547
+188,424.5,427.5,SPEAKER_02,"much fewer buttons. I see, so",0.021323,0.5879,0.012536
+189,426.0,429.0,SPEAKER_02,"I see, so it's more spread",0.056963,0.5399,0.030754
+190,427.5,430.5,SPEAKER_02,it's more spread out. You get the idea,0.301246,0.5915,0.178187
+191,429.0,432.0,SPEAKER_02,out. You get the idea about this size.,0.481363,0.5915,0.284726
+192,430.5,433.5,SPEAKER_02,about this size. It's got very few buttons on,0.22251,0.5536,0.123181
+193,435.0,438.0,SPEAKER_00,a valid point. The one on the,0.153937,0.7919,0.121903
+194,436.5,439.5,SPEAKER_00,one on the left looks quite,0.020976,0.7275,0.01526
+195,438.0,441.0,SPEAKER_00,left looks quite complicated. And that,0.118152,0.7868,0.092962
+196,439.5,442.5,SPEAKER_00,complicated. And that PRG thing is,0.042572,0.7868,0.033495
+197,441.0,444.0,SPEAKER_00,PRG thing is incredibly confusing.,0.204164,0.846,0.172723
+198,442.5,445.5,SPEAKER_00,incredibly confusing. So,0.243013,0.8639,0.209939
+199,444.0,447.0,SPEAKER_00,So I see why you,0.165656,0.8819,0.146092
+200,445.5,448.5,SPEAKER_00,I see why you might prefer the simpler,0.00765,0.8819,0.006746
+201,447.0,450.0,SPEAKER_00,"might prefer the simpler design. But yeah, you don't",0.07085,0.8135,0.057636
+202,448.5,451.5,SPEAKER_00,"design. But yeah, you don't want to lose out on what",0.1515,0.8135,0.123245
+203,450.0,453.0,SPEAKER_00,want to lose out on what it does. So maybe you get,0.3849,0.7497,0.28856
+204,451.5,454.5,SPEAKER_00,it does. So maybe you get a lot of remote controls where,0.082622,0.7497,0.061942
+205,453.0,456.0,SPEAKER_00,a lot of remote controls where you flip the thing open. I,0.075343,0.6364,0.047948
+206,454.5,457.5,SPEAKER_00,you flip the thing open. I think that's a good idea. I,0.066414,0.6308,0.041894
+207,456.0,459.0,SPEAKER_00,think that's a good idea. I think it's a,0.011281,0.569,0.006419
+208,460.5,463.5,SPEAKER_02,we have any functions we'd want on it?,0.008659,0.8089,0.007004
+209,462.0,465.0,SPEAKER_02,we'd want on it? So far I've got on,0.004624,0.7994,0.003696
+210,463.5,466.5,SPEAKER_02,"So far I've got on and off, switch the channel up and",0.010599,0.7899,0.008372
+211,465.0,468.0,SPEAKER_02,"and off, switch the channel up and down, and put the volume up and",0.01833,0.7899,0.014479
+212,466.5,469.5,SPEAKER_02,"down, and put the volume up and down. They're just",0.009594,0.73,0.007004
+213,468.0,471.0,SPEAKER_02,down. They're just the very basic features for TV.,0.065964,0.73,0.048154
+214,471.0,474.0,SPEAKER_00,"And then actual numbers for channels as well,",0.038814,0.8088,0.031393
+215,475.5,478.5,SPEAKER_02,You see that's our acquired one or our requested one. Which was,0.009378,0.6289,0.005898
+216,477.0,480.0,SPEAKER_02,"requested one. Which was that? The channels,",0.020152,0.7242,0.014594
+217,483.0,486.0,SPEAKER_00,"But I would say that's required. I mean, there's no way anybody's",0.094785,0.7735,0.073316
+218,484.5,487.5,SPEAKER_00,"required. I mean, there's no way anybody's going to buy a remote control",0.102708,0.7735,0.079445
+219,486.0,489.0,SPEAKER_00,going to buy a remote control these days. So if she can't,0.696783,0.6998,0.487609
+220,487.5,490.5,SPEAKER_00,"these days. So if she can't actually individually select channels, I mean,",0.061322,0.6998,0.042913
+221,489.0,492.0,SPEAKER_00,"actually individually select channels, I mean, would anybody disagree with that?",0.471633,0.7199,0.339529
+222,490.5,493.5,SPEAKER_00,would anybody disagree with that?,0.711421,0.7199,0.512152
+223,495.0,498.0,SPEAKER_00,So don't need to,0.409129,0.7557,0.309179
+224,496.5,499.5,SPEAKER_00,So don't need to worry about tele-text. Don't,0.145646,0.5172,0.075328
+225,498.0,501.0,SPEAKER_00,worry about tele-text. Don't need to,0.201701,0.5172,0.10432
+226,499.5,502.5,SPEAKER_00,need to worry about,0.165351,0.2787,0.046083
+227,501.0,504.0,SPEAKER_00,worry about VCR. Any kind of,0.574289,0.5464,0.313791
+228,502.5,505.5,SPEAKER_00,VCR. Any kind of display controls at all?,0.112707,0.5464,0.061583
+229,504.0,507.0,SPEAKER_00,display controls at all? Do you think we need to worry,0.086149,0.7777,0.066998
+230,508.5,511.5,SPEAKER_03,"think essentially what we're doing right now is we're categorizing. We're saying,",0.027288,0.8045,0.021953
+231,510.0,513.0,SPEAKER_03,"now is we're categorizing. We're saying, well, we want this to",0.048334,0.8045,0.038885
+232,511.5,514.5,SPEAKER_03,"well, we want this to be a product that offers",0.012401,0.8735,0.010832
+233,513.0,516.0,SPEAKER_03,"be a product that offers all the more tricky features,",0.105749,0.8735,0.092372
+234,514.5,517.5,SPEAKER_03,"all the more tricky features, but we want them to",0.034798,0.8735,0.030396
+235,516.0,519.0,SPEAKER_03,but we want them to be in another area. Is,0.131921,0.8462,0.111631
+236,517.5,520.5,SPEAKER_03,be in another area. Is that right? Is that,0.246474,0.7832,0.193038
+237,519.0,522.0,SPEAKER_03,that right? Is that what we're doing? We're sorting,0.342363,0.6939,0.237566
+238,520.5,523.5,SPEAKER_03,what we're doing? We're sorting them. Or are,0.431978,0.6565,0.283594
+239,522.0,525.0,SPEAKER_03,them. Or are we actually eliminating things we just don't want,0.282118,0.6563,0.185154
+240,526.5,529.5,SPEAKER_00,think are you maybe kind of thinking what we absolutely have to have and,0.033585,0.8549,0.028712
+241,531.0,534.0,SPEAKER_02,"with, I'm sorry, a bit both. We need to find out exactly what we have to have.",0.574045,0.5595,0.321178
+242,532.5,535.5,SPEAKER_02,"need to find out exactly what we have to have. And after that,",0.033985,0.592,0.020119
+243,534.0,537.0,SPEAKER_02,"And after that, we can add things if they're possible.",0.004379,0.6815,0.002984
+244,538.5,541.5,SPEAKER_00,"Right. Well, do you want to maybe just at",0.044672,0.7079,0.031623
+245,540.0,543.0,SPEAKER_00,you want to maybe just at this point decide on what,0.014104,0.7298,0.010293
+246,541.5,544.5,SPEAKER_00,this point decide on what we absolutely must have as a,0.025969,0.7298,0.018952
+247,543.0,546.0,SPEAKER_00,we absolutely must have as a function of this?,0.040773,0.7298,0.029756
+248,544.5,547.5,SPEAKER_00,"function of this? So so far,",0.013646,0.7504,0.01024
+249,546.0,549.0,SPEAKER_00,"So so far, just to recap, we've got",0.011859,0.7709,0.009142
+250,558.0,561.0,SPEAKER_03,"Well, one way",0.031518,0.8218,0.025902
+251,559.5,562.5,SPEAKER_03,"Well, one way I would look at this",0.036504,0.8218,0.029999
+252,561.0,564.0,SPEAKER_03,I would look at this would be that we,0.133779,0.8218,0.10994
+253,562.5,565.5,SPEAKER_03,would be that we approach the different controls in,0.053606,0.8218,0.044054
+254,564.0,567.0,SPEAKER_03,approach the different controls in terms of like control,0.02528,0.8218,0.020775
+255,565.5,568.5,SPEAKER_03,terms of like control types so that for the,0.221044,0.8218,0.181654
+256,567.0,570.0,SPEAKER_03,types so that for the user it's very clear,0.012848,0.8218,0.010558
+257,568.5,571.5,SPEAKER_03,"user it's very clear what they want to do,",0.013454,0.8218,0.011057
+258,570.0,573.0,SPEAKER_03,"what they want to do, where they go, and",0.148945,0.8218,0.122403
+259,571.5,574.5,SPEAKER_03,"where they go, and also think maybe a little",0.462402,0.8218,0.380002
+260,573.0,576.0,SPEAKER_03,also think maybe a little bit about what we,0.021769,0.8218,0.017889
+261,574.5,577.5,SPEAKER_03,bit about what we just want to be easily,0.011068,0.8218,0.009095
+262,576.0,579.0,SPEAKER_03,"just want to be easily accessible. For example, if we had",0.065123,0.8644,0.056293
+263,577.5,580.5,SPEAKER_03,"accessible. For example, if we had audio controls, those could be",0.036797,0.8644,0.031807
+264,579.0,582.0,SPEAKER_03,"audio controls, those could be something people set up very rarely.",0.038518,0.9071,0.03494
+265,580.5,583.5,SPEAKER_03,something people set up very rarely. Maybe they're in,0.0119,0.8377,0.009969
+266,582.0,585.0,SPEAKER_03,"Maybe they're in a little area,",0.216553,0.8377,0.181407
+267,583.5,586.5,SPEAKER_03,"a little area, but covered up.",0.270856,0.7684,0.208126
+268,585.0,588.0,SPEAKER_03,but covered up.,0.161916,0.7684,0.124416
+269,588.0,591.0,SPEAKER_03,Things like channel and volume,0.035426,0.8769,0.031065
+270,589.5,592.5,SPEAKER_03,channel and volume are used all,0.105011,0.8769,0.092084
+271,591.0,594.0,SPEAKER_03,"are used all the time, so",0.096217,0.8769,0.084373
+272,592.5,595.5,SPEAKER_03,"the time, so we just have",0.376398,0.8769,0.330064
+273,594.0,597.0,SPEAKER_03,we just have them right out,0.218723,0.8769,0.191798
+274,595.5,598.5,SPEAKER_03,them right out on top.,0.031401,0.8769,0.027535
+275,597.0,600.0,SPEAKER_03,on top. Just very,0.010911,0.8778,0.009578
+276,598.5,601.5,SPEAKER_03,Just very self-explanatory. So maybe we,0.062834,0.8621,0.054169
+277,600.0,603.0,SPEAKER_03,self-explanatory. So maybe we need to think about,0.035117,0.8621,0.030274
+278,601.5,604.5,SPEAKER_03,need to think about having three or more,0.007267,0.8455,0.006144
+279,603.0,606.0,SPEAKER_03,"having three or more groupings of controls, you",0.068654,0.8455,0.058047
+280,604.5,607.5,SPEAKER_03,"groupings of controls, you know, like one which",0.237664,0.8455,0.200945
+281,606.0,609.0,SPEAKER_03,"know, like one which are just the habitual ones",0.131449,0.8455,0.11114
+282,607.5,610.5,SPEAKER_03,are just the habitual ones that should be right,0.061203,0.8455,0.051748
+283,609.0,612.0,SPEAKER_03,that should be right within your natural grip,0.186271,0.8455,0.157492
+284,610.5,613.5,SPEAKER_03,within your natural grip and others that are,0.363762,0.8455,0.30756
+285,612.0,615.0,SPEAKER_03,and others that are also available and then,0.498083,0.8455,0.421129
+286,613.5,616.5,SPEAKER_03,also available and then others that are concealed.,0.583498,0.8455,0.493347
+287,616.5,619.5,SPEAKER_00,Okay. We're just to wrap up quickly,0.204357,0.8122,0.165979
+288,618.0,621.0,SPEAKER_00,just to wrap up quickly on this little section.,0.209053,0.7894,0.165026
+289,619.5,622.5,SPEAKER_00,on this little section. Do you,0.162521,0.8265,0.134323
+290,621.0,624.0,SPEAKER_00,Do you think maybe,0.297113,0.8636,0.256587
+291,622.5,625.5,SPEAKER_00,think maybe that's the,0.288068,0.8636,0.248775
+292,624.0,627.0,SPEAKER_00,that's the only kind of,0.230101,0.8636,0.198715
+293,625.5,628.5,SPEAKER_00,only kind of essential requirements and then,0.163397,0.8354,0.136502
+294,627.0,630.0,SPEAKER_00,essential requirements and then maybe just things that would,0.01816,0.8354,0.015171
+295,628.5,631.5,SPEAKER_00,maybe just things that would be nice if it could do,0.00433,0.8072,0.003495
+296,630.0,633.0,SPEAKER_00,be nice if it could do would be things like audio,0.018232,0.8072,0.014717
+297,631.5,634.5,SPEAKER_00,would be things like audio setup and display setup and,0.017173,0.8072,0.013862
+298,633.0,636.0,SPEAKER_00,"setup and display setup and things like that, maybe like",0.061721,0.8072,0.049821
+299,634.5,637.5,SPEAKER_00,"things like that, maybe like a mute button, that sort",0.124974,0.8072,0.100879
+300,636.0,639.0,SPEAKER_00,"a mute button, that sort of thing. Any of you",0.062943,0.7025,0.044218
+301,637.5,640.5,SPEAKER_00,of thing. Any of you anything to add to that at,0.010111,0.7025,0.007103
+302,639.0,642.0,SPEAKER_00,anything to add to that at all?,0.227106,0.7689,0.174622
+303,645.0,648.0,SPEAKER_00,Right. Okay. If we can move on,0.105115,0.7102,0.074652
+304,646.5,649.5,SPEAKER_00,Okay. If we can move on to the next presentation then please.,0.052907,0.7007,0.037072
+305,648.0,651.0,SPEAKER_00,to the next presentation then please. Sure.,0.020577,0.7833,0.016118
+306,652.5,655.5,SPEAKER_03,Can this reach? Can this plug come,0.025181,0.8221,0.020701
+307,658.5,661.5,SPEAKER_03,So why don't,0.291859,0.8291,0.241981
+308,660.0,663.0,SPEAKER_03,don't I just,0.840666,0.8291,0.696996
+309,661.5,664.5,SPEAKER_03,I just pick,0.368833,0.8291,0.3058
+310,663.0,666.0,SPEAKER_03,pick up and...,0.45516,0.8291,0.377373
+311,678.0,681.0,SPEAKER_03,Can you go,0.193346,0.828,0.160091
+312,679.5,682.5,SPEAKER_03,Can you go behind me?,0.155112,0.828,0.128433
+313,682.5,685.5,SPEAKER_03,This is so...,0.791579,0.5585,0.442097
+314,687.0,690.0,SPEAKER_00,"It be noises everything was wireless, isn't it?",0.579337,0.587,0.340071
+315,694.5,697.5,SPEAKER_03,So I can say,0.226629,0.8104,0.18366
+316,696.0,699.0,SPEAKER_03,"So I can say already, I don't know",0.348147,0.8104,0.282138
+317,697.5,700.5,SPEAKER_03,"already, I don't know whether this is for good",0.295302,0.8104,0.239313
+318,699.0,702.0,SPEAKER_03,"whether this is for good or for bad, but",0.383573,0.8104,0.310848
+319,700.5,703.5,SPEAKER_03,"or for bad, but there will be a",0.272692,0.8104,0.220989
+320,702.0,705.0,SPEAKER_03,there will be a lot of redundancy in the,0.297983,0.8104,0.241485
+321,703.5,706.5,SPEAKER_03,lot of redundancy in the issues.,0.462201,0.8104,0.374567
+322,706.5,709.5,SPEAKER_00,Overlap between what you,0.536139,0.509,0.272895
+323,711.0,714.0,SPEAKER_03,"not necessarily a bad thing, but what",0.081613,0.8091,0.066033
+324,712.5,715.5,SPEAKER_03,"thing, but what I've already started doing",0.203719,0.8091,0.164829
+325,714.0,717.0,SPEAKER_03,I've already started doing is I created,0.079448,0.8091,0.064282
+326,715.5,718.5,SPEAKER_03,is I created a slide in my,0.071007,0.8091,0.057452
+327,717.0,720.0,SPEAKER_03,a slide in my presentation here. So that,0.280994,0.8318,0.233731
+328,718.5,721.5,SPEAKER_03,"presentation here. So that we kind of think, well,",0.037143,0.8318,0.030896
+329,720.0,723.0,SPEAKER_03,"we kind of think, well, what's the cumulative effect of what",0.036883,0.8546,0.03152
+330,721.5,724.5,SPEAKER_03,what's the cumulative effect of what we've taken from your ideas,0.308368,0.8546,0.263532
+331,723.0,726.0,SPEAKER_03,"we've taken from your ideas and mine? Because certainly,",0.050981,0.8479,0.043227
+332,724.5,727.5,SPEAKER_03,"and mine? Because certainly, I have a",0.37271,0.8479,0.31602
+333,726.0,729.0,SPEAKER_03,I have a hard time separating things,0.528545,0.8412,0.444612
+334,727.5,730.5,SPEAKER_03,"hard time separating things completely. Obviously,",0.168068,0.8379,0.140824
+335,729.0,732.0,SPEAKER_03,"completely. Obviously, what you just",0.075613,0.8379,0.063356
+336,730.5,733.5,SPEAKER_03,what you just told me impacts,0.086145,0.8346,0.071896
+337,732.0,735.0,SPEAKER_03,told me impacts a lot on market,0.039133,0.8346,0.03266
+338,733.5,736.5,SPEAKER_03,a lot on market research that I've,0.005191,0.8346,0.004333
+339,735.0,738.0,SPEAKER_03,research that I've been.,0.26268,0.8346,0.219232
+340,736.5,739.5,SPEAKER_03,been. So how do I get,0.159471,0.8315,0.1326
+341,738.0,741.0,SPEAKER_03,So how do I get this up?,0.083831,0.7128,0.059755
+342,739.5,742.5,SPEAKER_03,"this up? Yeah, with",0.151606,0.7128,0.108065
+343,741.0,744.0,SPEAKER_03,"Yeah, with function",0.327074,0.5973,0.195361
+344,744.0,747.0,SPEAKER_03,"and effect, yeah.",0.768625,0.5973,0.4591
+345,745.5,748.5,SPEAKER_03,"effect, yeah. All right.",0.787454,0.3404,0.268049
+346,751.5,754.5,SPEAKER_01,"OK, I think that's",0.107121,0.5973,0.063983
+347,753.0,756.0,SPEAKER_01,think that's doing,0.299259,0.5973,0.178747
+348,754.5,757.5,SPEAKER_01,doing it now.,0.551602,0.5973,0.329472
+349,765.0,768.0,SPEAKER_02,"Again, maybe the",0.794364,0.6597,0.524042
+350,766.5,769.5,SPEAKER_02,maybe the wire,0.520003,0.6597,0.343046
+351,768.0,771.0,SPEAKER_02,wire in the,0.455747,0.6597,0.300656
+352,769.5,772.5,SPEAKER_02,in the back,0.433903,0.6597,0.286246
+353,771.0,774.0,SPEAKER_02,back might be,0.245738,0.6597,0.162113
+354,772.5,775.5,SPEAKER_02,might be loose.,0.110604,0.6597,0.072965
+355,775.5,778.5,SPEAKER_00,"OK. Yeah, you want",0.640873,0.2472,0.158424
+356,777.0,780.0,SPEAKER_00,"Yeah, you want to? Oh, here we go. OK,",0.278073,0.389,0.108171
+357,778.5,781.5,SPEAKER_00,"to? Oh, here we go. OK, great. There you go.",0.149587,0.3361,0.050276
+358,781.5,784.5,SPEAKER_03,"OK. Just before I bring this up, what",0.104849,0.8013,0.084016
+359,783.0,786.0,SPEAKER_03,"before I bring this up, what I'll just say is what I've",0.015343,0.8013,0.012294
+360,784.5,787.5,SPEAKER_03,I'll just say is what I've done is try to collect,0.030328,0.8013,0.024302
+361,786.0,789.0,SPEAKER_03,done is try to collect some information so that I can,0.011894,0.8013,0.009531
+362,787.5,790.5,SPEAKER_03,some information so that I can then relay this to you guys,0.01177,0.8013,0.009431
+363,789.0,792.0,SPEAKER_03,then relay this to you guys so that it now becomes a,0.026712,0.8013,0.021404
+364,790.5,793.5,SPEAKER_03,so that it now becomes a collective thing and then kind of,0.094779,0.8013,0.075946
+365,792.0,795.0,SPEAKER_03,collective thing and then kind of lead us in the direction,0.094371,0.8013,0.07562
+366,793.5,796.5,SPEAKER_03,"lead us in the direction of deciding, OK, what are our",0.036148,0.8013,0.028966
+367,795.0,798.0,SPEAKER_03,"of deciding, OK, what are our options? What should we decide?",0.2167,0.8251,0.178799
+368,819.0,822.0,SPEAKER_03,sense. So what I basically got is,0.226545,0.7383,0.167258
+369,820.5,823.5,SPEAKER_03,So what I basically got is I just looked into some information,0.179355,0.8176,0.14664
+370,822.0,825.0,SPEAKER_03,I just looked into some information and sort of tried to think,0.116499,0.8176,0.09525
+371,823.5,826.5,SPEAKER_03,and sort of tried to think about how we could review it,0.209199,0.8176,0.171041
+372,825.0,828.0,SPEAKER_03,about how we could review it and what kind of decisions we,0.149013,0.8176,0.121833
+373,826.5,829.5,SPEAKER_03,and what kind of decisions we could take away from it and,0.075638,0.8176,0.061842
+374,828.0,831.0,SPEAKER_03,could take away from it and then maybe by the end of,0.149881,0.8176,0.122543
+375,829.5,832.5,SPEAKER_03,then maybe by the end of just looking at some of these,0.06705,0.8176,0.05482
+376,831.0,834.0,SPEAKER_03,just looking at some of these things we can think about what,0.159,0.8176,0.129998
+377,832.5,835.5,SPEAKER_03,things we can think about what are our priorities because certainly there's,0.048506,0.8176,0.039659
+378,834.0,837.0,SPEAKER_03,are our priorities because certainly there's lots of different information to go,0.290637,0.8176,0.237625
+379,835.5,838.5,SPEAKER_03,lots of different information to go through. We're thinking here,0.021333,0.8217,0.017529
+380,837.0,840.0,SPEAKER_03,through. We're thinking here about primarily about customer,0.007791,0.8217,0.006402
+381,838.5,841.5,SPEAKER_03,about primarily about customer needs that we,0.004372,0.8258,0.003611
+382,840.0,843.0,SPEAKER_03,needs that we start with the customer,0.45788,0.8258,0.378117
+383,841.5,844.5,SPEAKER_03,start with the customer and what they,0.529446,0.8258,0.437216
+384,843.0,846.0,SPEAKER_03,and what they want and what are,0.102371,0.8258,0.084538
+385,844.5,847.5,SPEAKER_03,want and what are issues with existing,0.086734,0.8258,0.071625
+386,846.0,849.0,SPEAKER_03,issues with existing products. To think,0.029303,0.8377,0.024547
+387,847.5,850.5,SPEAKER_03,products. To think about trends and also about trying,0.00633,0.8377,0.005302
+388,849.0,852.0,SPEAKER_03,"about trends and also about trying to connect that, as you see",0.016477,0.8496,0.013999
+389,850.5,853.5,SPEAKER_03,"to connect that, as you see with the company vision, which is",0.084067,0.8496,0.071423
+390,852.0,855.0,SPEAKER_03,"with the company vision, which is about fashion and electronics.",0.110953,0.8496,0.094266
+391,853.5,856.5,SPEAKER_03,"about fashion and electronics. And then,",0.167088,0.8643,0.144414
+392,855.0,858.0,SPEAKER_03,"And then, as I say, we'd",0.264721,0.8791,0.232716
+393,856.5,859.5,SPEAKER_03,"as I say, we'd like to prioritize our",0.064902,0.8791,0.057056
+394,858.0,861.0,SPEAKER_03,like to prioritize our design features from this.,0.201689,0.8791,0.177305
+395,859.5,862.5,SPEAKER_03,design features from this.,0.273057,0.8791,0.240045
+396,865.5,868.5,SPEAKER_03,So this is what I've found here.,0.157228,0.7927,0.124635
+397,867.0,870.0,SPEAKER_03,So this is what I've found here. A lot of this is new,0.059166,0.771,0.045617
+398,868.5,871.5,SPEAKER_03,A lot of this is new to me. So we'll just read,0.138823,0.7312,0.101507
+399,870.0,873.0,SPEAKER_03,to me. So we'll just read two together. Users dislike,0.230062,0.7527,0.173168
+400,871.5,874.5,SPEAKER_03,two together. Users dislike the look and,0.47464,0.7544,0.358068
+401,873.0,876.0,SPEAKER_03,the look and feel of current,0.240441,0.7955,0.19127
+402,874.5,877.5,SPEAKER_03,feel of current remote controls.,0.268733,0.7683,0.206467
+403,876.0,879.0,SPEAKER_03,remote controls. So they find them ugly.,0.380389,0.8005,0.304501
+404,877.5,880.5,SPEAKER_03,So they find them ugly. Most people find them ugly.,0.542544,0.8117,0.440383
+405,879.0,882.0,SPEAKER_03,Most people find them ugly. The vast majority would,0.04055,0.847,0.034346
+406,880.5,883.5,SPEAKER_03,The vast majority would spend more money,0.128036,0.8292,0.106167
+407,882.0,885.0,SPEAKER_03,spend more money to look fancy as,0.102331,0.8292,0.084853
+408,883.5,886.5,SPEAKER_03,to look fancy as well. We'll see later.,0.02107,0.8681,0.018291
+409,885.0,888.0,SPEAKER_03,well. We'll see later. The vast majority of,0.042249,0.8318,0.035142
+410,886.5,889.5,SPEAKER_03,The vast majority of people would spend more money,0.026603,0.7591,0.020195
+411,888.0,891.0,SPEAKER_03,people would spend more money for slightly more intuitive,0.184941,0.7591,0.140389
+412,889.5,892.5,SPEAKER_03,for slightly more intuitive controls such as voice recognition.,0.63925,0.7591,0.485255
+413,891.0,894.0,SPEAKER_03,"controls such as voice recognition. Okay, I'm going to",0.476433,0.745,0.354942
+414,892.5,895.5,SPEAKER_03,"Okay, I'm going to look at that in a second.",0.150571,0.7761,0.116858
+415,894.0,897.0,SPEAKER_03,look at that in a second. Most people use only,0.093151,0.7846,0.073086
+416,895.5,898.5,SPEAKER_03,Most people use only a very slim,0.059071,0.8382,0.049513
+417,897.0,900.0,SPEAKER_03,a very slim portion of all the,0.073422,0.8382,0.061542
+418,898.5,901.5,SPEAKER_03,portion of all the controls. So I,0.11713,0.8423,0.098659
+419,900.0,903.0,SPEAKER_03,controls. So I guess what we're looking at,0.066118,0.8423,0.055691
+420,901.5,904.5,SPEAKER_03,guess what we're looking at here is people want this,0.014084,0.8465,0.011922
+421,903.0,906.0,SPEAKER_03,here is people want this technology. They tend to,0.039166,0.8401,0.032904
+422,904.5,907.5,SPEAKER_03,technology. They tend to use the most simple controls,0.041907,0.8401,0.035206
+423,906.0,909.0,SPEAKER_03,use the most simple controls and overall they find remote,0.113703,0.8338,0.094806
+424,907.5,910.5,SPEAKER_03,and overall they find remote controls to be something they,0.152887,0.8338,0.127477
+425,909.0,912.0,SPEAKER_03,"controls to be something they don't, doesn't really appeal to",0.282927,0.8338,0.235904
+426,910.5,913.5,SPEAKER_03,"don't, doesn't really appeal to them. So I think what",0.12985,0.8157,0.105918
+427,912.0,915.0,SPEAKER_03,them. So I think what we're doing is we're,0.02359,0.8157,0.019243
+428,913.5,916.5,SPEAKER_03,"we're doing is we're trying to take, for",0.235604,0.7976,0.187918
+429,915.0,918.0,SPEAKER_03,"trying to take, for me this is sort",0.125608,0.7976,0.100185
+430,916.5,919.5,SPEAKER_03,me this is sort of like three different,0.168495,0.7976,0.134392
+431,918.0,921.0,SPEAKER_03,of like three different inspirations. One is that we want,0.041436,0.8223,0.034073
+432,919.5,922.5,SPEAKER_03,"inspirations. One is that we want something that's high tech, but we want",0.039391,0.8223,0.032391
+433,921.0,924.0,SPEAKER_03,"something that's high tech, but we want it to seem easy.",0.165499,0.847,0.140177
+434,922.5,925.5,SPEAKER_03,it to seem easy. And in spite of,0.628822,0.8499,0.534436
+435,924.0,927.0,SPEAKER_03,And in spite of the primitive side of it,0.261439,0.8529,0.222981
+436,925.5,928.5,SPEAKER_03,the primitive side of it and the very high tech,0.092619,0.8529,0.078995
+437,927.0,930.0,SPEAKER_03,"and the very high tech side, we want it to",0.004463,0.8529,0.003806
+438,928.5,931.5,SPEAKER_03,"side, we want it to just be an appealing piece",0.028076,0.8529,0.023946
+439,930.0,933.0,SPEAKER_03,just be an appealing piece of equipment in people's hands.,0.02517,0.8529,0.021468
+440,931.5,934.5,SPEAKER_03,"of equipment in people's hands. Frustrations, they get lost",0.104997,0.8856,0.092985
+441,933.0,936.0,SPEAKER_03,"Frustrations, they get lost a lot as it",0.078709,0.8856,0.069705
+442,934.5,937.5,SPEAKER_03,a lot as it came up in our,0.03156,0.9182,0.028978
+443,936.0,939.0,SPEAKER_03,came up in our last meeting. It,0.16119,0.8777,0.141476
+444,937.5,940.5,SPEAKER_03,last meeting. It takes time to learn how,0.007057,0.8777,0.006194
+445,939.0,942.0,SPEAKER_03,takes time to learn how to use them. This,0.023294,0.8373,0.019504
+446,940.5,943.5,SPEAKER_03,to use them. This is why I mentioned when Craig,0.012899,0.8373,0.0108
+447,942.0,945.0,SPEAKER_03,is why I mentioned when Craig was showing us some ideas that,0.008239,0.8374,0.0069
+448,943.5,946.5,SPEAKER_03,was showing us some ideas that we actually try and group,0.004908,0.8374,0.00411
+449,945.0,948.0,SPEAKER_03,we actually try and group control. So it doesn't just look,0.011822,0.8246,0.009749
+450,946.5,949.5,SPEAKER_03,"control. So it doesn't just look like a big panel, kind",0.074291,0.8246,0.061261
+451,948.0,951.0,SPEAKER_03,"like a big panel, kind of like when you look at",0.092344,0.8117,0.074956
+452,949.5,952.5,SPEAKER_03,of like when you look at a new computer keyboard or,0.030873,0.8117,0.025059
+453,951.0,954.0,SPEAKER_03,a new computer keyboard or something that it's quite explanatory.,0.010495,0.7692,0.008073
+454,952.5,955.5,SPEAKER_03,"something that it's quite explanatory. If you want audio, if",0.113436,0.7692,0.087255
+455,954.0,957.0,SPEAKER_03,"If you want audio, if you want visual, then",0.319274,0.7268,0.232048
+456,955.5,958.5,SPEAKER_03,"you want visual, then you have those.",0.73981,0.7268,0.537694
+457,957.0,960.0,SPEAKER_03,you have those.,0.686142,0.7268,0.498688
+458,960.0,963.0,SPEAKER_01,"And I will admit,",0.664337,0.8015,0.532466
+459,961.5,964.5,SPEAKER_01,"will admit, I don't",0.760782,0.8015,0.609767
+460,963.0,966.0,SPEAKER_01,I don't know what RSI,0.412976,0.8015,0.331
+461,964.5,967.5,SPEAKER_01,know what RSI stands for.,0.40804,0.8015,0.327044
+462,969.0,972.0,SPEAKER_03,come up at all.,0.269368,0.8989,0.242135
+463,970.5,973.5,SPEAKER_03,So here's another,0.210319,0.8087,0.170085
+464,972.0,975.0,SPEAKER_03,So here's another sort of a review,0.219372,0.8087,0.177406
+465,973.5,976.5,SPEAKER_03,sort of a review here of the,0.196937,0.8087,0.159263
+466,975.0,978.0,SPEAKER_03,here of the main things. I also,0.094544,0.7726,0.073044
+467,976.5,979.5,SPEAKER_03,"main things. I also found that most people would,",0.049384,0.7726,0.038154
+468,978.0,981.0,SPEAKER_03,"found that most people would, adults at least, would",0.088933,0.7364,0.06549
+469,979.5,982.5,SPEAKER_03,"adults at least, would pay more for voice recognition.",0.100362,0.7364,0.073907
+470,981.0,984.0,SPEAKER_03,"pay more for voice recognition. Now, apparently we do",0.047089,0.8003,0.037685
+471,982.5,985.5,SPEAKER_03,"Now, apparently we do have access to all the",0.015108,0.8003,0.012091
+472,984.0,987.0,SPEAKER_03,have access to all the cutting edge technology and remote,0.011068,0.8641,0.009564
+473,985.5,988.5,SPEAKER_03,cutting edge technology and remote control. So I don't know if,0.060425,0.8942,0.054032
+474,987.0,990.0,SPEAKER_03,control. So I don't know if that's possible. We,0.032104,0.8858,0.028437
+475,988.5,991.5,SPEAKER_03,that's possible. We might consider,0.018673,0.8966,0.016742
+476,990.0,993.0,SPEAKER_03,might consider getting into,0.077985,0.869,0.067769
+477,991.5,994.5,SPEAKER_03,getting into it. And and again here,0.352223,0.8357,0.294352
+478,993.0,996.0,SPEAKER_03,it. And and again here as we sort of move,0.182966,0.8357,0.152905
+479,994.5,997.5,SPEAKER_03,as we sort of move Sort of things start,0.46648,0.8024,0.374303
+480,996.0,999.0,SPEAKER_03,Sort of things start thinking about how we want,0.053327,0.8024,0.042789
+481,997.5,1000.5,SPEAKER_03,thinking about how we want to sell and market this,0.058037,0.8024,0.046569
+482,999.0,1002.0,SPEAKER_03,to sell and market this I think a recurring theme,0.008885,0.8024,0.00713
+483,1000.5,1003.5,SPEAKER_03,I think a recurring theme here is the company,0.001364,0.8024,0.001094
+484,1002.0,1005.0,SPEAKER_03,here is the company wants it to be wants,0.014807,0.8024,0.011881
+485,1003.5,1006.5,SPEAKER_03,wants it to be wants us to make something that's,0.234322,0.8024,0.18802
+486,1005.0,1008.0,SPEAKER_03,us to make something that's fashionable and sleek and trendy,0.021836,0.8024,0.017521
+487,1006.5,1009.5,SPEAKER_03,fashionable and sleek and trendy people Additionally aren't aren't,0.025642,0.8024,0.020575
+488,1008.0,1011.0,SPEAKER_03,people Additionally aren't aren't liking the appearance of their,0.145578,0.8024,0.116812
+489,1009.5,1012.5,SPEAKER_03,liking the appearance of their products So we want to,0.736189,0.8024,0.590718
+490,1011.0,1014.0,SPEAKER_03,products So we want to think about as we,0.052025,0.8024,0.041744
+491,1012.5,1015.5,SPEAKER_03,think about as we take all the sort of,0.085516,0.8024,0.068618
+492,1014.0,1017.0,SPEAKER_03,take all the sort of the techie features how we,0.156542,0.8024,0.12561
+493,1015.5,1018.5,SPEAKER_03,the techie features how we can Put that into a,0.062173,0.8024,0.049888
+494,1017.0,1020.0,SPEAKER_03,"can Put that into a unit, which is which",0.383928,0.8024,0.308064
+495,1018.5,1021.5,SPEAKER_03,"unit, which is which people like, you know, they",0.168126,0.8024,0.134904
+496,1020.0,1023.0,SPEAKER_03,"people like, you know, they like the aesthetics and the",0.026002,0.8024,0.020864
+497,1024.5,1027.5,SPEAKER_00,"while, it looks good and it's easy to use. Big",0.531331,0.6522,0.346534
+498,1029.0,1032.0,SPEAKER_03,"you know, just looking at what Craig's ideas",0.01555,0.7511,0.011679
+499,1030.5,1033.5,SPEAKER_03,at what Craig's ideas there sort of tell,0.099912,0.7511,0.075044
+500,1032.0,1035.0,SPEAKER_03,there sort of tell me that maybe what,0.279611,0.7511,0.210016
+501,1033.5,1036.5,SPEAKER_03,me that maybe what we want to do,0.067416,0.7511,0.050636
+502,1035.0,1038.0,SPEAKER_03,we want to do is try and separate,0.077351,0.7511,0.058098
+503,1036.5,1039.5,SPEAKER_03,is try and separate the different things that,0.049503,0.7511,0.037181
+504,1038.0,1041.0,SPEAKER_03,the different things that we want to include,0.010454,0.7511,0.007852
+505,1039.5,1042.5,SPEAKER_03,we want to include in this. So if,0.062099,0.7915,0.049151
+506,1041.0,1044.0,SPEAKER_03,"in this. So if we do say, well, we want",0.043018,0.7915,0.034049
+507,1042.5,1045.5,SPEAKER_03,"we do say, well, we want there to be all the technology,",0.014245,0.8319,0.01185
+508,1044.0,1047.0,SPEAKER_03,"there to be all the technology, well, we try and make that",0.28948,0.8319,0.240818
+509,1045.5,1048.5,SPEAKER_03,"well, we try and make that almost be like optional technology.",0.553095,0.8319,0.46012
+510,1047.0,1050.0,SPEAKER_03,"almost be like optional technology. You know, it's",0.242371,0.6794,0.164667
+511,1048.5,1051.5,SPEAKER_03,"You know, it's like... like I find a lot",0.237839,0.6579,0.156474
+512,1050.0,1053.0,SPEAKER_03,like... like I find a lot of TVs these days something really nice,0.08946,0.6579,0.058856
+513,1051.5,1054.5,SPEAKER_03,of TVs these days something really nice about them is if you want,0.244544,0.7889,0.192921
+514,1053.0,1056.0,SPEAKER_03,about them is if you want to just turn them on and off,0.049387,0.7889,0.038961
+515,1054.5,1057.5,SPEAKER_03,to just turn them on and off you can but they have little,0.219309,0.7889,0.173013
+516,1056.0,1059.0,SPEAKER_03,you can but they have little panels where you click and there's just,0.312056,0.7889,0.246181
+517,1060.5,1063.5,SPEAKER_00,you want to grip all the different kind,0.019614,0.663,0.013004
+518,1062.0,1065.0,SPEAKER_00,all the different kind of types of functions,0.141542,0.663,0.093842
+519,1063.5,1066.5,SPEAKER_00,of types of functions together you know that's,0.406228,0.663,0.269329
+520,1068.0,1071.0,SPEAKER_03,my hope here is that I'm putting out,0.687876,0.8043,0.553258
+521,1069.5,1072.5,SPEAKER_03,that I'm putting out this information so we,0.010904,0.8043,0.00877
+522,1071.0,1074.0,SPEAKER_03,"this information so we can then say, OK,",0.12884,0.8043,0.103626
+523,1072.5,1075.5,SPEAKER_03,"can then say, OK, well, how do we",0.091528,0.8043,0.073616
+524,1074.0,1077.0,SPEAKER_03,"well, how do we collectively move on with",0.128522,0.8043,0.10337
+525,1075.5,1078.5,SPEAKER_03,collectively move on with it? I haven't,0.084596,0.8333,0.070494
+526,1077.0,1080.0,SPEAKER_03,it? I haven't brought out one specific,0.012585,0.8333,0.010487
+527,1078.5,1081.5,SPEAKER_03,"brought out one specific marketing idea, although my",0.149208,0.8623,0.128662
+528,1080.0,1083.0,SPEAKER_03,"marketing idea, although my sense is that what",0.111682,0.8623,0.096304
+529,1081.5,1084.5,SPEAKER_03,sense is that what we should try and think,0.039706,0.8623,0.034239
+530,1083.0,1086.0,SPEAKER_03,we should try and think about is what are,0.166032,0.8623,0.143169
+531,1084.5,1087.5,SPEAKER_03,about is what are the current trends in,0.527139,0.8623,0.454552
+532,1086.0,1089.0,SPEAKER_03,the current trends in materials and shapes and,0.078421,0.8623,0.067623
+533,1087.5,1090.5,SPEAKER_03,"materials and shapes and styles, and then use",0.014736,0.8623,0.012707
+534,1089.0,1092.0,SPEAKER_03,"styles, and then use that, but not let that",0.044347,0.8623,0.038241
+535,1096.5,1099.5,SPEAKER_03,Any comments on all of that?,0.098385,0.7912,0.077842
+536,1099.5,1102.5,SPEAKER_00,"Well, one of the things that we have to",0.010349,0.8394,0.008687
+537,1101.0,1104.0,SPEAKER_00,the things that we have to decide on by the end,0.041611,0.8394,0.034928
+538,1102.5,1105.5,SPEAKER_00,decide on by the end of the meeting is who we're,0.011906,0.8394,0.009994
+539,1104.0,1107.0,SPEAKER_00,"of the meeting is who we're going to be, who's our",0.014276,0.8394,0.011983
+540,1105.5,1108.5,SPEAKER_00,"going to be, who's our target audience, our target market.",0.007904,0.8394,0.006635
+541,1107.0,1110.0,SPEAKER_00,"target audience, our target market. So",0.014118,0.8115,0.011457
+542,1108.5,1111.5,SPEAKER_00,So if we want something,0.137981,0.7835,0.108108
+543,1110.0,1113.0,SPEAKER_00,if we want something that looks good and,0.122396,0.7835,0.095897
+544,1111.5,1114.5,SPEAKER_00,that looks good and is easy to use,0.15517,0.7835,0.121576
+545,1113.0,1116.0,SPEAKER_00,is easy to use but is fairly powerful,0.522466,0.7835,0.409352
+546,1114.5,1117.5,SPEAKER_00,"but is fairly powerful product or whatever, who",0.010538,0.7835,0.008256
+547,1116.0,1119.0,SPEAKER_00,"product or whatever, who do we really want",0.071886,0.7835,0.056323
+548,1117.5,1120.5,SPEAKER_00,do we really want to aim that at?,0.07287,0.7835,0.057094
+549,1122.0,1125.0,SPEAKER_00,"Yeah, he would have the money to spend,",0.195292,0.7425,0.145004
+550,1123.5,1126.5,SPEAKER_00,"have the money to spend, well if like 25 euro is",0.113328,0.7425,0.084146
+551,1125.0,1128.0,SPEAKER_00,well if like 25 euro is our selling price and you,0.118866,0.7425,0.088258
+552,1126.5,1129.5,SPEAKER_00,"our selling price and you can imagine, well I'm not",0.039649,0.7425,0.029439
+553,1128.0,1131.0,SPEAKER_00,"can imagine, well I'm not really sure how much that will",0.151279,0.7425,0.112325
+554,1129.5,1132.5,SPEAKER_00,"really sure how much that will retail at, but it's somebody",0.055026,0.7425,0.040857
+555,1131.0,1134.0,SPEAKER_00,"retail at, but it's somebody who's not going to just use",0.074562,0.7425,0.055363
+556,1132.5,1135.5,SPEAKER_00,who's not going to just use their moat that comes with,0.037609,0.7425,0.027925
+557,1134.0,1137.0,SPEAKER_00,"their moat that comes with their tally, I suppose they're",0.014438,0.7425,0.01072
+558,1135.5,1138.5,SPEAKER_00,"their tally, I suppose they're going to actually go out and",0.112935,0.7425,0.083855
+559,1137.0,1140.0,SPEAKER_00,going to actually go out and buy one. So who,0.118686,0.753,0.08937
+560,1138.5,1141.5,SPEAKER_00,buy one. So who do you think we're aiming this at?,0.114041,0.753,0.085873
+561,1143.0,1146.0,SPEAKER_01,think it will be the mid-range to the high-end,0.795821,0.6733,0.535826
+562,1144.5,1147.5,SPEAKER_01,the mid-range to the high-end market in terms of,0.156916,0.6733,0.105651
+563,1146.0,1149.0,SPEAKER_01,market in terms of people because 25 euros,0.11132,0.6733,0.074952
+564,1147.5,1150.5,SPEAKER_01,"people because 25 euros for a remote, how",0.22737,0.6733,0.153088
+565,1155.0,1158.0,SPEAKER_01,a lot of money to buy an extra remote or a,0.088597,0.7639,0.06768
+566,1156.5,1159.5,SPEAKER_01,an extra remote or a replacement remote? Okay.,0.100649,0.7029,0.070746
+567,1158.0,1161.0,SPEAKER_01,replacement remote? Okay. So maybe,0.249291,0.7489,0.186694
+568,1159.5,1162.5,SPEAKER_01,So maybe not the high-end,0.722034,0.8408,0.607086
+569,1161.0,1164.0,SPEAKER_01,"not the high-end range, but",0.628045,0.8408,0.52806
+570,1162.5,1165.5,SPEAKER_01,"range, but maybe middle-middle-up-ish.",0.749244,0.8408,0.629965
+571,1167.0,1170.0,SPEAKER_01,"You know how much? I don't know, I guess",0.155351,0.7047,0.109476
+572,1168.5,1171.5,SPEAKER_01,"don't know, I guess you'd be like 10.",0.282639,0.8179,0.23117
+573,1170.0,1173.0,SPEAKER_01,you'd be like 10. like a simple,0.469019,0.8179,0.383611
+574,1171.5,1174.5,SPEAKER_01,"like a simple replacement. I mean, if",0.615743,0.695,0.427942
+575,1173.0,1176.0,SPEAKER_01,"replacement. I mean, if you lost your remote and the first",0.642359,0.695,0.446439
+576,1177.5,1180.5,SPEAKER_03,"This kind of touches on your comments there, David. These are the age",0.233335,0.846,0.197401
+577,1179.0,1182.0,SPEAKER_03,"there, David. These are the age groups which we have information on.",0.21997,0.846,0.186095
+578,1180.5,1183.5,SPEAKER_03,groups which we have information on. And this is a table,0.0734,0.8463,0.062118
+579,1182.0,1185.0,SPEAKER_03,And this is a table of what people would pay more,0.031827,0.8265,0.026305
+580,1183.5,1186.5,SPEAKER_03,of what people would pay more for a certain feature. Just,0.015347,0.8362,0.012833
+581,1185.0,1188.0,SPEAKER_03,for a certain feature. Just give us a rough idea,0.253332,0.8362,0.211836
+582,1186.5,1189.5,SPEAKER_03,give us a rough idea of where the will to,0.271855,0.8459,0.229962
+583,1188.0,1191.0,SPEAKER_03,of where the will to spend money on TV equipment is.,0.094531,0.8459,0.079964
+584,1189.5,1192.5,SPEAKER_03,spend money on TV equipment is. Mostly,0.034023,0.8469,0.028815
+585,1191.0,1194.0,SPEAKER_03,Mostly focused around the 25,0.077694,0.8469,0.065799
+586,1201.5,1204.5,SPEAKER_00,Do you think then,0.025502,0.8466,0.02159
+587,1203.0,1206.0,SPEAKER_00,Do you think then voice recognition is,0.010304,0.8602,0.008863
+588,1204.5,1207.5,SPEAKER_00,voice recognition is something we should really,0.029107,0.8602,0.025038
+589,1206.0,1209.0,SPEAKER_00,something we should really seriously consider?,0.157794,0.8602,0.135734
+590,1209.0,1212.0,SPEAKER_00,"What do you think, Craig?",0.330398,0.7314,0.241653
+591,1212.0,1215.0,SPEAKER_02,"Well, you don't see it was the adults that were going",0.02551,0.7719,0.019691
+592,1213.5,1216.5,SPEAKER_02,the adults that were going for the voice recognition.,0.01557,0.7719,0.012018
+593,1216.5,1219.5,SPEAKER_03,It does fit with the,0.52998,0.7816,0.414233
+594,1218.0,1221.0,SPEAKER_03,fit with the market that we're,0.062735,0.7816,0.049034
+595,1219.5,1222.5,SPEAKER_03,market that we're sort of identifying,0.058488,0.7816,0.045714
+596,1221.0,1224.0,SPEAKER_03,sort of identifying in terms of,0.294473,0.7816,0.23016
+597,1224.0,1227.0,SPEAKER_00,I think we are going to have to narrow it,0.014641,0.8387,0.012279
+598,1225.5,1228.5,SPEAKER_00,going to have to narrow it down to say let's target these,0.016742,0.8387,0.014042
+599,1227.0,1230.0,SPEAKER_00,down to say let's target these people and give them what they,0.134803,0.8387,0.11306
+600,1228.5,1231.5,SPEAKER_00,people and give them what they want because you know there needs to,0.042724,0.8387,0.035833
+601,1230.0,1233.0,SPEAKER_00,want because you know there needs to be some kind of selling point,0.019642,0.8387,0.016474
+602,1231.5,1234.5,SPEAKER_00,be some kind of selling point to it. So,0.037543,0.8468,0.031791
+603,1233.0,1236.0,SPEAKER_00,to it. So anybody anything to add,0.040096,0.8468,0.033953
+604,1234.5,1237.5,SPEAKER_00,anybody anything to add just kind of young professionals,0.03496,0.855,0.029891
+605,1236.0,1239.0,SPEAKER_00,just kind of young professionals like if we are,0.0238,0.855,0.020349
+606,1237.5,1240.5,SPEAKER_00,like if we are going to include speech,0.039812,0.855,0.034039
+607,1239.0,1242.0,SPEAKER_00,going to include speech recognition it's kind of,0.055303,0.855,0.047284
+608,1240.5,1243.5,SPEAKER_00,recognition it's kind of between 15 and 35,0.017932,0.855,0.015332
+609,1242.0,1245.0,SPEAKER_00,between 15 and 35 seems to be like,0.270211,0.855,0.231031
+610,1243.5,1246.5,SPEAKER_00,seems to be like a really high response,0.003561,0.855,0.003045
+611,1245.0,1248.0,SPEAKER_00,a really high response to that. So we,0.052269,0.8149,0.042594
+612,1246.5,1249.5,SPEAKER_00,to that. So we could say that was,0.013393,0.8149,0.010914
+613,1248.0,1251.0,SPEAKER_00,"could say that was our target. Okay,",0.031602,0.7822,0.024719
+614,1249.5,1252.5,SPEAKER_00,"our target. Okay, so 15 to",0.012088,0.7822,0.009455
+615,1251.0,1254.0,SPEAKER_00,"so 15 to 35, fairly",0.426422,0.7896,0.336703
+616,1252.5,1255.5,SPEAKER_00,"35, fairly young, you",0.504744,0.7896,0.398546
+617,1254.0,1257.0,SPEAKER_00,"young, you know, they have",0.479841,0.7896,0.378882
+618,1255.5,1258.5,SPEAKER_00,"know, they have a bit",0.274518,0.7896,0.216759
+619,1257.0,1260.0,SPEAKER_00,a bit of expendable,0.064731,0.7896,0.051111
+620,1258.5,1261.5,SPEAKER_00,of expendable income to,0.389205,0.7896,0.307317
+621,1260.0,1263.0,SPEAKER_00,income to spend on this,0.311719,0.7896,0.246133
+622,1261.5,1264.5,SPEAKER_00,spend on this sort of,0.136674,0.7896,0.107918
+623,1266.0,1269.0,SPEAKER_01,each group is significant as well because those are people who use a,0.157832,0.5888,0.092932
+624,1267.5,1270.5,SPEAKER_01,those are people who use a computer. who are familiar,0.157101,0.6989,0.109798
+625,1269.0,1272.0,SPEAKER_01,computer. who are familiar with computers in,0.136722,0.6989,0.095555
+626,1270.5,1273.5,SPEAKER_01,with computers in their everyday work.,0.441225,0.809,0.356951
+627,1272.0,1275.0,SPEAKER_01,their everyday work. I think people who,0.397573,0.762,0.30295
+628,1273.5,1276.5,SPEAKER_01,"I think people who are AB Bob, I",0.30509,0.762,0.232479
+629,1275.0,1278.0,SPEAKER_01,"are AB Bob, I wouldn't say 35, but people",0.057132,0.715,0.040849
+630,1276.5,1279.5,SPEAKER_01,"wouldn't say 35, but people who are 40 and",0.032008,0.715,0.022886
+631,1278.0,1281.0,SPEAKER_01,who are 40 and above now would not be,0.172125,0.715,0.12307
+632,1279.5,1282.5,SPEAKER_01,above now would not be so dependent and reliant,0.068593,0.715,0.049044
+633,1281.0,1284.0,SPEAKER_01,so dependent and reliant on a computer or,0.726264,0.715,0.519279
+634,1282.5,1285.5,SPEAKER_01,on a computer or mobile phone or something like,0.229998,0.715,0.164448
+635,1284.0,1287.0,SPEAKER_01,mobile phone or something like that. These are people,0.307984,0.6544,0.201545
+636,1285.5,1288.5,SPEAKER_01,"that. These are people who are gadgety, right? People",0.27805,0.6518,0.181233
+637,1287.0,1290.0,SPEAKER_01,"who are gadgety, right? People who are growing up used to, you",0.786689,0.6202,0.487905
+638,1288.5,1291.5,SPEAKER_01,"who are growing up used to, you know, in schools and in universities when you",0.422609,0.6466,0.273259
+639,1293.0,1296.0,SPEAKER_00,Yeah. So we're not shy away from something quite,0.05718,0.6651,0.038031
+640,1294.5,1297.5,SPEAKER_00,not shy away from something quite high tech. That's a good,0.020054,0.8352,0.016749
+641,1296.0,1299.0,SPEAKER_00,high tech. That's a good point.,0.033247,0.8351,0.027764
+642,1297.5,1300.5,SPEAKER_00,point. OK. So,0.097658,0.8697,0.084933
+643,1299.0,1302.0,SPEAKER_00,OK. So shall we make,0.029553,0.8544,0.02525
+644,1300.5,1303.5,SPEAKER_00,shall we make the decision,0.248744,0.8739,0.217378
+645,1302.0,1305.0,SPEAKER_00,the decision to include,0.090746,0.8739,0.079303
+646,1303.5,1306.5,SPEAKER_00,to include speech recognition?,0.056673,0.8739,0.049526
+647,1305.0,1308.0,SPEAKER_00,speech recognition? If we can.,0.195843,0.9061,0.177453
+648,1309.5,1312.5,SPEAKER_01,should try not to avoid is not to say we have to,0.244354,0.8395,0.205135
+649,1311.0,1314.0,SPEAKER_01,not to say we have to use speech recognition right now.,0.250893,0.8395,0.210624
+650,1312.5,1315.5,SPEAKER_01,use speech recognition right now.,0.224059,0.8395,0.188097
+651,1314.0,1317.0,SPEAKER_01,Based on what,0.148596,0.7302,0.108505
+652,1315.5,1318.5,SPEAKER_01,"Based on what everybody is saying, you want",0.546376,0.7302,0.398964
+653,1317.0,1320.0,SPEAKER_01,"everybody is saying, you want something simple. You want basic",0.758403,0.6804,0.516018
+654,1318.5,1321.5,SPEAKER_01,something simple. You want basic stuff and you want something that,0.310739,0.6804,0.211427
+655,1320.0,1323.0,SPEAKER_01,stuff and you want something that is easy to use. Speech,0.511455,0.6727,0.344056
+656,1321.5,1324.5,SPEAKER_01,is easy to use. Speech recognition might not be,0.301422,0.6727,0.202767
+657,1326.0,1329.0,SPEAKER_03,"it be an on-off thing, like if you want it?",0.035606,0.7833,0.02789
+658,1330.5,1333.5,SPEAKER_01,Yeah. We're trying to lock ourselves into a particular kind of,0.382432,0.4478,0.171253
+659,1332.0,1335.0,SPEAKER_01,"into a particular kind of technology, rather than focusing on",0.670983,0.6786,0.455329
+660,1333.5,1336.5,SPEAKER_01,"technology, rather than focusing on exactly what are the features",0.387295,0.6786,0.262819
+661,1335.0,1338.0,SPEAKER_01,exactly what are the features that we're going to say.,0.327394,0.6786,0.22217
+662,1336.5,1339.5,SPEAKER_01,"that we're going to say. Okay. You know, say",0.178011,0.7062,0.125711
+663,1338.0,1341.0,SPEAKER_01,"Okay. You know, say speech recognition is good for this,",0.404083,0.7201,0.29098
+664,1339.5,1342.5,SPEAKER_01,"speech recognition is good for this, speech recognition is not good",0.227878,0.8001,0.182326
+665,1341.0,1344.0,SPEAKER_01,speech recognition is not good for this. Sure. Okay.,0.527628,0.8394,0.442891
+666,1342.5,1345.5,SPEAKER_01,for this. Sure. Okay. I suggest that we think about,0.234807,0.8293,0.194725
+667,1344.0,1347.0,SPEAKER_01,I suggest that we think about speech recognition. Sure. And it's,0.470045,0.8394,0.394556
+668,1345.5,1348.5,SPEAKER_01,speech recognition. Sure. And it's something that can be used to,0.144316,0.8432,0.121687
+669,1347.0,1350.0,SPEAKER_01,something that can be used to fulfill a function. But at the end,0.432232,0.7156,0.309305
+670,1348.5,1351.5,SPEAKER_01,"fulfill a function. But at the end of the day, we don't look at the",0.417627,0.7156,0.298854
+671,1350.0,1353.0,SPEAKER_01,"of the day, we don't look at the technology, but we look at the function first.",0.258615,0.5936,0.153514
+672,1354.5,1357.5,SPEAKER_00,do you want to give us your presentation?,0.04728,0.5825,0.027541
+673,1356.0,1359.0,SPEAKER_00,give us your presentation? And then we can... It,0.050528,0.7517,0.037982
+674,1357.5,1360.5,SPEAKER_00,And then we can... It might have been a good,0.073548,0.7517,0.055286
+675,1359.0,1362.0,SPEAKER_00,might have been a good idea to all deliver our,0.042833,0.7116,0.03048
+676,1360.5,1363.5,SPEAKER_00,"idea to all deliver our presentations and then discuss, but this",0.205469,0.7116,0.146212
+677,1362.0,1365.0,SPEAKER_00,"presentations and then discuss, but this is hybrid. Good to get ideas",0.021601,0.5564,0.012019
+678,1363.5,1366.5,SPEAKER_00,is hybrid. Good to get ideas out while they're fresh in mind.,0.016566,0.5916,0.0098
+679,1365.0,1368.0,SPEAKER_00,"out while they're fresh in mind. Exactly, yeah.",0.69941,0.604,0.422444
+680,1366.5,1369.5,SPEAKER_00,"Exactly, yeah. Suddenly, it's just occurred to me as well.",0.610437,0.7054,0.430602
+681,1368.0,1371.0,SPEAKER_00,"Suddenly, it's just occurred to me as well. If",0.060982,0.8082,0.049286
+682,1369.5,1372.5,SPEAKER_00,If we incorporate speech,0.060772,0.8082,0.049116
+683,1371.0,1374.0,SPEAKER_00,"we incorporate speech recognition, that's",0.014729,0.8676,0.012779
+684,1372.5,1375.5,SPEAKER_00,"recognition, that's appealing to people,",0.021518,0.8676,0.018669
+685,1374.0,1377.0,SPEAKER_00,"appealing to people, maybe, with",0.021267,0.8676,0.018451
+686,1375.5,1378.5,SPEAKER_00,"maybe, with physical disability as",0.080214,0.8676,0.069594
+687,1380.0,1383.0,SPEAKER_03,losing and also it helps in terms of,0.011498,0.8643,0.009938
+688,1381.5,1384.5,SPEAKER_03,"helps in terms of people not losing this, you",0.066967,0.8643,0.05788
+689,1383.0,1386.0,SPEAKER_03,"people not losing this, you know, they're saying, oh,",0.405072,0.8643,0.350104
+690,1384.5,1387.5,SPEAKER_03,"know, they're saying, oh, I lose it in",0.51267,0.8643,0.4431
+691,1386.0,1389.0,SPEAKER_03,I lose it in the couch.,0.606622,0.8643,0.524303
+692,1387.5,1390.5,SPEAKER_03,the couch. It's like we're,0.057755,0.8334,0.048133
+693,1389.0,1392.0,SPEAKER_03,It's like we're kind of what,0.047391,0.8024,0.038026
+694,1390.5,1393.5,SPEAKER_03,kind of what we're sort of getting,0.247963,0.8024,0.198966
+695,1392.0,1395.0,SPEAKER_03,we're sort of getting into here is mating,0.064533,0.8024,0.051781
+696,1393.5,1396.5,SPEAKER_03,into here is mating different design features,0.053318,0.8024,0.042782
+697,1398.0,1401.0,SPEAKER_02,recognition is I've actually seen one of them used. And the,0.008756,0.5759,0.005042
+698,1399.5,1402.5,SPEAKER_02,them used. And the technology it was in that,0.004098,0.5759,0.00236
+699,1401.0,1404.0,SPEAKER_02,technology it was in that one wasn't particularly amazing. So,0.006196,0.5354,0.003317
+700,1402.5,1405.5,SPEAKER_02,one wasn't particularly amazing. So you end up yelling at,0.231035,0.5354,0.123696
+701,1404.0,1407.0,SPEAKER_02,you end up yelling at the control for hours. I really,0.121223,0.508,0.061581
+702,1408.5,1411.5,SPEAKER_00,maybe we need further advances in that kind of,0.060809,0.7089,0.043108
+703,1410.0,1413.0,SPEAKER_00,advances in that kind of area until it's worthwhile,0.111845,0.7089,0.079287
+704,1416.0,1419.0,SPEAKER_00,There you go.,0.117749,0.4717,0.055542
+705,1420.5,1423.5,SPEAKER_01,"Right? Well, this is just the working",0.518778,0.5318,0.275886
+706,1422.0,1425.0,SPEAKER_01,"Well, this is just the working design.",0.427503,0.5318,0.227346
+707,1423.5,1426.5,SPEAKER_01,"design. Well, this",0.492678,0.8205,0.404243
+708,1425.0,1428.0,SPEAKER_01,"Well, this is just how I would go",0.511906,0.8523,0.436297
+709,1426.5,1429.5,SPEAKER_01,is just how I would go about it.,0.276253,0.8523,0.23545
+710,1428.0,1431.0,SPEAKER_01,about it. I guess I try to,0.617331,0.7816,0.482506
+711,1429.5,1432.5,SPEAKER_01,"I guess I try to define what we're doing now, try to",0.785313,0.7109,0.558279
+712,1431.0,1434.0,SPEAKER_01,"define what we're doing now, try to define what we're trying to get done.",0.502572,0.7109,0.357278
+713,1432.5,1435.5,SPEAKER_01,define what we're trying to get done. I think in a practical,0.136325,0.7392,0.100771
+714,1434.0,1437.0,SPEAKER_01,"I think in a practical way, we kind of know what it is.",0.507651,0.7675,0.389622
+715,1435.5,1438.5,SPEAKER_01,"way, we kind of know what it is. We've used it. We're familiar with",0.707167,0.8099,0.572734
+716,1437.0,1440.0,SPEAKER_01,We've used it. We're familiar with it. But we haven't,0.338641,0.8037,0.272166
+717,1438.5,1441.5,SPEAKER_01,it. But we haven't narrowed down exactly what the,0.627565,0.7973,0.500358
+718,1440.0,1443.0,SPEAKER_01,narrowed down exactly what the things we're trying to,0.647132,0.785,0.507999
+719,1441.5,1444.5,SPEAKER_01,things we're trying to fulfill.,0.395187,0.785,0.310222
+720,1443.0,1446.0,SPEAKER_01,fulfill. Design is the basics.,0.241158,0.7484,0.180483
+721,1444.5,1447.5,SPEAKER_01,Design is the basics. I think in the back of our,0.258869,0.73,0.188974
+722,1446.0,1449.0,SPEAKER_01,"I think in the back of our minds, we know what the basics are.",0.353394,0.7734,0.273315
+723,1447.5,1450.5,SPEAKER_01,"minds, we know what the basics are. It has to change channels. It has",0.324329,0.6136,0.199009
+724,1449.0,1452.0,SPEAKER_01,"It has to change channels. It has to change volume. in, like,",0.149095,0.5681,0.084701
+725,1450.5,1453.5,SPEAKER_01,"to change volume. in, like, specifics, right? Which one",0.015907,0.6737,0.010717
+726,1452.0,1455.0,SPEAKER_01,"specifics, right? Which one of the basics are you trying to target?",0.018697,0.7261,0.013576
+727,1453.5,1456.5,SPEAKER_01,of the basics are you trying to target? Are there certain,0.121642,0.7607,0.092533
+728,1455.0,1458.0,SPEAKER_01,Are there certain parts of the basics that are more,0.083587,0.7607,0.063584
+729,1456.5,1459.5,SPEAKER_01,parts of the basics that are more important or less important than the basics?,0.143088,0.706,0.10102
+730,1458.0,1461.0,SPEAKER_01,"important or less important than the basics? I mean, I",0.480868,0.7332,0.352573
+731,1459.5,1462.5,SPEAKER_01,"I mean, I just, the idea",0.590004,0.7605,0.448698
+732,1461.0,1464.0,SPEAKER_01,"just, the idea is just to get",0.752149,0.7605,0.572009
+733,1462.5,1465.5,SPEAKER_01,"is just to get everybody to, I usually",0.643819,0.7605,0.489624
+734,1464.0,1467.0,SPEAKER_01,"everybody to, I usually have a design that's",0.712773,0.7605,0.542064
+735,1465.5,1468.5,SPEAKER_01,have a design that's there as a basic.,0.820755,0.7605,0.624184
+736,1467.0,1470.0,SPEAKER_01,"there as a basic. So, you know,",0.272746,0.8367,0.228206
+737,1468.5,1471.5,SPEAKER_01,"So, you know, things that, to start everything",0.224098,0.913,0.204602
+738,1470.0,1473.0,SPEAKER_01,"things that, to start everything going. But I",0.395988,0.7359,0.291408
+739,1471.5,1474.5,SPEAKER_01,"going. But I guess everybody does have some ideas,",0.566043,0.7359,0.416551
+740,1473.0,1476.0,SPEAKER_01,"guess everybody does have some ideas, so I don't think there's a",0.618774,0.5588,0.345771
+741,1474.5,1477.5,SPEAKER_01,"so I don't think there's a need for that. Okay,",0.648236,0.5896,0.3822
+742,1476.0,1479.0,SPEAKER_01,"need for that. Okay, this finding thing",0.355645,0.5896,0.209688
+743,1477.5,1480.5,SPEAKER_01,this finding thing is a little,0.39167,0.6203,0.242953
+744,1479.0,1482.0,SPEAKER_01,is a little bit confusing. So,0.429887,0.7104,0.305392
+745,1480.5,1483.5,SPEAKER_01,bit confusing. So I'll go into the diagram first.,0.302572,0.7439,0.225083
+746,1482.0,1485.0,SPEAKER_01,I'll go into the diagram first. It just explains how the,0.500419,0.8057,0.403187
+747,1483.5,1486.5,SPEAKER_01,It just explains how the process goes through from,0.302529,0.811,0.245351
+748,1485.0,1488.0,SPEAKER_01,process goes through from the basic technology point of,0.527275,0.811,0.42762
+749,1486.5,1489.5,SPEAKER_01,"the basic technology point of view, the basic steps",0.104564,0.811,0.084802
+750,1488.0,1491.0,SPEAKER_01,"view, the basic steps that you need, and the",0.413563,0.811,0.335399
+751,1489.5,1492.5,SPEAKER_01,"that you need, and the diagram in this slide",0.510518,0.811,0.41403
+752,1491.0,1494.0,SPEAKER_01,"diagram in this slide probably works better. Okay, you",0.549015,0.7363,0.404239
+753,1492.5,1495.5,SPEAKER_01,"probably works better. Okay, you need some power source, your",0.325003,0.7363,0.2393
+754,1494.0,1497.0,SPEAKER_01,"need some power source, your battery or something to keep",0.168028,0.6616,0.111167
+755,1495.5,1498.5,SPEAKER_01,battery or something to keep it going.,0.334714,0.6616,0.221447
+756,1497.0,1500.0,SPEAKER_01,it going. And that power source,0.122793,0.7516,0.092291
+757,1498.5,1501.5,SPEAKER_01,And that power source is important because it ties,0.690013,0.8416,0.580715
+758,1500.0,1503.0,SPEAKER_01,is important because it ties you down to how,0.838677,0.8416,0.705831
+759,1501.5,1504.5,SPEAKER_01,you down to how long the device will last.,0.721692,0.8416,0.607376
+760,1503.0,1506.0,SPEAKER_01,long the device will last. It ties you,0.58638,0.7688,0.450809
+761,1504.5,1507.5,SPEAKER_01,It ties you down perhaps a bit later on,0.334266,0.7688,0.256983
+762,1506.0,1509.0,SPEAKER_01,down perhaps a bit later on in terms of technologies.,0.588299,0.696,0.409456
+763,1507.5,1510.5,SPEAKER_01,in terms of technologies. How far you can,0.780077,0.7823,0.610254
+764,1509.0,1512.0,SPEAKER_01,How far you can transmit a signal or the,0.619323,0.8687,0.538006
+765,1510.5,1513.5,SPEAKER_01,transmit a signal or the complexity of the functions that,0.470482,0.8687,0.408708
+766,1512.0,1515.0,SPEAKER_01,complexity of the functions that you want. Like for,0.317755,0.8071,0.25646
+767,1513.5,1516.5,SPEAKER_01,"you want. Like for example, voice recognition, right?",0.392512,0.8071,0.316797
+768,1515.0,1518.0,SPEAKER_01,"example, voice recognition, right? That might be constrained because that you",0.551877,0.6942,0.383113
+769,1516.5,1519.5,SPEAKER_01,"That might be constrained because that you might need to power a microphone, you",0.78991,0.6428,0.507754
+770,1518.0,1521.0,SPEAKER_01,"might need to power a microphone, you might need to power other things.",0.749638,0.6428,0.481867
+771,1519.5,1522.5,SPEAKER_01,might need to power other things. So that's one perhaps,0.551392,0.7288,0.401855
+772,1521.0,1524.0,SPEAKER_01,"So that's one perhaps constraint there. OK, the",0.40631,0.8037,0.326551
+773,1522.5,1525.5,SPEAKER_01,"constraint there. OK, the basic thing is",0.426569,0.8037,0.342833
+774,1524.0,1527.0,SPEAKER_01,basic thing is there's a user interface,0.669281,0.7927,0.530539
+775,1525.5,1528.5,SPEAKER_01,there's a user interface where people punch,0.437969,0.7927,0.347178
+776,1527.0,1530.0,SPEAKER_01,"where people punch a button, or talk",0.278572,0.7927,0.220824
+777,1528.5,1531.5,SPEAKER_01,"a button, or talk into it, or",0.862359,0.7927,0.683592
+778,1530.0,1533.0,SPEAKER_01,"into it, or smile to it, or",0.455666,0.7927,0.361206
+779,1531.5,1534.5,SPEAKER_01,"smile to it, or blink their eyes, whatever.",0.433365,0.7927,0.343528
+780,1533.0,1536.0,SPEAKER_01,"blink their eyes, whatever. And",0.740606,0.7662,0.567452
+781,1534.5,1537.5,SPEAKER_01,And that picks,0.685457,0.7662,0.525197
+782,1536.0,1539.0,SPEAKER_01,that picks up an input,0.547049,0.7397,0.404652
+783,1537.5,1540.5,SPEAKER_01,up an input from a,0.394758,0.7397,0.292002
+784,1539.0,1542.0,SPEAKER_01,from a user. A series,0.013429,0.7448,0.010002
+785,1540.5,1543.5,SPEAKER_01,user. A series of logic has to decide what,0.041925,0.7448,0.031226
+786,1542.0,1545.0,SPEAKER_01,of logic has to decide what the user is telling the device.,0.071928,0.7558,0.054363
+787,1543.5,1546.5,SPEAKER_01,"the user is telling the device. And the device has to, based",0.622522,0.7558,0.470502
+788,1545.0,1548.0,SPEAKER_01,"And the device has to, based on you push button A,",0.169554,0.7617,0.129149
+789,1546.5,1549.5,SPEAKER_01,"on you push button A, so I will do something with",0.488848,0.7617,0.372356
+790,1548.0,1551.0,SPEAKER_01,so I will do something with button A. So maybe button A,0.723809,0.6291,0.455348
+791,1549.5,1552.5,SPEAKER_01,button A. So maybe button A is the power button. And then it,0.256717,0.6588,0.169125
+792,1551.0,1554.0,SPEAKER_01,is the power button. And then it needs to be able to send,0.153962,0.6074,0.093516
+793,1552.5,1555.5,SPEAKER_01,needs to be able to send the signal out to the device,0.106131,0.7183,0.076234
+794,1554.0,1557.0,SPEAKER_01,"the signal out to the device itself, which is the receiver",0.070671,0.7183,0.050763
+795,1555.5,1558.5,SPEAKER_01,"itself, which is the receiver here.",0.099725,0.5799,0.05783
+796,1557.0,1560.0,SPEAKER_01,here. And I think that's,0.422803,0.5799,0.245183
+797,1558.5,1561.5,SPEAKER_01,And I think that's about it in terms,0.720231,0.4415,0.317982
+798,1560.0,1563.0,SPEAKER_01,about it in terms of my design.,0.24542,0.4415,0.108353
+799,1561.5,1564.5,SPEAKER_01,of my design. It's fairly general.,0.833833,0.6284,0.523981
+800,1563.0,1566.0,SPEAKER_01,It's fairly general. And I guess the purpose,0.863529,0.8146,0.70343
+801,1564.5,1567.5,SPEAKER_01,And I guess the purpose of this is also not,0.176238,0.8139,0.14344
+802,1566.0,1569.0,SPEAKER_01,of this is also not to restrict you in the,0.219522,0.8139,0.178669
+803,1567.5,1570.5,SPEAKER_01,"to restrict you in the way you're thinking, like",0.472269,0.8139,0.38438
+804,1569.0,1572.0,SPEAKER_01,"way you're thinking, like voice recognition, right?",0.109214,0.8139,0.08889
+805,1570.5,1573.5,SPEAKER_01,"voice recognition, right? If",0.366529,0.778,0.285159
+806,1572.0,1575.0,SPEAKER_01,"If it's something which is important, then we",0.483322,0.7422,0.358722
+807,1573.5,1576.5,SPEAKER_01,"it's something which is important, then we just add more power rather than having",0.121559,0.7422,0.090221
+808,1575.0,1578.0,SPEAKER_01,just add more power rather than having to think that we don't have,0.378275,0.7422,0.280756
+809,1576.5,1579.5,SPEAKER_01,to think that we don't have enough power. So it's not really a,0.493635,0.5937,0.293071
+810,1578.0,1581.0,SPEAKER_01,"enough power. So it's not really a constraint in that sense. I mean,",0.556832,0.607,0.337997
+811,1579.5,1582.5,SPEAKER_01,"constraint in that sense. I mean, these are functionally",0.30679,0.5394,0.165483
+812,1581.0,1584.0,SPEAKER_01,these are functionally the base what technology,0.315737,0.6337,0.200083
+813,1582.5,1585.5,SPEAKER_01,the base what technology has to do.,0.34405,0.6337,0.218024
+814,1584.0,1587.0,SPEAKER_01,has to do.,0.194978,0.6337,0.123557
+815,1585.5,1588.5,SPEAKER_01,So I guess the rest of it. I think,0.277182,0.7363,0.204089
+816,1587.0,1590.0,SPEAKER_01,So I guess the rest of it. I think maybe you want to go,0.200361,0.7363,0.147526
+817,1588.5,1591.5,SPEAKER_01,maybe you want to go back to what the functions are.,0.185194,0.8548,0.158304
+818,1590.0,1593.0,SPEAKER_01,back to what the functions are. I think that's,0.379129,0.5943,0.225317
+819,1594.5,1597.5,SPEAKER_00,Do you want to finish up your,0.069934,0.709,0.049583
+820,1596.0,1599.0,SPEAKER_00,to finish up your presentation? Are you,0.040031,0.7313,0.029275
+821,1600.5,1603.5,SPEAKER_01,"Oh, it's just putting the rest of it into",0.299225,0.4724,0.141354
+822,1602.0,1605.0,SPEAKER_01,"the rest of it into words, but it's essentially the",0.165277,0.7537,0.12457
+823,1603.5,1606.5,SPEAKER_01,"words, but it's essentially the same thing. You",0.042935,0.6552,0.028131
+824,1605.0,1608.0,SPEAKER_01,same thing. You have a transmitter,0.410938,0.6552,0.269246
+825,1606.5,1609.5,SPEAKER_01,have a transmitter and then put,0.184617,0.5568,0.102795
+826,1608.0,1611.0,SPEAKER_01,and then put the logic chip.,0.132247,0.5568,0.073635
+827,1612.5,1615.5,SPEAKER_03,Since we're on the topic of,0.070786,0.6905,0.048878
+828,1614.0,1617.0,SPEAKER_03,"on the topic of the technology, are there",0.021117,0.6905,0.014581
+829,1615.5,1618.5,SPEAKER_03,"the technology, are there any, what are our",0.037352,0.6905,0.025792
+830,1617.0,1620.0,SPEAKER_03,"any, what are our options? Is this the",0.272157,0.7553,0.20556
+831,1618.5,1621.5,SPEAKER_03,options? Is this the only way that we,0.196725,0.7553,0.148587
+832,1620.0,1623.0,SPEAKER_03,only way that we go about it?,0.100638,0.7911,0.079614
+833,1621.5,1624.5,SPEAKER_03,go about it? Or are there other?,0.37772,0.7911,0.298814
+834,1626.0,1629.0,SPEAKER_01,in that sense. This is just the,0.086134,0.7128,0.061397
+835,1627.5,1630.5,SPEAKER_01,This is just the basic principles and,0.310074,0.6797,0.210757
+836,1629.0,1632.0,SPEAKER_01,basic principles and basic components that,0.151011,0.6797,0.102642
+837,1630.5,1633.5,SPEAKER_01,"basic components that I needed. For example,",0.478084,0.6812,0.325671
+838,1632.0,1635.0,SPEAKER_01,"I needed. For example, if you needed to",0.566194,0.6812,0.385692
+839,1633.5,1636.5,SPEAKER_01,"if you needed to add a voice recognition,",0.529398,0.6828,0.361473
+840,1635.0,1638.0,SPEAKER_01,"add a voice recognition, then your user interface",0.360995,0.6828,0.246487
+841,1636.5,1639.5,SPEAKER_01,then your user interface will be split,0.523777,0.6828,0.357635
+842,1638.0,1641.0,SPEAKER_01,will be split broken down into more,0.284821,0.6828,0.194476
+843,1639.5,1642.5,SPEAKER_01,"broken down into more components, which you have",0.326628,0.6828,0.223022
+844,1641.0,1644.0,SPEAKER_01,"components, which you have a microphone, a VR,",0.215659,0.6828,0.147252
+845,1642.5,1645.5,SPEAKER_01,"a microphone, a VR, and stuff like that.",0.233451,0.6828,0.1594
+846,1650.0,1653.0,SPEAKER_01,represents one function. But I think the basic,0.180907,0.815,0.147439
+847,1651.5,1654.5,SPEAKER_01,"I think the basic functions of the logic, the",0.409996,0.8289,0.339845
+848,1653.0,1656.0,SPEAKER_01,"functions of the logic, the transmitter, and the receiver and",0.140355,0.8289,0.11634
+849,1654.5,1657.5,SPEAKER_01,"transmitter, and the receiver and the power are things that",0.276989,0.8289,0.229596
+850,1656.0,1659.0,SPEAKER_01,the power are things that you won't have to,0.403912,0.8289,0.334802
+851,1657.5,1660.5,SPEAKER_01,you won't have to care about. And,0.429906,0.7691,0.330641
+852,1659.0,1662.0,SPEAKER_01,care about. And those are things that based on,0.562719,0.7691,0.432787
+853,1660.5,1663.5,SPEAKER_01,"those are things that based on what your user interface requires, they",0.816268,0.7092,0.578897
+854,1662.0,1665.0,SPEAKER_01,"what your user interface requires, they will add more functionality to it.",0.364123,0.7092,0.258236
+855,1663.5,1666.5,SPEAKER_01,will add more functionality to it. There,0.126206,0.7549,0.095273
+856,1665.0,1668.0,SPEAKER_01,There might be one,0.156395,0.7549,0.118063
+857,1666.5,1669.5,SPEAKER_01,might be one other consideration which would,0.595673,0.8006,0.476895
+858,1668.0,1671.0,SPEAKER_01,other consideration which would be the transmission between,0.426562,0.8006,0.341506
+859,1669.5,1672.5,SPEAKER_01,be the transmission between the remote control and the,0.286409,0.7906,0.226435
+860,1671.0,1674.0,SPEAKER_01,the remote control and the TV for example.,0.147251,0.7906,0.116416
+861,1672.5,1675.5,SPEAKER_01,TV for example. Okay. Okay.,0.155418,0.5902,0.091728
+862,1674.0,1677.0,SPEAKER_01,Okay. Okay. Are we going,0.161403,0.5628,0.090838
+863,1675.5,1678.5,SPEAKER_01,Are we going to restrict ourselves to,0.356249,0.6983,0.248768
+864,1677.0,1680.0,SPEAKER_01,to restrict ourselves to using the traditional technologies?,0.626153,0.6983,0.437243
+865,1678.5,1681.5,SPEAKER_01,using the traditional technologies? Okay. Because that's something,0.102638,0.5537,0.056831
+866,1680.0,1683.0,SPEAKER_01,Okay. Because that's something you need to actually be physically,0.213151,0.5537,0.118021
+867,1686.0,1689.0,SPEAKER_00,that was expressed in the new requirements was that if,0.015229,0.8273,0.012599
+868,1687.5,1690.5,SPEAKER_00,"new requirements was that if we made this too complex,",0.154691,0.8273,0.127976
+869,1689.0,1692.0,SPEAKER_00,"we made this too complex, it would affect how long",0.114842,0.8273,0.095009
+870,1690.5,1693.5,SPEAKER_00,it would affect how long it took us to get,0.113142,0.8273,0.093602
+871,1692.0,1695.0,SPEAKER_00,it took us to get this to market. I suspect,0.186489,0.828,0.154413
+872,1693.5,1696.5,SPEAKER_00,this to market. I suspect it might be a,0.005165,0.828,0.004276
+873,1695.0,1698.0,SPEAKER_00,it might be a good idea to restrict our,0.295011,0.8287,0.244476
+874,1696.5,1699.5,SPEAKER_00,good idea to restrict our creative influence on this,0.204777,0.8287,0.169699
+875,1698.0,1701.0,SPEAKER_00,creative influence on this on the user interface,0.063773,0.8287,0.052848
+876,1699.5,1702.5,SPEAKER_00,on the user interface and not worry so much,0.073829,0.8287,0.061182
+877,1701.0,1704.0,SPEAKER_00,and not worry so much about how we transmit,0.13178,0.8287,0.109206
+878,1702.5,1705.5,SPEAKER_00,about how we transmit it because it's tried and,0.164794,0.8287,0.136565
+879,1704.0,1707.0,SPEAKER_00,it because it's tried and tested and for ads.,0.463217,0.8287,0.383868
+880,1707.0,1710.0,SPEAKER_01,There might be one other problem with the transmission,0.31605,0.5064,0.160047
+881,1708.5,1711.5,SPEAKER_01,other problem with the transmission in particular right now since,0.369802,0.5064,0.187268
+882,1710.0,1713.0,SPEAKER_01,in particular right now since we're talking about voice recognition.,0.187905,0.6283,0.118061
+883,1711.5,1714.5,SPEAKER_01,we're talking about voice recognition. If somebody is going to talk,0.162829,0.6283,0.102305
+884,1713.0,1716.0,SPEAKER_01,"If somebody is going to talk to the device, you ideally want",0.26601,0.7502,0.199561
+885,1714.5,1717.5,SPEAKER_01,"to the device, you ideally want them to hold it to them.",0.190862,0.7502,0.143185
+886,1716.0,1719.0,SPEAKER_01,them to hold it to them. You,0.283472,0.7726,0.219011
+887,1717.5,1720.5,SPEAKER_01,"You may not require that, but",0.726881,0.7726,0.561589
+888,1719.0,1722.0,SPEAKER_01,"may not require that, but it's something very natural,",0.743458,0.7949,0.590975
+889,1720.5,1723.5,SPEAKER_01,"it's something very natural, I guess, to hold",0.044867,0.7949,0.035665
+890,1722.0,1725.0,SPEAKER_01,"I guess, to hold it, signal to the",0.763607,0.7949,0.606991
+891,1723.5,1726.5,SPEAKER_01,"it, signal to the user and push a button",0.849562,0.7949,0.675317
+892,1725.0,1728.0,SPEAKER_01,user and push a button to start talking about,0.263427,0.7949,0.209398
+893,1726.5,1729.5,SPEAKER_01,to start talking about it. Then you need to send,0.079386,0.747,0.059301
+894,1728.0,1731.0,SPEAKER_01,"it. Then you need to send the signal out, because if you're",0.15018,0.747,0.112184
+895,1729.5,1732.5,SPEAKER_01,"the signal out, because if you're using infrared, the line of sight, I'll",0.383529,0.7463,0.286228
+896,1731.0,1734.0,SPEAKER_01,"using infrared, the line of sight, I'll say the TV's at that",0.615632,0.7463,0.459447
+897,1732.5,1735.5,SPEAKER_01,say the TV's at that chair and I'm standing in,0.287305,0.7935,0.227976
+898,1734.0,1737.0,SPEAKER_01,chair and I'm standing in front of here in the,0.405761,0.7935,0.321971
+899,1735.5,1738.5,SPEAKER_01,"front of here in the transmitter, it blocks it.",0.503383,0.7935,0.399435
+900,1737.0,1740.0,SPEAKER_01,"transmitter, it blocks it. So in that sense, there's",0.170296,0.7938,0.135181
+901,1738.5,1741.5,SPEAKER_01,"So in that sense, there's not really a restriction, but",0.102683,0.7942,0.081551
+902,1740.0,1743.0,SPEAKER_01,"not really a restriction, but it's something you may have to",0.621286,0.7942,0.493425
+903,1741.5,1744.5,SPEAKER_01,it's something you may have to think about later on in the,0.22745,0.7942,0.180641
+904,1746.0,1749.0,SPEAKER_03,clarification before we finish this. Is our,0.106391,0.8389,0.089251
+905,1747.5,1750.5,SPEAKER_03,"finish this. Is our controller, have the",0.057583,0.8389,0.048306
+906,1749.0,1752.0,SPEAKER_03,"controller, have the option of being",0.02429,0.8296,0.020151
+907,1750.5,1753.5,SPEAKER_03,option of being on a standard,0.009308,0.8296,0.007722
+908,1752.0,1755.0,SPEAKER_03,on a standard frequency as all,0.095893,0.8296,0.079553
+909,1753.5,1756.5,SPEAKER_03,frequency as all of the other,0.064826,0.8296,0.053779
+910,1755.0,1758.0,SPEAKER_03,of the other equipment so that,0.029049,0.8296,0.024099
+911,1756.5,1759.5,SPEAKER_03,equipment so that the one controller,0.018835,0.8296,0.015625
+912,1758.0,1761.0,SPEAKER_03,the one controller can control several,0.099547,0.8296,0.082584
+913,1759.5,1762.5,SPEAKER_03,can control several pieces of specific,0.228615,0.8296,0.189659
+914,1761.0,1764.0,SPEAKER_03,"pieces of specific information, but I",0.219353,0.8296,0.181975
+915,1762.5,1765.5,SPEAKER_03,"information, but I think that one",0.012034,0.8296,0.009983
+916,1764.0,1767.0,SPEAKER_03,think that one indication of infrared,0.011008,0.8296,0.009133
+917,1765.5,1768.5,SPEAKER_03,indication of infrared means that you're,0.227396,0.8296,0.188648
+918,1767.0,1770.0,SPEAKER_03,means that you're just targeting traditional,0.508557,0.8296,0.421898
+919,1771.5,1774.5,SPEAKER_00,"new requirements spec, they said just to focus on",0.022004,0.8017,0.017641
+920,1773.0,1776.0,SPEAKER_00,just to focus on the TV. So that's what we should do,0.018686,0.7185,0.013426
+921,1774.5,1777.5,SPEAKER_00,"the TV. So that's what we should do for now, I think. Something I was",0.04488,0.6934,0.03112
+922,1776.0,1779.0,SPEAKER_00,"for now, I think. Something I was wondering about was the power.",0.169766,0.6392,0.108514
+923,1777.5,1780.5,SPEAKER_00,wondering about was the power. Is it worth,0.101506,0.7148,0.072557
+924,1779.0,1782.0,SPEAKER_00,Is it worth considering having a charging,0.08985,0.7864,0.070658
+925,1780.5,1783.5,SPEAKER_00,considering having a charging unit as opposed to,0.08089,0.7864,0.063612
+926,1782.0,1785.0,SPEAKER_00,unit as opposed to just regular batteries?,0.03286,0.7345,0.024135
+927,1783.5,1786.5,SPEAKER_00,"just regular batteries? I mean, is that something you really want",0.056665,0.7345,0.04162
+928,1785.0,1788.0,SPEAKER_00,"I mean, is that something you really want to go into, do you think? Or",0.058931,0.7609,0.044841
+929,1786.5,1789.5,SPEAKER_00,"to go into, do you think? Or should we just consider",0.027256,0.7609,0.020739
+930,1791.0,1794.0,SPEAKER_01,"point of view, there's added complexity. You add cost to",0.332197,0.7462,0.247886
+931,1792.5,1795.5,SPEAKER_01,complexity. You add cost to it.,0.483847,0.7462,0.361047
+932,1794.0,1797.0,SPEAKER_01,it. And then there's probably the,0.531296,0.8124,0.431625
+933,1795.5,1798.5,SPEAKER_01,And then there's probably the fact that you need another physical,0.604433,0.7757,0.468859
+934,1797.0,1800.0,SPEAKER_01,fact that you need another physical component. You need a docking,0.483257,0.7202,0.348042
+935,1798.5,1801.5,SPEAKER_01,"component. You need a docking cradle, for example. Put it",0.664887,0.7789,0.517881
+936,1800.0,1803.0,SPEAKER_01,"cradle, for example. Put it into charge. Or you need",0.658401,0.7392,0.48669
+937,1801.5,1804.5,SPEAKER_01,into charge. Or you need to get the user to plug it in.,0.127503,0.7764,0.098993
+938,1803.0,1806.0,SPEAKER_01,to get the user to plug it in. So most,0.186357,0.5931,0.110528
+939,1804.5,1807.5,SPEAKER_01,So most users are already used to,0.170553,0.5296,0.090325
+940,1806.0,1809.0,SPEAKER_01,users are already used to the idea of buying batteries,0.923594,0.5296,0.489135
+941,1807.5,1810.5,SPEAKER_01,the idea of buying batteries and putting it into your,0.304637,0.5296,0.161336
+942,1809.0,1812.0,SPEAKER_01,and putting it into your controller. But unless the controller's,0.487969,0.6568,0.320498
+943,1810.5,1813.5,SPEAKER_01,controller. But unless the controller's going to consume a,0.430275,0.6568,0.282605
+944,1812.0,1815.0,SPEAKER_01,"going to consume a lot of batteries, like he's",0.325511,0.784,0.255201
+945,1813.5,1816.5,SPEAKER_01,"lot of batteries, like he's going to run through three",0.795548,0.784,0.62371
+946,1815.0,1818.0,SPEAKER_01,"going to run through three batteries a month, then I",0.662235,0.784,0.519193
+947,1816.5,1819.5,SPEAKER_01,"batteries a month, then I don't think rechargeable is something",0.626565,0.784,0.491227
+948,1821.0,1824.0,SPEAKER_00,"just stick to regular, okay.",0.148997,0.6363,0.094807
+949,1825.5,1828.5,SPEAKER_00,"Right, so basically,",0.115089,0.7842,0.090253
+950,1827.0,1830.0,SPEAKER_00,"Right, so basically, I'm just gonna just",0.040766,0.7842,0.031969
+951,1828.5,1831.5,SPEAKER_00,I'm just gonna just recap what I,0.421412,0.7842,0.330471
+952,1830.0,1833.0,SPEAKER_00,recap what I said at the start,0.294613,0.7842,0.231035
+953,1831.5,1834.5,SPEAKER_00,said at the start was that the whole,0.066377,0.7842,0.052053
+954,1833.0,1836.0,SPEAKER_00,was that the whole point of this,0.17668,0.7842,0.138553
+955,1834.5,1837.5,SPEAKER_00,point of this meeting was to absolutely,0.22955,0.7842,0.180013
+956,1836.0,1839.0,SPEAKER_00,meeting was to absolutely finalize who we're gonna,0.25114,0.7842,0.196944
+957,1837.5,1840.5,SPEAKER_00,finalize who we're gonna aim this at,0.015641,0.7842,0.012266
+958,1839.0,1842.0,SPEAKER_00,aim this at and what exactly the,0.103276,0.7842,0.080989
+959,1840.5,1843.5,SPEAKER_00,and what exactly the product's gonna do.,0.046072,0.8046,0.03707
+960,1842.0,1845.0,SPEAKER_00,product's gonna do. So just to,0.034184,0.8046,0.027505
+961,1843.5,1846.5,SPEAKER_00,"So just to recap, are we",0.008217,0.825,0.006779
+962,1845.0,1848.0,SPEAKER_00,"recap, are we all happy",0.418744,0.825,0.345464
+963,1846.5,1849.5,SPEAKER_00,all happy about the idea,0.596318,0.825,0.491962
+964,1848.0,1851.0,SPEAKER_00,about the idea of aiming,0.085084,0.825,0.070195
+965,1849.5,1852.5,SPEAKER_00,of aiming the product at,0.058591,0.825,0.048338
+966,1851.0,1854.0,SPEAKER_00,the product at the 15,0.016461,0.825,0.013581
+967,1852.5,1855.5,SPEAKER_00,the 15 to 35 bracket?,0.037224,0.825,0.03071
+968,1854.0,1857.0,SPEAKER_00,to 35 bracket? And,0.241292,0.8253,0.199138
+969,1855.5,1858.5,SPEAKER_00,And also the actual functions of,0.017834,0.8253,0.014718
+970,1857.0,1860.0,SPEAKER_00,also the actual functions of what it's going to do.,0.031133,0.8255,0.0257
+971,1858.5,1861.5,SPEAKER_00,what it's going to do. Do you want to recap on,0.307769,0.6918,0.212915
+972,1860.0,1863.0,SPEAKER_00,"Do you want to recap on that, Craig?",0.442237,0.6918,0.305939
+973,1863.0,1866.0,SPEAKER_02,I think we used to say it was going,0.026082,0.5284,0.013782
+974,1864.5,1867.5,SPEAKER_02,used to say it was going to be the most basic,0.095208,0.5284,0.050308
+975,1866.0,1869.0,SPEAKER_02,to be the most basic stuff possible.,0.046507,0.5284,0.024574
+976,1867.5,1870.5,SPEAKER_02,"stuff possible. On off, up and down channels,",0.016181,0.5717,0.009251
+977,1869.0,1872.0,SPEAKER_02,"On off, up and down channels, up and down volume. And they",0.012231,0.5378,0.006578
+978,1870.5,1873.5,SPEAKER_02,up and down volume. And they skipped to a channel.,0.044092,0.5378,0.023713
+979,1873.5,1876.5,SPEAKER_03,Is it going to include,0.051573,0.6976,0.035977
+980,1875.0,1878.0,SPEAKER_03,it going to include any of the more advanced,0.066302,0.6976,0.046252
+981,1876.5,1879.5,SPEAKER_03,any of the more advanced features or are we,0.042446,0.6976,0.029611
+982,1878.0,1881.0,SPEAKER_03,features or are we going to eliminate those?,0.19382,0.6976,0.135209
+983,1882.5,1885.5,SPEAKER_02,"include the mute, but apart from that, I think we",0.033781,0.5731,0.01936
+984,1884.0,1887.0,SPEAKER_02,"from that, I think we just go for the simpleness.",0.059965,0.5731,0.034366
+985,1885.5,1888.5,SPEAKER_02,just go for the simpleness.,0.034905,0.5731,0.020004
+986,1888.5,1891.5,SPEAKER_03,Is it not an option still that we include,0.028506,0.8178,0.023312
+987,1890.0,1893.0,SPEAKER_03,option still that we include some things just as,0.157193,0.8178,0.128552
+988,1891.5,1894.5,SPEAKER_03,some things just as a sort of under a,0.274142,0.8178,0.224194
+989,1893.0,1896.0,SPEAKER_03,a sort of under a door? What I'd,0.363206,0.8215,0.298374
+990,1894.5,1897.5,SPEAKER_03,door? What I'd be a bit,0.33317,0.8215,0.273699
+991,1896.0,1899.0,SPEAKER_03,be a bit worried about is,0.027149,0.8251,0.0224
+992,1897.5,1900.5,SPEAKER_03,worried about is if someone had,0.447931,0.8251,0.369588
+993,1899.0,1902.0,SPEAKER_03,if someone had previously developed habits,0.082311,0.8251,0.067915
+994,1900.5,1903.5,SPEAKER_03,previously developed habits of expecting to,0.048974,0.8251,0.040409
+995,1902.0,1905.0,SPEAKER_03,of expecting to control surround sound,0.029573,0.8251,0.024401
+996,1903.5,1906.5,SPEAKER_03,control surround sound or this,0.008107,0.8251,0.006689
+997,1905.0,1908.0,SPEAKER_03,or this and that with,0.168086,0.8251,0.138688
+998,1906.5,1909.5,SPEAKER_03,and that with their controller and,0.172685,0.8251,0.142482
+999,1908.0,1911.0,SPEAKER_03,their controller and then they get,0.502246,0.8251,0.414404
+1000,1909.5,1912.5,SPEAKER_03,"then they get ours, it doesn't",0.175562,0.8251,0.144856
+1001,1911.0,1914.0,SPEAKER_03,"ours, it doesn't have that. I don't",0.122355,0.6139,0.075114
+1002,1912.5,1915.5,SPEAKER_03,have that. I don't know if that would be a problem.,0.110663,0.6139,0.067936
+1003,1915.5,1918.5,SPEAKER_01,Another thing that you were,0.196831,0.7408,0.145812
+1004,1917.0,1920.0,SPEAKER_01,"thing that you were saying about categorizing the controls,",0.346913,0.7408,0.256993
+1005,1918.5,1921.5,SPEAKER_01,"saying about categorizing the controls, maybe I could suggest",0.175366,0.7408,0.129911
+1006,1920.0,1923.0,SPEAKER_01,maybe I could suggest we break them down,0.369903,0.7408,0.274024
+1007,1921.5,1924.5,SPEAKER_01,we break them down into three simple categories.,0.129469,0.7408,0.09591
+1008,1923.0,1926.0,SPEAKER_01,into three simple categories. One would be,0.699018,0.7175,0.501545
+1009,1924.5,1927.5,SPEAKER_01,"One would be audio controls, one would be video",0.295542,0.6942,0.205165
+1010,1926.0,1929.0,SPEAKER_01,"audio controls, one would be video controls, the other one would",0.381544,0.6942,0.264868
+1011,1927.5,1930.5,SPEAKER_01,"controls, the other one would be a device.",0.45981,0.6942,0.3192
+1012,1929.0,1932.0,SPEAKER_01,be a device. This may not map very,0.272672,0.748,0.203959
+1013,1930.5,1933.5,SPEAKER_01,"This may not map very well to advanced functionality especially,",0.654214,0.8018,0.524549
+1014,1932.0,1935.0,SPEAKER_01,"well to advanced functionality especially, but I think that from",0.330143,0.8018,0.264709
+1015,1933.5,1936.5,SPEAKER_01,but I think that from a manufacturer's point of,0.832783,0.8018,0.667725
+1016,1935.0,1938.0,SPEAKER_01,"a manufacturer's point of view, from a person designing",0.696985,0.8018,0.558843
+1017,1936.5,1939.5,SPEAKER_01,"view, from a person designing the device, but I think",0.464444,0.8018,0.372392
+1018,1938.0,1941.0,SPEAKER_01,"the device, but I think from a point of view",0.284752,0.8018,0.228314
+1019,1939.5,1942.5,SPEAKER_01,from a point of view of a person using a,0.711122,0.8018,0.570178
+1020,1941.0,1944.0,SPEAKER_01,"of a person using a device, You know a TV is something",0.857766,0.7593,0.651302
+1021,1942.5,1945.5,SPEAKER_01,"device, You know a TV is something they see and something they hear.",0.483002,0.7593,0.366743
+1022,1944.0,1947.0,SPEAKER_01,they see and something they hear. And it's something,0.400256,0.6552,0.262248
+1023,1945.5,1948.5,SPEAKER_01,And it's something they do other things to like turn,0.491224,0.5934,0.291492
+1024,1947.0,1950.0,SPEAKER_01,they do other things to like turn it on and turn it off.,0.641259,0.5934,0.380523
+1025,1948.5,1951.5,SPEAKER_01,it on and turn it off. So what we could,0.570451,0.6578,0.375242
+1026,1950.0,1953.0,SPEAKER_01,So what we could have is like three buckets where we could,0.546349,0.7221,0.394518
+1027,1951.5,1954.5,SPEAKER_01,have is like three buckets where we could throw things into like if we want this,0.547277,0.7221,0.395189
+1028,1953.0,1956.0,SPEAKER_01,throw things into like if we want this feature let's throw it into there.,0.773371,0.7221,0.558451
+1029,1954.5,1957.5,SPEAKER_01,feature let's throw it into there. And then from there,0.231967,0.6791,0.157529
+1030,1956.0,1959.0,SPEAKER_01,And then from there decide when it's basic or,0.293784,0.6362,0.186905
+1031,1957.5,1960.5,SPEAKER_01,decide when it's basic or it's non-basic. It might,0.220821,0.731,0.16142
+1032,1959.0,1962.0,SPEAKER_01,it's non-basic. It might help with the visualization.,0.728153,0.7249,0.527838
+1033,1960.5,1963.5,SPEAKER_01,help with the visualization. And it would actually help,0.375042,0.7692,0.288483
+1034,1962.0,1965.0,SPEAKER_01,And it would actually help with the component build as well.,0.631315,0.7126,0.449875
+1035,1966.5,1969.5,SPEAKER_00,"Right. OK, well, I've",0.276587,0.7473,0.206693
+1036,1968.0,1971.0,SPEAKER_00,"OK, well, I've got five minutes to wrap",0.062071,0.8147,0.050569
+1037,1969.5,1972.5,SPEAKER_00,got five minutes to wrap up now. Next,0.009588,0.7587,0.007274
+1038,1971.0,1974.0,SPEAKER_00,up now. Next thing we're doing is having lunch.,0.044943,0.7587,0.034098
+1039,1972.5,1975.5,SPEAKER_00,thing we're doing is having lunch. And then,0.772413,0.7525,0.581241
+1040,1974.0,1977.0,SPEAKER_00,And then we're going to have 30 minutes,0.704682,0.8023,0.565367
+1041,1975.5,1978.5,SPEAKER_00,we're going to have 30 minutes of working on the next stage.,0.431834,0.8023,0.34646
+1042,1977.0,1980.0,SPEAKER_00,of working on the next stage.,0.34931,0.8358,0.291953
+1043,1978.5,1981.5,SPEAKER_00,So I'll be putting,0.260074,0.8694,0.226108
+1044,1980.0,1983.0,SPEAKER_00,So I'll be putting the minutes of this,0.413777,0.8694,0.359738
+1045,1981.5,1984.5,SPEAKER_00,the minutes of this meeting into the project,0.138917,0.8694,0.120774
+1046,1983.0,1986.0,SPEAKER_00,meeting into the project documents folder.,0.15859,0.8694,0.137878
+1047,1984.5,1987.5,SPEAKER_00,documents folder. So I,0.141578,0.8668,0.12272
+1048,1986.0,1989.0,SPEAKER_00,So I guess just to confirm,0.130198,0.8642,0.112517
+1049,1987.5,1990.5,SPEAKER_00,guess just to confirm that we know what,0.295382,0.8642,0.255269
+1050,1989.0,1992.0,SPEAKER_00,that we know what we're doing in the,0.672787,0.8642,0.581423
+1051,1990.5,1993.5,SPEAKER_00,"we're doing in the next, well, in the 30",0.688794,0.8642,0.595256
+1052,1992.0,1995.0,SPEAKER_00,"next, well, in the 30 minutes after lunch anyway.",0.306408,0.8642,0.264798
+1053,1993.5,1996.5,SPEAKER_00,"minutes after lunch anyway. For our industrial designer,",0.204086,0.7717,0.157493
+1054,1995.0,1998.0,SPEAKER_00,"For our industrial designer, you're going to",0.295586,0.7717,0.228104
+1055,1996.5,1999.5,SPEAKER_00,you're going to be thinking about the,0.18611,0.6793,0.126424
+1056,1998.0,2001.0,SPEAKER_00,be thinking about the components concept.,0.150657,0.6793,0.102341
+1057,1999.5,2002.5,SPEAKER_00,"components concept. User interface designer, you're going",0.057908,0.6724,0.038937
+1058,2001.0,2004.0,SPEAKER_00,"User interface designer, you're going to be thinking about our user",0.149497,0.6656,0.099505
+1059,2002.5,2005.5,SPEAKER_00,"to be thinking about our user interface. And marketing, you're going to",0.075592,0.5826,0.04404
+1060,2004.0,2007.0,SPEAKER_00,"interface. And marketing, you're going to be thinking about trend watching.",0.219063,0.5826,0.127626
+1061,2005.5,2008.5,SPEAKER_00,be thinking about trend watching. And you'll all get,0.060288,0.651,0.039247
+1062,2007.0,2010.0,SPEAKER_00,And you'll all get specific instructions as well.,0.325397,0.8023,0.261066
+1063,2008.5,2011.5,SPEAKER_00,specific instructions as well. So I know,0.373688,0.7792,0.291178
+1064,2010.0,2013.0,SPEAKER_00,"So I know just to ask now,",0.269734,0.7562,0.203973
+1065,2011.5,2014.5,SPEAKER_00,"just to ask now, if you've got",0.35249,0.7562,0.266553
+1066,2013.0,2016.0,SPEAKER_00,if you've got anything else you thought,0.026958,0.7562,0.020386
+1067,2014.5,2017.5,SPEAKER_00,anything else you thought about while we've been,0.007532,0.7562,0.005695
+1068,2016.0,2019.0,SPEAKER_00,"about while we've been talking, do you want",0.203954,0.7562,0.15423
+1069,2017.5,2020.5,SPEAKER_00,"talking, do you want to start with",0.12838,0.7562,0.097081
+1070,2019.0,2022.0,SPEAKER_00,to start with David? Anything else to say,0.03639,0.7601,0.02766
+1071,2020.5,2023.5,SPEAKER_00,David? Anything else to say at all?,0.257679,0.7601,0.195862
+1072,2025.0,2028.0,SPEAKER_03,just I just wanted to ask then before,0.075999,0.7979,0.06064
+1073,2026.5,2029.5,SPEAKER_03,to ask then before we wrap up should we,0.014271,0.7979,0.011387
+1074,2028.0,2031.0,SPEAKER_03,we wrap up should we agree for a sake,0.186122,0.7979,0.148507
+1075,2029.5,2032.5,SPEAKER_03,agree for a sake of sort of clarity,0.142256,0.7979,0.113506
+1076,2031.0,2034.0,SPEAKER_03,of sort of clarity and when we when,0.075002,0.7979,0.059844
+1077,2032.5,2035.5,SPEAKER_03,and when we when we resume that we'll,0.028215,0.7979,0.022513
+1078,2034.0,2037.0,SPEAKER_03,we resume that we'll use this idea David's proposal,0.328906,0.7979,0.262434
+1079,2035.5,2038.5,SPEAKER_03,use this idea David's proposal we think of these,0.028873,0.7979,0.023038
+1080,2037.0,2040.0,SPEAKER_03,we think of these three sort of buckets,0.010879,0.7979,0.00868
+1081,2038.5,2041.5,SPEAKER_03,three sort of buckets and yeah okay we're,0.098561,0.7979,0.078642
+1082,2040.0,2043.0,SPEAKER_03,and yeah okay we're talking about this yeah okay,0.213587,0.7979,0.170421
+1083,2041.5,2044.5,SPEAKER_03,talking about this yeah okay great just about the,0.065159,0.7979,0.05199
+1084,2043.0,2046.0,SPEAKER_03,great just about the three buckets and what,0.368113,0.7979,0.293717
+1085,2044.5,2047.5,SPEAKER_03,three buckets and what would go in the,0.209541,0.7979,0.167193
+1086,2049.0,2052.0,SPEAKER_01,like on off because they don't have anything to do,0.710061,0.6869,0.487741
+1087,2050.5,2053.5,SPEAKER_01,don't have anything to do with what you see yeah,0.708907,0.6869,0.486948
+1088,2052.0,2055.0,SPEAKER_01,with what you see yeah I mean in terms of,0.734922,0.6869,0.504818
+1089,2053.5,2056.5,SPEAKER_01,I mean in terms of picture and the entertainment value,0.313742,0.6869,0.21551
+1090,2055.0,2058.0,SPEAKER_01,picture and the entertainment value you know okay so and,0.107573,0.6869,0.073892
+1091,2056.5,2059.5,SPEAKER_01,you know okay so and channel and channel because the,0.443298,0.6869,0.304501
+1092,2058.0,2061.0,SPEAKER_01,channel and channel because the on off also goes you,0.259133,0.6869,0.177998
+1093,2059.5,2062.5,SPEAKER_01,on off also goes you know like on off like,0.411511,0.6869,0.282667
+1094,2061.0,2064.0,SPEAKER_01,know like on off like power not on off sound,0.538804,0.6869,0.370104
+1095,2062.5,2065.5,SPEAKER_01,power not on off sound yeah video although you don't,0.268693,0.6869,0.184565
+1096,2064.0,2067.0,SPEAKER_01,yeah video although you don't turn off the video on,0.463454,0.6869,0.318347
+1097,2065.5,2068.5,SPEAKER_01,turn off the video on your TV but you might,0.356704,0.6869,0.24502
+1098,2067.0,2070.0,SPEAKER_01,your TV but you might want to you know turn,0.320514,0.6869,0.220161
+1099,2068.5,2071.5,SPEAKER_01,want to you know turn off the sound say you,0.330879,0.6869,0.227281
+1100,2070.0,2073.0,SPEAKER_01,off the sound say you want to pick up,0.629887,0.6869,0.432669
+1101,2071.5,2074.5,SPEAKER_01,want to pick up the phone there's a mute,0.264017,0.6869,0.181354
+1102,2073.0,2076.0,SPEAKER_01,the phone there's a mute button right okay you have,0.576245,0.6869,0.395823
+1103,2074.5,2077.5,SPEAKER_01,button right okay you have you have a choice of,0.16689,0.6869,0.114637
+1104,2079.0,2082.0,SPEAKER_00,so you're going to have,0.365471,0.5597,0.204554
+1105,2080.5,2083.5,SPEAKER_00,going to have audio which,0.331752,0.5597,0.185682
+1106,2082.0,2085.0,SPEAKER_00,audio which is going to,0.70308,0.5597,0.393514
+1107,2083.5,2086.5,SPEAKER_00,"is going to be like,",0.046764,0.5597,0.026174
+1108,2085.0,2088.0,SPEAKER_00,"be like, you know, you",0.109223,0.5597,0.061132
+1109,2086.5,2089.5,SPEAKER_00,"you know, you base settings",0.043923,0.5597,0.024584
+1110,2088.0,2091.0,SPEAKER_00,base settings and actual volume.,0.061554,0.5597,0.034452
+1111,2089.5,2092.5,SPEAKER_00,"and actual volume. Okay,",0.045643,0.6293,0.028723
+1112,2095.5,2098.5,SPEAKER_00,"visual. Okay, so brightness",0.542824,0.7381,0.400658
+1113,2097.0,2100.0,SPEAKER_00,"Okay, so brightness contrast things like that and",0.600317,0.7381,0.443094
+1114,2098.5,2101.5,SPEAKER_00,contrast things like that and then just actual device things,0.355801,0.7773,0.276564
+1115,2100.0,2103.0,SPEAKER_00,then just actual device things like what channel you're,0.142873,0.7773,0.111055
+1116,2101.5,2104.5,SPEAKER_00,like what channel you're watching turning on and off,0.014867,0.7773,0.011556
+1117,2103.0,2106.0,SPEAKER_00,"watching turning on and off stuff like that, okay I",0.160919,0.7773,0.125082
+1118,2104.5,2107.5,SPEAKER_00,"stuff like that, okay I suppose quite likely what",0.370473,0.7773,0.287969
+1119,2106.0,2109.0,SPEAKER_00,suppose quite likely what would happen is in the,0.207205,0.7773,0.16106
+1120,2107.5,2110.5,SPEAKER_00,would happen is in the device category there might,0.062947,0.7773,0.048928
+1121,2109.0,2112.0,SPEAKER_00,device category there might be some which are just,0.807619,0.7773,0.627762
+1122,2110.5,2113.5,SPEAKER_00,be some which are just like the habitual standard and,0.59138,0.7773,0.45968
+1123,2112.0,2115.0,SPEAKER_00,like the habitual standard and then others which are,0.121975,0.7773,0.094811
+1124,2113.5,2116.5,SPEAKER_00,then others which are maybe a bit more like,0.410397,0.7773,0.319001
+1125,2118.0,2121.0,SPEAKER_01,no other place to push.,0.184733,0.8084,0.149338
+1126,2119.5,2122.5,SPEAKER_01,push. Even if it doesn't match very,0.085909,0.8084,0.069449
+1127,2121.0,2124.0,SPEAKER_01,"Even if it doesn't match very clearly, what happens is that people at",0.501742,0.7839,0.393316
+1128,2122.5,2125.5,SPEAKER_01,"clearly, what happens is that people at least have some in their mind.",0.460666,0.7839,0.361116
+1129,2124.0,2127.0,SPEAKER_01,"least have some in their mind. It's easy to use, I think",0.572173,0.8096,0.463231
+1130,2125.5,2128.5,SPEAKER_01,"It's easy to use, I think that's one thing.",0.187027,0.8354,0.156242
+1131,2127.0,2130.0,SPEAKER_01,that's one thing. And I,0.410514,0.664,0.272581
+1132,2128.5,2131.5,SPEAKER_01,And I guess from the component point of view,0.603091,0.4925,0.297022
+1133,2130.0,2133.0,SPEAKER_01,"guess from the component point of view of the bill as well, because things",0.460028,0.4925,0.226564
+1134,2134.5,2137.5,SPEAKER_00,"So yeah, I guess just things to think about",0.250849,0.6544,0.164155
+1135,2136.0,2139.0,SPEAKER_00,"I guess just things to think about are, you know, like the fact",0.071178,0.7409,0.052736
+1136,2137.5,2140.5,SPEAKER_00,"are, you know, like the fact it's got to look good because",0.380346,0.7409,0.281799
+1137,2139.0,2142.0,SPEAKER_00,"it's got to look good because of who we're, you know, targeting",0.169911,0.7409,0.125887
+1138,2140.5,2143.5,SPEAKER_00,"of who we're, you know, targeting this at.",0.073088,0.7409,0.054151
+1139,2142.0,2145.0,SPEAKER_00,this at. Something maybe kind of,0.2862,0.7954,0.227643
+1140,2143.5,2146.5,SPEAKER_00,"Something maybe kind of quirky in design, maybe make",0.170916,0.85,0.145279
+1141,2145.0,2148.0,SPEAKER_00,"quirky in design, maybe make it kind of ergonomic kind",0.006061,0.85,0.005152
+1142,2146.5,2149.5,SPEAKER_00,"it kind of ergonomic kind of to hold, you",0.094764,0.85,0.080549
+1143,2148.0,2151.0,SPEAKER_00,"of to hold, you know, things like that.",0.549725,0.85,0.467266
+1144,2149.5,2152.5,SPEAKER_00,"know, things like that. So",0.51103,0.8388,0.428652
+1145,2151.0,2154.0,SPEAKER_00,"So I guess, I guess that's",0.119459,0.8277,0.098876
+1146,2152.5,2155.5,SPEAKER_00,"I guess, I guess that's it. It's",0.253344,0.8127,0.205893
+1147,2154.0,2157.0,SPEAKER_00,it. It's the meeting,0.716678,0.8127,0.582444
+1148,2155.5,2158.5,SPEAKER_00,the meeting over.,0.431307,0.7977,0.344054
+1149,2161.5,2164.5,SPEAKER_03,Then we get to go find out,0.181923,0.7854,0.142882
+1150,2163.0,2166.0,SPEAKER_03,get to go find out what was picked up for lunch,0.01561,0.7854,0.01226

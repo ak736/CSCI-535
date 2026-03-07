@@ -1,0 +1,4 @@
+date,step,model,random_seed,meetings,total_segments,notes
+2026-03-07,audio_emotion,superb/wav2vec2-large-superb-er,42,"ES2002a-d, ES2003a-d, ES2004a-d",12076,Speaker-headset mapping via RMS energy analysis
+2026-03-07,text_emotion,j-hartmann/emotion-english-distilroberta-base,42,"ES2002a-d, ES2003a-d, ES2004a-d",12076,"Label mapping: joy->happy, anger->angry, sadness->sad, rest->neutral"
+2026-03-07,incongruence_scoring,JS_divergence,42,"ES2002a-d, ES2003a-d, ES2004a-d",12076,confidence_weight=asr_confidence; JS normalized by log(2)
