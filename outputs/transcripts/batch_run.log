@@ -1,0 +1,344 @@
+=============================
+Batch start: Fri Mar  6 13:07:03 PST 2026
+=============================
+[SKIP]    ES2002a — output already exists: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2002a_transcript.csv
+[RUNNING] ES2002b — 13:07:03
+objc[83922]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1128d03a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x15f4e8328). One of the two will be used. Which one is undefined.
+objc[83922]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1128d03f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x15f4e8378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2002b/audio/ES2002b.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 13:07:14 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 13:07:14 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+=============================
+Batch start: Fri Mar  6 13:08:36 PST 2026
+=============================
+[SKIP]    ES2002a — output already exists: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2002a_transcript.csv
+[RUNNING] ES2002b — 13:08:36
+objc[84404]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x11a93c3a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x169a68328). One of the two will be used. Which one is undefined.
+objc[84404]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x11a93c3f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x169a68378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2002b/audio/ES2002b.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 13:08:42 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 13:08:42 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 13:08:55 - whisperx.asr - INFO - Detected language: en (0.85) in first 30s of audio
+2026-03-06 13:11:50 - whisperx.asr - INFO - Detected language: en (0.85) in first 30s of audio
+      Detected language: en  raw segments: 89
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2002b_transcript.csv 436 rows
+[DONE]    ES2002b — 13:14:50
+[RUNNING] ES2002c — 13:14:50
+objc[87340]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10b4903a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x149b18328). One of the two will be used. Which one is undefined.
+objc[87340]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10b4903f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x149b18378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2002c/audio/ES2002c.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 13:14:57 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 13:14:57 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+      Detected language: en  raw segments: 89
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2002b_transcript.csv 436 rows
+2026-03-06 13:18:00 - whisperx.asr - INFO - Detected language: en (0.78) in first 30s of audio
+[DONE]    ES2002b — 13:18:00
+[RUNNING] ES2002c — 13:18:00
+objc[88237]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1128103a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17c0c8328). One of the two will be used. Which one is undefined.
+objc[88237]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1128103f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17c0c8378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2002c/audio/ES2002c.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 13:18:08 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 13:18:08 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 13:21:38 - whisperx.asr - INFO - Detected language: en (0.78) in first 30s of audio
+      Detected language: en  raw segments: 105
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2002c_transcript.csv 503 rows
+[DONE]    ES2002c — 13:26:31
+[RUNNING] ES2002d — 13:26:31
+objc[90563]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1152883a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17fa70328). One of the two will be used. Which one is undefined.
+objc[90563]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1152883f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17fa70378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2002d/audio/ES2002d.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 13:26:40 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 13:26:40 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+      Detected language: en  raw segments: 105
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2002c_transcript.csv 503 rows
+2026-03-06 13:30:31 - whisperx.asr - INFO - Detected language: en (0.52) in first 30s of audio
+[DONE]    ES2002c — 13:30:38
+[RUNNING] ES2002d — 13:30:38
+objc[91785]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10e1103a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x156670328). One of the two will be used. Which one is undefined.
+objc[91785]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10e1103f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x156670378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2002d/audio/ES2002d.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 13:30:46 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 13:30:46 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 13:34:47 - whisperx.asr - INFO - Detected language: en (0.52) in first 30s of audio
+      Detected language: en  raw segments: 103
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2002d_transcript.csv 660 rows
+[DONE]    ES2002d — 13:39:53
+[RUNNING] ES2003a — 13:39:53
+objc[94347]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10a4d43a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x15ebe0328). One of the two will be used. Which one is undefined.
+objc[94347]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10a4d43f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x15ebe0378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2003a/audio/ES2003a.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 13:40:02 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 13:40:02 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 13:41:51 - whisperx.asr - INFO - Detected language: en (0.81) in first 30s of audio
+      Detected language: en  raw segments: 103
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2002d_transcript.csv 660 rows
+[DONE]    ES2002d — 13:44:46
+[RUNNING] ES2003a — 13:44:46
+objc[95753]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1145503a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x174018328). One of the two will be used. Which one is undefined.
+objc[95753]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1145503f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x174018378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2003a/audio/ES2003a.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 13:44:54 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 13:44:54 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+      Detected language: en  raw segments: 35
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2003a_transcript.csv 160 rows
+[DONE]    ES2003a — 13:45:31
+[RUNNING] ES2003b — 13:45:31
+objc[95991]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x114af03a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17a018328). One of the two will be used. Which one is undefined.
+objc[95991]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x114af03f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17a018378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2003b/audio/ES2003b.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 13:45:41 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 13:45:41 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 13:46:36 - whisperx.asr - INFO - Detected language: en (0.81) in first 30s of audio
+2026-03-06 13:48:57 - whisperx.asr - INFO - Detected language: en (0.83) in first 30s of audio
+      Detected language: en  raw segments: 35
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2003a_transcript.csv 160 rows
+[DONE]    ES2003a — 13:49:33
+[RUNNING] ES2003b — 13:49:33
+objc[97084]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1079283a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x167518328). One of the two will be used. Which one is undefined.
+objc[97084]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1079283f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x167518378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2003b/audio/ES2003b.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 13:49:41 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 13:49:41 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 13:53:01 - whisperx.asr - INFO - Detected language: en (0.83) in first 30s of audio
+      Detected language: en  raw segments: 93
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2003b_transcript.csv 406 rows
+[DONE]    ES2003b — 13:57:27
+[RUNNING] ES2003c — 13:57:27
+objc[99220]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x11da303a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x16aa18328). One of the two will be used. Which one is undefined.
+objc[99220]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x11da303f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x16aa18378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2003c/audio/ES2003c.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 13:57:36 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 13:57:36 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 14:01:20 - whisperx.asr - INFO - Detected language: en (0.71) in first 30s of audio
+      Detected language: en  raw segments: 93
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2003b_transcript.csv 406 rows
+[DONE]    ES2003b — 14:01:35
+[RUNNING] ES2003c — 14:01:35
+objc[542]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10a5503a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x179d18328). One of the two will be used. Which one is undefined.
+objc[542]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10a5503f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x179d18378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2003c/audio/ES2003c.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 14:01:44 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 14:01:44 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 14:05:19 - whisperx.asr - INFO - Detected language: en (0.71) in first 30s of audio
+      Detected language: en  raw segments: 100
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2003c_transcript.csv 377 rows
+[DONE]    ES2003c — 14:10:12
+[RUNNING] ES2003d — 14:10:12
+objc[2949]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10ba303a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17ee18328). One of the two will be used. Which one is undefined.
+objc[2949]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10ba303f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17ee18378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2003d/audio/ES2003d.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 14:10:21 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 14:10:21 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 14:14:11 - whisperx.asr - INFO - Detected language: en (0.62) in first 30s of audio
+      Detected language: en  raw segments: 100
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2003c_transcript.csv 377 rows
+[DONE]    ES2003c — 14:14:25
+[RUNNING] ES2003d — 14:14:25
+objc[4090]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1051c83a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x169c68328). One of the two will be used. Which one is undefined.
+objc[4090]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1051c83f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x169c68378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2003d/audio/ES2003d.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 14:14:34 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 14:14:34 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 14:18:22 - whisperx.asr - INFO - Detected language: en (0.62) in first 30s of audio
+      Detected language: en  raw segments: 100
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2003d_transcript.csv 443 rows
+[DONE]    ES2003d — 14:23:12
+[RUNNING] ES2004a — 14:23:12
+objc[6454]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x14b3683a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17d1e8328). One of the two will be used. Which one is undefined.
+objc[6454]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x14b3683f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17d1e8378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2004a/audio/ES2004a.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 14:23:22 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 14:23:22 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 14:25:04 - whisperx.asr - INFO - Detected language: en (0.89) in first 30s of audio
+      Detected language: en  raw segments: 100
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2003d_transcript.csv 443 rows
+[DONE]    ES2003d — 14:28:07
+[RUNNING] ES2004a — 14:28:07
+objc[7757]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10e2703a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x16fea4328). One of the two will be used. Which one is undefined.
+objc[7757]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10e2703f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x16fea4378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2004a/audio/ES2004a.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 14:28:15 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 14:28:15 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+      Detected language: en  raw segments: 43
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2004a_transcript.csv 230 rows
+[DONE]    ES2004a — 14:29:25
+[RUNNING] ES2004b — 14:29:25
+objc[8121]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x125a543a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17cc18328). One of the two will be used. Which one is undefined.
+objc[8121]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x125a543f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17cc18378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2004b/audio/ES2004b.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 14:29:34 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 14:29:34 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 14:29:50 - whisperx.asr - INFO - Detected language: en (0.89) in first 30s of audio
+      Detected language: en  raw segments: 43
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2004a_transcript.csv 230 rows
+2026-03-06 14:33:16 - whisperx.asr - INFO - Detected language: en (0.91) in first 30s of audio
+[DONE]    ES2004a — 14:33:18
+[RUNNING] ES2004b — 14:33:18
+objc[9192]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10dc603a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17d0c4328). One of the two will be used. Which one is undefined.
+objc[9192]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10dc603f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17d0c4378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2004b/audio/ES2004b.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 14:33:27 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 14:33:27 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 14:37:13 - whisperx.asr - INFO - Detected language: en (0.91) in first 30s of audio
+      Detected language: en  raw segments: 96
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2004b_transcript.csv 427 rows
+[DONE]    ES2004b — 14:42:28
+[RUNNING] ES2004c — 14:42:28
+objc[11643]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1106d03a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17a1a8328). One of the two will be used. Which one is undefined.
+objc[11643]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1106d03f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x17a1a8378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2004c/audio/ES2004c.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 14:42:38 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 14:42:38 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 14:46:24 - whisperx.asr - INFO - Detected language: en (0.94) in first 30s of audio
+      Detected language: en  raw segments: 96
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2004b_transcript.csv 427 rows
+[DONE]    ES2004b — 14:47:03
+[RUNNING] ES2004c — 14:47:03
+objc[12926]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10d9b03a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x16dd18328). One of the two will be used. Which one is undefined.
+objc[12926]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x10d9b03f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x16dd18378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2004c/audio/ES2004c.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 14:47:12 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 14:47:12 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 14:51:00 - whisperx.asr - INFO - Detected language: en (0.94) in first 30s of audio
+      Detected language: en  raw segments: 100
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2004c_transcript.csv 461 rows
+[DONE]    ES2004c — 14:55:39
+[RUNNING] ES2004d — 14:55:39
+objc[15253]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1082843a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x16be70328). One of the two will be used. Which one is undefined.
+objc[15253]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x1082843f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x16be70378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2004d/audio/ES2004d.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 14:55:48 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 14:55:48 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 14:59:46 - whisperx.asr - INFO - Detected language: en (0.86) in first 30s of audio
+      Detected language: en  raw segments: 100
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2004c_transcript.csv 461 rows
+[DONE]    ES2004c — 15:00:58
+[RUNNING] ES2004d — 15:00:58
+objc[16729]: Class AVFFrameReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x119cf03a8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x179944328). One of the two will be used. Which one is undefined.
+objc[16729]: Class AVFAudioReceiver is implemented in both /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x119cf03f8) and /opt/homebrew/Cellar/ffmpeg/8.0.1_4/lib/libavdevice.62.1.100.dylib (0x179944378). One of the two will be used. Which one is undefined.
+Device: mps  (transcription→cpu, alignment→mps)
+[1/4] Loading audio: /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/Datasets/amicorpus/ES2004d/audio/ES2004d.Mix-Headset.wav
+[2/4] Transcribing  model=small  device=cpu  compute_type=int8  batch_size=4
+2026-03-06 15:01:09 - whisperx.asr - INFO - No language specified, language will be detected for each audio file (increases inference time)
+2026-03-06 15:01:09 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.1. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint venv/lib/python3.12/site-packages/whisperx/assets/pytorch_model.bin`
+2026-03-06 15:05:03 - whisperx.asr - INFO - Detected language: en (0.86) in first 30s of audio
+      Detected language: en  raw segments: 86
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2004d_transcript.csv 513 rows
+[DONE]    ES2004d — 15:08:33
+=============================
+Batch end: Fri Mar  6 15:08:33 PST 2026
+All meetings completed successfully.
+      Detected language: en  raw segments: 86
+[3/4] Aligning  model=Wav2Vec2  language=en  device=mps
+[4/4] Building CSV rows
+WROTE /Users/aaditya/Desktop/CSCI 535/Project/CSCI-535/outputs/transcripts/ES2004d_transcript.csv 513 rows
+[DONE]    ES2004d — 15:12:12
+=============================
+Batch end: Fri Mar  6 15:12:12 PST 2026
+All meetings completed successfully.

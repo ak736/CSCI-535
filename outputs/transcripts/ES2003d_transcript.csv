@@ -1,0 +1,444 @@
+segment_id,start,end,transcript,asr_confidence
+0,0.03,1.19,should hopefully do a trick.,0.711
+1,17.61,28.0,"Sorry about the small delay, falling a little bit behind schedule.",0.5845
+2,34.22,47.02,"OK, so just to try and roughly go over what we agreed in the last one, we're going to go for something, how was it?",0.7903
+3,47.32,48.52,"The new black, I believe.",0.8558
+4,50.28,58.24,"Something that looks good, because that seems to be in preference to actual functionality in the end, though we should never avoid functionality, of course.",0.7889
+5,58.22,68.0,"Many of our components are going to be standard off the shelf, but it seemed like we were going to require at least an advanced chip and we were still very much for the idea of using an LCD display.",0.8299
+6,70.98,75.85,"Other things where we were hoping to use rubber, most likely going to be double curved, etc.",0.8419
+7,77.64,87.0,"Okay, so due to your hard work we might as well let the two designers go first and show us the prototype.",0.8035
+8,87.2,92.58,"Okay, that's quite how the best way to do this is I'm not sure.",0.6531
+9,92.6,94.82,I think we both step up and,0.4946
+10,96.78,107.05,"Okay, now, doing the prototype gave us a bit more insight into the ergonomics of the design.",0.7788
+11,108.17,123.71,"For one thing, it turned out that the only point at which it needs to be articulated for handedness is down here for the LED as it turned out.",0.8426
+12,123.69,141.13,"the whole thing transfers from the right to left hand fairly well from the point of view of operating the function buttons and joystick, though it might be an idea to be able to adjust the position of the base of the joystick just a little bit.",0.7987
+13,142.22,143.98,"Actually, just a thought.",0.7563
+14,144.56,148.23,You could simply have a slightly ovoid-shaped joystick.,0.8436
+15,148.45,157.46,They could then just be twisted around so that the bit that sticks out a bit more is on one side or the other.,0.8031
+16,158.56,166.51,"But as you see with holding it in the left hand, the LCD is nowhere useful.",0.8596
+17,167.14,170.1,So that would need to be articulated.,0.778
+18,170.08,172.79,if we're going to retain our ergonomic design.,0.8307
+19,172.85,180.14,"Now, I got your note about keeping the costs down.",0.8593
+20,180.62,181.31,"I'm afraid, yeah.",0.427
+21,181.85,184.03,We'll go into that a bit more.,0.7089
+22,184.89,189.2,This design could be done with,0.8838
+23,191.88,205.07,"with plastic casing, though I would recommend around the grip part here in the middle having maybe just a rubber grip over that, which would allow for a slightly more sort of biomorphic form and a bit more ergonomic as well.",0.8082
+24,206.13,211.16,"As for the single curve,",0.852
+25,211.46,219.53,"Well, this edge and this edge, like I said, it would be nice to have some curvature to it, but it's not absolutely necessary.",0.7075
+26,219.59,231.09,"Really, the curve that's most needed is the underside so that the joystick rests over the edge of the hand like this.",0.8656
+27,232.57,234.39,the transmitter here.,0.7477
+28,234.93,240.78,Now we speak for the remote control finder.,0.8834
+29,242.06,245.14,Any further comments?,0.6753
+30,246.76,251.41,Obviously it's going to be bulkier than it looks because it's going to be flat on one side.,0.6658
+31,251.91,254.69,So the LCD will be sticking down like this.,0.7557
+32,254.68,257.44,Because we can't get it curved.,0.6395
+33,258.9,264.35,"And it's plastic as well, so it won't be as comfortable on the hand.",0.7879
+34,265.75,272.36,With the rubber design it could pretty much mold very much to the user's hand.,0.8212
+35,272.38,275.25,One nice feature if we could still do the rubber.,0.7684
+36,275.23,284.96,I thought it was to have the rubber extend beyond the end of the rigid substructure.,0.7966
+37,285.14,289.03,So it has a wee sort of tail that you just drape over your wrist so it stays in position nicely.,0.6533
+38,291.69,292.04,Lovely.,0.959
+39,295.34,296.44,"Yeah, that's it.",0.367
+40,298.13,298.95,"OK, yeah, great.",0.49
+41,301.23,304.24,"Yeah, I've got a few load up my evaluation.",0.641
+42,304.25,305.8,"Yeah, OK.",0.4675
+43,306.8,307.42,Excellent work.,0.8945
+44,322.34,322.94,Evaluation.,0.483
+45,329.94,334.33,basic point have a list of criteria that we need to rate their prototype by.,0.8309
+46,336.89,346.17,"Then we will, it's a seven step kind of evaluation process.",0.7027
+47,346.15,347.48,"Not seven steps, seven scale.",0.8272
+48,348.34,357.37,"So after we finished doing all the ratings for each criteria, we averaged that and that would give us some type of confidence in our prototype.",0.7614
+49,358.31,372.28,"And the criteria were based on real reactions, kind of goals and policies, marketing strategies, and also those are put together from the user requirements phase.",0.765
+50,373.85,374.01,Okay.,0.364
+51,374.25,375.27,"If you flip there,",0.8195
+52,378.86,381.5,So those are the criteria.,0.6782
+53,384.45,394.9,"Perhaps I could have put them a bit better, but you notice a few things that we've totally abandoned, which means that the product would score very badly on some of those points.",0.7795
+54,396.89,397.51,But it might be.,0.3765
+55,398.07,403.62,So we have a true one.,0.8613
+56,408.57,411.26,"Seven, eight.",0.805
+57,414.6,421.17,"Okay, so we have to go through each point, if we imagine it's actually straight, and just give it a score.",0.7173
+58,421.91,433.9,"So how well would you say the prototype is, how well have we realized the dream of being able to stop remotes from being lost, or to be able to find them once they're lost?",0.7903
+59,433.92,437.56,"I mean, is the homing thing still the locator?",0.8941
+60,437.6,439.4,"Yeah, that's still part of the design.",0.7094
+61,439.69,441.47,"Sure, and Adam, we can keep that in.",0.7987
+62,441.77,442.67,"Yeah, I believe so.",0.8233
+63,443.07,450.04,"So I mean, I don't think anybody could actually stop a remote being lost because that would mean doing something about the human element.",0.7579
+64,450.18,455.06,But I'd like to think that we've done something about finding the damn thing once we have.,0.8487
+65,455.38,455.64,Sure.,0.654
+66,455.86,457.32,And making it a bright color helps.,0.7521
+67,457.66,460.83,"Personally, I would have gone for purple, brown, and yellow.",0.6503
+68,460.85,461.35,Bright color.,0.83
+69,461.37,463.99,So we still have that noise being in.,0.8469
+70,464.13,469.72,"On a scale of 1 to 7, how would you guys rate it for finding it once it's lost?",0.6572
+71,471.74,472.74,I'd say number one.,0.7438
+72,473.42,475.04,Number one?,0.236
+73,475.06,475.16,Okay.,0.007
+74,475.18,478.45,Number one for the first criteria.,0.6217
+75,478.47,491.99,"I think if it was just the sounder, then there's something I've found with trying to find a cardless phone or a mobile, you can hear it.",0.7901
+76,492.26,495.03,You can't quite pin it down where it is.,0.8733
+77,495.45,497.71,You can tell what room the mobile is.,0.7771
+78,497.69,507.58,What if the volume on the TV is turned up massively and you just want to turn down the volume you can't find remote?,0.61
+79,508.79,511.77,I suppose you have to go to the TV manually.,0.5969
+80,514.11,515.37,You wouldn't hear the speaker.,0.8802
+81,516.38,522.16,"Just before we go through all of the steps here, what we'll do is",0.7854
+82,524.08,529.41,If we can look at the criteria you're going to evaluate and then we'll come back to the product evaluation if that's all right.,0.7117
+83,530.48,532.82,That's fine.,0.5945
+84,533.96,539.82,So is there anything here that you,0.8131
+85,541.79,546.84,"that you wanted to cover as in the criteria that you've covered, and then we'll come back pretty much promptly to this.",0.7925
+86,547.0,554.86,"Is there any, if these criteria need any explaining or is there anything that you thought really would stand out compared to the others?",0.6873
+87,555.46,556.2,A few.,0.6925
+88,558.8,570.87,"Something I neglected from my initial research is that Royal Reactions has a goal, a strategy that all of their products being inspired by interior fashion and clothing fashion.",0.793
+89,571.51,576.9,That is why fruit and veg being popular in the home and clothing was important.,0.8178
+90,577.94,583.05,And they want all their products to be somehow inspired by current trends in fashion.,0.8615
+91,583.43,586.07,So they say we put the fashion electronics where they really mean it.,0.8701
+92,586.15,588.2,They're very big on fashion.,0.8302
+93,588.17,591.64,So that's this bit right here.,0.789
+94,591.7,599.49,And this bit is this one easy to use for visitors or for anybody.,0.8595
+95,600.05,602.75,I guess it's just the same as saying easy to use interface.,0.7666
+96,602.77,604.49,So it's kind of condensed into one.,0.569
+97,605.23,606.01,And we can come back to it.,0.854
+98,606.03,614.84,"You said it's OK. No, and which we will do very, very shortly.",0.8043
+99,616.88,617.4,OK.,0.846
+100,619.96,627.21,Slight problem we had was that we were an amazing four euros over budget for what we were hoping to do.,0.8019
+101,627.25,640.41,"Most of it stems from the use of VLCD, which I think in the end accounted for about half of our expended trip, because of course we required a chip as well.",0.8002
+102,640.39,650.14,"The only way to get this down was either to ditch the LCD, at which point we've removed a large part of how we were going to interface, we require more buttons, etc.",0.7702
+103,652.23,660.18,"Or what we did was that we, as in I as I was quickly going over it, was altering the actual structure.",0.8412
+104,660.16,670.91,Changing the plastic and a solid unit with a single curve design would allow us to come back into the proposed costs and we're just scraping it in.,0.8393
+105,670.95,673.1,We've got 0.2 of a euro left over there.,0.7583
+106,673.98,675.72,So we're just managing it really.,0.8525
+107,676.62,682.62,"Even then as well, there was no criteria technically defined for a joystick so I've used what I think is appropriate.",0.6948
+108,683.53,687.05,With any luck that won't mean that we've incurred more cost than we can actually afford to.,0.7257
+109,689.8,693.83,It blows a lot of our really good ideas slightly to one side.,0.8405
+110,693.87,699.64,"For example, the possibility of having a USB connection is definitely not available now.",0.7623
+111,700.39,701.24,different languages?,0.8875
+112,702.38,703.54,That should still be viable.,0.8398
+113,703.56,704.58,We've got an advanced chip.,0.6704
+114,704.6,706.06,We've got the use of ELCD.,0.7037
+115,706.08,710.75,So being able to communicate in multiple languages is still very much a possibility.,0.8252
+116,713.15,716.22,But what's something we need to decide on is how we're going to go from here.,0.7392
+117,717.6,723.43,We do need to try and come up with an idea which could be continued with other people if need be.,0.8424
+118,725.18,728.63,I can bring the Excel sheet up and show you if you wish.,0.8273
+119,728.95,741.08,"I really think as much as it pains me is that we might have to go with plastic and some kind of solid design, possibly meaning that the LCD wouldn't be in the perfect place.",0.8267
+120,741.13,746.37,It might be slightly between what would be good for a left-handed and what would be good for a right-handed person.,0.8311
+121,747.21,756.98,"I suppose one thing that could be done is have it circular and have it so that the pinky, it actually goes a bit over the pinky finger.",0.7032
+122,757.62,759.32,Okay.,0.618
+123,760.88,763.86,"It very much is about making concessions, unfortunately.",0.8589
+124,764.54,769.19,Do you have any data on how much different prints cost?,0.8305
+125,769.21,773.21,"I mean, can you get the entire thing printed with a design?",0.6769
+126,773.19,777.1,You mean on the plastic?,0.7882
+127,779.49,783.44,You now have as much information as I do.,0.827
+128,785.17,790.74,"So as you can see here, for example, the battery, really not very little choice in that one.",0.7934
+129,790.78,792.38,We've gone for one of the cheaper options as well.,0.5764
+130,793.14,796.15,"Unfortunately, we require the advanced chip if we're going to do what we're needing to.",0.7579
+131,796.19,798.77,I've said single curved.,0.891
+132,799.09,801.84,We really do need it to be that way for the ergonomics of it.,0.8571
+133,803.54,810.05,"Plastic, for some reason, incurs no cost, which I've had to very much make advantage of, despite the fact that rubber's only got a value of two euros per unit.",0.7863
+134,811.55,815.11,"Problem comes here, as you can see, in the interface.",0.8343
+135,816.88,822.49,"If I've read this incorrectly, then we can save 0.5 of a euro here, and it's not per push button.",0.852
+136,823.11,831.22,"That might make sense, because then a numeric keypad would come in at, well, 4.5 euros, which is an awful lot, so that could well be wrong.",0.8127
+137,831.96,839.61,"Even if we save 0.5 there, it would just mean that we're most likely placing it and actually just gaining a color for the unit, which is set to be put this one side.",0.7784
+138,840.36,846.48,"As you can see, the use of an LC display, advanced chip,",0.9007
+139,846.46,851.95,"And what we're terming a scroll wheel here as well, because it's an integrated scroll wheel push button.",0.7722
+140,851.99,854.84,It wasn't quite what I think they had in mind with the joystick.,0.6623
+141,855.46,859.97,Why would that be more expensive than an individual push button and a scroll wheel together?,0.7441
+142,861.25,863.07,That's quite significantly expensive.,0.8257
+143,864.55,869.24,That's something you have to take up with the bean counters.,0.4389
+144,870.44,874.04,"As you can see, that's taken up well over half the price.",0.8117
+145,875.23,890.24,"So I'm very much open to suggestions of where we go, but because we need to shed what was for euros off of the price of what we really desired.",0.8451
+146,890.22,899.41,"This one comes in under price as you can see, but this was the one that sacrificed the material for the case and for the actual case design.",0.812
+147,899.65,902.38,We don't even have speakers here.,0.8883
+148,902.5,905.92,What about speakers and transmitters and stuff like that?,0.7399
+149,906.14,906.95,Have we affected that?,0.7615
+150,907.0,910.51,"No, we haven't.",0.882
+151,910.87,913.43,"Transmitter, receiver, speakers.",0.7977
+152,914.58,917.74,Plus the extra device itself that's going to be on the TV.,0.5446
+153,917.76,919.06,Is that going to be a button?,0.5167
+154,919.74,921.42,It literally would just be a button.,0.524
+155,922.76,924.07,We might have to...,0.7785
+156,924.95,931.16,"It looks like almost nothing... No, good call.",0.8741
+157,931.22,931.76,I missed that.,0.5177
+158,932.85,935.27,"I mean it's not on here, but...",0.8671
+159,935.29,935.43,Done.,0.644
+160,935.45,936.61,That's a very valid point.,0.8526
+161,938.37,941.97,Do we have to use an advanced chip for the LCD?,0.7993
+162,944.05,944.4,Yeah.,0.576
+163,944.44,945.7,OK.,0.643
+164,945.72,951.17,"So if we're going to go with the LCD display, then that's... What's that hand dynamo?",0.6154
+165,951.67,953.11,You have to wind it up?,0.8602
+166,953.27,954.03,"At least so, yeah.",0.4347
+167,956.34,962.13,"That would probably not be in keeping with the fashion statement and such, yeah.",0.7688
+168,963.91,968.16,It's basically the only new thing is the LCD on the remote.,0.6692
+169,968.18,969.46,We're manipulated by the joystick here.,0.5122
+170,969.52,971.81,On joystick here.,0.434
+171,971.83,974.37,Which I'm defining as scroll wheel.,0.7522
+172,976.46,983.57,"And we couldn't replace the joystick right because we would need four extra buttons to replace it up, down, left, and right.",0.7051
+173,983.81,985.23,And that would be more expensive than it.,0.7875
+174,986.03,988.22,But is the scroll wheel not just back and forward?,0.6251
+175,989.5,997.75,"Yeah, it's just because there was no actual definition for what a joystick might be that that's what I've labeled it for purposes of this evaluation.",0.8023
+176,998.51,1001.58,The LCD basically is the big selling point of it.,0.5266
+177,1001.6,1005.02,If we remove the LCD display we could save ourselves,0.756
+178,1006.91,1008.11,a fair amount.,0.8797
+179,1009.63,1011.3,That's what makes it original.,0.6388
+180,1013.06,1017.5,If we remove the LC display then there was absolutely no point to any of these meetings.,0.8574
+181,1018.51,1021.61,We just put our branding on any other remote control.,0.8899
+182,1025.11,1029.14,It's a shame we should possibly,0.8303
+183,1031.21,1037.46,"If we could have increased the price, we could have manufactured that, and then we could have got something far closer to what we were open to.",0.7275
+184,1037.74,1042.12,"Does this bear in mind that, I mean, it's a bit ridiculous that they're going to charge us?",0.7178
+185,1043.7,1049.89,Was it like this much money for three million if we're going to buy three million components?,0.7538
+186,1050.75,1053.79,"Again, you'll have to argue with the accountants on that one.",0.781
+187,1055.08,1059.7,"But for the purposes of this meeting, we're going to have to stick with these figures.",0.7319
+188,1061.03,1068.56,So I would say that it would seem like the general opinion is we're going to keep the LCD display because it's about what really separates us.,0.782
+189,1068.92,1070.51,It's like the cost it's going to incur.,0.6369
+190,1070.55,1083.41,Our people maybe not happy with but are willing to go ahead with this and going for a plastic solid case to keep the LCD.,0.8536
+191,1084.37,1094.38,How much extra would it be to keep the articulation?,0.8745
+192,1095.42,1096.28,It's hard to tell.,0.744
+193,1096.3,1105.63,I would say that you're at least going to take double curved and even then I'm not quite sure if that's incorporating the idea of articulation.,0.7777
+194,1105.61,1106.05,Yeah.,0.3
+195,1106.07,1111.29,"Well, I think it didn't require it to be double curved.",0.6585
+196,1111.31,1112.97,"Yeah, it can still be single curved.",0.6216
+197,1113.13,1121.31,It's just that the case would come and would be made in two parts and then joined together with an articulation.,0.8407
+198,1121.29,1129.96,Could we not get rid of the curvaceousness and focus on the menu being the best interface?,0.8681
+199,1131.1,1133.44,Because we have restrictions on software.,0.675
+200,1133.46,1135.6,"That's what you need for the joystick, I think.",0.4196
+201,1135.62,1136.92,"Oh, but it has to be.",0.633
+202,1137.64,1148.17,"I mean, if you look closer at the prototype here, the lines here along the grip are actually quite straight.",0.7723
+203,1148.15,1151.98,"But the curve's all over the hand, is it?",0.6117
+204,1152.0,1159.01,"Yeah, on the LCD, I mean, although we've done it with a curve, it could just as easily be done without curves.",0.7882
+205,1159.69,1169.2,The curve that's really needed is up here to keep the joystick in a good ergonomic position for it to have it rest on the top of the hand.,0.8589
+206,1169.62,1172.32,"Okay, my bad.",0.7977
+207,1174.09,1176.66,We wouldn't actually save a lot by reducing it anyway.,0.8028
+208,1176.68,1182.59,So I mean for the purposes of this meeting maybe we can state that single curve still allows articulation.,0.8895
+209,1184.47,1189.02,Unless we hear otherwise we could go ahead with that proposal.,0.8299
+210,1190.52,1196.05,I think the product is not going to perform so well for my criteria.,0.7027
+211,1196.87,1198.38,which is what we can get on to now.,0.883
+212,1198.68,1207.57,"As long as, so we're gonna say, we'll have to keep an eye on the time as well, but we're gonna say, single curve design.",0.6742
+213,1208.23,1209.17,Sample speaker.,0.922
+214,1210.37,1211.53,What is a sample speaker?,0.7856
+215,1211.73,1213.68,Is that somewhat similar to what we want?,0.8088
+216,1214.26,1215.58,"It could well be, but a constant.",0.7506
+217,1215.6,1218.82,Can I ask that voice response thing that we got the email about?,0.5829
+218,1219.75,1221.33,I thought it was completely pointless.,0.7925
+219,1221.93,1223.96,You got an email about Voice Respawn.,0.6637
+220,1223.98,1224.72,Yeah.,0.775
+221,1224.74,1226.34,I did not.,0.921
+222,1226.36,1226.66,All right.,0.1045
+223,1226.68,1235.41,"Basically, it was saying that our labs had come up with a chip that you could say hello to and it would say hello back in a friendly female voice.",0.7564
+224,1236.89,1239.21,"OK, yeah, we'll definitely won't go with that one.",0.5354
+225,1239.23,1241.34,"We won't go with that one, as you say.",0.6428
+226,1241.6,1242.96,"That's voice recognition, so.",0.93
+227,1243.36,1244.48,OK. OK.,0.7265
+228,1246.3,1250.61,"So, okay, battery definitely.",0.7572
+229,1250.62,1255.13,So it looks like we're going to get rid of the whole locator thing.,0.5979
+230,1255.17,1261.78,It looks like it unless we can manage to put it in under 0.2 euros.,0.8137
+231,1263.8,1263.9,Okay.,0.01
+232,1263.92,1264.26,Okay.,0.719
+233,1264.52,1268.97,"Maybe even, well, no, yeah, pretty much 0.2 euros, I'd say.",0.7538
+234,1268.99,1270.15,So we'll leave that one for now.,0.7676
+235,1270.97,1273.35,We'll go for a special color.,0.6383
+236,1273.33,1282.89,It's a case of I'm a slightly unsure 1.5 euro for one push button doesn't sound quite right.,0.7859
+237,1282.93,1286.87,So maybe it's a case of a push button is maybe one or more.,0.7859
+238,1289.56,1291.4,"Well, I was back for a case.",0.7254
+239,1293.66,1295.79,"Oh, do you already incorporate that?",0.661
+240,1295.81,1297.47,"Oh, especially for the case.",0.7328
+241,1297.97,1299.27,"Well, you got 0.5 there.",0.8132
+242,1299.41,1302.06,It's literally a case of whether or not this is correct.,0.7397
+243,1302.54,1306.94,"I'm not quite sure if they're, I don't think they mean 0.5 euros per button.",0.7747
+244,1307.87,1307.96,Okay.,0.0
+245,1307.99,1314.13,"Well, let's say that and then we can have our special colored case and then we at least have make it a little harder to lose.",0.8238
+246,1314.63,1315.06,There we go.,0.5607
+247,1315.28,1321.08,"Because most, most remotes are a fairly dingy color that gets camouflaged under any pile of crap.",0.8702
+248,1321.54,1323.19,"What's the default color, white or black?",0.6353
+249,1324.46,1326.81,Black's probably the normal colour you'd say.,0.5419
+250,1328.05,1329.91,I quite like that colour that you're fetching now.,0.6759
+251,1330.38,1334.12,Definitely make it glow in the dark even better.,0.833
+252,1336.44,1339.79,"So, will we go with that then?",0.797
+253,1341.32,1348.83,"OK. And we can see we'll come back to your evaluation, which you're probably now going to pan us.",0.8379
+254,1349.13,1349.67,But there you go.,0.3312
+255,1350.59,1351.01,OK.,0.8
+256,1352.07,1357.84,"So just to give you an idea, you'll want to go maybe a bit quickly as well.",0.8403
+257,1357.86,1358.68,I'm not sure how much time.,0.7925
+258,1358.72,1361.1,We've not hit the five-minute warning yet.,0.8064
+259,1361.26,1368.43,OK. OK. Ability to stop remote from being lost or to find them once they are lost?,0.6452
+260,1369.35,1390.72,um okay special color special color uh four four three three for being generous i think we can do three three we're being generous here with special color doesn't would i think make a difference it makes you stand out from you know it's lost in a big pile of crap it stands out from the rest of the crap,0.7174
+261,1390.7,1391.54,Okay.,0.444
+262,1392.04,1393.72,We've used a number of unused buttons.,0.7566
+263,1393.8,1395.18,"We're down to two buttons, is it?",0.7001
+264,1395.68,1397.09,Two buttons on a joystick.,0.7166
+265,1397.13,1398.47,"Okay, so that's a one, you know where?",0.678
+266,1398.81,1399.25,Yeah.,0.442
+267,1399.83,1400.93,I'd say we're doing well there.,0.6948
+268,1401.09,1401.85,"Okay, that was good.",0.722
+269,1402.91,1409.14,"Easy to use interface, buttons, menu, menus, call, that's good.",0.6878
+270,1409.16,1410.82,"Okay, that's what I'm doing so badly.",0.5447
+271,1410.86,1413.04,Easy to use.,0.8837
+272,1413.78,1415.11,"Oh, okay, let's forget that one.",0.7158
+273,1415.59,1416.61,Fancy looking.,0.9165
+274,1418.53,1420.31,It doesn't get much.,0.7528
+275,1420.45,1421.15,Sure.,0.666
+276,1421.17,1423.32,We could do whatever we like with the LCD.,0.7353
+277,1423.34,1426.93,"Yeah, that's just assuming it's a good LCD display.",0.6459
+278,1427.37,1428.83,Maybe I was panicking for no reason.,0.61
+279,1428.95,1435.17,I'll tell you we've got two because the fanciest would be the double curve.,0.6075
+280,1435.97,1438.04,"Yeah, maybe a bit, yeah.",0.5872
+281,1438.06,1439.12,With the articulators.,0.529
+282,1439.32,1439.82,There we go.,0.8993
+283,1439.98,1448.93,"That's better to more accurate numbers, no logically innovative.",0.7948
+284,1449.97,1453.22,"Well, we're getting rid of the locative thing, which is a shame.",0.7721
+285,1453.84,1454.68,"Which, yeah.",0.814
+286,1455.64,1458.19,"I don't need for three for this, for that.",0.7458
+287,1458.17,1458.63,You're free.,0.478
+288,1459.29,1459.39,Yeah.,0.324
+289,1460.15,1471.63,"I mean, the menus thing is something you don't normally see on a remote, but you see it in a lot of other places.",0.7848
+290,1472.61,1473.81,"Yeah, mobile phones.",0.539
+291,1474.39,1479.4,And what you're doing is moving the menu from the television to the remote control source.,0.6559
+292,1480.52,1480.66,Mm-hmm.,0.143
+293,1480.68,1481.18,You say free?,0.8743
+294,1481.78,1483.44,I might go as far as two in there.,0.6547
+295,1483.46,1483.79,Free.,0.814
+296,1484.77,1485.73,I'd give you three.,0.499
+297,1486.01,1486.87,I'd give you three.,0.298
+298,1487.23,1487.43,Three.,0.514
+299,1489.89,1491.79,We'll get to hand on the next one anyway.,0.8203
+300,1492.34,1493.78,It's here where some people find pleasing.,0.3607
+301,1494.9,1497.56,"Sponginess is what they really would have wanted, apparently.",0.8174
+302,1497.64,1498.18,"It is, yeah.",0.5197
+303,1498.48,1499.12,Don't blame them.,0.865
+304,1501.11,1505.17,Because of the way that we've minimised the number of buttons and such.,0.7219
+305,1507.42,1508.62,"Plastic, it sucks.",0.7237
+306,1509.1,1512.02,But it's no worse than any of the other remote controls they have.,0.6698
+307,1512.38,1512.78,That's true.,0.817
+308,1513.06,1514.35,It's not a step backwards.,0.826
+309,1514.7,1526.81,"Okay, that's totally thrown everything off balance.",0.7173
+310,1527.77,1530.3,Inspired by the latest interior and clothing fashion.,0.7917
+311,1530.32,1533.82,We could what color will we gonna make leopard print?,0.6967
+312,1535.0,1539.62,I would say give us a give a selection of colors.,0.8047
+313,1539.61,1542.51,We're in yellow for the prototype because we had yellow.,0.6724
+314,1543.11,1545.72,"If I were buying one, I'd go for purple.",0.8471
+315,1545.74,1547.34,Leopard print would be cool.,0.5662
+316,1548.34,1551.63,"But by this, I think it's more okay, so food and beer.",0.6532
+317,1552.87,1556.02,"I'd say the color of the border there, you'd find that.",0.726
+318,1556.82,1558.09,That would stand out.,0.572
+319,1558.49,1563.22,"That yellow, it would also help keep the product placement.",0.8674
+320,1565.99,1568.64,It's inspired by interior clothing fashion.,0.7635
+321,1568.66,1571.01,They refer to the food and veg thing.,0.6401
+322,1573.49,1575.85,Is this like a banana type color?,0.7249
+323,1576.07,1577.44,Could we stretch?,0.9293
+324,1577.46,1579.24,"No, it's not shaped like a banana.",0.7247
+325,1579.88,1581.22,It's kind of.,0.685
+326,1581.24,1585.51,"It probably won't be when it's being... Oh, because it's flat.",0.6376
+327,1585.53,1585.85,Budgeted.,0.433
+328,1586.25,1587.35,What is this fruit?,0.7513
+329,1587.83,1589.04,It's just flat.,0.5643
+330,1589.02,1595.91,I think this is not particularly fruit and veggie.,0.7953
+331,1596.33,1602.9,We might have to suffer badly for this one as well.,0.7395
+332,1602.92,1608.41,Well I mean it's probably more fruit and veg than most other things out there bar fruit and veg.,0.6469
+333,1608.69,1613.36,Four four or that's very ambitious.,0.6375
+334,1613.38,1624.44,"Yeah, I don't think fruit and veg is the sole criteria for being inspired by fashion.",0.7686
+335,1624.46,1631.73,We're inspired by current fashions.,0.7004
+336,1631.71,1636.08,This is their motto.,0.6775
+337,1636.12,1637.72,This is their strategy.,0.8555
+338,1638.86,1645.08,Imagine we actually had some money invested in this and the amount that we invest is going to be proportional to the marks.,0.8269
+339,1645.68,1650.95,We might want to be a bit more skeptical about this one.,0.7752
+340,1653.26,1654.54,What would you think yourself?,0.9028
+341,1654.98,1659.33,"I would say, I mean, it's not at all, right?",0.7349
+342,1659.94,1661.65,In any way or shape or form.,0.772
+343,1662.91,1667.79,"Well, it's kind of curved and we can make it yellow and that's pretty much banana-like.",0.8766
+344,1668.19,1671.86,"Okay, the yellow banana-like thing is, I think it's okay.",0.6762
+345,1672.02,1672.88,It's got a curve to it.,0.8592
+346,1674.2,1676.2,"Five, is that so unreasonable?",0.7464
+347,1677.81,1680.55,It's nice being stretching the use of a banana.,0.6728
+348,1681.39,1681.73,Yeah.,0.507
+349,1686.72,1689.49,"Okay, so we have 1, 2, 3, 4, 5, 6, 7.",0.7891
+350,1689.51,1696.82,"So 5, 7, 10, 16, 21.",0.8373
+351,1697.22,1701.81,Which gives us an average of 3.,0.7633
+352,1703.43,1722.89,it's well this would be in the middle so it's it's not bad it's on the good section it's not bad and considering the oops sorry I'm sorry,0.8193
+353,1722.87,1752.49,"Considering the price we had to get this in, to have a positive, even based on the four of us being heavily biased, it was going to be quite hard to get anything standing out, I'd say, possibly based on the cost features.",0.8377
+354,1753.98,1754.34,Hmm.,0.384
+355,1754.37,1784.38,"Even if we were to increase this entire thing by by seven we were to go down a grade to four we would have to do I Mean we didn't we weren't that Kind of optimistic to overly optimistic You know like we didn't we didn't add we didn't subtract your whole seven points from these things So I think we're definitely on the good bit even if we gave this one seven this one seven That's still only three extra points over seven You know, it's",0.7809
+356,1784.36,1786.46,"Yeah, it was okay.",0.6843
+357,1786.8,1787.14,It was good.,0.337
+358,1787.64,1809.59,"Personally, I think given that the product only replaces a single remote control that you've already got, are people really going to shell out 25 euros for something that's only marginally good?",0.7722
+359,1812.47,1817.92,"Well, it depends here what the target people are like you'd say.",0.7322
+360,1817.96,1822.29,Maybe fashion conscious.,0.8863
+361,1824.34,1825.78,Maybe women are we don't know.,0.7162
+362,1825.82,1826.4,Look at that.,0.6933
+363,1826.5,1826.86,It's cool.,0.2515
+364,1826.88,1830.99,It looks like a it's yellow looks like a banana.,0.7499
+365,1831.01,1831.35,It's cool.,0.6575
+366,1831.39,1832.81,It's got a look good in the sitting room.,0.7588
+367,1834.55,1848.57,"Rather than LCD, whereas more technical, like more people in with the latest technology, like it's good, it's got an LCD screen, it's only got two buttons and a joystick.",0.6904
+368,1850.22,1855.83,"So, which kind of people would be more likely to buy it?",0.6987
+369,1857.73,1862.66,"probably the people technologically, they're usually the ones that buy pointless stuff.",0.6059
+370,1862.68,1872.55,"I mean, my mom still has not learned how to use text messaging on her phone and she's had it for a long time, you know, she uses it to make phone calls and that's it.",0.7517
+371,1872.9,1874.03,Yeah.,0.192
+372,1874.05,1882.94,"So I think if my mom saw remote control like this, with only two buttons and a joystick, I mean, that would probably be the first one she decides not to buy, you know.",0.7681
+373,1883.64,1885.07,"She'd be like, is this the remote control?",0.4995
+374,1885.09,1887.11,How do you use it and stuff like that?,0.7064
+375,1888.21,1893.14,"So even if it is really user friendly to us, but we're used to using menus all the time.",0.7776
+376,1894.0,1907.59,"I suppose one thing is that because it's technically innovative, for someone who's sort of technophobic, the fact that it simply looks unfamiliar, will be daunting.",0.7495
+377,1908.82,1909.4,Yeah.,0.587
+378,1909.42,1914.0,I think it's totally radical to have remote control with no numbered buttons.,0.7371
+379,1916.27,1917.83,"But like radical, good, maybe.",0.696
+380,1918.72,1923.09,"Okay, I don't know how much longer we've got at least five minutes I think.",0.7731
+381,1924.47,1926.47,Quickly we'll pop on to project evaluation.,0.7741
+382,1930.78,1938.03,"So, we've got these four criteria here for satisfaction.",0.8107
+383,1940.1,1941.64,Does anybody want to,0.7995
+384,1944.08,1945.85,Do you have any opinions on any of them?,0.7993
+385,1946.55,1955.22,"For example, work backwards I suppose, the ability to work in this project using the technology we've been presented with.",0.8187
+386,1958.61,1963.12,People made good use of the pen and paper.,0.8873
+387,1963.1,1966.22,I would say I have no doodles.,0.74
+388,1967.37,1969.07,I wrote nearly a page about that.,0.5009
+389,1971.07,1975.4,I'm not quite sure what the advantage for us using a digital pen might be.,0.6923
+390,1976.04,1984.03,I think the digital pens mostly for the benefit of the researchers studying us goes into their corpus.,0.7683
+391,1985.09,1992.8,It would have been nice to be able to transfer our paper notes onto the,0.7577
+392,1993.41,1994.77,with future ourselves.,0.664
+393,1994.79,1996.17,"Yeah, that would have been pretty good.",0.2564
+394,1996.19,2000.18,It does seem like paper stole a heavy consideration for taking notes.,0.8928
+395,2001.94,2004.1,So maybe this is literally just the way around it.,0.6483
+396,2005.42,2005.74,I don't know.,0.7457
+397,2007.77,2011.01,How are people satisfied with the teamwork we've managed to display today?,0.6666
+398,2011.03,2014.34,"I like it, yeah.",0.7242
+399,2018.9,2044.22,leadership as much as can be leader in this last one we've got is room for creativity well until until accounts came we're not lacking in ideas you know that was not the problem,0.7579
+400,2045.4,2056.54,Yeah I think of in the end ideas that can be used and sadly is meaning not so much that we weren't full of ideas but of ones that are going to allow us to actually build the thing.,0.7693
+401,2057.14,2057.9,It's a bit of a pity.,0.8083
+402,2058.82,2062.97,I would have to agree in that I think we needed a larger budget.,0.7708
+403,2063.45,2077.19,"If you're going to aim your product, maybe a technological kind of sector, then you can afford to maybe jack the price up slightly from what it is because they will pay outrageous cash to be able first in the market.",0.758
+404,2077.21,2091.4,I think to retaining the motor biomorphic form and the articulation would gain more profit and sales than it would lose in,0.7696
+405,2092.72,2113.64,added expense and the price was like it was twice the assembly cost and would it have to be twice that it could be like it could have had the assembly cost of like maybe 15 euro it's still set up for 25,0.7647
+406,2115.24,2117.07,"That's true, yeah.",0.6667
+407,2117.95,2126.66,"I suppose these are all that will have to be taken up with a different group, I guess, as to who the costs involved.",0.705
+408,2128.57,2132.39,"But, I mean, we've got a prototype.",0.8179
+409,2133.99,2143.77,"So, I don't know, I think it's gone okay today considering the information that we've had our disposal on.",0.6554
+410,2143.81,2150.1,Maybe the counts would have been better if we had a list to begin with.,0.8159
+411,2152.26,2157.05,"Probably would have, I mean, we could have come up with a lot more solid design in the end, I would have to agree.",0.6997
+412,2157.71,2166.2,It is very much pity to get so far into the stage and then find out that maybe some of your ideas are just a bit too expensive.,0.8224
+413,2167.68,2171.53,Always hard to tell until you know the costs.,0.8078
+414,2175.51,2176.19,Okay.,0.549
+415,2178.21,2179.38,Are the costs within budget?,0.7262
+416,2180.68,2184.41,"Well, they are now that we have our slightly less than capable product.",0.7569
+417,2185.67,2190.34,We evaluated it and we can see we came out with a value of three.,0.8268
+418,2191.97,2213.92,"Actually, one thing I would say, something that could perhaps be part of the product testing and market research process would be to produce mockups of both versions and see just how much of a difference the going over budget would make to sales.",0.8296
+419,2215.1,2217.84,"Which, yeah, and response from consumers.",0.6648
+420,2218.82,2221.85,We could even market two versions.,0.9223
+421,2225.44,2229.47,We keep the version of the nice biomorphic wrapper version.,0.6971
+422,2231.7,2233.92,And then the final one where you get to call it Hal.,0.7641
+423,2234.9,2235.9,But we'll go into that later.,0.6092
+424,2236.39,2237.97,Right.,0.786
+425,2239.75,2243.57,Is there anything else that anybody would like to add?,0.7727
+426,2245.72,2255.23,Anything they think has not been covered before I quickly write up a final report?,0.7425
+427,2256.09,2256.43,I don't know.,0.8533
+428,2256.45,2257.59,"I mean, we've got a product.",0.7025
+429,2257.97,2260.57,We maybe aren't as happy with it as we'd like to be.,0.7653
+430,2262.93,2266.1,We've got something we think we can maybe stick on to the market and sell.,0.8226
+431,2268.52,2274.81,"And of course, something we have been avoiding talking about because we've no information is selling them directly to the manufacturers.",0.8293
+432,2275.61,2276.45,There's a huge market.,0.739
+433,2276.47,2278.6,"I mean, we briefly touched on it, but we've no more knowledge.",0.5368
+434,2278.72,2280.52,And there's little we can say on that.,0.7846
+435,2287.13,2287.61,Yeah.,0.387
+436,2289.77,2301.95,"So unless anybody's got anything they'd like to add, we can maybe round this up slightly earlier than we need to and then we can finish up the writing and such.",0.8111
+437,2309.44,2312.26,Thank you for your participation.,0.8198
+438,2318.69,2324.9,"I was actually kind of upset, you know, at the budget and that we had to cut a lot of stuff.",0.7827
+439,2324.96,2327.76,"Man, we can't have the locator thing.",0.7519
+440,2330.06,2331.01,"Yeah, that's just bad.",0.4722
+441,2333.83,2343.6,Do you think maybe the prices were made so that we had the second price and stuff?,0.2752
+442,2343.62,2344.46,That is a question you can ask in a while.,0.017

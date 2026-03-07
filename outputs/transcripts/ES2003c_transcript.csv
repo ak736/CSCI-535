@@ -1,0 +1,378 @@
+segment_id,start,end,transcript,asr_confidence
+0,11.81,12.93,All right.,0.2895
+1,14.65,15.05,OK.,0.816
+2,17.04,19.4,So we'll start off with a quick overview of the minutes.,0.7777
+3,20.16,26.27,I think to sum up the last meeting would be to say the requirements that we've set out.,0.8269
+4,27.25,35.54,"Those are, we were going to go for what seemed to be a fairly minimal design based on a small joystick.",0.8027
+5,36.95,47.13,LCD and a couple of other buttons for navigation with power being one of the main single purpose buttons.,0.7828
+6,48.43,60.24,"We were also going to use a novelty of being able to locate the remote control again via a small transmitter with any luck, the idea to try and separate us, and also because of the minimal design.",0.7612
+7,60.22,67.07,It looks like we'll be able to be fairly adventurous in the actual physical shape of our remote control with any luck.,0.8419
+8,69.78,70.98,Pretty much sums up the last one.,0.803
+9,72.16,73.98,So we'll just crack on.,0.7256
+10,74.44,78.69,I'd like to maybe start with the industrial designer if it's possible.,0.7621
+11,81.55,83.69,"Today is the conceptual, today.",0.8616
+12,84.35,90.18,This meeting is a conceptual design phase and is,0.806
+13,90.16,107.76,"And it's to cover things like what the parts might be made of, can we outsource these from elsewhere or will we have to construct the items ourselves?",0.7647
+14,108.28,111.45,"I have a presentation area, I'll just save it in there.",0.7365
+15,111.47,118.84,"Yeah, okay, I'll just upload it up then.",0.5209
+16,118.86,120.14,Which one?,0.894
+17,121.91,124.91,"Oh, interface concept, that's you.",0.7094
+18,124.93,126.35,"We've got trend watching, that's you.",0.5707
+19,127.62,129.22,Components design?,0.6455
+20,129.24,131.42,Components design.,0.435
+21,139.25,142.21,OK. All right.,0.229
+22,142.23,148.8,"So the case, that's what I wrote.",0.7133
+23,148.82,151.18,"First of all, it could be plastic, or plastic.",0.6198
+24,152.1,158.39,"But later on, we found out that it can be rubber as well, or titanium, or even wood.",0.8181
+25,159.41,163.74,"So we've decided what it's going to be, probably plastic.",0.6821
+26,165.09,167.01,We need the infrared transmitter.,0.8076
+27,167.69,168.59,Get that off the shelf.,0.8712
+28,169.21,177.29,"Joystick will probably, if we're going to use it, could be plastic or rubber even as well.",0.6941
+29,179.53,182.12,"If you go on to the next slide,",0.8261
+30,182.87,188.09,"But if you go on to findings, it's like two or three slides down.",0.7859
+31,189.59,192.56,So this is what a fan we can use.,0.8239
+32,193.58,197.67,Three different types of batteries.,0.9106
+33,199.51,212.63,can either use a hand dynamo or the kinetic type ones you know that they use in watches or else a solid powered one.,0.7279
+34,212.65,216.34,"No, the kinetic one.",0.753
+35,216.32,218.88,because that's the one where the movement causes it.,0.5897
+36,220.24,226.75,The battery for a watch wouldn't require a lot of power would be my one query.,0.8854
+37,227.49,231.35,Is a kinetic one going to be able to supply enough power?,0.7859
+38,231.37,235.74,"I don't know, a watch moves around a great deal more.",0.8103
+39,236.88,237.86,I don't think it would.,0.7728
+40,239.04,246.32,"And solar cells, I don't know about that.",0.6246
+41,248.03,250.63,We should probably just use conventional batteries.,0.4794
+42,252.5,256.21,And just like in usual rock and trunks.,0.6115
+43,256.23,259.4,"Which I suppose as well would allow us to go off the shelf again, you two?",0.7896
+44,259.64,260.08,Yeah.,0.551
+45,261.17,267.7,"These are three different types, or two different types, three different types of shapes.",0.7139
+46,267.72,274.13,"You can have one as a flat one, and then more original ones are a single curved one, or one with a double curved.",0.7602
+47,276.21,281.56,"The materials are there, as you can see, but you can't have a titanium one for a double curved.",0.7426
+48,282.92,285.2,"Titanium, they're really strong metal.",0.8
+49,285.64,288.33,Is it also expensive?,0.681
+50,288.31,290.85,"It thinks so as well, yeah.",0.4245
+51,290.87,293.13,They might meant by Xenodad.,0.4538
+52,293.15,294.15,So it's really light as well.,0.368
+53,294.62,295.14,Curious.,0.9
+54,295.88,299.62,"I don't know if you'd be able to, off the top of your head or not, the single curved or the double curved.",0.7442
+55,300.06,301.35,Would you be able to give an example?,0.8074
+56,304.03,305.45,Could you maybe draw something?,0.739
+57,305.85,307.11,It doesn't have to be perfect.,0.6232
+58,307.13,310.18,It's just because I'm not quite sure if I understand the difference between the two.,0.8329
+59,313.84,314.26,Well.,0.87
+60,315.53,331.27,"For curves, well, I was thinking to sit in the palm of your hand, maybe like this with the joy pod here, joystick here, and maybe",0.6583
+61,333.23,337.31,and OK button around here so that the thumb can use it quite easily.,0.7058
+62,338.25,342.08,I don't exactly double curves.,0.9104
+63,343.22,352.95,"It probably means this is probably double curves, whereas a single curve would be like that, I guess.",0.7963
+64,354.77,355.55,"Or no, sorry.",0.6563
+65,356.33,358.96,So it might literally just be two curves.,0.7248
+66,359.3,359.88,OK.,0.797
+67,360.85,364.04,"Yeah, like that, whereas this is two curves.",0.5011
+68,365.66,380.89,"So I guess that's what they mean by a double curve, which it looks better than a single curve, but you can't have it in titanium, which is a nice material.",0.8117
+69,383.18,394.33,"And for the buttons, you can have the scroll wheel, which they use in mouses.",0.9083
+70,395.92,401.43,And it requires a more expensive chip to use.,0.8869
+71,401.83,403.87,"And if you want to use LCD, it's even more expensive.",0.5918
+72,404.63,407.24,So you have to decide to trade offs there.,0.4767
+73,409.74,420.24,"If you have a double curved control on its rubber, then you have to use rubber buttons as well.",0.8031
+74,420.22,424.71,I reckon you're going to have to have a number keypad anyway.,0.7475
+75,424.85,430.1,"For the amount of channels these days, you wouldn't want to just have to scroll through all the channels together when you want.",0.7674
+76,430.12,432.62,You want to enter just a number if you know it.,0.6641
+77,432.64,439.88,So I reckon we're going to have to have a number keypad anyway.,0.6445
+78,439.9,440.52,Do you think?,0.4877
+79,441.04,446.05,"OK, that's definitely something we can talk about.",0.693
+80,447.69,452.36,So you've got a little bit about the chip that we might require as well.,0.6538
+81,452.72,453.02,Yeah.,0.685
+82,455.24,465.8,So it depends where you're going to spend the money if you want a fancy LCD display.,0.6378
+83,468.43,478.47,"Do you have any idea, so far, when we're saying that we need an advanced chip for an LCD, does that shoot a cost up by a drastic amount?",0.7905
+84,478.65,481.77,Do you need an advanced chip for the LCD?,0.5176
+85,482.5,486.2,"Often compared to, say, this pressing of buttons.",0.8065
+86,486.18,497.74,If you press a button it sends a certain transmission through the infrared whereas I think if we're controlling the LCD we definitely require a much more powerful chip.,0.6608
+87,497.76,504.45,Just compared to the chip you would use for pushing buttons I think to see the point being made if I've not overstepped.,0.7619
+88,507.43,509.88,Should I go on or go back?,0.792
+89,512.79,532.15,"If we only have 12 pounds 50 12 euros not even 12 pounds 12 yours was that like 8 pounds isn't like that Well, we'd also be relying on the the bulk buying and Producemen and such okay, that's I assume we have to look into the cost of those so",0.7509
+90,532.13,532.51,Sorry.,0.323
+91,533.09,542.11,The previous slides just explain what's in the internal components of the remote control if you go to one before that.,0.8638
+92,542.13,543.29,So it just says what it does.,0.6149
+93,543.89,547.89,Translate the key press into an infrared signal and this is received by the TV.,0.8342
+94,549.04,556.33,The chip just needs to detect the signal or detect the key press and then it'll send it to the amplifier.,0.7033
+95,557.21,557.67,Okay.,0.607
+96,558.88,573.02,And then the next slide just shows how the copper wires interact with the rubber buttons to get sent to the chip.,0.7082
+97,575.6,578.08,So that's just how the control works inside.,0.8353
+98,580.69,584.09,We have to decide on what buttons we're going to use.,0.5246
+99,588.56,588.62,OK.,0.333
+100,589.79,591.48,You just got a section for personal preferences.,0.3964
+101,595.3,603.81,"So in the information that you've been supplied, how feasible would you say that the idea of using an LCD looks?",0.8173
+102,605.67,617.42,I think we can do it if we use conventional batteries and not have solar cells or kinetic.,0.7052
+103,618.63,630.0,"Maybe use a single curved case, because you might need it to be curved for the thumb to use the joystick easily.",0.7942
+104,631.0,636.05,And then you'll need the advanced chip for the LCD.,0.6604
+105,638.53,641.25,"I mean, that sounds like quite a good requirement to me.",0.7379
+106,641.99,643.67,Conventional battery would seem to make sense.,0.8207
+107,644.76,648.9,I'm not sure if there's any cost differences between single and double curved.,0.8204
+108,649.54,657.79,"And I don't know about anybody else, but plastic or rubber as a traditional form of casing would seem to be a good way forward.",0.854
+109,658.41,666.46,I'm actually going to be bold and go straight for rubber for reasons I'll go into.,0.6086
+110,667.0,668.54,I also have a preference for rubber.,0.575
+111,668.52,671.76,"OK, well, based on my reasons.",0.6818
+112,673.02,677.71,"Yeah, well, we move on to user interface and, yeah.",0.7701
+113,677.73,680.79,"OK. That's right, as long as we use.",0.6169
+114,680.89,688.68,"Yeah, OK. And interface concept.",0.6798
+115,690.36,694.68,I'm going to have to work between the slides and the.,0.7712
+116,695.62,696.25,Yeah.,0.551
+117,696.58,700.35,and the white board because I actually have some fairly concrete things.,0.6452
+118,702.17,702.57,It's time.,0.6725
+119,703.85,715.34,"I was given an HTML file giving various ideas from other previous remote control designs, and pretty much decided to just dump them all.",0.8277
+120,715.36,722.45,"I wasn't very impressed by them, and nothing I saw seemed to meet the sorts of design specifications that we're going for today.",0.8792
+121,724.54,730.81,"So rather than looking at other remotes, it would be better to simply look at the human hand.",0.8148
+122,730.79,744.04,"and try and figure out a way of laying out the elements we've already decided on so that the fingers, each finger or thumb is wherever it needs to be already.",0.8219
+123,746.55,749.57,"So, next slide, if you please.",0.8878
+124,749.55,760.92,"And what we basically decided on was the joystick, two function buttons and the LCD, just keep it paired down to the absolute minimum.",0.7171
+125,761.26,776.44,I don't actually think we need the numeric keypad because one of the menus that we could have available via the LCD is one where you scroll through channels.,0.7765
+126,777.28,778.48,So if there's something.,0.589
+127,778.46,805.39,"And bear in mind, since this isn't meant to work for digital or for cable or whatever, you're basically looking at four or five terrestrial channels and then the channel for your VCR and our DVD player and our set-top box.",0.8329
+128,805.37,808.7,So I'm not really excessively concerned about that.,0.8286
+129,809.48,824.06,"You also have two modes, basic mode where the joysticks, left right for channels up, down for volume, and menu mode for further functions.",0.8146
+130,824.04,834.88,The reason I was particularly interested in using rubber for this is if we're going to have a highly ergonomic design it needs to be ergonomic for left or right handed people.,0.79
+131,836.73,838.17,Can I just jump in slightly there?,0.776
+132,838.83,842.52,That would suggest that double curved design is probably going to be most appropriate then.,0.7635
+133,842.5,843.44,"Yes, absolutely.",0.9055
+134,845.52,871.07,"Basically, what this would be having, I would say the whole thing articulated at two points so that if you're handing it from a left or a right handed user, you can adjust it so that the LCD and the joystick would be in the right place.",0.8052
+135,872.23,887.34,"Also, it seems to be a rather nice design gimmick that the whole thing should have sort of organic feel to it, that it should be soft to touch and can be moved around.",0.7605
+136,887.38,892.47,It's rather nice.,0.6013
+137,892.71,894.63,"OK, on to the next slide.",0.689
+138,894.91,897.74,"Just to let you know, we're probably quite tight for time as well.",0.7795
+139,898.32,900.66,"Because I think you've probably got a lot you'd like to say, I guess.",0.8155
+140,901.04,901.46,Yeah.,0.706
+141,902.71,911.2,"Basically, I can add pretty pictures to this.",0.8896
+142,913.95,932.57,"Assuming the hand to be in this position, or holding the remote, the joystick unit should rest over the joint of the forefinger so that it's directly accessible for the thumb.",0.7764
+143,933.89,943.89,And it would need to be articulated just below that so that it could be switched around for left or right-handed users.,0.8858
+144,950.72,958.75,You then have the grip section that can be more or less the same irrespective of handedness.,0.7914
+145,959.09,967.23,"You just have two big buttons that cover most of the area, so it can, in the upper part, one for the forefinger, one for the middle finger.",0.88
+146,967.99,969.47,Is this a joystick?,0.458
+147,969.45,973.15,This part here is the joystick.,0.803
+148,973.49,975.59,This would be the actual grip.,0.8713
+149,975.93,978.9,Probably where you'd want to have the battery as well.,0.6848
+150,979.62,982.36,That would be probably the bulkiest part.,0.7687
+151,982.38,989.49,"And you then have at the bottom the LCD, and this would need to be articulated as well.",0.859
+152,989.77,995.95,And basically I'd want this to rest here right at the base of the wrist so it would fit just nicely in the hand.,0.6837
+153,996.03,998.49,"And again, this part could be",0.8307
+154,1000.06,1013.83,rotated so it can be adjusted to either left or right handed user.,0.7636
+155,1017.0,1027.94,"So the top function button in basic mode would be the on-off switch, and menu mode would be the enter button, and then the bottom function button switches between modes.",0.8817
+156,1029.02,1035.75,"Now programming it, actually this is one thing I found with the replacement remote controls.",0.7385
+157,1035.89,1038.22,Programming them can be a bright pain.,0.9126
+158,1038.2,1057.24,"So I thought the simplest way around that would be to have a cable connected to the computer, some fairly simple software on your home computer just so that you could program it in a rather more comfortable interface.",0.7751
+159,1057.48,1065.13,And you could download programs for TVs from all sort of main manufacturers.,0.8046
+160,1065.11,1086.58,though it would be necessary to have a mode for programming it without the computer just in case there are still people left out there who don't have them yet.,0.8448
+161,1088.94,1091.11,OK. That's my idea.,0.8878
+162,1093.35,1102.35,"Excellent, right?",0.4035
+163,1102.37,1106.28,OK. OK.,0.806
+164,1109.34,1113.89,"So to gather my research, two basic methods.",0.8005
+165,1113.91,1119.57,We compared whether people want the remote control to do a lot of stuff or they want it to look cool.,0.8367
+166,1120.63,1123.43,And then we researched fashion trends in Europe.,0.8327
+167,1123.59,1126.22,What's the new black as it goes?,0.8694
+168,1128.06,1129.97,"Next slide, please.",0.448
+169,1129.95,1145.85,"We found in order of importance people want the remote control to look cool More than they wanted to be cool as in they wanted to do a lot of good They wanted to look like it does a lot and if it does do a lot, that's a bonus, but they don't care so much, you know",0.8475
+170,1145.83,1146.87,they want it to be.,0.7598
+171,1146.89,1149.21,That sounds a bit like a contradiction.,0.7606
+172,1150.17,1154.49,Technologically innovative.,0.866
+173,1155.19,1159.76,"People want it to be that, but still, they care more about the way it looks than what it does.",0.7813
+174,1160.54,1163.88,So the interface is really important.,0.8227
+175,1163.9,1164.84,And easy to use.,0.8367
+176,1165.3,1171.71,It just so happens that from the second point to the third point is twice as important.,0.782
+177,1171.85,1174.67,"I mean, the second point is twice as important as the third point.",0.7738
+178,1174.75,1175.51,People want it.,0.7213
+179,1178.21,1185.5,"It has to be cooler than easy to use, you know, if it has the newest features, even if it's difficult to use, to prefer it to have the newest features.",0.8131
+180,1186.88,1188.47,"And if it's easy to use, that's a bonus.",0.7347
+181,1189.47,1198.36,"The fashion now, this seems a bit odd to me, but fruit and veg is the new black for furniture, for clothes, for shoes.",0.8308
+182,1198.34,1200.47,"How that relates to remote control, I don't know.",0.7024
+183,1201.09,1201.67,But I see.,0.842
+184,1201.71,1204.52,I'll come on to that in the next slide.,0.7049
+185,1205.3,1205.86,Spongy.,0.873
+186,1206.08,1207.7,I've also been saying everything is a new black.,0.6562
+187,1207.9,1209.61,"Well, spongy is a new black as well.",0.7052
+188,1209.63,1211.59,So we had the choice between rubber and plastic.,0.8968
+189,1212.41,1214.58,"If it's a type of rubber that you can squeeze,",0.6859
+190,1214.56,1215.86,"You know, it's spongy.",0.8038
+191,1216.46,1224.77,"I forgot to mention that the rubber material is the type of stress ball material, not just normal rubber.",0.7403
+192,1225.37,1228.4,"Okay, so kind of spongy material.",0.8235
+193,1229.14,1233.22,"So my personal opinion,",0.8438
+194,1234.96,1240.43,"We want something fancy and technologically innovative, obviously.",0.7518
+195,1240.97,1246.69,"But what we need is something that looks like it's from the future, that looks cool, that's different.",0.874
+196,1247.02,1250.12,"Everyone has a white remote control, a black remote control.",0.8174
+197,1250.18,1251.04,You need something cool.,0.6018
+198,1251.92,1254.68,"Like titanium is cool, but it's expensive.",0.8814
+199,1254.7,1258.47,And maybe it's a bit of overkill for a remote control.,0.8565
+200,1258.45,1265.4,"Now, the fruit and veg options, either we go in that direction or we stay totally away from it.",0.8211
+201,1266.3,1271.43,"I mean, a research did come up with fruit and veg, so maybe it is important up to the interface guy.",0.77
+202,1272.05,1274.44,"So if we stay away from it, stay away from it.",0.9111
+203,1275.04,1282.65,"But if we're gonna go along with it, then it doesn't necessarily have to be like an apple or something like that or a kiwi fruit.",0.8415
+204,1282.97,1284.37,It could be something like,0.6672
+205,1284.35,1289.68,"I say potato feeler, but I'm sure you guys have a much cooler idea than I do.",0.8807
+206,1290.12,1291.74,So I think cool is the key.,0.7436
+207,1291.77,1295.95,A few questions about a spongy remote control.,0.9084
+208,1296.23,1297.21,I've never seen one before.,0.851
+209,1297.26,1298.96,I've seen plastic remote controls.,0.7982
+210,1299.42,1300.34,I think maybe they were...,0.7378
+211,1302.62,1308.13,"I don't know, back in the day when they first came up with remote controls, they had a reason for it being...",0.8126
+212,1308.72,1311.72,"sturdy, you know, for being strong and sturdy.",0.8531
+213,1312.09,1316.49,"So if we want something strong and sturdy, I say stable plastic or titanium.",0.8524
+214,1317.27,1322.4,"But if we go with spongy, we can stress that you can drop this as many times as you want.",0.8549
+215,1322.42,1324.77,"It doesn't matter, spongy material is not going to break, you know.",0.7317
+216,1325.63,1333.92,I just don't know how the LED and the lights are going to fit into a spongy material because it's not going to be completely squeezable.,0.7714
+217,1333.9,1335.14,So how do things fit in?,0.816
+218,1335.74,1338.21,"And if we are going to use spongy, we can say it's long-lasting.",0.7174
+219,1338.85,1342.96,It's damage resistant and stuff like that.,0.7991
+220,1343.16,1350.25,"So just to summarize, people want stuff that's cool, that looks like it's cool.",0.7054
+221,1350.23,1358.94,"And if it is called NASA bonus where it doesn't have to be people like Fruit and Veg, we can either go down that alley or stay totally away from it.",0.7756
+222,1360.11,1366.9,"People like Spongy Material, if we're going to use Spongy Material, we have to think of how practical it is and how we can further promote that idea.",0.7552
+223,1367.14,1369.12,And also this was this year.,0.8022
+224,1369.1,1384.31,"So things change all the time every year, you know, they always talk about this year This is a new black or next year something else is gonna be the new black and we're stuck with last year's fruit and veg That's me",0.7538
+225,1387.56,1393.12,"Well, I would say that the most you could probably hope for is gaining a year's lead on most people anyway.",0.8422
+226,1393.42,1401.62,"You always have to bring out new designs, so if we can get next year, then that's possibly a good place to start anyway.",0.8207
+227,1408.35,1414.24,"seems like a lot of the components could be off the shelf, so I don't know exactly what cost would be incurred.",0.8376
+228,1414.28,1427.39,"I can see your point about the numbered keybat, but I would say that we can probably incorporate it into the menu system if you need to do traversal of a large number of channels.",0.8632
+229,1427.37,1440.16,"My feeling would be that even if at a later date this was to be taking control of set-top boxes as well, having the use of the LCD and a joystick would probably allow you to manipulate enough channel numbers for you to be",0.7444
+230,1440.5,1453.13,"Actually, if you've got a lot of channels, the numbered keypad can be quite annoying as well, because if you're trying to remember what number is the discovery channel.",0.8374
+231,1453.23,1454.01,That's a good point.,0.3668
+232,1454.03,1455.57,You can go for it names.,0.6828
+233,1456.21,1459.08,"But if you have a menu structure, then you can subgroup them.",0.8529
+234,1459.1,1463.92,OK. You can use music like they do on the Sky Digital.,0.6949
+235,1463.98,1465.32,Yeah.,0.392
+236,1465.3,1469.75,So what it looks like to me is we'll use a large number of standard components.,0.8599
+237,1472.56,1482.72,"Say something like lithium ion battery, the kind that you find in most small handheld devices now.",0.8328
+238,1482.7,1485.15,Looks like we're going for a double curved design.,0.7649
+239,1485.81,1488.34,I don't know what cost implications there are in that.,0.7167
+240,1490.8,1493.89,Looks like we're pretty much decided on some kind of flexible rubber.,0.9087
+241,1494.47,1500.42,"So I'd have to say, depending on how flexible it is, we might need to have some kind of inner frame.",0.8535
+242,1500.93,1502.95,"Yeah, I would say definitely.",0.7112
+243,1503.01,1519.61,"I mean, the idea of having it articulated, there would be basically two points of articulation, one below and one above the main grip.",0.7535
+244,1519.59,1523.02,Do you think there's any way we could maybe remove the articulation?,0.6271
+245,1523.12,1529.04,"I can see why it looks appealing, but it could be a weak point in the structure, do you think?",0.8358
+246,1529.72,1530.78,That would be a worry of mine.,0.8723
+247,1531.52,1535.37,"If you're going with the fruit and veg thing, it looks like a banana.",0.3486
+248,1535.35,1541.18,I don't think it would be a structural weakness.,0.7816
+249,1541.38,1546.48,"If you have a firm substructure, you can then incorporate articulation into that.",0.895
+250,1546.85,1559.2,"If you then have an outer skin of flexible, spongy rubber, then you have something that is very much organic and I think would look...",0.8226
+251,1559.18,1561.6,"I mean, rather cool.",0.7325
+252,1561.62,1563.82,"I mean, my drawing there doesn't do it justice.",0.6916
+253,1563.88,1570.11,It makes you look a little bit more like a vibrator than a remote control.,0.5741
+254,1570.29,1572.23,"Yeah, we won't add that functionality.",0.7213
+255,1573.71,1586.92,"One interesting point is, I don't know how serious you were there, but if we take some of the ideas of a banana, why don't we make this damn thing yellow to incorporate the color of the logo?",0.7964
+256,1586.9,1592.04,sure yeah I don't know it's certainly a different color from your average um,0.7582
+257,1593.52,1595.08,"Make it harder to lose, as well.",0.7837
+258,1596.36,1596.46,Yeah.,0.072
+259,1596.48,1597.9,That's true.,0.1905
+260,1597.92,1599.49,Was there anything in your research?,0.7508
+261,1600.27,1603.19,The noise for when you lose the banana.,0.9276
+262,1604.41,1606.78,"Yeah, for when you lose the remote control.",0.5715
+263,1606.8,1614.8,"It could be like a monkey noise or something like that, rather than a standard V. You know, you lose the monkey, that banana.",0.7572
+264,1614.82,1616.16,You lose the monkey.,0.1837
+265,1616.18,1622.53,"You lose the banana, you press a button, and you hear like monkey screams or something like that to direct you towards the banana.",0.8252
+266,1622.51,1629.7,"I think that's something that could perhaps be programmable, though maybe we have monkey as default.",0.6314
+267,1630.0,1632.99,"Oh, I was going to talk about the programmable remote control.",0.8166
+268,1633.55,1636.93,"Now, I think it would be cool if you had one remote control that can work with all TVs.",0.7267
+269,1637.08,1642.7,"You know, you click a button and it finds the frequency that works with your particular television.",0.8341
+270,1643.43,1644.99,But why you'd need to program it?,0.8901
+271,1645.43,1647.79,"Like as a standard feature, I don't know.",0.8137
+272,1647.88,1659.96,"Well, basically, for each manufacturer, we'll have a particular command set that the TV responds to.",0.8348
+273,1660.07,1663.45,It's not simply a matter of frequency.,0.7559
+274,1665.09,1670.88,Usually what's done is you have this big booklet full of different possibilities.,0.8476
+275,1670.89,1676.76,You'll have all of them programmed into the remote and you'll have this little booklet of codes.,0.8155
+276,1677.46,1688.58,You then find your manufacturer and try the different codes that come under that manufacturer's name until you find the right one.,0.8381
+277,1688.56,1692.61,That's because televisions don't give the remote control any type of feedback when you send it.,0.7262
+278,1694.77,1710.87,That's quite annoying and we probably would still have to do that but if we had some sort of hookup to your computer as an option then if you've got a computer you can avoid that rather irritating.,0.8484
+279,1710.85,1738.82,an interesting point is that if the person doesn't have the computer we can still make the process easier because instead of having to look up codes maybe we can have it for one of the options they have is that they look up the name of a company on the LCD and then maybe look up different names of the different actual units that have been produced or we have the remote control just go through them until it's like does this do the correct function and such,0.8007
+280,1738.9,1743.36,Is it actually a book of names to digits or is it like a few pages?,0.7536
+281,1744.12,1745.29,"Um, booklet.",0.889
+282,1746.09,1746.85,Some pages.,0.9435
+283,1747.33,1758.4,"I was just thinking, if we were to store this information, some type of mapping, this person probably need to use this feature like once, you know, when they first buy the remote control or whenever they buy a new television.",0.7033
+284,1758.42,1759.64,So once there is...,0.587
+285,1759.66,1761.35,"It doesn't have to be used very often, that's right.",0.2746
+286,1761.45,1761.87,Yeah.,0.743
+287,1761.85,1763.85,But it's a nuisance.,0.5913
+288,1764.27,1769.54,And it's a nuisance very close to actually purchasing it.,0.8785
+289,1770.06,1772.32,So it's something you'd like to be thinking about.,0.8811
+290,1772.4,1785.44,"If there's one in the shop that says it can avoid much of that nuisance, you might be favorably inclined towards it.",0.886
+291,1787.16,1792.77,"OK, this is just to give us a rough idea of what we're meant to be doing for the next stage.",0.693
+292,1792.97,1795.53,I'm pretty sure that you got that anyway.,0.6604
+293,1795.57,1796.69,This was a conceptual one.,0.7466
+294,1797.77,1802.36,I think we've covered everything we need to here.,0.8449
+295,1802.4,1809.01,"I think we've decided on standard items for most of them, rubber and such.",0.877
+296,1809.89,1815.41,So we're now looking at the detail design and what we need to be doing for the next meeting.,0.7516
+297,1818.43,1821.11,"So for example, we'll just start at the top.",0.52
+298,1821.13,1827.96,"You've got yourself and the industrial and designer going to be working quite closely at this stage because it'll be hard not to, obviously.",0.8122
+299,1833.18,1838.03,Looking for photo typing of some of this description using clay.,0.6985
+300,1838.75,1842.31,I suppose you'll be told a lot more about that as we progress.,0.7806
+301,1846.04,1847.68,The user interface design,0.6
+302,1849.67,1861.98,"It looks like the idea of push forward so far is maybe more of a physical one there, whereas possibly be more interested in maybe how the LCD is going to incorporate, do you think?",0.7759
+303,1863.24,1868.87,Or do you perceive that most of the design decisions still need to be based on the physical layout?,0.7014
+304,1869.68,1887.33,"Well, I think other than getting a more aesthetically pleasing form for it, most of the layout design decisions are made, I would say.",0.7923
+305,1887.31,1902.69,"But then again, the menu structure, to a considerable extent, that's going to vary according to the model of television and also any customizations that the user might wish to incorporate.",0.8131
+306,1903.6,1911.55,And one of the nice things about having an LCD and a menu structure is that there is that flexibility to it.,0.7489
+307,1912.63,1916.29,That's very true.,0.7687
+308,1917.57,1918.65,OK.,0.888
+309,1919.8,1921.92,I've got product evaluation as well.,0.8423
+310,1922.32,1922.93,"Yes, yeah.",0.8635
+311,1923.65,1926.96,Some of these things kind of logically follow the others.,0.6704
+312,1927.78,1932.59,The product evaluation doesn't come after what I've actually seen.,0.5747
+313,1932.57,1951.57,"Any product prototype I think would be yeah, no it'd be more case of how do you envisage us performing the product evaluation once we have a Model to test with oh, that's the okay sure So it'd be a case of do you think that just bringing users in to have them test it out?",0.7909
+314,1952.47,1957.42,"Maybe putting a certain number of products into the field in certain places, which I suppose is quite similar or",0.8172
+315,1957.4,1966.16,"or just hitting the streets and saying, this is a new remote control, what do you think of the look of it?",0.6493
+316,1967.84,1971.57,"At this stage, we still have no target audience?",0.6928
+317,1972.53,1980.8,"I think the target audience is pretty much anybody under the age of, say, maybe 60 or something ludicrous.",0.8729
+318,1982.95,1988.23,"The reason I'm saying that is that we're just looking at a replacement remote control, something that's stylish.",0.7673
+319,1988.82,1992.7,"So maybe you're even just, maybe you're narrowing down your target audience simply by saying.",0.8305
+320,1992.72,1993.88,It's stylish.,0.471
+321,1993.86,2009.31,If they're buying it that often or they're maybe looking to replace something then they've got a bit of free cash that puts them potentially in the younger age bracket maybe even single just for the reasons of excess cash flow.,0.7707
+322,2010.82,2017.55,Of course I mean at 25 Euros I don't think we're looking at charging the air for the device as well as the normal bracket.,0.6815
+323,2019.84,2023.4,Your idea of USB I think would largely depend on the cost.,0.8519
+324,2023.54,2035.88,USB is definitely one of the cheapest interfaces out there but it might push the cost of the overall unit up because it would require not just the connection but the chip for communicating with the rest of the system.,0.7601
+325,2037.2,2039.1,That one might have to be based on.,0.5367
+326,2039.37,2040.31,The USB for which?,0.4748
+327,2040.69,2041.43,for the remote control.,0.5965
+328,2041.93,2053.53,The idea was that maybe it could connect ups for allowing a software interface on the PC for a larger programming due to the fact that we've gone for such a nice easy minimal design normally.,0.7939
+329,2055.27,2056.88,Definitely talking some type of,0.556
+330,2057.5,2059.48,But didn't they just say it was just for TV?,0.6234
+331,2060.91,2067.9,"It's just for TV, but for different programming it to use your TV, you might hook it up to the PC.",0.7849
+332,2068.4,2074.33,"I'm not sure, but I'm thinking maybe that the additional cost of USB might be prohibitive.",0.8737
+333,2074.35,2076.76,We don't know unless it would make sense to.,0.815
+334,2076.74,2080.64,But you're going to need some type of flash memory or something.,0.6595
+335,2080.7,2086.27,"Well, something that doesn't, you wouldn't have to redo the whole thing once the batteries are changed, once you have the power.",0.761
+336,2086.47,2094.07,"I mean, it would need to have some sort of onboard memory in any way.",0.7159
+337,2096.14,2103.16,"For one thing, because I do think the menu system should be, I mean, although,",0.7098
+338,2103.14,2132.78,you know it's not going to be terribly complicated it's just controlling one device the menu system ought to be um ought to be customizable and different languages and different skins and stuff like that how you won't say the um the menu structure for flicking through channels if you've got lots of channels so if it was customizable as in different languages and stuff that does open it is supposed to be international right so,0.7656
+339,2132.76,2133.99,It would make sense to.,0.8526
+340,2134.22,2134.77,It would make sense to.,0.3546
+341,2134.79,2135.37,I would say to.,0.3738
+342,2136.05,2138.92,And we better be careful about the time as well.,0.8114
+343,2139.34,2141.03,We've already had a five minute warning so.,0.7094
+344,2142.03,2144.16,I would say yeah.,0.6923
+345,2145.8,2147.11,International would make sense.,0.8145
+346,2147.93,2149.75,You're going to look at product evaluation.,0.7646
+347,2149.79,2152.39,I'd better start writing up a hell of a lot of crap.,0.3987
+348,2154.21,2156.64,You're going to look a bit more at the physical makeup.,0.6416
+349,2157.62,2161.58,It looks like we're going to need maybe a prototype in clay.,0.6556
+350,2163.48,2164.36,We'll see how that goes.,0.8076
+351,2165.19,2166.83,Are we going to be supplied with the clay?,0.6571
+352,2167.89,2169.13,Where is the clay?,0.8467
+353,2169.11,2174.97,"So, I think we've got an idea of where we need to go for the next meeting, would you say?",0.8097
+354,2175.01,2175.46,Yeah.,0.661
+355,2176.24,2178.12,Obviously they're gone with the fashion thing.,0.6679
+356,2178.62,2180.0,Like the fruit and veg.,0.6036
+357,2180.02,2180.62,The design.,0.653
+358,2180.84,2181.96,"Spongy, proper.",0.814
+359,2182.74,2185.82,"Yeah, I would say that would be my...",0.7066
+360,2186.07,2186.89,I think I would enlarge a lot.,0.4147
+361,2187.25,2192.25,"Actually, I still clear the whole fruit and veg thing.",0.5672
+362,2193.81,2197.61,"But the spongy, I like it a lot.",0.7951
+363,2197.81,2204.17,You seem to have quite a general consensus that the idea of the rubber could be quite... Yeah.,0.7706
+364,2205.33,2210.62,"I don't know much about having bright yellow, I think that's quite a good idea.",0.45
+365,2210.66,2212.77,Maybe we could have options for colours as well.,0.7712
+366,2214.59,2214.69,Yeah.,0.37
+367,2215.67,2218.93,"And again, this has the advantage of being harder to lose.",0.8051
+368,2219.33,2219.63,Sure.,0.459
+369,2219.65,2224.06,"I mean, we are trying to promote remote control, but we want to keep the company brand as well.",0.8064
+370,2224.94,2225.4,Yeah.,0.606
+371,2225.42,2228.24,So we always need to remember that somewhere we're meant to be getting a slogan on.,0.7714
+372,2230.3,2235.97,"Possibly, I'm not sure, but I'm seeing a little bit of space around maybe the joystick area, which could be used.",0.7598
+373,2238.47,2243.94,"Like I said before, I think we should have the RR on the top function button.",0.6626
+374,2245.59,2248.06,"Okay, and I think that says it all really.",0.7038
+375,2248.18,2248.87,I think so too.,0.5498
+376,2249.49,2251.68,"Right, we'll see everybody in a half hour.",0.6784

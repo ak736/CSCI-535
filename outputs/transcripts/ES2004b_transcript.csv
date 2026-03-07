@@ -1,0 +1,428 @@
+segment_id,start,end,transcript,asr_confidence
+0,8.18,10.77,"It's up there, but the screen's black.",0.2426
+1,14.59,26.83,It doesn't do.,0.275
+2,26.85,27.91,I'm not really sure.,0.3525
+3,37.04,45.99,"All right, okay.",0.4293
+4,57.4,63.79,"Okay, that's fine.",0.2893
+5,63.81,63.97,"Oh, God.",0.002
+6,63.99,64.11,Sorry.,0.167
+7,66.74,67.08,Right.,0.725
+8,67.3,76.77,OK. Our agenda for today.,0.6192
+9,77.69,78.82,Do you want us to give you a second?,0.6917
+10,80.58,81.26,"No, that's OK.",0.7047
+11,81.32,82.78,Sorry.,0.324
+12,86.07,91.18,I'll go over what we decided last meeting.,0.8927
+13,92.67,95.11,We decided upon a universal control.,0.8842
+14,96.19,99.22,One handset for all TB video.,0.8422
+15,100.61,111.34,"equipment that it was important that the product was accessible to a wide range of consumers, wide age range, not limiting anyone.",0.7
+16,112.2,119.56,"We decided it was important to reflect the company's image in our product, we put fashion in electronics, you know, that kind of thing.",0.6827
+17,121.23,129.63,"Our budget would have to affect, try not to reflect our budget that we might",0.8215
+18,131.39,133.79,"I have a bit of, oh, oh, you can see it.",0.7795
+19,136.45,136.65,Okay.,0.305
+20,137.55,143.84,Dissonance between what our budget was and what we wanted to look like.,0.7998
+21,145.02,147.83,"Wanted to look uncluttered, undaunted to the customer.",0.6381
+22,148.81,159.52,"We discussed a flip open design, reducing the size of the control and an electronic panel for further features like programming, things like that.",0.8038
+23,161.19,163.65,Okay.,0.517
+24,164.33,166.29,Three presentations I've got written here.,0.5748
+25,166.35,170.52,"So, shall we hear from marketing first?",0.8399
+26,171.4,172.98,Is it okay if I postpone that to later?,0.5999
+27,173.0,175.16,I just want to get access to a little bit more information.,0.7695
+28,175.34,175.73,Is that okay?,0.3133
+29,175.81,176.89,"No, that's fine, that's fine.",0.3798
+30,176.91,177.99,"Okay, yeah, I'll go first.",0.3004
+31,178.01,179.81,Can I grab the... Can you plug me?,0.5216
+32,182.15,182.66,Thanks.,0.756
+33,191.54,192.31,What do I have to press?,0.1507
+34,192.33,194.25,"Oh, F8.",0.828
+35,194.53,195.01,FN.,0.801
+36,195.99,203.72,"Function, FN.",0.8925
+37,203.74,210.17,Maybe.,0.461
+38,210.19,210.27,Yep.,0.008
+39,210.29,212.68,There we go.,0.22
+40,212.7,218.56,"OK, this is the working design presented by me, the industrial designer extraordinaire.",0.838
+41,219.98,225.34,This is where I went a bit mad with PowerPoint.,0.8087
+42,225.44,228.41,"The first thing, question I asked was, what are we trying to design?",0.7782
+43,228.99,238.46,"Well, a device which basically just sends the signal to the TV to change the state, whether that be the power or the channel or the volume.",0.8093
+44,238.56,246.97,Everything is just some sort of signal to change the state of the TV or other appliance that it's sending the signal to.,0.8223
+45,248.92,255.43,So I decided I'd have a look at what other people have designed and try and take some inspiration from that.,0.7515
+46,257.45,271.15,"But although we will want to be taking ideas from other people, we want to make sure that our design stands out and I thought that was something that, well, it wasn't really my area because",0.8201
+47,272.6,274.18,I'm dealing with the inside really.,0.864
+48,275.1,280.95,"Yeah, I ran out of time so I couldn't do this one as fun as the last one.",0.7419
+49,281.45,298.47,And I found out that most controls use some form of infrared to send signals to the TV presumably because of the cost issue of something like the same thing that computers use wireless and you don't need to send very much information.,0.7452
+50,298.45,302.07,Most of them are powered by some form of battery.,0.8483
+51,302.62,320.5,"Now R1, I'm not sure whether we want to look at the size issue because most of them are powered by AAA batteries, but those can be quite bulky, so I didn't know if you wanted to look at something else so we could shrink down the size of the control.",0.8019
+52,320.52,321.85,Can I interject to ask a question?,0.8443
+53,321.93,323.11,Is that appropriate?,0.4623
+54,323.13,325.45,You're saying the AAA batteries are small or the current?,0.4454
+55,325.43,332.48,"If you look at most remote controls, they're quite chunky, and that's because of the size of the batteries.",0.7955
+56,332.58,336.76,"They have to be, obviously, this certain size to fit those batteries.",0.8097
+57,336.79,338.23,Triple A's are the smallest you can get.,0.5354
+58,338.45,353.36,"Well, you can get the circular round ones, but I'm just wondering about power consumption and how much you need to send the data across, which leads onto the next point about them being small and easy to",0.7873
+59,353.34,354.37,carry around.,0.955
+60,354.89,360.36,"Now the ones at the moment are small, but I was just wondering if we could look at something a bit smaller.",0.8164
+61,361.76,368.53,Now the main components I came up with were obviously the power source for the batteries because otherwise it's not going to work.,0.8091
+62,368.51,375.08,"As I said about which batteries we were going to choose, we can discuss that later.",0.7129
+63,375.2,387.69,And then you obviously need something to decode the information that you're putting in from the controller and to turn it into an infrared signal.,0.8402
+64,387.67,391.99,which we're going to use to send the information.,0.8751
+65,392.21,402.82,"Now these have a wireless range of up to about five meters, which is sort of suitable for anyone who's watching their TV unless they're in a cinema, which not most people do.",0.792
+66,402.88,407.22,"So as we're applying to the most audience, that should be fine.",0.8531
+67,407.36,417.67,"And then I just had a quick look at the external design, but I left that mostly to the interface designer.",0.8214
+68,417.65,422.92,And so this is what I had as the basic idea of what we want to do.,0.8796
+69,423.0,425.56,It's not a proper circuit.,0.8498
+70,426.42,427.96,I'm not sure if it will work or not.,0.6698
+71,428.4,432.39,I'm not even confident that those are the real way you'd wire it up.,0.7063
+72,432.71,442.06,"But anyway, we've just got the power going to the infrared bulb with the chip and the UI interface.",0.7809
+73,442.04,471.13,"which would basically, when you pressed anything, the chip would convert it into some form of IR data which could be decoded by the TV receiver, which obviously means that we're going to have to conform to whatever form of communication that the TVs are already using and since that's another reason to use infrared because that's what all TVs use at the moment.",0.766
+74,472.33,480.06,"And then finally, we want it to be available to a wide audience at a low cost.",0.8785
+75,480.08,485.31,So all the components that I've put forward are low in cost.,0.7124
+76,485.33,487.64,So that should be good.,0.7078
+77,487.62,495.31,It should be different enough from the alternative products to get a good consumer base.,0.8403
+78,495.35,500.72,We were talking about it before and also just something that I was thinking about because they're small.,0.8255
+79,501.12,502.52,They're also easy to lose.,0.8076
+80,502.58,516.88,"So if we could look into some way of, I don't know, some anti going down the side of the sofa thing that you could have, that was just sort of a general point there.",0.8063
+81,516.86,523.55,"That's a very important point, it came up in our market research findings too, so I can refer to that whenever you'd like me to present.",0.8375
+82,524.29,528.5,"Yeah, that's what I came up with there.",0.798
+83,528.52,545.86,Would you like to continue on for a minute?,0.5271
+84,590.99,604.25,Is it in the right?,0.8334
+85,604.95,610.42,The plug hasn't come out yet.,0.6967
+86,611.8,612.12,It is.,0.768
+87,612.34,613.42,It has come.,0.395
+88,613.44,614.8,Okay.,0.591
+89,614.82,616.28,Yeah.,0.674
+90,616.3,619.81,"Actually, some of my points might overlap with what William just mentioned.",0.6494
+91,620.51,627.84,"But basically, my method was like whatever brainstorming we did in the last meeting, just took up a valuable points and started developing on that.",0.7802
+92,628.2,636.75,"And there might be some missing loops in this thing, which I think will take a feedback from the marketing because",0.864
+93,636.73,641.83,I haven't had some marketing data and basically every product is market driven.,0.6969
+94,642.65,648.34,"So purpose as William already said, I would put it to simplify the interaction with TV to make it as simple as possible.",0.792
+95,649.26,663.09,"And to summarize, I would say it should be user friendly by being easy to use rather than having a lot of complex buttons because you can have an engineering driven maybe having 100 buttons and maybe having a remote control which has the main features.",0.8215
+96,663.07,667.46,like volume control or channel changing the channel or whatever.,0.7739
+97,667.48,673.99,But we are to make it unique so that people want to buy it will punch in these two features together.,0.8419
+98,674.75,677.32,So what the concept is to have a flip top model.,0.7642
+99,677.48,681.99,The main functions such as which are like often used will be on the top.,0.8905
+100,681.97,692.82,and the complex functions which say you can say like the young generation or trendy generation want to say program their favorite channels or whatever can be put in the middle part of the flip top.,0.7748
+101,693.68,706.62,So it's like it could be accessed by a wider range of audience and we can punch in new features such as added features such as shockproof body and maybe a design to appeal to a lot of people.,0.8324
+102,708.24,711.83,Findings most people prefer user-friendly rather than complex remote controls.,0.8621
+103,712.39,720.44,"Because there are times like people have used a remote control for, say, a year or something, and they have not used maybe 30% to 40% of the buttons.",0.7956
+104,721.14,727.97,So it's not of no use of punching and trying to put in those things on the top of the remote control and try to confuse a user.,0.8403
+105,727.95,730.2,"As we saw, we have to make a profit also.",0.8272
+106,730.66,735.75,"So we can maybe go for an economics of a higher production by 50 million, we said.",0.7705
+107,736.13,736.35,Yeah.,0.623
+108,736.59,736.97,Yeah.,0.793
+109,736.99,739.88,"With that, I think we'll be able to achieve economies of scale also.",0.8872
+110,740.02,747.41,So we can add in more features and make it less costly.,0.795
+111,747.39,767.04,"So if you ask me personally, I would make a flip top with a trendy design and maybe we should look at also like the buttons, whether they are like soft or a little hard because there are times where the buttons tend to be a bit hard after continuous usage and all that.",0.7401
+112,767.7,773.23,So overall a simple and user-friendly design.,0.7041
+113,773.25,774.85,Any comments like if you want to?,0.3606
+114,775.47,778.36,I think we'll chat about it at the end.,0.5627
+115,778.5,791.1,"OK. OK, so if anyone wants to write something down, I want to bring it up at the end.",0.5848
+116,803.08,804.46,"Oh, I've got to keep this here.",0.6614
+117,805.54,807.76,You've got to.,0.616
+118,808.52,810.55,I have to move it long time.,0.5654
+119,812.79,813.19,Whoops.,0.532
+120,813.21,814.41,Can I push it a bit more?,0.6276
+121,815.99,817.84,Can it manage a bit more?,0.7692
+122,818.1,818.32,Yep.,0.728
+123,818.7,818.98,Oh dear.,0.643
+124,819.46,828.33,Now we're going to go a bit more.,0.624
+125,831.45,832.17,Is that OK?,0.5403
+126,834.33,837.32,Thank you.,0.8235
+127,837.6,838.97,Just pull it closer a little bit.,0.7076
+128,840.19,842.68,You should be able to get it right over.,0.7423
+129,842.74,844.02,Thank you.,0.808
+130,845.62,846.9,Okay.,0.48
+131,848.62,851.77,I'm going to look at the functional requirements from the marketing point of view.,0.8261
+132,852.55,856.35,And obviously our starting point with marketing is always market research.,0.8462
+133,858.77,859.86,So that's where we started.,0.7944
+134,859.9,862.94,"We used our usability lab, the company's usability lab.",0.7402
+135,863.32,869.37,"We did our usual selection methods to get a cross-section of the general public, male and female, all age groups from 15 upwards.",0.8477
+136,869.35,873.98,"And we observed them in the lab, just their general use of the remote control.",0.8493
+137,874.01,875.68,You can see we had 100 subjects there.,0.8311
+138,877.4,880.79,"Our findings, lots of findings, I've just summarized some of them here.",0.8214
+139,880.83,888.14,"The overall thing, which I've got at the top there in italics, is that users dislike the look and feel of current remote control.",0.86
+140,888.16,890.14,So that has obvious design implications there.,0.8103
+141,891.4,895.81,We found that 75% of users find most remote controls ugly.,0.8274
+142,895.79,901.46,80% would spend more money when a remote control would look fancy.,0.8152
+143,901.58,912.04,"We were quite surprised by that finding, but that's quite a high proportion of our international target group are prepared to spend more money for something that's a bit nicer looking.",0.8225
+144,912.02,917.53,Current remote controls do not match well with operating behavior of the user overall.,0.8642
+145,917.95,921.86,"For example, you can see below there, 75% of users zap a lot.",0.8719
+146,922.2,925.44,So you've got your person sunk back in the sofa channel hopping.,0.8632
+147,925.96,927.76,"So again, there's power implications there.",0.7433
+148,927.78,932.41,50% of users only use 10% of the buttons.,0.8647
+149,932.45,934.05,"So again, a big design issue there.",0.8263
+150,934.79,941.42,And possibly we can also cut back on cost if we don't have so many functions actually on the remote control.,0.9045
+151,941.4,943.13,"Um,",0.895
+152,946.89,953.05,The biggest frustrations that people found with regard to personal preferences were something that you mentioned earlier.,0.8297
+153,953.09,955.94,Remote controls are often lost in the room.,0.8427
+154,955.98,958.3,It's the slipping down the back of the sofa type of thing.,0.881
+155,958.96,962.04,50% were particularly frustrated by that.,0.8393
+156,962.06,966.99,34% of people said they take too much time to learn to use.,0.7939
+157,967.55,972.41,And I think that ties in with the previous finding of people only using 10% of the buttons.,0.8302
+158,972.43,975.8,They just can't be bothered to learn about the other functions.,0.7873
+159,975.78,982.75,Slightly more than a quarter of people said it was bad for repetitive strain injury.,0.8855
+160,983.63,987.87,"You know, the small movements of the remote control can lead to kind of shoulder and elbow problems.",0.7925
+161,989.55,996.5,The vast majority of the 35 and underage group would like a liquid crystal display and speech recognition.,0.8639
+162,996.98,1004.11,"Again, that was to aid, I think, in when they've lost the actual remote control, some kind of speech recognition.",0.8786
+163,1004.09,1014.17,"Something we didn't put to them, but which I'm thinking of now, is even if perhaps the lost control can give off a bleep every now and again, until you find it or a flashing light, possibly.",0.8291
+164,1015.27,1017.96,That trend reverses in the older age groups.,0.8439
+165,1018.26,1026.71,"So 35s and unders who would like those two features, that kind of evens out 35 to 45, and in the older age group it kind of reverses, they're not so bothered with this.",0.7876
+166,1026.69,1031.7,"I had marvellous tables and things that I could show you, but I think I'll just keep it simple.",0.829
+167,1031.72,1035.09,"If there's any more information, I can email you extra details.",0.798
+168,1035.17,1035.89,Is that okay?,0.7927
+169,1038.78,1039.18,Right.,0.817
+170,1041.81,1044.83,We have new project requirements.,0.8384
+171,1051.09,1059.38,"We're not going to be using teletext partners, consumers, consider outdated with the internet now.",0.8128
+172,1062.52,1064.79,Our control is only going to be for TV.,0.7976
+173,1064.83,1072.52,"It's not going to be combined control, which limits all of the different things.",0.8311
+174,1072.76,1077.5,"It limits the cost for us, but it also makes it easier to understand.",0.7034
+175,1077.54,1079.87,So can we not program a video with this remote control?,0.6977
+176,1080.65,1085.94,"It says for TV only, so it looks like it's trapped.",0.7402
+177,1086.38,1097.59,"I think maybe Sky, things like that might be incorporated into it, but I don't know what do you think it just said for TV only?",0.8967
+178,1097.77,1099.89,Would that imply video use?,0.4648
+179,1100.51,1102.17,Do you do video as well?,0.8103
+180,1103.64,1105.66,"Well, I don't know.",0.533
+181,1105.7,1109.61,"You get combined TV and videos, don't you?",0.6494
+182,1109.65,1122.41,"Yeah, and if you've got a Sky box, one of those Sky Plus boxes now, you can record straight off the TV anyway, so onto the TV hard drive or something.",0.784
+183,1122.45,1126.97,I think we assume it's still got play and stop functions and programming.,0.7225
+184,1127.61,1133.97,Anything about that on the market research or something like regarding whether people want to combine something like that?,0.7615
+185,1134.22,1142.27,"We didn't really look into that, but remember we found that finding that most people only use about 10% of the buttons.",0.8509
+186,1142.91,1148.68,"I think that those tend to be the basic channel hopping things on and off of the video, fast forwarding so on.",0.8154
+187,1149.06,1154.59,And I think it's of general knowledge that people do find programming their videos a nightmare.,0.8274
+188,1154.61,1159.72,"So I don't know if that's something we need to... Just as an idea on the speech recognition thing,",0.7377
+189,1159.7,1164.94,So it would probably be quite expensive to incorporate an entire speech recognition thing.,0.4817
+190,1164.96,1165.93,And they're not that great.,0.4632
+191,1165.95,1167.87,"In fact, I've just called up that table there.",0.6984
+192,1167.93,1169.37,We asked those two questions.,0.8178
+193,1169.39,1172.1,"The table relates to both questions, so we didn't differentiate.",0.7625
+194,1172.48,1174.28,Would you prefer an LCD screen?,0.816
+195,1174.36,1175.58,That's a multifunction remote.,0.6275
+196,1176.04,1179.03,And would you pay more for speech recognition in a remote control?,0.7688
+197,1179.35,1184.27,"So you can see how the yes, no sort of varies across the age group there.",0.7848
+198,1184.29,1186.52,A substantial number of don't knows in the older age group.,0.8845
+199,1186.56,1189.3,I think that's just general fear of new technology.,0.8873
+200,1189.28,1198.87,"But on that again, I just thought because you can get those key chains now and you whistle and then it'll let off a loud noise to let you know where it is.",0.7943
+201,1199.37,1199.53,Right.,0.468
+202,1199.59,1200.66,So I thought that could be quite.,0.4621
+203,1200.88,1206.16,We do have a budget limitation that we can't control ourselves.,0.8799
+204,1206.58,1215.78,"So I think when we can take a cheaper option, which still does the same kind of thing, because it is something.",0.737
+205,1215.76,1221.81,"It needs to be, the thing that you use to find it needs to be something that you don't lose.",0.7882
+206,1221.83,1228.9,"So you were saying whistling, maybe on the TV you could put like a pack on the TV or something so you can't see the remote.",0.8183
+207,1228.92,1231.86,You go and press the button on top of the TV and it beeps.,0.8085
+208,1232.46,1233.41,"Okay, it's over there.",0.715
+209,1233.91,1237.93,That sounds a lot cheaper to me.,0.6143
+210,1237.91,1246.6,The third thing was that we have to make sure the corporate image is very much incorporated into the handset.,0.8247
+211,1249.41,1258.54,"So we want logo, we want fashionable, trendy, I mean what you were talking about with the marketing.",0.8379
+212,1260.04,1263.79,People paying more for it to look good.,0.8402
+213,1264.85,1267.53,We need to focus on that as well.,0.6115
+214,1267.55,1267.75,Yes.,0.902
+215,1267.91,1271.3,Further market research will be needed to focus on what that is.,0.8564
+216,1271.47,1274.26,It's going to be different for a 15-year-old for somebody who's 60.,0.7034
+217,1274.76,1282.83,"And also across the world of reigning at the international market, what is attractive to a trendy New Yorker and what is attractive to a retired South African?",0.8789
+218,1282.85,1284.19,I don't know.,0.786
+219,1284.71,1285.39,You get the idea.,0.885
+220,1285.43,1287.6,It's going to vary around the world.,0.7883
+221,1287.58,1291.49,"At the end of the day, the engineering design is one thing.",0.8114
+222,1291.63,1299.62,"It's the user interface design that may, and the sort of fashionable aspect of it, we might have to change the different markets around the world.",0.8062
+223,1300.29,1305.84,"So are we talking of a single model or maybe five, six designs and all that?",0.6757
+224,1306.26,1309.2,"Well, yeah, you could have a number of different designs.",0.7654
+225,1309.26,1313.54,"I mean, inside, they'd be essentially exactly the same.",0.8362
+226,1313.6,1317.05,"The features could be the same, and the body could look spectacularly different.",0.5288
+227,1318.25,1322.73,"So what about, you were talking about the buttons.",0.8897
+228,1324.76,1331.64,"The controls that are coming out now have kind of big rubber buttons, not tiny little one, big rubber buttons.",0.7405
+229,1331.66,1335.93,"But what about, I mean, because we've got to make it original.",0.7219
+230,1335.91,1337.23,What about?,0.888
+231,1337.29,1356.01,"You know with the touch screen yeah, yeah, that's what I was just yeah, yeah So you it's like a little panel that you touch rather than a button Which shouldn't wear out as much either Well, no because you wouldn't have to you don't have to press it.",0.7101
+232,1356.03,1360.43,"You just have to put your thumb onto it Yeah, I think that might appeal.",0.7849
+233,1360.49,1362.54,I'm thinking kind of Japan.,0.7906
+234,1362.56,1365.34,I'm thinking young,0.7163
+235,1365.32,1369.36,"office people, trendy.",0.8987
+236,1369.82,1372.47,"Yes, with appeal to sections of the market.",0.6923
+237,1373.03,1385.52,"But quite easily labelled so that anyone can, oh yeah, that's obvious what that's for and it's not daunting to maybe the older generations.",0.8083
+238,1385.76,1390.22,"But also ergonomics, as we're saying with the different designs, ergonomics.",0.6692
+239,1390.68,1394.14,There's sort of physically different things because,0.6243
+240,1394.12,1423.81,If you've ever seen the Xbox they had to make two different sized controllers because people in Japan wouldn't buy it because the control that was physically too big because They're cut just generally Japanese people have smaller hands so they can go around the controller which is so if you I Don't know what because you obviously could have bigger buttons for some countries or something and smaller ones for others,0.8478
+241,1424.35,1434.04,"Yeah, maybe to, as it was indicated, the risk of repeated use, the injuries, maybe your touchscreen could be a better option for that.",0.7799
+242,1434.06,1434.3,Yeah.,0.75
+243,1435.36,1435.58,Yeah.,0.571
+244,1436.83,1446.08,"So, okay, so you're dividing designs based on not only segment age groups, you're dividing it according to the countries also, the market.",0.7883
+245,1446.46,1449.38,Maybe for USNL you can have a slightly bigger remote control.,0.7139
+246,1449.4,1449.5,Yeah.,0.409
+247,1450.1,1452.14,"And maybe in Japan and all you need to have a small,",0.5615
+248,1452.12,1464.26,I think we have to design one product and then the company can take it wherever they want to in the sense that they can make it smaller or they can make it bigger or they can change the future slightly.,0.8253
+249,1465.48,1468.12,The internal engineering design has got to remain the same.,0.7392
+250,1468.26,1469.08,It's going to be the same.,0.5598
+251,1469.14,1471.24,So we need to focus on just one thing.,0.8401
+252,1471.44,1477.49,We'll get bogged down in lots of different possibilities.,0.7543
+253,1477.47,1481.48,"I'm concerned when you raise the RSI issue, again, repetitive strain injury.",0.7673
+254,1482.34,1485.84,I don't think just moving your finger around on a small screen is going to deal with that enough.,0.7884
+255,1485.86,1489.01,"I think that is still a kind of question mark issue, how we deal with that.",0.8143
+256,1491.69,1494.76,RSI tends to be caused by repetitive small movements.,0.8486
+257,1496.12,1498.02,I really can't get my head around this one.,0.7186
+258,1498.04,1501.39,"This may have to be postponed to a future meeting, but it's something we should think about.",0.647
+259,1501.86,1511.43,"I was just thinking about how you can combat that, because without doing something where you have to move your arm around to change the camera.",0.684
+260,1511.45,1513.26,"I know, and it becomes ridiculous.",0.2948
+261,1513.28,1514.12,Speech recognition.,0.7775
+262,1515.22,1517.28,Which is extremely expensive.,0.682
+263,1517.3,1521.99,I think that's the only way that you can avoid that kind of issue.,0.6511
+264,1522.11,1533.66,"Do we have to initially, looking at the findings here, focus on a younger age group initially, and then broaden out the market later?",0.8647
+265,1534.32,1536.63,Do we really have to go for everyone right away?,0.8736
+266,1538.07,1539.39,Focus on the biggest market?,0.6752
+267,1540.55,1542.48,People between age group of 20 to 35?,0.5295
+268,1542.84,1547.7,"When we've been throwing up our ideas, we're automatically talking about business people, young people, tender people.",0.8368
+269,1547.72,1550.19,We're talking about,0.5503
+270,1552.03,1564.68,"the type of company that we're working for as well, that they want it to be fashionable, they want it to be trendy, and you wouldn't automatically assume, associate that with the older generations.",0.8177
+271,1565.3,1575.82,"Now, with the baby boomers, the older generations are actually larger, they have a greater population than us young people, but I don't think we're focusing on that.",0.8316
+272,1575.84,1579.92,I think we are focusing on a sort of mid-range,0.8661
+273,1581.23,1588.79,I'm just thinking of budgetary issues too for when it does get to the broad-scale marketing stage.,0.8168
+274,1588.81,1602.79,"We want to not waste money, not be profligate and focus on where the idea will be taken up first is most likely to be taken up first of all, where the main purchasing power is coming from for a product like this.",0.8171
+275,1604.67,1613.93,"Okay, so the remote control functions, we've got the TV, we've got the video.",0.8364
+276,1614.63,1622.05,"Now there's, I can't remember what it's called, the little code at the end of program details.",0.7866
+277,1622.49,1623.07,Video plus.,0.8
+278,1623.33,1623.93,Yes.,0.891
+279,1625.77,1632.96,"We could use that as an alternative to programming in times, things like that.",0.8254
+280,1633.82,1636.0,I always find that really easy when I discovered it.,0.8798
+281,1638.93,1645.82,"Because you've got your general record anyway, so if there's a program on you want to put record on, that's fine.",0.8424
+282,1645.8,1650.73,"But if you do want to tape something in two days' time and you're not sure if you're going to, you put the number in.",0.7971
+283,1651.35,1652.47,And it's just a number.,0.9004
+284,1652.69,1653.43,It's not a date.,0.8448
+285,1653.47,1654.05,It's not time.,0.6943
+286,1654.07,1654.77,It's not a channel.,0.7778
+287,1654.85,1655.95,It's not when it finishes.,0.9274
+288,1656.01,1657.76,It's not anything like that.,0.8544
+289,1657.89,1658.64,It's just a number.,0.6653
+290,1659.08,1662.4,And you wouldn't need a whole host of extra buttons for that.,0.773
+291,1662.42,1665.07,You just need one because you've already got the numbers there anyway.,0.4426
+292,1665.12,1666.41,You've already got the numbers for typing in anyway.,0.1617
+293,1666.39,1668.61,"I'm not coming across that function, but it sounds wonderful.",0.7501
+294,1670.27,1679.34,"If you look in the newspaper TV guide or any TV guide, there's a five, six-digit number afterwards, and that's the number you put in.",0.797
+295,1679.94,1690.88,"And it's recorded that it's going to be on on Tuesdays at 10 o'clock on the 17th, things like that, so you don't have to worry about dates and you don't have to worry about times.",0.7732
+296,1690.86,1694.06,And it has been around for a long time.,0.5134
+297,1694.08,1695.24,It's been around for a long time.,0.6973
+298,1695.26,1697.2,It's just it's not very well advertised.,0.76
+299,1697.39,1698.65,No it's not.,0.3973
+300,1698.87,1702.45,I think if awareness was kind of brought to the forefront about that.,0.6937
+301,1702.57,1703.46,Yes.,0.896
+302,1703.48,1706.94,Though if you've got something like Sky anyway you can just click on it.,0.8067
+303,1706.98,1711.47,You can just press the button on the program once and it'll record that program.,0.7553
+304,1711.57,1711.69,Right.,0.017
+305,1711.71,1714.57,When it's on and you press it on it twice and it'll record the whole series.,0.6936
+306,1714.71,1715.39,Excellent.,0.679
+307,1715.38,1722.89,"So, yeah, but just have that function would be really good.",0.6137
+308,1723.23,1725.33,Can I just run this past you while it occurs to me?,0.7224
+309,1725.35,1731.98,"I don't mean to quickly jump from one subject to another, but just discussing the different age groups and targeting the different age groups.",0.8384
+310,1732.54,1739.27,"It occurs to me, we already produce our own mobile phones, that's kind of what led us on to comparing TV remote controls with their design features.",0.7106
+311,1739.25,1749.54,"Chain companies like Car4n Warehouse, you can pop in any time with a phone that you've bought for them if you've got any problems with it and they'll fix it, they'll phone the company, you can use their telephones.",0.7676
+312,1750.89,1765.18,"Is it worthwhile with our retail outlets having a similar kind of service so that if older users were deterred from buying this, if they know they can just pop into one of our high street outlets, you know, which button is that I press for this?",0.8213
+313,1765.62,1767.68,That's a free aspect of our service.,0.8334
+314,1767.74,1769.23,Would that not make it more attractive to them?,0.6569
+315,1769.21,1785.43,"But the only problem is that with a mobile phone you signed for a contract, so the companies who you deal with have actually, they've got an obligation to help you out and also",0.7899
+316,1785.41,1793.32,"I mean, it's fair enough to have some sort of help service, but I'm not sure how much the cost would be.",0.856
+317,1793.36,1794.5,Right.,0.418
+318,1794.52,1800.21,"The functionality of it in the sense that you're sitting there, you're pressing this button and your TV is not doing it.",0.7841
+319,1800.81,1801.21,All right.,0.46
+320,1801.35,1804.45,"Taking your TV and your phone and saying, look, this is what I'm doing.",0.5344
+321,1804.47,1805.6,It's not working.,0.409
+322,1805.62,1806.0,What should I do?,0.407
+323,1805.98,1813.42,"If it was something as simple as you couldn't change the channel, but I mean, if there were any more, or are we absolutely definite it's only going to be for TV and video.",0.7531
+324,1813.78,1814.32,"Yeah, I think so.",0.297
+325,1814.48,1815.51,Okay.,0.665
+326,1815.53,1816.45,Just a thought.,0.6883
+327,1816.47,1818.57,"I mean, instruction books, I feel.",0.623
+328,1818.59,1819.41,Instruction manuals.,0.542
+329,1819.67,1819.77,Okay.,0.174
+330,1819.79,1822.37,"But I mean, there's customer service.",0.7642
+331,1823.15,1828.62,There will be a customer service number thing that you can phone up and speak to.,0.7544
+332,1828.64,1828.92,Sure.,0.698
+333,1829.24,1834.98,"And that way there's no call out charges, no extra, the person has to walk to a shop on the high street.",0.8327
+334,1835.0,1835.34,Yeah.,0.507
+335,1835.32,1839.83,"I think it would be too much of an effort for a person to, for a phone maybe he might walk down the street.",0.6596
+336,1840.39,1844.98,"But for a remote, he will just... Not for such simple functions because we're focusing on that.",0.6546
+337,1845.12,1853.3,We should focus on making the manual as user-friendly as possible because a lot of them are just tiny little writing and lots and lots of pages.,0.702
+338,1853.28,1855.22,"It puts people off reading them, so they just do the obvious.",0.5128
+339,1855.26,1858.22,"It does, just fill in the drawing tool if something goes wrong, and then you try and search through it.",0.3623
+340,1858.57,1858.83,Sure.,0.863
+341,1859.03,1860.51,That should be something we think about.,0.6354
+342,1862.47,1863.39,What other functions...,0.855
+343,1863.89,1877.35,"I'm not sure if we need a design decision now, but we should think about... Because you've got the dilemma between old batteries, that's what I was thinking about.",0.7636
+344,1877.37,1879.34,"Mobile phone batteries, what kind of battery is that?",0.6971
+345,1879.55,1886.86,"They're specially made for the mobile phones, but they come with a charger.",0.8208
+346,1886.96,1889.0,"I mean, you could bundle a charger.",0.648
+347,1889.3,1892.2,They last quite a long time.,0.7662
+348,1892.62,1906.02,"And the thing that you get with mobile house phones, you sit it in its charger when you're not using it at night or something, but it doesn't really matter because it never really runs out because it lasts a long time once it is charged.",0.7886
+349,1907.28,1909.0,Something like that should reduce,0.8472
+350,1908.98,1919.26,"Yeah, and if you had one of those, just coming back to your other point about pressing the button and setting off the bleeper in the room, that could... Yeah, it could be on that.",0.7839
+351,1919.34,1920.42,"Yeah, on that as well.",0.5336
+352,1920.88,1922.6,Okay.,0.601
+353,1922.62,1925.75,"So, are we talking of a concept of rechargeable something?",0.6482
+354,1925.77,1929.67,"Yeah, some sort of docking station or... Rechargeable with a docking station.",0.5992
+355,1930.85,1932.68,So the rechargeable would be your...,0.6507
+356,1933.38,1936.07,"Yeah, yeah, that would be fine.",0.5023
+357,1936.27,1939.61,And also that would mean they wouldn't have to go out buying batteries all the time.,0.6449
+358,1939.63,1943.28,"Yes, which is cheaper in London as well.",0.7319
+359,1943.52,1946.74,"The shape, you've got trendy.",0.8164
+360,1946.76,1950.53,I don't want a big box with lots of things.,0.8449
+361,1951.33,1962.56,"You don't want a tiny sort of little thing either, because then you have got the repetitive strain engine, no matter how much you try and make it simple.",0.8166
+362,1962.54,1966.07,"And we don't want, I mean so many remote controls look absolutely identical.",0.8547
+363,1966.11,1970.22,These long brown things with the same colored buttons or crammed in on the surface.,0.8183
+364,1970.62,1975.35,"We definitely, an obvious thing, a very simple thing is to get away from these brown rectangles.",0.8109
+365,1976.3,1976.94,We don't want that.,0.928
+366,1977.3,1980.69,"Okay, so we've got a flip screen.",0.7111
+367,1982.78,1987.78,What I was thinking of a design which Nokia came up with almost six or seven years back.,0.7592
+368,1988.5,1990.18,"Basically, we have a flat one.",0.9535
+369,1990.7,1992.47,"It looks like a box, like a chocolate.",0.7721
+370,1992.85,1995.01,That's very strenuous because your thumb is slightly up.,0.767
+371,1996.01,1998.45,"So they come up with something like this, curved up.",0.5962
+372,1998.49,2001.52,"So here, and you don't have to, you know, bend your thumb too much.",0.7634
+373,2002.26,2007.28,"So it's like a, you can say a banana kind of curved like a boat.",0.5791
+374,2007.26,2021.52,"So what happens is you don't have to press your thumb too down like so it's already curved up So we can have us like you know mold it according to your Yeah, the way you hold up.",0.6987
+375,2021.54,2024.19,It's kind of semi-circular in the bottom something like that.,0.7193
+376,2024.21,2031.38,"Okay, I wouldn't say exactly semi-circular but you look into the company logo",0.6692
+377,2031.36,2041.42,things that are associated with the company in view to try and incorporate that into the design of the product.,0.6941
+378,2043.2,2053.22,"For example, if it was a sea or something like that, you could have it in a vague sea shape that opens up kind of like a shell or something.",0.8856
+379,2055.98,2066.73,"Something along those lines to be able to incorporate it quite, obviously, into the design while also making it quite different from anything else that's there.",0.8399
+380,2067.27,2083.46,What we were talking is to make it rather than like seashells logo could become means you could put a logo in the corner of the model rather than you know trying to make it like a seashell or what you're telling me.,0.7006
+381,2083.48,2086.09,Well we need to think about how it's gonna look different.,0.7225
+382,2087.03,2092.22,"I think that sounds a really attractive idea, not come across anything like that before.",0.8199
+383,2092.24,2099.87,"If it kind of, yeah, and that opens out into your flip top, then it's nice to, you can make it lightweight plastic, nice to hold in the palm of the hand.",0.8278
+384,2100.41,2108.68,"And just because you're having to actually insert in between the two covers, that's going to take care of some of the repetitive strain injury, try and prevent a lot of it, I would think.",0.7683
+385,2108.66,2110.19,I think it's a really nice idea.,0.8213
+386,2110.23,2116.75,"Even though we're using plastic, think of the design you can get in plastic.",0.6751
+387,2116.77,2121.31,We can do a nice conch shell or scallop shell exterior.,0.7314
+388,2121.61,2126.99,"Or you could do different, like you get with mobile phones, different fashions.",0.7844
+389,2127.82,2130.62,You could have different kind of casings.,0.7551
+390,2130.8,2137.59,You could have psychedelic ones for younger people and sleek ones.,0.811
+391,2138.41,2139.81,"Less chance of it being lost, too.",0.8266
+392,2139.85,2143.01,It's not like a chocolate-brown lozenge that's going to go down the sofa.,0.8342
+393,2143.32,2151.45,"People might want to put it on their mantelpiece or whatever, if it looks attractive enough as a kind of ornament, and they're not going to lose it so much.",0.7529
+394,2151.43,2153.09,"It's easy, it's a bit nice to handle.",0.6852
+395,2154.61,2160.1,"Yeah, maybe we could commit some, say, 5-6 designs and then choose whichever appeals the most.",0.6689
+396,2160.38,2161.66,That could be the most common design.,0.8673
+397,2162.91,2164.51,But we can think of 5-6 designs.,0.739
+398,2165.07,2167.7,"Right, I think we have to round it up.",0.6417
+399,2167.98,2171.59,Can I just quickly go over the new project requirements so that I haven't missed anything?,0.7796
+400,2171.99,2173.03,There's no teletext.,0.9097
+401,2173.27,2175.34,It's only for TV and by implication video.,0.6903
+402,2176.22,2178.62,Corporate image should be incorporated in their remote control.,0.8062
+403,2178.68,2182.09,Something about video plus.,0.8347
+404,2182.31,2194.52,"That was in cutting down the number, that was kind of separate, that was cutting down the number of functions, making it simpler, instead of having lots of things to do.",0.7352
+405,2194.54,2200.81,"So when they press for programming, it comes up on the LCDR reminder about using Video Plus, so that they will look at the guidance.",0.8708
+406,2202.43,2204.43,Or is this nothing to do with the project requirements?,0.8424
+407,2204.47,2206.37,"Is this just, that was an add-on feature.",0.6266
+408,2206.89,2213.9,"It kind of takes the place of having a button to press for the date and having a button to press for the channel, things like that.",0.7971
+409,2214.34,2216.95,So it's kind of doing away with the programming feature?,0.6778
+410,2216.99,2223.38,"Yes, it could be an advertisement feature rather than a design feature.",0.5953
+411,2224.74,2230.49,Drawing attention to that and also paid lip service in the instruction manual.,0.8465
+412,2231.03,2235.63,"Because it's very simple, so putting it down in words should be helpful.",0.7495
+413,2235.61,2237.02,and there'd be chargeable batteries.,0.5838
+414,2237.45,2241.88,Was there anything else there that we... new project requirements?,0.8226
+415,2248.81,2255.44,"We've got the buttons, but I think we'll work through that with the design of it.",0.8476
+416,2257.14,2263.13,"That's not at the moment a requirement, it's something we're looking at, what preference, so it may come around to market research at some point to see what people can do.",0.6449
+417,2263.19,2268.96,"We've talked about there being an alarm or something, a beeping for being lost.",0.6211
+418,2270.02,2277.69,"learning how to use it should be as simple as possible, but there aren't going to be that many functions incorporated into it, so it should be fine.",0.838
+419,2278.19,2282.24,"And the instruction manual, I don't know if we deal with that.",0.8443
+420,2286.0,2292.01,"I think, yeah, and different from what's out there.",0.7556
+421,2292.31,2294.19,I think that's us.,0.8733
+422,2294.54,2300.19,"What would you specifically like marketing to look at before the next meeting, or shall I just sort of generally look at all the issues involved?",0.6258
+423,2300.21,2303.59,"I think you might get guidance, but...",0.901
+424,2307.28,2314.57,"In short, the manuals, because there tends to be a demonised thing there.",0.5284
+425,2315.57,2319.66,"Everyone's got a big pile of them, but no one really uses them.",0.6053
+426,2322.98,2341.76,I think you can email me if there's any more questions.,0.8315
