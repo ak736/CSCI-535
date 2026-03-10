@@ -22,3 +22,5 @@ __pycache__/
 
 # Temp/local scripts (not part of pipeline spec)
 run.sh
+
+presentation/
