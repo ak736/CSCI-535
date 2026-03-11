@@ -1,0 +1,2 @@
+model,threshold,roc_auc,precision,recall,f1,krippendorff_alpha,n_segments,n_incongruent_gt,text_model,audio_model
+JS_divergence,0.3,0.5381,0.0545,0.1667,0.0822,0.6222,180,18,j-hartmann/emotion-english-distilroberta-base,superb/wav2vec2-large-superb-er
