@@ -1,0 +1,221 @@
+PHASE 2 TASK — Aniket: Multimodal Incongruence & Fusion Model
+===============================================================
+
+BEFORE YOU START
+----------------
+1. Make sure the video dataset has been downloaded:
+     cd Datasets && bash dataset_phase2.sh
+
+2. Activate the venv:
+     cd "CSCI 535 MPL/Implementation"
+     source venv/bin/activate
+
+3. Wait for Aaditya (video emotions) and Charan (imbalance) to finish their outputs
+   before starting Task 1. Wait for Harish (merge) before starting Task 2.
+
+===============================================================
+
+CRITICAL RULES (applies to everyone)
+-------------------------------------
+
+Rule 1: Compound Key
+Every Phase 2 output CSV must include both meeting_id and segment_id columns.
+Phase 1 segment_id resets to 0 per meeting (ES2002a has 0-495, ES2003a has 0-434, etc.).
+Without meeting_id, the cross-meeting merge will produce wrong joins.
+How to add meeting_id: Extract from filename. Processing ES2002a_text_emotions.csv → meeting_id = ES2002a.
+
+Rule 2: Validate Against Reference
+Before handing off, verify your segment_id values match outputs/segments/ESXXXX_segments.csv.
+That file is the single source of truth for what segments exist.
+
+Rule 3: No NaN, No Duplicates
+Every output must have zero NaN values and zero duplicate (meeting_id, segment_id) pairs.
+
+Phase 1 Output Reference (Read-Only):
+  outputs/segments/ESXXXX_segments.csv           → segment_id, start, end, speaker_id, transcript, asr_confidence
+  outputs/embeddings/ESXXXX_text_emotions.csv    → segment_id, p_happy, p_angry, p_sad, p_neutral
+  outputs/embeddings/ESXXXX_audio_emotions.csv   → segment_id, p_happy, p_angry, p_sad, p_neutral
+  outputs/incongruence/ESXXXX_scores.csv         → segment_id, start, end, speaker_id, transcript, incongruence_score, confidence_weight, final_score
+
+Note: Phase 1 incongruence file is ESXXXX_scores.csv (not ESXXXX_incongruence.csv).
+      The JSD value is in the incongruence_score column. The confidence-weighted version is final_score.
+
+===============================================================
+
+ROLE
+----
+Two responsibilities in Phase 2:
+1. Multimodal incongruence (Step 4): Extend text-audio JSD to all three modality pairs
+   once Aaditya's video emotions are ready.
+2. Fusion model (Step 6): Train the instability classifier on the merged feature matrix
+   once Harish's merge is complete. Run the ablation study.
+
+EXECUTION SEQUENCE
+------------------
+You own Steps 4 and 6. You must wait for dependencies.
+
+  Step 0-2: Video processing                        ← AADITYA
+  Step 3:   Interaction metrics                      ← CHARAN
+  Step 4:   Multimodal incongruence                  ← YOU (needs Aaditya done)
+  Step 5:   Feature merge                            ← HARISH (needs you + Charan done)
+  Step 6:   Fusion model + ablation                  ← YOU (needs Harish done)
+  Step 7:   Evaluation + plots                       ← HARISH (needs you done)
+
+PIPELINE DIAGRAM
+----------------
+
+  Task 1 — Multimodal Incongruence:
+
+    outputs/embeddings/ESXXXX_text_emotions.csv      (Phase 1)
+    outputs/embeddings/ESXXXX_audio_emotions.csv     (Phase 1)
+    outputs/video_emotions/ESXXXX_video_emotions.csv  (Aaditya)
+                  |
+                  v
+    aniket/aniket_multimodal_incongruence.py
+                  |
+                  v
+    outputs/incongruence/ESXXXX_multimodal_incongruence.csv   ← HANDOFF TO HARISH
+
+  ──────────────────────────────────────────────────────────
+
+  Task 2 — Fusion Model (after Harish merge):
+
+    outputs/final_dataset/final_dataset.csv   (Harish)
+                  |
+                  v
+    aniket/aniket_fusion.py
+    scripts/run_fusion.py
+                  |
+                  v
+    outputs/predictions/predictions.csv           ← HANDOFF TO HARISH
+    results/experiment_log.csv
+
+==========================================================================
+
+TASK 1: MULTIMODAL INCONGRUENCE (Step 4)
+-----------------------------------------
+
+What to Build:
+  Extend the Phase 1 text-audio JSD score to cover all three modality pairs.
+
+  Phase 1 already produced outputs/incongruence/ESXXXX_scores.csv with the
+  incongruence_score column (raw JSD between text and audio). You can reuse
+  that value or recompute it — but the new output file should contain all
+  three pairs plus the composite.
+
+  Pair              Column Name
+  ----              -----------
+  Text vs Audio     jsd_text_audio
+  Text vs Video     jsd_text_video
+  Audio vs Video    jsd_audio_video
+  Composite         incongruence_composite (mean of all three)
+
+JSD Formula (same as Phase 1):
+  M = 0.5 * (P + Q)
+  JSD(P || Q) = 0.5 * KL(P || M) + 0.5 * KL(Q || M)
+  Normalized JSD = JSD / log(2)    → range [0, 1]
+
+  Add epsilon (1e-10) before computing KL to avoid log(0).
+
+Input:
+  outputs/embeddings/ESXXXX_text_emotions.csv      → segment_id, p_happy, p_angry, p_sad, p_neutral
+  outputs/embeddings/ESXXXX_audio_emotions.csv     → segment_id, p_happy, p_angry, p_sad, p_neutral
+  outputs/video_emotions/ESXXXX_video_emotions.csv → meeting_id, segment_id, p_happy, p_angry, p_sad, p_neutral
+
+  Note: Phase 1 emotion files do NOT have meeting_id. Extract from filename.
+
+Output:
+  outputs/incongruence/ESXXXX_multimodal_incongruence.csv
+
+  meeting_id              string    e.g. ES2002a
+  segment_id              int       Must match Phase 1 segments
+  jsd_text_audio          float     JSD between P_text and P_audio
+  jsd_text_video          float     JSD between P_text and P_video
+  jsd_audio_video         float     JSD between P_audio and P_video
+  incongruence_composite  float     Mean of all three JSD scores
+
+  All JSD values must be in [0.0, 1.0].
+  Do NOT overwrite the Phase 1 ESXXXX_scores.csv files. Write to new filename.
+
+==========================================================================
+
+TASK 2: FUSION MODEL (Step 6)
+------------------------------
+
+Input:
+  outputs/final_dataset/final_dataset.csv   (from Harish)
+  Coordinate with Harish on exact column names before writing loading code.
+
+Ablation Configurations — train in this exact order:
+
+  Config              Features Used
+  ------              -------------
+  A — Baseline        P_text + P_audio (8 features)
+  B — + Video         P_text + P_audio + P_video (12 features)
+  C — + Incongruence  All above + 4 JSD scores (16 features)
+  D — + Imbalance     All above + 4 imbalance features (20 features)
+  E — Full Model      All features (20 features)
+
+Model:
+  Start simple. The goal is to show feature value, not model complexity.
+  - Primary: Logistic regression (good for 180 samples)
+  - Secondary: MLP with 2 hidden layers (64, 32) — only if logistic regression works
+  - Use 5-fold stratified cross-validation (stratify on label to handle 10% positive rate)
+  - Report mean and std of each metric across folds
+  - Normalize features with StandardScaler — fit on train fold only, transform test fold
+
+Labels:
+  Use annotations/annotated_segments.csv — column majority_label (0 = aligned, 1 = incongruent).
+  180 labeled segments total.
+  To match annotation rows to features: join on meeting_id + segment_id.
+  The annotation file has both columns.
+
+Output:
+  outputs/predictions/predictions.csv
+
+  meeting_id    Meeting identifier
+  segment_id    Segment identifier
+  label         Ground truth (from annotations)
+  pred_label    Predicted label
+  pred_prob     Predicted probability for positive class
+  config        Ablation configuration name (A through E)
+  fold          CV fold number
+
+  results/experiment_log.csv
+
+  config        Configuration name
+  auc           Mean ROC-AUC across folds
+  auc_std       Std of ROC-AUC
+  f1            Mean F1 score
+  precision     Mean precision
+  recall        Mean recall
+
+SCRIPTS
+-------
+  aniket/aniket_multimodal_incongruence.py  → Compute JSD for all three modality pairs
+  aniket/aniket_fusion.py                   → Fusion model + ablation logic
+  scripts/run_fusion.py                     → Run all ablation configurations
+
+VALIDATION CHECKLIST
+--------------------
+
+Before handing incongruence output to Harish:
+  [ ] Every segment_id matches Phase 1 segments exactly
+  [ ] meeting_id column present and correct
+  [ ] No missing or duplicate (meeting_id, segment_id)
+  [ ] All JSD values in [0.0, 1.0]
+  [ ] No NaN values
+  [ ] Phase 1 ESXXXX_scores.csv files are untouched
+
+Before handing predictions to Harish:
+  [ ] predictions.csv has rows for all 180 annotated segments x 5 configs
+  [ ] experiment_log.csv has one row per config with all metrics
+  [ ] All five ablation configurations (A through E) are present
+
+NOTES
+-----
+- Add epsilon (1e-10) before KL divergence to avoid log(0). Do not clip to zero.
+- Normalize all features with StandardScaler before training. Fit on train split only.
+- Phase 1 emotion CSVs do not have meeting_id — extract from filename
+  (ES2002a_text_emotions.csv → ES2002a).
+- The ablation delta (gain per added modality) is the most important result.

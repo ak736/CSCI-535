@@ -1,0 +1,215 @@
+PHASE 2 TASK — Harish: Data Integration & Evaluation
+======================================================
+
+BEFORE YOU START
+----------------
+1. Make sure the video dataset has been downloaded:
+     cd Datasets && bash dataset_phase2.sh
+
+2. Activate the venv:
+     cd "CSCI 535 MPL/Implementation"
+     source venv/bin/activate
+
+3. Wait for ALL three teammates to finish before starting:
+   - Aaditya: outputs/video_emotions/ESXXXX_video_emotions.csv (12 files)
+   - Charan:  outputs/imbalance/ESXXXX_imbalance.csv (12 files)
+   - Aniket:  outputs/incongruence/ESXXXX_multimodal_incongruence.csv (12 files)
+   Do NOT begin the merge until all inputs are confirmed ready.
+
+======================================================
+
+CRITICAL RULES (applies to everyone)
+-------------------------------------
+
+Rule 1: Compound Key
+Every Phase 2 output CSV must include both meeting_id and segment_id columns.
+Phase 1 segment_id resets to 0 per meeting (ES2002a has 0-495, ES2003a has 0-434, etc.).
+Without meeting_id, the cross-meeting merge will produce wrong joins.
+How to add meeting_id: Extract from filename. Processing ES2002a_text_emotions.csv → meeting_id = ES2002a.
+
+Rule 2: Validate Against Reference
+Before handing off, verify your segment_id values match outputs/segments/ESXXXX_segments.csv.
+That file is the single source of truth for what segments exist.
+
+Rule 3: No NaN, No Duplicates
+Every output must have zero NaN values and zero duplicate (meeting_id, segment_id) pairs.
+
+Phase 1 Output Reference (Read-Only):
+  outputs/segments/ESXXXX_segments.csv           → segment_id, start, end, speaker_id, transcript, asr_confidence
+  outputs/embeddings/ESXXXX_text_emotions.csv    → segment_id, p_happy, p_angry, p_sad, p_neutral
+  outputs/embeddings/ESXXXX_audio_emotions.csv   → segment_id, p_happy, p_angry, p_sad, p_neutral
+  outputs/incongruence/ESXXXX_scores.csv         → segment_id, start, end, speaker_id, transcript, incongruence_score, confidence_weight, final_score
+
+Note: Phase 1 incongruence file is ESXXXX_scores.csv (not ESXXXX_incongruence.csv).
+
+======================================================
+
+ROLE
+----
+Merge all modality outputs into a single validated feature matrix, then run evaluation and
+generate all plots. You are the last line of defense before modeling. If your merge is wrong,
+everything downstream breaks silently.
+
+EXECUTION SEQUENCE
+------------------
+You own Steps 5 and 7. You must wait for dependencies.
+
+  Step 0-2: Video processing                        ← AADITYA
+  Step 3:   Interaction metrics                      ← CHARAN
+  Step 4:   Multimodal incongruence                  ← ANIKET
+  Step 5:   Feature merge + validation               ← YOU (needs Steps 2, 3, 4 done)
+  Step 6:   Fusion model + ablation                  ← ANIKET (needs you done)
+  Step 7:   Evaluation + plots                       ← YOU (needs Aniket done)
+
+PIPELINE DIAGRAM
+----------------
+
+  outputs/embeddings/             (Phase 1 — text/audio emotions)
+  outputs/incongruence/           (Phase 1 — ESXXXX_scores.csv)
+                                  (Aniket — ESXXXX_multimodal_incongruence.csv)
+  outputs/video_emotions/         (Aaditya — P_video per segment)
+  outputs/imbalance/              (Charan  — interaction imbalance features)
+  annotations/annotated_segments.csv  (labels)
+                |
+                v
+  scripts/merge_all_features.py
+                |
+                v
+  outputs/final_dataset/final_dataset.csv   ← HANDOFF TO ANIKET
+
+                [Aniket trains model]
+
+  outputs/predictions/predictions.csv       (Aniket)
+                |
+                v
+  scripts/evaluate_detector.py
+  scripts/plot_results.py
+                |
+                v
+  results/                    ← FINAL OUTPUT
+
+==========================================================================
+
+TASK 1: FEATURE MERGE (Step 5)
+-------------------------------
+
+Join all outputs on (meeting_id, segment_id) using an inner join.
+Every modality must be present for a segment to be included.
+
+  Source          File Pattern                                              Key Columns to Extract
+  ------          ------------                                              ----------------------
+  Text emotion    outputs/embeddings/ESXXXX_text_emotions.csv               p_happy, p_angry, p_sad, p_neutral
+  Audio emotion   outputs/embeddings/ESXXXX_audio_emotions.csv              p_happy, p_angry, p_sad, p_neutral
+  Video emotion   outputs/video_emotions/ESXXXX_video_emotions.csv          p_happy, p_angry, p_sad, p_neutral
+  Incongruence    outputs/incongruence/ESXXXX_multimodal_incongruence.csv   jsd_text_audio, jsd_text_video, jsd_audio_video, incongruence_composite
+  Imbalance       outputs/imbalance/ESXXXX_imbalance.csv                    gini, interruptions, dominance_ratio, turn_entropy
+  Labels          annotations/annotated_segments.csv                        majority_label
+
+IMPORTANT — Column Renaming:
+When merging emotion columns from three modalities, prefix them to avoid collision:
+  Text:  p_text_happy,  p_text_angry,  p_text_sad,  p_text_neutral
+  Audio: p_audio_happy, p_audio_angry, p_audio_sad, p_audio_neutral
+  Video: p_video_happy, p_video_angry, p_video_sad, p_video_neutral
+
+Phase 1 emotion CSVs don't have meeting_id. Extract it from the filename when loading.
+
+==========================================================================
+
+TASK 2: ALIGNMENT VALIDATION
+------------------------------
+
+Before saving the merged file, run these checks:
+  - Row count is consistent across all input files for the same meeting
+  - No (meeting_id, segment_id) pair appears more than once
+  - No NaN values in any feature column
+  - Emotion probability columns sum to 1.0 per modality per row (within tolerance of 0.01)
+  - All expected columns are present
+
+Log validation failures to logs/merge_validation.log. Do not silently drop rows.
+
+==========================================================================
+
+TASK 3: EVALUATION (Step 7)
+-----------------------------
+
+After Aniket returns predictions, compute:
+  - ROC-AUC (overall and per ablation config)
+  - Precision, Recall, F1 (at optimal threshold)
+  - Confusion matrix per config
+
+==========================================================================
+
+TASK 4: PLOTS
+--------------
+
+Generate the following and save to results/plots/:
+  - ROC curves (one per ablation configuration, overlaid)
+  - Precision-Recall curves
+  - Confusion matrix heatmap (for full model)
+  - Ablation delta bar chart: AUC gain from each added modality
+  - Feature importance bar chart (if model supports it)
+
+==========================================================================
+
+OUTPUT FILES
+------------
+
+Merged Feature Matrix:
+  outputs/final_dataset/final_dataset.csv
+
+  Column                                                          Source
+  ------                                                          ------
+  meeting_id                                                      Join key
+  segment_id                                                      Join key
+  p_text_happy, p_text_angry, p_text_sad, p_text_neutral          Text emotion
+  p_audio_happy, p_audio_angry, p_audio_sad, p_audio_neutral      Audio emotion
+  p_video_happy, p_video_angry, p_video_sad, p_video_neutral      Video emotion
+  jsd_text_audio, jsd_text_video, jsd_audio_video                 Incongruence
+  incongruence_composite                                          Incongruence
+  gini, interruptions, dominance_ratio, turn_entropy              Imbalance
+  label                                                           Ground truth (from annotations, NaN if not annotated)
+
+Evaluation Results:
+  results/
+    phase2_metrics_summary.csv
+    phase2_experiment_log.csv
+    plots/
+      phase2_roc_curves.png
+      phase2_pr_curves.png
+      phase2_confusion_matrix.png
+      phase2_ablation_delta.png
+      phase2_feature_importance.png
+
+SCRIPTS
+-------
+  scripts/merge_all_features.py   → Inner join all modality outputs on (meeting_id, segment_id)
+  scripts/evaluate_detector.py    → Compute metrics against ground truth
+  scripts/plot_results.py         → Generate all result visualizations
+
+VALIDATION CHECKLIST
+--------------------
+
+Before handing merged data to Aniket:
+  [ ] meeting_id and segment_id both present
+  [ ] No duplicate (meeting_id, segment_id) rows
+  [ ] Zero NaN values in feature columns
+  [ ] All three P_text, P_audio, P_video distributions sum to ~1.0 per row
+  [ ] All expected columns present with correct names (see table above)
+  [ ] Validation log written to logs/merge_validation.log
+  [ ] Labeled rows (from annotations) have label column populated
+
+Before finalizing evaluation:
+  [ ] Predictions file from Aniket loaded correctly
+  [ ] Ground truth labels align on (meeting_id, segment_id)
+  [ ] All plots saved and readable
+  [ ] phase2_metrics_summary.csv has one row per ablation config
+
+NOTES
+-----
+- Use inner join only. If a segment is missing from any modality, exclude it and log it.
+- Column naming must be exact — Aniket's fusion model loads columns by name.
+- If row counts after merge drop by more than 10% compared to Phase 1 segments, flag it to the team.
+- Phase 1 emotion CSVs use p_happy, p_angry, etc. — you must rename them to p_text_happy,
+  p_audio_happy, p_video_happy during merge to avoid column name collisions.
+- The existing Phase 1 results/ files (evaluation_metrics.csv, etc.) should not be overwritten.
+  Prefix Phase 2 results with phase2_.

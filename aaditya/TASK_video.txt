@@ -1,0 +1,189 @@
+PHASE 2 TASK — Aaditya: Video Processing & Visual Emotion
+==========================================================
+
+BEFORE YOU START
+----------------
+1. Download the video dataset:
+     cd Datasets && bash dataset_phase2.sh
+   This downloads 84 video files (7 per meeting x 12 meetings).
+
+2. Verify download:
+     ls Datasets/amicorpus/ES2002a/video/
+   Should show 7 .avi files.
+
+3. Activate the venv:
+     cd "CSCI 535 MPL/Implementation"
+     source venv/bin/activate
+
+VIDEO FILES (per meeting)
+--------------------------
+  Datasets/amicorpus/ESXXXX/video/
+    ESXXXX.Closeup1.avi    ← participant 1 face (USE THESE FOR OPENFACE)
+    ESXXXX.Closeup2.avi    ← participant 2 face
+    ESXXXX.Closeup3.avi    ← participant 3 face
+    ESXXXX.Closeup4.avi    ← participant 4 face
+    ESXXXX.PreferredOverview.avi   (not needed for emotion)
+    ESXXXX.Corner.avi              (not needed for emotion)
+    ESXXXX.Overhead.avi            (not needed for emotion)
+
+Only the Closeup videos matter. Each one captures a single participant's face —
+exactly like the individual headset audio files from Phase 1.
+
+==========================================================
+
+CRITICAL RULES (applies to everyone)
+-------------------------------------
+
+Rule 1: Compound Key
+Every Phase 2 output CSV must include both meeting_id and segment_id columns.
+Phase 1 segment_id resets to 0 per meeting (ES2002a has 0-495, ES2003a has 0-434, etc.).
+Without meeting_id, the cross-meeting merge will produce wrong joins.
+How to add meeting_id: Extract from filename. Processing ES2002a_segments.csv → meeting_id = ES2002a.
+
+Rule 2: Validate Against Reference
+Before handing off, verify your segment_id values match outputs/segments/ESXXXX_segments.csv.
+That file is the single source of truth for what segments exist.
+
+Rule 3: No NaN, No Duplicates
+Every output must have zero NaN values and zero duplicate (meeting_id, segment_id) pairs.
+
+Phase 1 Output Reference (Read-Only):
+  outputs/segments/ESXXXX_segments.csv        → segment_id, start, end, speaker_id, transcript, asr_confidence
+  outputs/embeddings/ESXXXX_text_emotions.csv → segment_id, p_happy, p_angry, p_sad, p_neutral
+  outputs/embeddings/ESXXXX_audio_emotions.csv→ segment_id, p_happy, p_angry, p_sad, p_neutral
+  outputs/incongruence/ESXXXX_scores.csv      → segment_id, start, end, speaker_id, transcript, incongruence_score, confidence_weight, final_score
+
+==========================================================
+
+ROLE
+----
+Build the video modality pipeline. Your output is P_video: per-segment emotion probability
+distributions extracted from meeting video using OpenFace. This feeds directly into Aniket's
+multimodal incongruence computation.
+
+EXECUTION SEQUENCE
+------------------
+You are Steps 0-2 in the Phase 2 pipeline. Charan (Step 3) can work in parallel with you.
+Everyone else waits for your output.
+
+  Step 0:  Download video (dataset_phase2.sh)        ← YOU
+  Step 0.5: Speaker-camera mapping                   ← YOU
+  Step 1:  Frame extraction                          ← YOU
+  Step 2:  OpenFace + visual emotion                 ← YOU
+  Step 3:  Interaction metrics                       ← CHARAN (parallel)
+  Step 4:  Multimodal incongruence                   ← ANIKET (waits for you)
+  Step 5:  Feature merge                             ← HARISH
+  Step 6:  Fusion model                              ← ANIKET
+  Step 7:  Evaluation + plots                        ← HARISH
+
+PIPELINE DIAGRAM
+----------------
+  Datasets/amicorpus/ESXXXX/video/ESXXXX.Closeup{1-4}.avi
+        |
+        v
+  Step 0.5: Speaker-Camera Mapping
+        |
+        v
+  Step 1: Frame Extraction (aligned to segments)
+        |
+        v
+  Step 2a: OpenFace Feature Extraction
+        |
+        v
+  outputs/video_features/ESXXXX_video_features.csv
+        |
+        v
+  Step 2b: Visual Emotion Modeling
+        |
+        v
+  outputs/video_emotions/ESXXXX_video_emotions.csv   ← FINAL HANDOFF TO ANIKET
+
+TASKS
+-----
+
+Step 0.5 - Speaker-Camera Mapping
+  Determine which Closeup{1-4} corresponds to which SPEAKER_XX for each meeting.
+  This is analogous to how Aniket mapped audio headsets to speakers in Phase 1
+  (via RMS energy analysis). Options:
+    - Visual inspection: check who is in each closeup during a known speaker turn
+    - Automated: correlate diarization timestamps with lip movement detection
+  Save this mapping (e.g. a simple dict or CSV) — you'll need it to pick the right
+  camera for each segment's speaker.
+
+Step 1 - Frame Extraction
+  Extract frames from the Closeup videos at a consistent frame rate.
+  Align each frame to a segment_id using the segment timestamps in outputs/segments/ESXXXX_segments.csv.
+  - Use Datasets/amicorpus/ESXXXX/video/ESXXXX.Closeup{N}.avi where N is the camera for the segment's speaker
+  - Sample at 1 fps or keyframes only (balance coverage vs storage)
+  - For each frame, determine which segment it falls into using start and end times
+  - If multiple frames fall within one segment, aggregate features in Step 2b
+
+Step 2a - OpenFace Feature Extraction
+  Run OpenFace on the extracted frames using scripts/run_openface.sh.
+  Features to extract:
+  - Action Units (AU): AU01, AU02, AU04, AU06, AU12, AU15, AU17, AU25
+  - Head pose: pitch, yaw, roll
+  - Gaze direction vectors
+
+Step 2b - Visual Emotion Modeling
+  Map OpenFace features to emotion probabilities using scripts/run_video_emotion.py.
+  Target emotion label space (MUST match text and audio exactly):
+    happy, angry, sad, neutral
+  Use either a pretrained AU-to-emotion mapping or a lightweight classifier trained on AffectNet/CK+.
+  Do NOT use a label space that differs from text/audio — the incongruence computation requires identical categories.
+
+INPUT FILES
+-----------
+  Datasets/amicorpus/ESXXXX/video/ESXXXX.Closeup{1-4}.avi  → Per-participant face camera
+  outputs/segments/ESXXXX_segments.csv                      → segment_id, start, end, speaker_id, transcript, asr_confidence
+
+OUTPUT FILES
+------------
+
+Intermediate — Raw Features:
+  outputs/video_features/ESXXXX_video_features.csv
+
+  meeting_id     string    e.g. ES2002a
+  segment_id     int       Must match Phase 1 segments exactly
+  AU01...AU25    float     Action unit intensities
+  head_pitch     float     Head pose pitch
+  head_yaw       float     Head pose yaw
+  head_roll      float     Head pose roll
+  gaze_x         float     Gaze direction x
+  gaze_y         float     Gaze direction y
+
+Final Handoff — Visual Emotion Probabilities:
+  outputs/video_emotions/ESXXXX_video_emotions.csv
+
+  meeting_id     string    e.g. ES2002a
+  segment_id     int       Must match Phase 1 segments exactly
+  p_happy        float     Probability, sums to 1 with others
+  p_angry        float     Probability
+  p_sad          float     Probability
+  p_neutral      float     Probability
+
+  p_happy + p_angry + p_sad + p_neutral must equal 1.0 for every row.
+
+SCRIPTS
+-------
+  scripts/run_openface.sh       → Batch OpenFace extraction on video frames
+  scripts/run_video_emotion.py  → Map AU features to emotion probabilities
+
+VALIDATION CHECKLIST
+--------------------
+  [ ] Video dataset downloaded (bash Datasets/dataset_phase2.sh)
+  [ ] Speaker-camera mapping determined for all 12 meetings
+  [ ] Every segment_id in your output exists in outputs/segments/ESXXXX_segments.csv
+  [ ] meeting_id column is present and correct in every output file
+  [ ] No (meeting_id, segment_id) pair is missing or duplicated
+  [ ] All four probability columns are present and sum to 1.0 per row
+  [ ] Emotion column names match exactly: p_happy, p_angry, p_sad, p_neutral
+  [ ] Tested on at least one full meeting before batch run
+  [ ] No NaN or null values in any row
+
+NOTES
+-----
+- Run on one meeting end-to-end first. Confirm output format before batching all meetings.
+- If OpenFace fails on a segment (no face detected), fill with uniform distribution [0.25, 0.25, 0.25, 0.25] and log the segment ID.
+- Do not invent or modify segment_id values. Copy them directly from the segments file.
+- The segments file has segment_id as integer (0, 1, 2, ...) — keep the same type in your output.

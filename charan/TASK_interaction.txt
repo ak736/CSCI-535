@@ -1,0 +1,150 @@
+PHASE 2 TASK — Charan: Interaction Imbalance
+==============================================
+
+BEFORE YOU START
+----------------
+1. Make sure the video dataset has been downloaded (someone on team runs this once):
+     cd Datasets && bash dataset_phase2.sh
+   You don't need the video files yourself, but the project requires them to be present.
+
+2. Activate the venv:
+     cd "CSCI 535 MPL/Implementation"
+     source venv/bin/activate
+
+3. Your inputs are already in the repo from Phase 1 — no new downloads needed for your task.
+
+==============================================
+
+CRITICAL RULES (applies to everyone)
+-------------------------------------
+
+Rule 1: Compound Key
+Every Phase 2 output CSV must include both meeting_id and segment_id columns.
+Phase 1 segment_id resets to 0 per meeting (ES2002a has 0-495, ES2003a has 0-434, etc.).
+Without meeting_id, the cross-meeting merge will produce wrong joins.
+How to add meeting_id: Extract from filename. Processing ES2002a_segments.csv → meeting_id = ES2002a.
+
+Rule 2: Validate Against Reference
+Before handing off, verify your segment_id values match outputs/segments/ESXXXX_segments.csv.
+That file is the single source of truth for what segments exist.
+
+Rule 3: No NaN, No Duplicates
+Every output must have zero NaN values and zero duplicate (meeting_id, segment_id) pairs.
+
+Phase 1 Output Reference (Read-Only):
+  outputs/segments/ESXXXX_segments.csv           → segment_id, start, end, speaker_id, transcript, asr_confidence
+  outputs/diarization/ESXXXX_diarization.csv     → segment_id, start, end, speaker_id
+  outputs/embeddings/ESXXXX_text_emotions.csv    → segment_id, p_happy, p_angry, p_sad, p_neutral
+  outputs/embeddings/ESXXXX_audio_emotions.csv   → segment_id, p_happy, p_angry, p_sad, p_neutral
+  outputs/incongruence/ESXXXX_scores.csv         → segment_id, start, end, speaker_id, transcript, incongruence_score, confidence_weight, final_score
+
+==============================================
+
+ROLE
+----
+Compute conversation dynamics features from diarization data. Your output captures how
+balanced or imbalanced the speaking patterns are within each meeting segment. This feeds
+into the final feature merge alongside video and audio-text incongruence.
+
+EXECUTION SEQUENCE
+------------------
+You are Step 3 in the Phase 2 pipeline. You can work in parallel with Aaditya (Steps 0-2).
+Your only inputs come from Phase 1 — you don't need to wait for anyone.
+
+  Step 0-2: Video processing                        ← AADITYA (parallel with you)
+  Step 3:   Interaction metrics                      ← YOU
+  Step 4:   Multimodal incongruence                  ← ANIKET (waits for you + Aaditya)
+  Step 5:   Feature merge                            ← HARISH
+  Step 6:   Fusion model                             ← ANIKET
+  Step 7:   Evaluation + plots                       ← HARISH
+
+PIPELINE DIAGRAM
+----------------
+  outputs/segments/ESXXXX_segments.csv         (Phase 1 — segment boundaries + speaker)
+  outputs/diarization/ESXXXX_diarization.csv   (Phase 1 — raw diarization)
+        |
+        v
+  charan/charan_interaction.py
+  scripts/run_interaction_metrics.py
+        |
+        v
+  outputs/imbalance/ESXXXX_imbalance.csv   ← FINAL HANDOFF TO HARISH
+
+TASKS
+-----
+
+Task 1 - Speaking Time per Speaker
+  For each meeting, compute the total speaking time per speaker across all diarization segments.
+  - Use start and end from outputs/diarization/ESXXXX_diarization.csv
+  - Group by speaker_id
+  - Output: seconds spoken per speaker
+
+Task 2 - Gini Coefficient
+  Compute the Gini coefficient of speaking time distribution across speakers in the meeting.
+  - Gini = 0: perfectly equal participation
+  - Gini = 1: one speaker dominates entirely
+  This is a meeting-level metric. Broadcast it to all segments of that meeting
+  (same value for every row of a given meeting).
+
+Task 3 - Interruption Detection
+  An interruption occurs when speaker B begins speaking before speaker A has finished,
+  with a configurable overlap threshold (e.g. >= 200ms overlap).
+  - Use the raw diarization output (outputs/diarization/ESXXXX_diarization.csv) to find overlapping speaker turns
+  - For each segment in outputs/segments/ESXXXX_segments.csv, count how many interruptions
+    occurred within that segment's [start, end] window
+
+Task 4 - Turn Statistics
+  Compute per segment:
+  - dominance_ratio: fraction of speaking time by the dominant speaker within a window around this segment
+  - turn_entropy: Shannon entropy of the turn distribution in a window around this segment (higher = more balanced)
+  Use a 30-second sliding window centered on each segment's midpoint.
+  Agree with the team before changing this.
+
+INPUT FILES
+-----------
+  outputs/segments/ESXXXX_segments.csv         → segment_id, start, end, speaker_id, transcript, asr_confidence
+  outputs/diarization/ESXXXX_diarization.csv   → segment_id, start, end, speaker_id
+
+IMPORTANT: The segment_id in the diarization file is DIFFERENT from the segment_id in the
+segments file. Diarization has raw utterance-level IDs. Segments have windowed IDs.
+  - Use the SEGMENTS file as your reference for output segment_ids.
+  - Use the DIARIZATION file for computing speaking time and overlaps.
+
+OUTPUT FILE
+-----------
+  outputs/imbalance/ESXXXX_imbalance.csv
+
+  meeting_id       string    e.g. ES2002a
+  segment_id       int       Must match Phase 1 segments exactly
+  speaker_id       string    Speaker for this segment (from segments file)
+  gini             float     Gini coefficient for the whole meeting (0 to 1)
+  interruptions    int       Interruption count in/around this segment
+  dominance_ratio  float     Fraction of speaking time by dominant speaker in window
+  turn_entropy     float     Shannon entropy of turn distribution in window
+
+SCRIPTS
+-------
+  charan/charan_interaction.py          → core logic
+  scripts/run_interaction_metrics.py    → batch runner
+
+VALIDATION CHECKLIST
+--------------------
+  [ ] Every segment_id in your output exists in outputs/segments/ESXXXX_segments.csv
+  [ ] meeting_id column is present and correct
+  [ ] No (meeting_id, segment_id) pair is missing or duplicated
+  [ ] gini is between 0.0 and 1.0 for all rows
+  [ ] dominance_ratio is between 0.0 and 1.0 for all rows
+  [ ] turn_entropy is non-negative for all rows
+  [ ] No NaN or null values in any column
+  [ ] Row count matches the segments file exactly per meeting
+
+NOTES
+-----
+- Gini is a meeting-level feature. All segments from the same meeting will have the same
+  gini value. This is expected and correct.
+- For turn entropy, use the 30s sliding window around each segment's timestamp, not a global
+  per-meeting window.
+- If a segment has only one speaker in its window, turn_entropy = 0. That is valid.
+- Do not modify or reassign segment_id values. Copy them directly from the segments file.
+- The diarization file uses its own segment_id numbering (raw utterances). Do not confuse
+  it with the windowed segment IDs from the segments file.

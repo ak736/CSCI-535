@@ -4,6 +4,7 @@ Datasets/*
 # But do NOT ignore these two files
 !Datasets/Dataset.md
 !Datasets/dataset.sh
+!Datasets/dataset_phase2.sh
 
 # Python virtual environment
 venv/
