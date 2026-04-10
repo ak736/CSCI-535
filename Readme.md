@@ -435,3 +435,105 @@ project/
 - [ ] CSV output with timestamped scores and confidence weights
 - [ ] Reproducibility log (seeds, model versions, experiment tracking)
 - [ ] Short report summarizing results
+
+---
+
+## Phase 2: Video Modality Pipeline (Aaditya)
+
+Extends the incongruence scorer with a **visual emotion modality** extracted from per-participant closeup videos in the AMI corpus. Output feeds directly into the multimodal incongruence computation (Aniket, Step 4).
+
+### Pipeline
+
+```
+Datasets/amicorpus/ESXXXX/video/ESXXXX.Closeup{1-4}.avi
+        |
+        v
+Step 0.5: Speaker-Camera Mapping
+        (lip-movement variance → assigns each SPEAKER_XX to their Closeup camera)
+        |
+        v
+Step 1: Frame Extraction
+        (frames sampled at 1 fps, aligned to segment timestamps)
+        |
+        v
+Step 2a: AU Feature Extraction (py-feat: retinaface + xgb)
+        (AU01, AU02, AU04, AU06, AU12, AU15, AU17, AU25 + head pose)
+        |
+        v
+outputs/video_features/ESXXXX_video_features.csv
+        |
+        v
+Step 2b: Visual Emotion Modeling (rule-based FACS mapping)
+        (AU intensities → softmax over happy, angry, sad, neutral)
+        |
+        v
+outputs/video_emotions/ESXXXX_video_emotions.csv   ← handoff to Aniket
+```
+
+### Emotion Mapping (FACS-based)
+
+```python
+happy_score   = 0.5 * AU06 + 0.5 * AU12
+angry_score   = 0.4 * AU04 + 0.3 * AU17 + 0.3 * AU25
+sad_score     = 0.4 * AU01 + 0.3 * AU04 + 0.3 * AU15
+neutral_score = max(0.0, 1.0 - 0.15 * total_activation)
+probs = softmax([happy, angry, sad, neutral])
+```
+
+No-face fallback (face not detected in any frame of a segment): `[0.25, 0.25, 0.25, 0.25]`
+
+### Output Files
+
+| File | Description |
+|------|-------------|
+| `outputs/speaker_camera_map.csv` | meeting_id, speaker_id, camera_id for all 12 meetings |
+| `outputs/video_features/ESXXXX_video_features.csv` | AU intensities + head pose per segment |
+| `outputs/video_emotions/ESXXXX_video_emotions.csv` | p_happy, p_angry, p_sad, p_neutral per segment |
+
+All 12 meetings processed: ES2002a-d, ES2003a-d, ES2004a-d. Zero NaN, zero duplicates, all probability rows sum to 1.0.
+
+### Scripts
+
+| Script | Purpose |
+|--------|---------|
+| `scripts/map_speaker_camera.py` | Automated speaker-to-camera mapping via lip-movement variance |
+| `scripts/extract_video_features.py` | Frame extraction + AU feature extraction using py-feat |
+| `scripts/run_video_emotion.py` | AU → emotion probability mapping |
+| `scripts/validate_video_outputs.py` | Validates output CSVs against reference segments |
+| `scripts/run_openface.sh` | Wrapper to activate venv and run feature extraction |
+
+### Environment
+
+Requires Python 3.10 (py-feat incompatible with 3.12):
+
+```bash
+python3.10 -m venv venv_video
+source venv_video/bin/activate
+pip install "py-feat==0.6.2" opencv-python pandas numpy "scipy<1.14" "torch<2.5" "torchvision<0.20"
+```
+
+### Running the Pipeline
+
+```bash
+source venv_video/bin/activate
+
+# 1. Speaker-camera mapping (all meetings, ~5-10 min)
+python scripts/map_speaker_camera.py --all
+
+# 2. Feature extraction (all meetings, ~3 hours — use nohup)
+nohup bash scripts/run_openface.sh >> logs/features.log 2>&1 &
+
+# 3. Emotion mapping (fast, <1 min total)
+python scripts/run_video_emotion.py --all
+
+# 4. Validate all outputs
+python scripts/validate_video_outputs.py --all
+```
+
+### Phase 2 Deliverables
+
+- [x] Speaker-camera mapping for all 12 meetings
+- [x] AU feature extraction for all 12 meetings (496–1281 segments each)
+- [x] Visual emotion probabilities for all 12 meetings
+- [x] Validated: no NaN, no duplicates, probabilities sum to 1.0
+- [x] No-face fallback logged and applied (uniform distribution)
