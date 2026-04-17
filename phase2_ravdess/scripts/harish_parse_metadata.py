@@ -98,16 +98,68 @@ def parse_filename(filename: str) -> dict:
     Returns dict with: clip_id, filename, actor, gender, emotion_code,
     emotion_label, emotion_4class, intensity, statement, repetition.
     """
-    # TODO(Harish): implement filename parsing.
-    #   1. Strip .wav extension.
-    #   2. Split on "-" into 7 parts, cast each to int.
-    #   3. Validate emotion_code in 1..8, actor in 1..24, intensity in 1..2,
-    #      statement in 1..2, repetition in 1..2.
-    #   4. gender = "male" if actor % 2 == 1 else "female".
-    #   5. Build clip_id = f"{actor:02d}_{emotion_code:02d}_{intensity:02d}_{statement:02d}_{repetition:02d}"
-    #   6. Look up emotion_label = EMOTION_LABEL[emotion_code]
-    #                 emotion_4class = FOUR_CLASS[emotion_code]
-    raise NotImplementedError("TODO: implement parse_filename")
+    base = filename.strip()
+    if not base.lower().endswith(".wav"):
+        raise ValueError(f"expected .wav file, got: {filename!r}")
+
+    stem = base[:-4] if base.lower().endswith(".wav") else base
+    parts = stem.split("-")
+    if len(parts) != 7:
+        raise ValueError(
+            f"expected 7 hyphen-separated fields, got {len(parts)}: {filename!r}"
+        )
+
+    try:
+        modality, channel, emotion_code, intensity, statement, repetition, actor = (
+            int(parts[0]),
+            int(parts[1]),
+            int(parts[2]),
+            int(parts[3]),
+            int(parts[4]),
+            int(parts[5]),
+            int(parts[6]),
+        )
+    except ValueError as e:
+        raise ValueError(f"non-integer field in filename {filename!r}: {e}") from e
+
+    # Audio-only speech subset (RAVDESS convention)
+    if modality != 3 or channel != 1:
+        raise ValueError(
+            f"expected modality=03 and channel=01 for audio_speech, got "
+            f"{modality:02d}-{channel:02d} in {filename!r}"
+        )
+
+    if not 1 <= emotion_code <= 8:
+        raise ValueError(f"emotion_code out of range 1..8: {emotion_code} in {filename!r}")
+    if not 1 <= actor <= 24:
+        raise ValueError(f"actor out of range 1..24: {actor} in {filename!r}")
+    if intensity not in (1, 2):
+        raise ValueError(f"intensity must be 1 or 2: {intensity} in {filename!r}")
+    if statement not in (1, 2):
+        raise ValueError(f"statement must be 1 or 2: {statement} in {filename!r}")
+    if repetition not in (1, 2):
+        raise ValueError(f"repetition must be 1 or 2: {repetition} in {filename!r}")
+
+    # GUIDELINES_HARISH: odd actor = male, even = female
+    gender = "male" if actor % 2 == 1 else "female"
+
+    clip_id = (
+        f"{actor:02d}_{emotion_code:02d}_{intensity:02d}_"
+        f"{statement:02d}_{repetition:02d}"
+    )
+
+    return {
+        "clip_id": clip_id,
+        "filename": base,
+        "actor": actor,
+        "gender": gender,
+        "emotion_code": emotion_code,
+        "emotion_label": EMOTION_LABEL[emotion_code],
+        "emotion_4class": FOUR_CLASS[emotion_code],
+        "intensity": intensity,
+        "statement": statement,
+        "repetition": repetition,
+    }
 
 
 def run(audio_root: str, out_path: str) -> None:
@@ -124,19 +176,29 @@ def run(audio_root: str, out_path: str) -> None:
         print(f"ERROR: no .wav files found under {audio_root}", file=sys.stderr)
         sys.exit(1)
 
-    # TODO(Harish): for each wav_path, call parse_filename(os.path.basename(path))
-    # and collect into a list of dicts. Then build a DataFrame with METADATA_COLUMNS.
-    print("TODO: implement metadata parsing loop")
-    sys.exit(0)
+    if len(wav_paths) != EXPECTED_ROWS:
+        print(
+            f"ERROR: expected {EXPECTED_ROWS} .wav files, found {len(wav_paths)}",
+            file=sys.stderr,
+        )
+        sys.exit(1)
 
-    # rows: list[dict] = []
-    # for path in wav_paths:
-    #     rows.append(parse_filename(os.path.basename(path)))
-    # df = pd.DataFrame(rows, columns=METADATA_COLUMNS)
-    # os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
-    # df.to_csv(out_path, index=False)
-    # print(f"WROTE {out_path} {len(df)} rows")
-    # validate(out_path)
+    rows: list[dict] = []
+    for path in wav_paths:
+        try:
+            rows.append(parse_filename(os.path.basename(path)))
+        except ValueError as e:
+            print(f"ERROR parsing {path}: {e}", file=sys.stderr)
+            sys.exit(1)
+
+    df = pd.DataFrame(rows, columns=METADATA_COLUMNS)
+    df = df.sort_values("clip_id", kind="stable").reset_index(drop=True)
+
+    os.makedirs(os.path.dirname(os.path.abspath(out_path)) or ".", exist_ok=True)
+    df.to_csv(out_path, index=False)
+    print(f"WROTE {out_path} {len(df)} rows")
+
+    validate(out_path)
 
 
 # ---------------------------------------------------------------------------
