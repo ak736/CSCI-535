@@ -188,43 +188,44 @@ def run(metadata_path: str, audio_root: str, out_path: str) -> None:
     metadata_df = pd.read_csv(metadata_path)
     print(f"  metadata: {len(metadata_df)} rows  ({metadata_path})")
 
-    # TODO(Charan): uncomment once you're ready to run
-    # model_bundle = load_model()
-    #
-    # rows = []
-    # for i, meta in metadata_df.iterrows():
-    #     clip_id  = meta["clip_id"]
-    #     filename = meta["filename"]
-    #     actor    = int(meta["actor"])
-    #     emo_code = int(meta["emotion_code"])
-    #     emo_4    = meta["emotion_4class"]
-    #
-    #     try:
-    #         audio = load_ravdess_wav(audio_root, filename, actor)
-    #         probs = predict_probs(model_bundle, audio)
-    #     except Exception as e:
-    #         print(f"  WARNING: clip_id={clip_id} failed: {e}")
-    #         probs = {"p_happy": 0.25, "p_angry": 0.25, "p_sad": 0.25, "p_neutral": 0.25}
-    #
-    #     rows.append({
-    #         "clip_id": clip_id,
-    #         "actor": actor,
-    #         "emotion_code": emo_code,
-    #         "emotion_4class": emo_4,
-    #         **probs,
-    #     })
-    #
-    #     if (i + 1) % 100 == 0:
-    #         print(f"    processed {i + 1}/{len(metadata_df)} clips...")
-    #
-    # df = pd.DataFrame(rows, columns=OUTPUT_COLUMNS)
-    # os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
-    # df.to_csv(out_path, index=False)
-    # print(f"WROTE {out_path} {len(df)} rows")
-    # validate(out_path)
+    model_bundle = load_model()
 
-    print("TODO: implement — uncomment the loop above and run")
-    sys.exit(0)
+    rows = []
+    for i, meta in metadata_df.iterrows():
+        clip_id = meta["clip_id"]
+        filename = meta["filename"]
+        actor = int(meta["actor"])
+        emo_code = int(meta["emotion_code"])
+        emo_4 = meta["emotion_4class"]
+
+        try:
+            audio = load_ravdess_wav(audio_root, filename, actor)
+            probs = predict_probs(model_bundle, audio)
+        except Exception as e:
+            print(f"  WARNING: clip_id={clip_id} failed: {e}")
+            probs = {
+                "p_happy": 0.25,
+                "p_angry": 0.25,
+                "p_sad": 0.25,
+                "p_neutral": 0.25,
+            }
+
+        rows.append({
+            "clip_id": clip_id,
+            "actor": actor,
+            "emotion_code": emo_code,
+            "emotion_4class": emo_4,
+            **probs,
+        })
+
+        if (i + 1) % 100 == 0:
+            print(f"    processed {i + 1}/{len(metadata_df)} clips...")
+
+    df = pd.DataFrame(rows, columns=OUTPUT_COLUMNS)
+    os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
+    df.to_csv(out_path, index=False)
+    print(f"WROTE {out_path} {len(df)} rows")
+    validate(out_path)
 
 
 # ---------------------------------------------------------------------------
