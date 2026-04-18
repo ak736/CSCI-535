@@ -19,7 +19,8 @@ FACS mapping (copied from phase1/scripts/run_video_emotion.py):
 
 INPUTS:
     phase2_ravdess/metadata/ravdess_metadata.csv                  (from Step 1)
-    Datasets/ravdess/facial_tracking/Actor_XX/*.csv               (pre-extracted)
+    Datasets/ravdess/facial_tracking/*.csv                        (pre-extracted)
+    Datasets/ravdess/facial_tracking/Actor_XX/*.csv               (also supported)
 
 FILENAME MATCHING:
     Audio wav    = 03-01-05-02-01-01-08.wav    (modality=03 audio-only)
@@ -137,8 +138,9 @@ def audio_filename_to_tracking_filename(audio_filename: str) -> str:
 
 def mean_pool_valid_frames(csv_path: str) -> dict | None:
     """
-    Load a tracking CSV, filter to (confidence > 0.5 AND success == 1) frames,
-    mean-pool AU*_r columns. Returns dict of mean AU values, or None if empty.
+    Load a tracking CSV, filter to confidence > 0.5 frames, and additionally
+    require success == 1 if that column exists. Mean-pool AU*_r columns.
+    Returns dict of mean AU values, or None if empty.
     """
     try:
         df = pd.read_csv(csv_path)
@@ -149,14 +151,16 @@ def mean_pool_valid_frames(csv_path: str) -> dict | None:
     # Strip whitespace from column names (OpenFace CSVs sometimes have " AU01_r")
     df.columns = [c.strip() for c in df.columns]
 
-    # Validate required columns are present
-    missing = [c for c in AU_COLS_OPENFACE + QUALITY_COLS if c not in df.columns]
+    # Validate required columns are present (success is optional in some releases)
+    missing = [c for c in AU_COLS_OPENFACE + ["confidence"] if c not in df.columns]
     if missing:
         print(f"  WARNING: {csv_path} missing columns {missing}")
         return None
 
-    # Filter valid frames
-    mask = (df["confidence"] > CONFIDENCE_THRESHOLD) & (df["success"] == 1)
+    # Filter valid frames — use success column only if present
+    mask = df["confidence"] > CONFIDENCE_THRESHOLD
+    if "success" in df.columns:
+        mask = mask & (df["success"] == 1)
     valid = df[mask]
     if len(valid) == 0:
         return None
@@ -187,8 +191,7 @@ def run(metadata_path: str, tracking_root: str, out_path: str) -> None:
     n_missing = 0
     n_uniform = 0
 
-    # TODO(Aaditya): uncomment the loop body below once you're ready to run.
-    for i, meta in metadata_df.iterrows():
+    for _, meta in metadata_df.iterrows():
         clip_id  = meta["clip_id"]
         actor    = int(meta["actor"])
         emo_code = int(meta["emotion_code"])
@@ -196,23 +199,27 @@ def run(metadata_path: str, tracking_root: str, out_path: str) -> None:
         audio_fn = meta["filename"]
 
         tracking_fn   = audio_filename_to_tracking_filename(audio_fn)
-        tracking_path = os.path.join(tracking_root, f"Actor_{actor:02d}", tracking_fn)
+        # Try Actor_XX/ subdirectory first; fall back to flat layout
+        tracking_path_subdir = os.path.join(tracking_root, f"Actor_{actor:02d}", tracking_fn)
+        tracking_path_flat   = os.path.join(tracking_root, tracking_fn)
+        if os.path.isfile(tracking_path_subdir):
+            tracking_path = tracking_path_subdir
+        else:
+            tracking_path = tracking_path_flat
 
         probs = None
         if os.path.isfile(tracking_path):
-            # TODO(Aaditya): uncomment once you've verified tracking CSV shape:
-            # means = mean_pool_valid_frames(tracking_path)
-            # if means is not None:
-            #     h, a, s, n = au_to_emotion_scores(means)
-            #     sm = softmax([h, a, s, n])
-            #     sm = sm / sm.sum()  # renormalize to sum to 1.0
-            #     probs = {
-            #         "p_happy":   round(float(sm[0]), 6),
-            #         "p_angry":   round(float(sm[1]), 6),
-            #         "p_sad":     round(float(sm[2]), 6),
-            #         "p_neutral": round(float(sm[3]), 6),
-            #     }
-            pass
+            means = mean_pool_valid_frames(tracking_path)
+            if means is not None:
+                h, a, s, n = au_to_emotion_scores(means)
+                sm = softmax([h, a, s, n])
+                sm = sm / sm.sum()  # renormalize to sum to 1.0
+                probs = {
+                    "p_happy":   round(float(sm[0]), 6),
+                    "p_angry":   round(float(sm[1]), 6),
+                    "p_sad":     round(float(sm[2]), 6),
+                    "p_neutral": round(float(sm[3]), 6),
+                }
         else:
             n_missing += 1
             if n_missing <= 5:
@@ -221,6 +228,7 @@ def run(metadata_path: str, tracking_root: str, out_path: str) -> None:
         if probs is None:
             probs = dict(UNIFORM_PROBS)
             n_uniform += 1
+            print(f"  UNIFORM fallback: {clip_id}")
 
         rows.append({
             "clip_id": clip_id,
@@ -230,17 +238,13 @@ def run(metadata_path: str, tracking_root: str, out_path: str) -> None:
             **probs,
         })
 
-    # TODO(Aaditya): remove the next 2 lines once loop body is implemented
-    print("TODO: implement — uncomment the AU-pooling block inside the loop")
-    sys.exit(0)
-
-    # df = pd.DataFrame(rows, columns=OUTPUT_COLUMNS)
-    # os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
-    # df.to_csv(out_path, index=False)
-    # print(f"WROTE {out_path} {len(df)} rows")
-    # print(f"  missing tracking files: {n_missing}")
-    # print(f"  uniform-fallback rows : {n_uniform}")
-    # validate(out_path)
+    df = pd.DataFrame(rows, columns=OUTPUT_COLUMNS)
+    os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
+    df.to_csv(out_path, index=False)
+    print(f"WROTE {out_path} {len(df)} rows")
+    print(f"  missing tracking files: {n_missing}")
+    print(f"  uniform-fallback rows : {n_uniform}")
+    validate(out_path)
 
 
 # ---------------------------------------------------------------------------
