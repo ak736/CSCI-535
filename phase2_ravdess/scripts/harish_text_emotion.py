@@ -80,9 +80,13 @@ def load_text_pipeline():
     """Load the distilroberta emotion classification pipeline (Phase 1 pattern)."""
     try:
         from transformers import pipeline
-    except ImportError:
+    except ImportError as e:
         print(
-            "ERROR: install transformers: pip install transformers torch",
+            "ERROR: could not import transformers.\n"
+            f"  Python: {sys.executable}\n"
+            f"  Reason: {e}\n"
+            "  Fix: use the SAME interpreter you run this script with, e.g.\n"
+            "    python3 -m pip install transformers torch",
             file=sys.stderr,
         )
         sys.exit(1)
@@ -101,22 +105,36 @@ def predict_text_probs(pipe, sentence: str) -> dict:
     Run the pipeline on a sentence, collapse 7 labels → 4-class, renormalize.
     Returns dict with keys p_happy, p_angry, p_sad, p_neutral (sum to 1.0).
 
-    Reuses the exact logic from phase1/harish/harish_segmentation_and_text.py
-    run_part2_embeddings.
+    Same logic as phase1/harish/harish_segmentation_and_text.py run_part2_embeddings.
     """
-    # TODO(Harish): implement using the Phase 1 pattern:
-    #   out = pipe(sentence, truncation=True, max_length=512)
-    #   label_list = out[0] if out and isinstance(out[0], list) else out
-    #   four_probs = {"happy": 0.0, "angry": 0.0, "sad": 0.0, "neutral": 0.0}
-    #   for item in label_list:
-    #       lab = item["label"].strip().lower()
-    #       score = float(item["score"])
-    #       target = LABEL_TO_FOUR.get(lab, "neutral")
-    #       four_probs[target] += score
-    #   total = sum(four_probs.values())
-    #   if total <= 0: return uniform 0.25s
-    #   else: normalize by total, round to 6 decimals
-    raise NotImplementedError("TODO: implement predict_text_probs")
+    if not (sentence or "").strip():
+        return {k: 0.25 for k in OUTPUT_LABELS}
+
+    out = pipe(sentence, truncation=True, max_length=512)
+    if out and isinstance(out[0], list):
+        label_list = out[0]
+    else:
+        label_list = out
+
+    four_probs = {"happy": 0.0, "angry": 0.0, "sad": 0.0, "neutral": 0.0}
+    for item in label_list:
+        lab = item["label"].strip().lower()
+        score = float(item["score"])
+        target = LABEL_TO_FOUR.get(lab, "neutral")
+        four_probs[target] += score
+
+    total = sum(four_probs.values())
+    if total <= 0:
+        four_probs = {"happy": 0.25, "angry": 0.25, "sad": 0.25, "neutral": 0.25}
+    else:
+        four_probs = {k: v / total for k, v in four_probs.items()}
+
+    return {
+        "p_happy": round(four_probs["happy"], 6),
+        "p_angry": round(four_probs["angry"], 6),
+        "p_sad": round(four_probs["sad"], 6),
+        "p_neutral": round(four_probs["neutral"], 6),
+    }
 
 
 def run(out_path: str) -> None:
@@ -125,14 +143,8 @@ def run(out_path: str) -> None:
 
     rows = []
     for stmt_id, sentence in SENTENCES.items():
-        # TODO(Harish): uncomment once predict_text_probs is implemented
-        # probs = predict_text_probs(pipe, sentence)
-        # rows.append({"statement": stmt_id, "sentence": sentence, **probs})
-        print(f"TODO: implement — would predict for statement {stmt_id}: {sentence!r}")
-
-    if not rows:
-        print("TODO: implement predict_text_probs then rerun")
-        sys.exit(0)
+        probs = predict_text_probs(pipe, sentence)
+        rows.append({"statement": stmt_id, "sentence": sentence, **probs})
 
     df = pd.DataFrame(rows, columns=OUTPUT_COLUMNS)
     os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
