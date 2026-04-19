@@ -71,12 +71,14 @@ OUTPUT_COLUMNS = [
 # ---------------------------------------------------------------------------
 
 def build_pair_id(actor: int, stmt: int, intensity: int, rep: int,
-                  audio_emo: str, video_emo: str) -> str:
+                  audio_tag: str, video_tag: str) -> str:
     """
-    pair_id format: {actor}_{stmt}_{int}_{rep}_A{audio_emo}_V{video_emo}
-    Example: 08_1_2_1_Aangry_Vhappy
+    pair_id format: {actor:02d}_{stmt}_{int}_{rep}_A{audio_tag}_V{video_tag}
+
+    audio_tag / video_tag use metadata ``emotion_label`` (neutral, calm, happy,
+    …) so ids stay unique when several emotion_codes share the same 4-class.
     """
-    return f"{actor:02d}_{stmt}_{intensity}_{rep}_A{audio_emo}_V{video_emo}"
+    return f"{actor:02d}_{stmt}_{intensity}_{rep}_A{audio_tag}_V{video_tag}"
 
 
 def run(metadata_path: str, audio_path: str, video_path: str,
@@ -100,32 +102,105 @@ def run(metadata_path: str, audio_path: str, video_path: str,
     print(f"  video_emo: {len(video_df)} rows")
     print(f"  text_emo : {len(text_df)} rows")
 
-    # TODO(Harish): implement pair construction
-    #
-    # PSEUDOCODE:
-    #   1. Merge metadata with audio_df on clip_id → adds audio probs + gender + emotion_4class.
-    #   2. Merge metadata with video_df on clip_id → adds video probs + emotion_4class.
-    #      (Video may be missing rows; inner-join is fine — downstream expects both present.)
-    #   3. Build text lookup: dict[statement_int] → (p_happy, p_angry, p_sad, p_neutral).
-    #   4. Group audio rows and video rows by (actor, statement, intensity, repetition).
-    #      Within each group, Cartesian-join audio emotions x video emotions.
-    #      Skip any combo where either side is missing.
-    #   5. For each (audio_row, video_row) combination:
-    #        - label = 0 if audio.emotion_4class == video.emotion_4class else 1
-    #        - pair_id = build_pair_id(actor, stmt, intensity, rep, audio_emo, video_emo)
-    #        - Pull p_audio_* from audio_row, p_video_* from video_row, p_text_* via lookup.
-    #        - Append dict to rows list.
-    #   6. Build DataFrame with OUTPUT_COLUMNS order.
-    #   7. Print label distribution (0 vs 1) and write CSV.
-    print("TODO: implement pair construction loop")
-    sys.exit(0)
+    required_emo_cols = {"clip_id", "actor", "emotion_code", "emotion_4class", *EMOTION_COLS}
+    for name, df in [("audio", audio_df), ("video", video_df)]:
+        missing = required_emo_cols - set(df.columns)
+        if missing:
+            print(f"ERROR: {name} CSV missing columns: {sorted(missing)}", file=sys.stderr)
+            sys.exit(1)
 
-    # df = pd.DataFrame(rows, columns=OUTPUT_COLUMNS)
-    # os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
-    # df.to_csv(out_path, index=False)
-    # print(f"WROTE {out_path} {len(df)} rows")
-    # print(f"  label distribution: {df['label'].value_counts().to_dict()}")
-    # validate(out_path)
+    for col in ("statement", "sentence", *EMOTION_COLS):
+        if col not in text_df.columns:
+            print(f"ERROR: text CSV missing column: {col}", file=sys.stderr)
+            sys.exit(1)
+
+    meta_join_cols = [
+        "clip_id", "gender", "statement", "intensity", "repetition", "emotion_label",
+    ]
+    missing_meta = set(meta_join_cols) - set(metadata_df.columns)
+    if missing_meta:
+        print(f"ERROR: metadata CSV missing columns: {sorted(missing_meta)}", file=sys.stderr)
+        sys.exit(1)
+
+    meta_join = metadata_df[meta_join_cols].drop_duplicates(subset=["clip_id"], keep="first")
+
+    audio_full = audio_df.merge(meta_join, on="clip_id", how="inner")
+    video_full = video_df.merge(meta_join, on="clip_id", how="inner")
+
+    text_by_stmt: dict[int, dict[str, float]] = {}
+    for _, tr in text_df.iterrows():
+        sid = int(tr["statement"])
+        text_by_stmt[sid] = {f"p_text_{c.split('_', 1)[1]}": float(tr[c]) for c in EMOTION_COLS}
+
+    if set(text_by_stmt.keys()) != {1, 2}:
+        print(
+            f"ERROR: text_emotions.csv must have statement 1 and 2, got {sorted(text_by_stmt)}",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    group_cols = ["actor", "statement", "intensity", "repetition"]
+    audio_groups = dict(tuple(audio_full.groupby(group_cols, sort=True)))
+    video_groups = dict(tuple(video_full.groupby(group_cols, sort=True)))
+
+    rows: list[dict] = []
+    for key in sorted(audio_groups.keys(), key=lambda k: (k[0], k[1], k[2], k[3])):
+        if key not in video_groups:
+            continue
+        a_g = audio_groups[key]
+        v_g = video_groups[key]
+        actor, stmt, intensity, repetition = key
+        gender = str(a_g.iloc[0]["gender"])
+        text_probs = text_by_stmt[int(stmt)]
+
+        for _, a_row in a_g.iterrows():
+            for _, v_row in v_g.iterrows():
+                pair_id = build_pair_id(
+                    int(actor),
+                    int(stmt),
+                    int(intensity),
+                    int(repetition),
+                    str(a_row["emotion_label"]),
+                    str(v_row["emotion_label"]),
+                )
+                label = 0 if a_row["emotion_4class"] == v_row["emotion_4class"] else 1
+                rows.append(
+                    {
+                        "pair_id": pair_id,
+                        "actor": int(actor),
+                        "gender": gender,
+                        "statement": int(stmt),
+                        "intensity": int(intensity),
+                        "repetition": int(repetition),
+                        "audio_clip_id": str(a_row["clip_id"]),
+                        "video_clip_id": str(v_row["clip_id"]),
+                        "audio_emotion_4class": str(a_row["emotion_4class"]),
+                        "video_emotion_4class": str(v_row["emotion_4class"]),
+                        "label": label,
+                        "p_audio_happy": float(a_row["p_happy"]),
+                        "p_audio_angry": float(a_row["p_angry"]),
+                        "p_audio_sad": float(a_row["p_sad"]),
+                        "p_audio_neutral": float(a_row["p_neutral"]),
+                        "p_video_happy": float(v_row["p_happy"]),
+                        "p_video_angry": float(v_row["p_angry"]),
+                        "p_video_sad": float(v_row["p_sad"]),
+                        "p_video_neutral": float(v_row["p_neutral"]),
+                        **text_probs,
+                    }
+                )
+
+    if not rows:
+        print("ERROR: no pairs generated (check audio/video CSVs and metadata)", file=sys.stderr)
+        sys.exit(1)
+
+    df = pd.DataFrame(rows, columns=OUTPUT_COLUMNS)
+    df = df.sort_values("pair_id", kind="stable").reset_index(drop=True)
+
+    os.makedirs(os.path.dirname(os.path.abspath(out_path)) or ".", exist_ok=True)
+    df.to_csv(out_path, index=False)
+    print(f"WROTE {out_path} {len(df)} rows")
+    print(f"  label distribution: {df['label'].value_counts().to_dict()}")
+    validate(out_path)
 
 
 # ---------------------------------------------------------------------------
