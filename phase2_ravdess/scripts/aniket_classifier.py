@@ -123,54 +123,57 @@ def run_one_config(df: pd.DataFrame, config: str) -> tuple[pd.DataFrame, dict]:
         print(f"ERROR: config {config} missing columns {missing}", file=sys.stderr)
         sys.exit(1)
 
-    X_all  = df[feature_cols].values.astype(np.float64)
-    y_all  = df["label"].values.astype(int)
-    groups = df["actor"].values.astype(int)
+    X_all    = df[feature_cols].values.astype(np.float64)
+    y_all    = df["label"].values.astype(int)
+    groups   = df["actor"].values.astype(int)
     pair_ids = df["pair_id"].values
 
     logo = LeaveOneGroupOut()
 
-    # TODO(Aniket): loop over folds:
-    #   auc_list, f1_list, p_list, r_list = [], [], [], []
-    #   pred_rows = []
-    #   for train_idx, test_idx in logo.split(X_all, y_all, groups):
-    #       scaler = StandardScaler()
-    #       X_train = scaler.fit_transform(X_all[train_idx])
-    #       X_test  = scaler.transform(X_all[test_idx])
-    #
-    #       clf = LogisticRegression(
-    #           class_weight='balanced', max_iter=2000, random_state=42,
-    #       )
-    #       clf.fit(X_train, y_all[train_idx])
-    #       prob = clf.predict_proba(X_test)[:, 1]
-    #       pred = (prob >= 0.5).astype(int)
-    #
-    #       fold_actor = int(groups[test_idx][0])
-    #       for pid, yt, pp, pl in zip(pair_ids[test_idx], y_all[test_idx], prob, pred):
-    #           pred_rows.append({
-    #               "pair_id": pid, "label": int(yt),
-    #               "pred_prob": float(pp), "pred_label": int(pl),
-    #               "config": config, "fold_actor": fold_actor,
-    #           })
-    #
-    #       if len(set(y_all[test_idx])) > 1:
-    #           auc_list.append(roc_auc_score(y_all[test_idx], prob))
-    #       f1_list.append(f1_score(y_all[test_idx], pred, zero_division=0))
-    #       p_list.append(precision_score(y_all[test_idx], pred, zero_division=0))
-    #       r_list.append(recall_score(y_all[test_idx], pred, zero_division=0))
-    #
-    #   summary = {
-    #       "config": config,
-    #       "auc_mean": float(np.mean(auc_list)),
-    #       "auc_std":  float(np.std(auc_list)),
-    #       "f1_mean":  float(np.mean(f1_list)),
-    #       "precision_mean": float(np.mean(p_list)),
-    #       "recall_mean":    float(np.mean(r_list)),
-    #   }
-    #   preds_df = pd.DataFrame(pred_rows, columns=PREDICTION_COLUMNS)
-    #   return preds_df, summary
+    auc_list, f1_list, p_list, r_list = [], [], [], []
+    pred_rows = []
 
-    raise NotImplementedError("TODO: implement run_one_config LOAO loop")
+    for train_idx, test_idx in logo.split(X_all, y_all, groups):
+        scaler  = StandardScaler()
+        X_train = scaler.fit_transform(X_all[train_idx])
+        X_test  = scaler.transform(X_all[test_idx])
+
+        clf = LogisticRegression(
+            class_weight="balanced", max_iter=2000, random_state=42,
+        )
+        clf.fit(X_train, y_all[train_idx])
+
+        prob = clf.predict_proba(X_test)[:, 1]
+        pred = (prob >= 0.5).astype(int)
+
+        fold_actor = int(groups[test_idx][0])
+        for pid, yt, pp, pl in zip(pair_ids[test_idx], y_all[test_idx], prob, pred):
+            pred_rows.append({
+                "pair_id":    pid,
+                "label":      int(yt),
+                "pred_prob":  round(float(pp), 6),
+                "pred_label": int(pl),
+                "config":     config,
+                "fold_actor": fold_actor,
+            })
+
+        # Skip folds where test set has only one class (AUC undefined)
+        if len(set(y_all[test_idx])) > 1:
+            auc_list.append(roc_auc_score(y_all[test_idx], prob))
+        f1_list.append(f1_score(y_all[test_idx], pred, zero_division=0))
+        p_list.append(precision_score(y_all[test_idx], pred, zero_division=0))
+        r_list.append(recall_score(y_all[test_idx], pred, zero_division=0))
+
+    summary = {
+        "config":          config,
+        "auc_mean":        round(float(np.mean(auc_list)),  4),
+        "auc_std":         round(float(np.std(auc_list)),   4),
+        "f1_mean":         round(float(np.mean(f1_list)),   4),
+        "precision_mean":  round(float(np.mean(p_list)),    4),
+        "recall_mean":     round(float(np.mean(r_list)),    4),
+    }
+    preds_df = pd.DataFrame(pred_rows, columns=PREDICTION_COLUMNS)
+    return preds_df, summary
 
 
 # ---------------------------------------------------------------------------
@@ -196,28 +199,24 @@ def run(scores_path: str, out_predictions: str, out_experiment: str) -> None:
     all_preds: list[pd.DataFrame] = []
     summaries: list[dict] = []
 
-    # TODO(Aniket): uncomment once run_one_config is implemented
     for cfg in CONFIGS:
         print(f"\n  Running config {cfg} ({len(CONFIG_FEATURES[cfg])} features)...")
-        # preds_df, summary = run_one_config(df, cfg)
-        # all_preds.append(preds_df)
-        # summaries.append(summary)
-        # print(f"    AUC={summary['auc_mean']:.4f} ± {summary['auc_std']:.4f}  "
-        #       f"F1={summary['f1_mean']:.4f}")
+        preds_df, summary = run_one_config(df, cfg)
+        all_preds.append(preds_df)
+        summaries.append(summary)
+        print(f"    AUC={summary['auc_mean']:.4f} ± {summary['auc_std']:.4f}  "
+              f"F1={summary['f1_mean']:.4f}  "
+              f"P={summary['precision_mean']:.4f}  R={summary['recall_mean']:.4f}")
 
-    if not all_preds:
-        print("TODO: implement run_one_config and remove this early exit")
-        sys.exit(0)
+    predictions_df = pd.concat(all_preds, ignore_index=True)
+    experiment_df  = pd.DataFrame(summaries, columns=EXPERIMENT_COLUMNS)
 
-    # predictions_df = pd.concat(all_preds, ignore_index=True)
-    # experiment_df  = pd.DataFrame(summaries, columns=EXPERIMENT_COLUMNS)
-    #
-    # os.makedirs(os.path.dirname(os.path.abspath(out_predictions)), exist_ok=True)
-    # predictions_df.to_csv(out_predictions, index=False)
-    # experiment_df.to_csv(out_experiment, index=False)
-    # print(f"\nWROTE {out_predictions} {len(predictions_df)} rows")
-    # print(f"WROTE {out_experiment}  {len(experiment_df)} rows")
-    # validate(out_predictions, out_experiment)
+    os.makedirs(os.path.dirname(os.path.abspath(out_predictions)), exist_ok=True)
+    predictions_df.to_csv(out_predictions, index=False)
+    experiment_df.to_csv(out_experiment, index=False)
+    print(f"\nWROTE {out_predictions} {len(predictions_df)} rows")
+    print(f"WROTE {out_experiment}  {len(experiment_df)} rows")
+    validate(out_predictions, out_experiment)
 
 
 # ---------------------------------------------------------------------------
