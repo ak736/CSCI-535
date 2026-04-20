@@ -78,37 +78,54 @@ METRIC_COLUMNS = [
     "f1_mean", "precision_mean", "recall_mean",
 ]
 
+PREDICTION_COLUMNS = ["pair_id", "label", "pred_prob", "pred_label", "config", "fold_actor"]
+PAIR_SCORE_COLUMNS = ["audio_emotion_4class", "video_emotion_4class", "label", "jsd_audio_video", "jsd_composite"]
+EMOTION_ORDER = ["happy", "angry", "sad", "neutral"]
+
 
 # ---------------------------------------------------------------------------
 # Metric helpers
 # ---------------------------------------------------------------------------
 
-def compute_metrics_per_config(preds_df: pd.DataFrame) -> pd.DataFrame:
-    """
-    For each config A-D, compute AUC (mean/std across folds) + F1/P/R at
-    Youden's-J-optimal threshold.
-    """
-    # TODO(Aaditya): implement using sklearn:
-    #   from sklearn.metrics import roc_auc_score, f1_score, precision_score, recall_score, roc_curve
-    #   For each config:
-    #     auc_per_fold = []
-    #     for fold_actor in preds_df["fold_actor"].unique():
-    #         subset = preds_df[(preds_df.config==cfg) & (preds_df.fold_actor==fold_actor)]
-    #         if subset["label"].nunique() < 2: continue   # skip degenerate folds
-    #         auc_per_fold.append(roc_auc_score(subset.label, subset.pred_prob))
-    #     auc_mean = np.mean(auc_per_fold); auc_std = np.std(auc_per_fold)
-    #
-    #     Pool all folds for this config, compute Youden's J threshold on ROC,
-    #     then P/R/F1 at that threshold.
-    raise NotImplementedError("TODO: implement compute_metrics_per_config")
+def require_columns(df: pd.DataFrame, required: list[str], name: str) -> None:
+    """Fail fast if a required CSV is missing columns."""
+    missing = [c for c in required if c not in df.columns]
+    if missing:
+        print(f"ERROR: {name} missing required columns {missing}", file=sys.stderr)
+        sys.exit(1)
+
+
+def sort_by_config(df: pd.DataFrame) -> pd.DataFrame:
+    """Sort rows in canonical ablation order A, B, C, D."""
+    out = df.copy()
+    out["config"] = pd.Categorical(out["config"], categories=CONFIGS, ordered=True)
+    out = out.sort_values("config").reset_index(drop=True)
+    out["config"] = out["config"].astype(str)
+    return out
+
+
+def compute_metrics_per_config(experiment_log_df: pd.DataFrame) -> pd.DataFrame:
+    """Use Step 5's experiment_log.csv as the canonical summary metrics."""
+    require_columns(experiment_log_df, METRIC_COLUMNS, "experiment_log")
+    metrics_df = sort_by_config(experiment_log_df[METRIC_COLUMNS])
+    if set(metrics_df["config"]) != set(CONFIGS):
+        print("ERROR: experiment_log config column != {A,B,C,D}", file=sys.stderr)
+        sys.exit(1)
+    if metrics_df.isna().sum().sum() != 0:
+        print("ERROR: experiment_log contains NaN values", file=sys.stderr)
+        sys.exit(1)
+    return metrics_df
 
 
 def compute_confusion_matrix(preds_df: pd.DataFrame, config: str) -> np.ndarray:
     """Binary confusion matrix (2x2) for the given config at threshold 0.5."""
-    # TODO(Aaditya): from sklearn.metrics import confusion_matrix
-    #   sub = preds_df[preds_df.config == config]
-    #   return confusion_matrix(sub.label, sub.pred_label)
-    raise NotImplementedError("TODO: implement compute_confusion_matrix")
+    from sklearn.metrics import confusion_matrix
+
+    sub = preds_df[preds_df["config"] == config]
+    if sub.empty:
+        print(f"ERROR: no prediction rows found for config {config}", file=sys.stderr)
+        sys.exit(1)
+    return confusion_matrix(sub["label"], sub["pred_label"], labels=[0, 1])
 
 
 # ---------------------------------------------------------------------------
@@ -123,73 +140,152 @@ def plot_roc_curves(preds_df: pd.DataFrame, out_path: str) -> None:
     plt.rcParams.update(RCPARAMS)
     fig, ax = plt.subplots(figsize=(6, 5.5))
 
-    # TODO(Aaditya): for each config in CONFIGS:
-    #   sub = preds_df[preds_df.config == cfg]
-    #   fpr, tpr, _ = roc_curve(sub.label, sub.pred_prob)
-    #   auc = roc_auc_score(sub.label, sub.pred_prob)
-    #   ax.plot(fpr, tpr, lw=2, label=f"Config {cfg} (AUC={auc:.3f})")
-    # ax.plot([0,1],[0,1], color=DIAG_COLOR, ls=":", lw=1.5)
-    # ax.set_xlabel("False Positive Rate")
-    # ax.set_ylabel("True Positive Rate")
-    # ax.set_title("ROC Curves — Ablation Configurations")
-    # ax.legend(loc="lower right", fontsize=10)
-    # fig.tight_layout()
-    # fig.savefig(out_path)
-    # plt.close(fig)
+    palette = [JS_COLOR, "#0F766E", "#7C3AED", BASE_COLOR]
+    for cfg, color in zip(CONFIGS, palette):
+        sub = preds_df[preds_df["config"] == cfg]
+        fpr, tpr, _ = roc_curve(sub["label"], sub["pred_prob"])
+        auc = roc_auc_score(sub["label"], sub["pred_prob"])
+        ax.plot(fpr, tpr, color=color, lw=2.2, label=f"Config {cfg} (AUC={auc:.3f})")
 
-    print(f"TODO: implement plot_roc_curves → {out_path}")
+    ax.plot([0, 1], [0, 1], color=DIAG_COLOR, ls=":", lw=1.5)
+    ax.set_xlim(-0.02, 1.02)
+    ax.set_ylim(-0.02, 1.05)
+    ax.set_xlabel("False Positive Rate")
+    ax.set_ylabel("True Positive Rate")
+    ax.set_title("ROC Curves — Ablation Configurations")
+    ax.legend(loc="lower right", fontsize=10, framealpha=0.9)
+    fig.tight_layout()
+    fig.savefig(out_path)
     plt.close(fig)
 
 
 def plot_ablation_delta(log_df: pd.DataFrame, out_path: str) -> None:
     """Bar chart showing AUC increase going from A → B → C → D."""
     import matplotlib.pyplot as plt
+    import seaborn as sns
 
     plt.rcParams.update(RCPARAMS)
     fig, ax = plt.subplots(figsize=(6, 4.5))
 
-    # TODO(Aaditya): bar chart of log_df["auc_mean"] across configs,
-    # annotate delta between successive configs.
-    print(f"TODO: implement plot_ablation_delta → {out_path}")
+    plot_df = sort_by_config(log_df[["config", "auc_mean"]])
+    sns.barplot(data=plot_df, x="config", y="auc_mean", color=JS_COLOR, ax=ax)
+
+    for idx, row in plot_df.iterrows():
+        ax.text(idx, row["auc_mean"] + 0.006, f"{row['auc_mean']:.3f}",
+                ha="center", va="bottom", fontsize=10)
+        if idx > 0:
+            delta = row["auc_mean"] - plot_df.loc[idx - 1, "auc_mean"]
+            ax.text(idx - 0.5, max(row["auc_mean"], plot_df.loc[idx - 1, "auc_mean"]) + 0.02,
+                    f"+{delta:.3f}", ha="center", va="bottom", fontsize=9, color="#374151")
+
+    ax.set_ylim(0.0, max(0.7, float(plot_df["auc_mean"].max()) + 0.08))
+    ax.set_xlabel("Configuration")
+    ax.set_ylabel("Mean ROC-AUC")
+    ax.set_title("Ablation Study — Mean ROC-AUC by Configuration")
+    fig.tight_layout()
+    fig.savefig(out_path)
     plt.close(fig)
 
 
 def plot_emotion_pair_heatmap(pair_scores_df: pd.DataFrame, out_path: str) -> None:
     """Heatmap of mean jsd_audio_video by (audio_emotion_4class, video_emotion_4class)."""
     import matplotlib.pyplot as plt
+    import seaborn as sns
 
     plt.rcParams.update(RCPARAMS)
     fig, ax = plt.subplots(figsize=(6, 5))
 
-    # TODO(Aaditya): pivot_table on pair_scores with
-    #   index="audio_emotion_4class", columns="video_emotion_4class",
-    #   values="jsd_audio_video", aggfunc="mean"
-    # Then ax.imshow with colormap, annotate values.
-    print(f"TODO: implement plot_emotion_pair_heatmap → {out_path}")
+    heatmap_df = pair_scores_df.pivot_table(
+        index="audio_emotion_4class",
+        columns="video_emotion_4class",
+        values="jsd_audio_video",
+        aggfunc="mean",
+    ).reindex(index=EMOTION_ORDER, columns=EMOTION_ORDER)
+
+    sns.heatmap(
+        heatmap_df,
+        annot=True,
+        fmt=".3f",
+        cmap="Blues",
+        linewidths=0.5,
+        cbar_kws={"label": "Mean JSD"},
+        ax=ax,
+    )
+    ax.set_xlabel("Video emotion")
+    ax.set_ylabel("Audio emotion")
+    ax.set_title("Mean Audio-Video JSD by Emotion Pair")
+    fig.tight_layout()
+    fig.savefig(out_path)
     plt.close(fig)
 
 
 def plot_confusion_matrix(cm: np.ndarray, out_path: str) -> None:
     """Binary 2x2 confusion matrix heatmap (congruent/incongruent)."""
     import matplotlib.pyplot as plt
+    import seaborn as sns
 
     plt.rcParams.update(RCPARAMS)
     fig, ax = plt.subplots(figsize=(5, 4.5))
 
-    # TODO(Aaditya): imshow(cm) with ticks ["congruent","incongruent"]
-    print(f"TODO: implement plot_confusion_matrix → {out_path}")
+    sns.heatmap(
+        cm,
+        annot=True,
+        fmt="d",
+        cmap="Blues",
+        cbar=False,
+        xticklabels=["Congruent", "Incongruent"],
+        yticklabels=["Congruent", "Incongruent"],
+        ax=ax,
+    )
+    ax.set_xlabel("Predicted label")
+    ax.set_ylabel("True label")
+    ax.set_title("Confusion Matrix")
+    fig.tight_layout()
+    fig.savefig(out_path)
     plt.close(fig)
 
 
 def plot_score_distribution(pair_scores_df: pd.DataFrame, out_path: str) -> None:
     """Violin/box plot of jsd_composite split by label (0 congruent, 1 incongruent)."""
     import matplotlib.pyplot as plt
+    import seaborn as sns
 
     plt.rcParams.update(RCPARAMS)
     fig, ax = plt.subplots(figsize=(6, 4.5))
 
-    # TODO(Aaditya): ax.violinplot([scores_0, scores_1]) or box; label ticks.
-    print(f"TODO: implement plot_score_distribution → {out_path}")
+    plot_df = pair_scores_df[["label", "jsd_composite"]].copy()
+    plot_df["pair_label"] = plot_df["label"].map({0: "Congruent", 1: "Incongruent"})
+
+    sns.violinplot(
+        data=plot_df,
+        x="pair_label",
+        y="jsd_composite",
+        hue="pair_label",
+        palette=[BASE_COLOR, JS_COLOR],
+        inner=None,
+        cut=0,
+        legend=False,
+        ax=ax,
+    )
+    sns.boxplot(
+        data=plot_df,
+        x="pair_label",
+        y="jsd_composite",
+        hue="pair_label",
+        width=0.25,
+        showfliers=False,
+        dodge=False,
+        legend=False,
+        boxprops={"facecolor": "white", "alpha": 0.8},
+        whiskerprops={"linewidth": 1.2},
+        medianprops={"color": "#111827", "linewidth": 2},
+        ax=ax,
+    )
+    ax.set_xlabel("")
+    ax.set_ylabel("Composite JSD Score")
+    ax.set_title("Composite JSD by Pair Label")
+    fig.tight_layout()
+    fig.savefig(out_path)
     plt.close(fig)
 
 
@@ -211,6 +307,10 @@ def run(predictions_path: str, experiment_log_path: str, pair_scores_path: str,
     experiment_log = pd.read_csv(experiment_log_path)
     pair_scores_df = pd.read_csv(pair_scores_path)
 
+    require_columns(preds_df, PREDICTION_COLUMNS, "predictions")
+    require_columns(experiment_log, METRIC_COLUMNS, "experiment_log")
+    require_columns(pair_scores_df, PAIR_SCORE_COLUMNS, "pair_scores")
+
     print(f"  predictions    : {len(preds_df)} rows")
     print(f"  experiment_log : {len(experiment_log)} rows")
     print(f"  pair_scores    : {len(pair_scores_df)} rows")
@@ -218,26 +318,22 @@ def run(predictions_path: str, experiment_log_path: str, pair_scores_path: str,
     os.makedirs(os.path.dirname(os.path.abspath(out_metrics_path)), exist_ok=True)
     os.makedirs(plots_dir, exist_ok=True)
 
-    # TODO(Aaditya): uncomment once metric helpers are implemented
-    # metrics_df = compute_metrics_per_config(preds_df)
-    # metrics_df = metrics_df[METRIC_COLUMNS]
-    # metrics_df.to_csv(out_metrics_path, index=False)
-    # print(f"WROTE {out_metrics_path} {len(metrics_df)} rows")
-    #
-    # best_config = metrics_df.loc[metrics_df["auc_mean"].idxmax(), "config"]
-    # print(f"  best config (by AUC): {best_config}")
-    # cm = compute_confusion_matrix(preds_df, best_config)
+    metrics_df = compute_metrics_per_config(experiment_log)
+    metrics_df.to_csv(out_metrics_path, index=False)
+    print(f"WROTE {out_metrics_path} {len(metrics_df)} rows")
 
-    print("TODO: implement — uncomment compute_metrics + plot calls")
+    best_config = metrics_df.loc[metrics_df["auc_mean"].idxmax(), "config"]
+    print(f"  best config (by AUC): {best_config}")
+    cm = compute_confusion_matrix(preds_df, best_config)
 
     # Plots
     plot_roc_curves(preds_df, os.path.join(plots_dir, "roc_curves.png"))
-    plot_ablation_delta(experiment_log, os.path.join(plots_dir, "ablation_delta.png"))
+    plot_ablation_delta(metrics_df, os.path.join(plots_dir, "ablation_delta.png"))
     plot_emotion_pair_heatmap(pair_scores_df, os.path.join(plots_dir, "emotion_pair_heatmap.png"))
-    # plot_confusion_matrix(cm, os.path.join(plots_dir, "confusion_matrix.png"))
+    plot_confusion_matrix(cm, os.path.join(plots_dir, "confusion_matrix.png"))
     plot_score_distribution(pair_scores_df, os.path.join(plots_dir, "score_distribution.png"))
 
-    # validate(out_metrics_path)
+    validate(out_metrics_path)
 
 
 # ---------------------------------------------------------------------------
