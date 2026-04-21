@@ -71,7 +71,7 @@ RCPARAMS = {
     "axes.labelsize": 12,
 }
 
-CONFIGS = ["A", "B", "C", "D"]
+CONFIGS = ["A", "B", "C", "D", "E"]
 
 METRIC_COLUMNS = [
     "config", "auc_mean", "auc_std",
@@ -105,11 +105,14 @@ def sort_by_config(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def compute_metrics_per_config(experiment_log_df: pd.DataFrame) -> pd.DataFrame:
-    """Use Step 5's experiment_log.csv as the canonical summary metrics."""
+    """Filter experiment_log to CONFIGS rows and sort in canonical order."""
     require_columns(experiment_log_df, METRIC_COLUMNS, "experiment_log")
-    metrics_df = sort_by_config(experiment_log_df[METRIC_COLUMNS])
-    if set(metrics_df["config"]) != set(CONFIGS):
-        print("ERROR: experiment_log config column != {A,B,C,D}", file=sys.stderr)
+    # Keep only the primary configs (ignore C_bal, E_bal, C_no_happy, etc.)
+    metrics_df = experiment_log_df[experiment_log_df["config"].isin(CONFIGS)][METRIC_COLUMNS].copy()
+    metrics_df = sort_by_config(metrics_df)
+    missing = set(CONFIGS) - set(metrics_df["config"])
+    if missing:
+        print(f"ERROR: experiment_log missing configs {missing}", file=sys.stderr)
         sys.exit(1)
     if metrics_df.isna().sum().sum() != 0:
         print("ERROR: experiment_log contains NaN values", file=sys.stderr)
@@ -140,7 +143,7 @@ def plot_roc_curves(preds_df: pd.DataFrame, out_path: str) -> None:
     plt.rcParams.update(RCPARAMS)
     fig, ax = plt.subplots(figsize=(6, 5.5))
 
-    palette = [JS_COLOR, "#0F766E", "#7C3AED", BASE_COLOR]
+    palette = [JS_COLOR, "#0F766E", "#7C3AED", BASE_COLOR, "#EA580C"]
     for cfg, color in zip(CONFIGS, palette):
         sub = preds_df[preds_df["config"] == cfg]
         fpr, tpr, _ = roc_curve(sub["label"], sub["pred_prob"])
@@ -350,9 +353,9 @@ def validate(metrics_path: str) -> None:
     assert len(df) == len(CONFIGS), f"expected {len(CONFIGS)} rows, got {len(df)}"
     assert list(df.columns) == METRIC_COLUMNS, f"column mismatch: {list(df.columns)}"
     assert df.isna().sum().sum() == 0, "NaN values present"
-    assert set(df["config"].tolist()) == set(CONFIGS), "config column != {A,B,C,D}"
+    assert set(df["config"].tolist()) == set(CONFIGS), f"config column != {set(CONFIGS)}"
 
-    print("  OK — 4 configs, all metrics present, no NaN")
+    print(f"  OK — {len(CONFIGS)} configs, all metrics present, no NaN")
 
 
 # ---------------------------------------------------------------------------
@@ -364,10 +367,10 @@ def main() -> None:
         description="Compute evaluation metrics + render all Phase 2 plots",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
-    parser.add_argument("--predictions",    default="phase2_ravdess/predictions/predictions.csv")
-    parser.add_argument("--experiment_log", default="phase2_ravdess/predictions/experiment_log.csv")
-    parser.add_argument("--pair_scores",    default="phase2_ravdess/scores/pair_scores.csv")
-    parser.add_argument("--out_metrics",    default="phase2_ravdess/results/evaluation_metrics.csv")
+    parser.add_argument("--predictions",    default="phase2_ravdess/predictions/predictions_improved.csv")
+    parser.add_argument("--experiment_log", default="phase2_ravdess/predictions/experiment_log_improved.csv")
+    parser.add_argument("--pair_scores",    default="phase2_ravdess/scores/pair_scores_calibrated.csv")
+    parser.add_argument("--out_metrics",    default="phase2_ravdess/results/evaluation_metrics_improved.csv")
     parser.add_argument("--plots_dir",      default="phase2_ravdess/results/plots")
     parser.add_argument("--validate_only", action="store_true")
     args = parser.parse_args()
