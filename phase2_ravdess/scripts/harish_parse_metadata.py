@@ -2,9 +2,6 @@
 """
 harish_parse_metadata.py — Phase 2 Step 1 (Harish)
 
-OWNER: Harish
-STEP : 1 (Day 1) — runs FIRST, blocks everyone else
-
 Parse every RAVDESS audio-only .wav filename into a structured metadata
 table. The RAVDESS filename encodes a 7-part identifier:
 
@@ -26,8 +23,6 @@ RUN:
     python3 phase2_ravdess/scripts/harish_parse_metadata.py \\
         --audio_root Datasets/ravdess/audio_speech \\
         --out        phase2_ravdess/metadata/ravdess_metadata.csv
-
-DOWNSTREAM CONSUMERS: Charan (Step 2a), Aaditya (Step 2b), Harish (Step 2c, 3)
 """
 
 import argparse

@@ -2,9 +2,6 @@
 """
 aniket_classifier.py — Phase 2 Step 5 (Aniket)
 
-OWNER: Aniket
-STEP : 5 (Day 5-6) — WAITS for Charan Step 4 (pair_scores.csv)
-
 Train a binary classifier (congruent vs incongruent) with leave-one-actor-out
 24-fold cross-validation and 4 ablation configurations.
 
@@ -20,7 +17,7 @@ ABLATION CONFIGURATIONS:
     D:  C + p_text_* (4) + intensity + gender (one-hot)                            (17 features)
 
 INPUT:
-    phase2_ravdess/scores/pair_scores.csv  (from Charan Step 4)
+    phase2_ravdess/scores/pair_scores.csv
 
 OUTPUTS:
     phase2_ravdess/predictions/predictions.csv       — per-row predictions
@@ -34,8 +31,6 @@ RUN:
         --scores          phase2_ravdess/scores/pair_scores.csv \\
         --out_predictions phase2_ravdess/predictions/predictions.csv \\
         --out_experiment  phase2_ravdess/predictions/experiment_log.csv
-
-DOWNSTREAM CONSUMER: Aaditya Step 6 (evaluation + plots)
 """
 
 import argparse

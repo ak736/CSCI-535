@@ -2,9 +2,6 @@
 """
 aaditya_evaluate_and_plot.py — Phase 2 Step 6 (Aaditya)
 
-OWNER: Aaditya
-STEP : 6 (Day 6-7) — WAITS for Aniket Step 5 (predictions.csv, experiment_log.csv)
-
 Compute final evaluation metrics per ablation config and render all plots.
 
 Metrics per config (A, B, C, D):
@@ -13,21 +10,16 @@ Metrics per config (A, B, C, D):
     - Confusion matrix
 
 Plots (into phase2_ravdess/results/plots/):
-    - roc_curves.png           — overlaid ROC curves for configs A-D with AUC in legend
+    - roc_curves.png           — overlaid ROC curves for configs A-E with AUC in legend
     - ablation_delta.png       — bar chart of AUC gain per added feature group
     - emotion_pair_heatmap.png — heatmap by (audio_emotion, video_emotion)
     - confusion_matrix.png     — best config binary confusion matrix
     - score_distribution.png   — JSD distributions for congruent vs incongruent pairs
 
-Matplotlib style MATCHES Phase 1 (phase1/scripts/plot_results.py):
-    JS_COLOR   = "#2563EB"  (blue)
-    BASE_COLOR = "#DC2626"  (red)
-    monospace for formulas, publication quality, no icons.
-
 INPUTS:
-    phase2_ravdess/predictions/predictions.csv       (from Aniket Step 5)
-    phase2_ravdess/predictions/experiment_log.csv    (from Aniket Step 5)
-    phase2_ravdess/scores/pair_scores.csv            (for score distributions)
+    phase2_ravdess/predictions/predictions.csv
+    phase2_ravdess/predictions/experiment_log.csv
+    phase2_ravdess/scores/pair_scores.csv
 
 OUTPUTS:
     phase2_ravdess/results/evaluation_metrics.csv
@@ -52,7 +44,7 @@ import pandas as pd
 np.random.seed(42)
 
 # ---------------------------------------------------------------------------
-# Plot style (Phase 1 — do not change)
+# Plot style
 # ---------------------------------------------------------------------------
 
 JS_COLOR   = "#2563EB"  # blue

@@ -2,9 +2,6 @@
 """
 harish_text_emotion.py — Phase 2 Step 2c (Harish)
 
-OWNER: Harish
-STEP : 2c (Day 2) — parallel with Charan Step 2a and Aaditya Step 2b
-
 RAVDESS actors read only 2 fixed sentences. We therefore only need to
 predict emotion probabilities on those 2 sentences — not on every clip.
 
@@ -12,7 +9,6 @@ predict emotion probabilities on those 2 sentences — not on every clip.
     Statement 2: "Dogs are sitting by the door"
 
 MODEL: j-hartmann/emotion-english-distilroberta-base
-       (same model as Phase 1 — see phase1/harish/harish_segmentation_and_text.py)
 
 The model returns 7 labels (joy, anger, sadness, neutral, disgust, fear,
 surprise). We collapse them to our 4-class space via LABEL_TO_FOUR, then
@@ -30,8 +26,6 @@ OUTPUT:
 RUN:
     python3 phase2_ravdess/scripts/harish_text_emotion.py \\
         --out phase2_ravdess/emotions/text_emotions.csv
-
-DOWNSTREAM CONSUMER: Harish (Step 3 pair-building — looks up by statement)
 """
 
 import argparse
@@ -77,7 +71,7 @@ OUTPUT_COLUMNS = ["statement", "sentence"] + OUTPUT_LABELS
 # ---------------------------------------------------------------------------
 
 def load_text_pipeline():
-    """Load the distilroberta emotion classification pipeline (Phase 1 pattern)."""
+    """Load the distilroberta emotion classification pipeline."""
     try:
         from transformers import pipeline
     except ImportError as e:
@@ -104,8 +98,6 @@ def predict_text_probs(pipe, sentence: str) -> dict:
     """
     Run the pipeline on a sentence, collapse 7 labels → 4-class, renormalize.
     Returns dict with keys p_happy, p_angry, p_sad, p_neutral (sum to 1.0).
-
-    Same logic as phase1/harish/harish_segmentation_and_text.py run_part2_embeddings.
     """
     if not (sentence or "").strip():
         return {k: 0.25 for k in OUTPUT_LABELS}

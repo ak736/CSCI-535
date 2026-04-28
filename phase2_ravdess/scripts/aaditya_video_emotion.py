@@ -2,25 +2,21 @@
 """
 aaditya_video_emotion.py — Phase 2 Step 2b (Aaditya)
 
-OWNER: Aaditya
-STEP : 2b (Day 2-3) — parallel with Charan Step 2a and Harish Step 2c
-
 Map pre-extracted OpenFace AU features to emotion probabilities.
 
 NOTE — NO py-feat, NO OpenFace execution needed. The RAVDESS Facial
 Landmark Tracking dataset ships per-trial tracking CSVs with frame-level
 AU intensities (OpenFace 2.1.0 output). We just read them.
 
-FACS mapping (copied from phase1/scripts/run_video_emotion.py):
+FACS mapping:
     happy:   AU06 (cheek raiser) + AU12 (lip corner puller)
     angry:   AU04 + AU17 + AU25
     sad:     AU01 + AU04 + AU15
     neutral: inverse of total AU activation
 
 INPUTS:
-    phase2_ravdess/metadata/ravdess_metadata.csv                  (from Step 1)
-    Datasets/ravdess/facial_tracking/*.csv                        (pre-extracted)
-    Datasets/ravdess/facial_tracking/Actor_XX/*.csv               (also supported)
+    phase2_ravdess/metadata/ravdess_metadata.csv
+    Datasets/ravdess/facial_tracking/*.csv  (pre-extracted, also Actor_XX/ layout)
 
 FILENAME MATCHING:
     Audio wav    = 03-01-05-02-01-01-08.wav    (modality=03 audio-only)
@@ -40,8 +36,6 @@ RUN:
         --metadata     phase2_ravdess/metadata/ravdess_metadata.csv \\
         --tracking_root Datasets/ravdess/facial_tracking \\
         --out          phase2_ravdess/emotions/video_emotions.csv
-
-DOWNSTREAM CONSUMER: Harish Step 3 (pair building)
 """
 
 import argparse
@@ -80,7 +74,7 @@ UNIFORM_PROBS = {"p_happy": 0.25, "p_angry": 0.25, "p_sad": 0.25, "p_neutral": 0
 
 
 # ---------------------------------------------------------------------------
-# FACS mapping (COPIED VERBATIM from phase1/scripts/run_video_emotion.py)
+# FACS mapping
 # ---------------------------------------------------------------------------
 
 def au_to_emotion_scores(row: dict) -> tuple[float, float, float, float]:

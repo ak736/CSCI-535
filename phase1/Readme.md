@@ -1,476 +1,156 @@
 # Beyond Fusion: Text vs Audio Incongruence (Phase 1)
 
-## Project Goal
+**CSCI 535 — Multimodal Probabilistic Learning | University of Southern California**
 
-Build a **segment-level Text vs Audio Incongruence Scorer** that detects when a speaker's words disagree with their vocal tone.
-
-**Example:**
-
-> Transcript: "That's fine."
-> Tone: Angry
-> → High incongruence
-
-This is the first implementation phase of the broader Communication Instability Modeling project.
+Detect when a speaker's words emotionally disagree with their vocal tone using Jensen–Shannon divergence over emotion probability distributions.
 
 ---
 
-## Phase 1 Scope (Strict)
+## Team
 
-**We are building:**
-
-- Speaker-aware segmentation
-- Text emotion prediction
-- Audio emotion prediction
-- Jensen–Shannon (JS) divergence scorer
-- CSV output with timestamps and scores
-
-**We are NOT building:**
-
-- Visual modeling
-- Interaction imbalance modeling
-- UI / dashboard
-- Complex fusion architectures
+| Name | Role |
+|------|------|
+| Aniket Kumar | Audio emotion model, merge pipeline, incongruence scoring |
+| Harish Dukkipati | Segmentation, text emotion model |
+| Charan Kumar D. | Speaker diarization |
+| Aaditya Patil | WhisperX transcription, video emotion pipeline |
 
 ---
 
-## System Architecture
+## Dataset
+
+**AMI Meeting Corpus** — 12 meetings: ES2002a-d, ES2003a-d, ES2004a-d
+Located at: `Datasets/amicorpus/<meeting_id>/audio/`
+
+---
+
+## Pipeline
 
 ```
 Audio File
     ↓
-Speaker Diarization
+[Step 1] Speaker Diarization  (charan_diarization.py)
     ↓
-WhisperX Transcription (aligned timestamps)
+[Step 2] WhisperX Transcription  (aaditya_whisperx.py)
     ↓
-Fixed-Length Segmentation (3s window, 1.5s hop)
+[Step 3] Merge Diarization + Transcript  (aniket_merge.py)
     ↓
-Text Emotion Model → P_text       Audio Emotion Model → P_audio
-    ↓                                       ↓
-              Probability Calibration
-                    ↓
-              Confidence Weighting
-                    ↓
-              JS Divergence
-                    ↓
-          Incongruence Score
-                    ↓
-              CSV Output
+[Step 4/5] Fixed-Length Segmentation + Text Emotion  (harish_segmentation_and_text.py)
+    ↓
+[Step 6] Audio Emotion  (aniket_audio_emotion.py)
+    ↓
+[Step 7] JS Divergence Incongruence Scoring  (aniket_incongruence.py)
+    ↓
+outputs/incongruence/ESXXXX_scores.csv
 ```
 
 ---
 
-## Emotion Label Space (Fixed)
+## Scripts
 
-For Phase 1, we use a **fixed, shared label space** across all modalities:
+| Step | Script | Output |
+|------|--------|--------|
+| 1 | `charan/charan_diarization.py` | `outputs/diarization/ESXXXX_diarization.csv` |
+| 2 | `aaditya/aaditya_whisperx.py` | `outputs/transcripts/ESXXXX_transcript.csv` |
+| 3 | `aniket/aniket_merge.py` | `outputs/merged/ESXXXX_merged.csv` |
+| 4+5 | `harish/harish_segmentation_and_text.py` | `outputs/segments/`, `outputs/embeddings/ESXXXX_text_emotions.csv` |
+| 6 | `aniket/aniket_audio_emotion.py` | `outputs/embeddings/ESXXXX_audio_emotions.csv` |
+| 7 | `aniket/aniket_incongruence.py` | `outputs/incongruence/ESXXXX_scores.csv` |
 
-```
-E = {happy, angry, sad, neutral}
-```
-
-All modalities **MUST** output a probability distribution over this exact set.
-
-**Why this matters:**
-
-- JS divergence requires aligned distributions — mismatched label spaces will silently produce wrong results.
-- Enforcing this upfront prevents hidden mismatch errors downstream.
-
-> ⚠️ Any pretrained model whose output space differs from `E` must be mapped or re-trained before use.
+Bash wrappers for batch runs are in `scripts/`.
 
 ---
 
-## Emotion Modeling
+## Technical Decisions
 
-### Text Emotion Model
+**Emotion label space:** `E = {happy, angry, sad, neutral}` — fixed across all modalities so JSD operates on aligned distributions.
 
-| Option             | Description                               |
-| ------------------ | ----------------------------------------- |
-| **A (fast start)** | Pretrained HuggingFace emotion classifier |
-| **B**              | DistilBERT + small classifier head        |
+**Text model:** `j-hartmann/emotion-english-distilroberta-base` — 7 raw labels collapsed to 4 (disgust/fear/surprise → neutral).
 
-**Output per segment:**
+**Audio model:** `superb/wav2vec2-large-superb-er` — SUPERB labels hap/ang/sad/neu map 1:1 to our space. Loaded via `AutoFeatureExtractor + AutoModelForAudioClassification` (bypasses torchcodec/FFmpeg dependency).
 
+**Speaker→headset mapping:** RMS energy analysis across Headset-0 to Headset-3 WAV files. Each speaker is assigned to the headset where they are loudest (~10× energy vs distant voices). Falls back to Mix-Headset if individual headsets unavailable.
+
+**Segmentation:** 3s window, 1.5s hop, drop <3 words, drop multi-speaker windows.
+
+**Incongruence score:**
 ```
-P_text = [p(happy), p(angry), p(sad), p(neutral)]
-```
+M = 0.5 × (P_text + P_audio)
+JS(P_text, P_audio) = 0.5 × KL(P_text ‖ M) + 0.5 × KL(P_audio ‖ M)
+normalized to [0, 1] by dividing by log(2)
 
-**Deliverable:**
-
-```
-models/text_emotion.py
+final_score = JS(P_text, P_audio) × asr_confidence
 ```
 
 ---
 
-### Audio Emotion Model
+## Running the Pipeline
 
-| Option | Description                              |
-| ------ | ---------------------------------------- |
-| **A**  | OpenSMILE features + logistic regression |
-| **B**  | Wav2Vec2 embeddings + classifier         |
+```bash
+cd "CSCI 535 MPL/Implementation"
+source venv/bin/activate
 
-**Output per segment:**
-
-```
-P_audio = [p(happy), p(angry), p(sad), p(neutral)]
-```
-
-**Deliverable:**
-
-```
-models/audio_emotion.py
+# Run all 12 meetings (Steps 1-7)
+bash scripts/run_diarization.sh
+bash scripts/run_whisperx.sh
+bash scripts/run_merge.sh
+python3 harish/harish_segmentation_and_text.py --merged ... --part ESXXXX --out_dir outputs
+bash scripts/run_audio_emotion.sh
+bash scripts/run_incongruence.sh
 ```
 
 ---
 
-### Probability Calibration
+## Results
 
-Before computing JS divergence, both distributions must be calibrated to avoid overconfident predictions that artificially inflate divergence scores.
+**12,076 segments scored** across all 12 meetings.
 
-Apply one of:
-
-- **Softmax temperature scaling** — smooths overconfident peaks
-- **Output normalization** — re-normalize so probabilities sum to 1
-
-```python
-# Temperature scaling example (T > 1 softens, T < 1 sharpens)
-P_calibrated = softmax(logits / T)
-```
-
-> ⚠️ Skipping calibration can cause the scorer to detect model overconfidence rather than genuine incongruence.
+| Metric | Value |
+|--------|-------|
+| Mean final_score | 0.1600 |
+| Max final_score | 0.7797 |
+| High incongruence (≥ 0.5) | 638 segments (5.3%) |
 
 ---
 
-### Confidence Handling
+## Annotation & Evaluation
 
-Real systems degrade due to noisy ASR output or weak audio signals. Apply the following rules before scoring:
+**180 segments** hand-labeled by 3 annotators (majority vote ground truth).
 
-| Condition                  | Action                         |
-| -------------------------- | ------------------------------ |
-| ASR confidence < threshold | Downweight text modality       |
-| Audio energy < threshold   | Mark segment as low-confidence |
-| Both below threshold       | Skip segment entirely          |
+| Label | Count | Share |
+|-------|-------|-------|
+| Aligned (0) | 162 | 89.4% |
+| Incongruent (1) | 18 | 10.6% |
 
-**Weighted scoring formula:**
+| Method | ROC-AUC | Precision | Recall | F1 | Krippendorff's α |
+|--------|---------|-----------|--------|-----|-----------------|
+| JS Divergence (ours) | **0.6351** | 0.1500 | 0.5000 | 0.2308 | **0.6222** |
+| Valence Difference (baseline) | 0.5381 | 0.0545 | 0.1667 | 0.0822 | 0.6222 |
 
-```
-final_score = JS(P_text, P_audio) × confidence_weight
-```
+JS divergence outperforms the baseline by +0.097 AUC and +0.149 F1. Krippendorff's α = 0.622 (acceptable inter-rater agreement).
 
-Where `confidence_weight ∈ [0, 1]` is derived from ASR and audio energy signals.
+**Re-run evaluation:**
+```bash
+source venv/bin/activate
 
-This prevents the scorer from detecting noise as incongruence.
+python3 scripts/evaluate_detector.py \
+  --annotations annotations/annotated_segments.csv \
+  --scores      annotations/annotation_sample.csv \
+  --out         results/evaluation_metrics.csv
 
----
-
-## Implementation Steps
-
-### Step 1: Dataset Setup
-
-**Primary dataset:** AMI Meeting Corpus
-**Backup:** IEMOCAP
-
-**Tasks:**
-
-- Download dataset
-- Extract audio files
-- Organize into `/data/raw/`
-
-**Deliverable:**
-
-```
-data/raw/
+python3 scripts/evaluate_detector.py \
+  --annotations annotations/annotated_segments.csv \
+  --scores      annotations/baseline_scores.csv \
+  --out         results/baseline_metrics.csv
 ```
 
 ---
 
-### Step 2: Speaker Diarization
+## Video Emotion Pipeline (Aaditya)
 
-**Tool:** `pyannote.audio`
+Extends the incongruence scorer with a visual emotion modality from AMI per-participant closeup videos.
 
-**Goal:** Identify speaker segments with timestamps.
-
-**Output format:**
-
-```
-segment_id | start | end | speaker_id
-```
-
-**Deliverable:**
-
-```
-data/processed/diarization.csv
-```
-
----
-
-### Step 3: Transcription & Alignment
-
-**Tool:** WhisperX
-
-**Goal:** Generate word-aligned transcripts with timestamps and ASR confidence scores.
-
-**Output format:**
-
-```
-segment_id | speaker | start | end | transcript | asr_confidence
-```
-
-**Deliverable:**
-
-```
-data/processed/transcripts.csv
-```
-
----
-
-### Step 4: Fixed-Length Segmentation
-
-Create overlapping windows:
-
-- **Window size:** 3 seconds
-- **Hop size:** 1.5 seconds
-
-**Segment Filtering Rules:**
-
-| Rule                                      | Reason                                 |
-| ----------------------------------------- | -------------------------------------- |
-| Remove segments < 1.5 seconds             | Too short to extract reliable features |
-| Remove segments with < 3 spoken words     | Insufficient text signal               |
-| Remove multi-speaker overlapping segments | Diarization ambiguity                  |
-| Keep only single-speaker windows          | Ensures clean per-speaker scoring      |
-
-**Deliverable:**
-
-```
-data/processed/segments.csv
-```
-
----
-
-## Incongruence Scoring
-
-### Jensen–Shannon Divergence (Exact Definition)
-
-For distributions **P** (text) and **Q** (audio):
-
-```
-M = 0.5 × (P + Q)
-
-JS(P, Q) = 0.5 × KL(P ‖ M) + 0.5 × KL(Q ‖ M)
-```
-
-Where KL divergence is computed using **natural log**.
-
-**Range:** `[0, log(2)]` → normalized to `[0, 1]`
-
-> JS divergence is symmetric and always finite, making it well-suited for comparing probability distributions.
-
----
-
-### Scoring Pipeline
-
-For each segment:
-
-1. **Obtain** calibrated distributions from both models:
-
-   ```
-   P_text,  P_audio
-   ```
-
-2. **Apply** confidence weighting:
-
-   ```
-   confidence_weight = f(asr_confidence, audio_energy)
-   ```
-
-3. **Compute** JS divergence:
-
-   ```
-   JS(P_text, P_audio)
-   ```
-
-4. **Apply** confidence weight:
-
-   ```
-   final_score = JS(P_text, P_audio) × confidence_weight
-   ```
-
-5. **Save** output:
-   ```
-   timestamp | speaker | transcript | incongruence_score | confidence_weight
-   ```
-
-**Deliverable:**
-
-```
-models/incongruence.py
-```
-
----
-
-## Validation Plan
-
-### Annotation Protocol
-
-Annotators are presented with both the audio clip and the transcript simultaneously and asked:
-
-> _"Do the speaker's words and tone express the same emotional intent?"_
-
-**Labels:**
-
-| Label | Meaning                               |
-| ----- | ------------------------------------- |
-| `0`   | Aligned — words and tone match        |
-| `1`   | Incongruent — words and tone conflict |
-
-**Process:**
-
-- Sample **200–300 segments**
-- **3 independent annotators** per segment
-- Final label = **majority vote**
-- Compute **Krippendorff's alpha** for inter-rater agreement
-
----
-
-### Baseline Comparison
-
-We compare two methods to establish whether JS divergence outperforms a simpler heuristic:
-
-| Method                            | Description                                |
-| --------------------------------- | ------------------------------------------ |
-| **JS Divergence** (primary)       | Full distributional comparison over `E`    |
-| **Valence Difference** (baseline) | `score = \|valence_text − valence_audio\|` |
-
-Both methods are evaluated against human annotations. Results reported in `evaluation_metrics.csv`.
-
----
-
-### Evaluation Metrics
-
-| Metric               | Target   |
-| -------------------- | -------- |
-| ROC-AUC              | ≥ 0.75   |
-| Precision            | Reported |
-| Recall               | Reported |
-| F1                   | Reported |
-| Krippendorff's Alpha | Reported |
-
-**Deliverable:**
-
-```
-results/evaluation_metrics.csv
-```
-
----
-
-## Reproducibility
-
-To ensure experiments are replicable:
-
-- Fix **random seeds** across all models and splits
-- Log **model versions** and hyperparameters
-- Save **all intermediate CSV outputs** at each pipeline stage
-- Track experiments using **Weights & Biases** or a local CSV experiment log
-
-```
-results/
-├── evaluation_metrics.csv
-├── experiment_log.csv
-└── annotations/
-    └── annotated_segments.csv
-```
-
----
-
-## Repository Structure
-
-```
-project/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│       ├── diarization.csv
-│       ├── transcripts.csv
-│       └── segments.csv
-│
-├── models/
-│   ├── text_emotion.py
-│   ├── audio_emotion.py
-│   └── incongruence.py
-│
-├── scripts/
-│   └── run_pipeline.py
-│
-├── results/
-│   ├── evaluation_metrics.csv
-│   ├── experiment_log.csv
-│   └── annotations/
-│
-└── README.md
-```
-
----
-
-## Timeline (Phase 1)
-
-| Week       | Tasks                                                |
-| ---------- | ---------------------------------------------------- |
-| **Week 1** | Dataset setup, Diarization, Transcription            |
-| **Week 2** | Segmentation, Text emotion model                     |
-| **Week 3** | Audio emotion model, Calibration                     |
-| **Week 4** | Incongruence scorer, Baseline comparison, Validation |
-
----
-
-## Phase 1 Deliverables
-
-- [ ] Working Text vs Audio Incongruence Scorer
-- [ ] Fixed emotion label space `E` enforced across all models
-- [ ] Calibrated probability outputs for text and audio
-- [ ] Confidence-weighted scoring implemented
-- [ ] 200+ human-annotated segments with Krippendorff's alpha
-- [ ] Baseline comparison (JS Divergence vs. Valence Difference)
-- [ ] Evaluation metrics (AUC, F1, Precision, Recall)
-- [ ] CSV output with timestamped scores and confidence weights
-- [ ] Reproducibility log (seeds, model versions, experiment tracking)
-- [ ] Short report summarizing results
-
----
-
-## Phase 2: Video Modality Pipeline (Aaditya)
-
-Extends the incongruence scorer with a **visual emotion modality** extracted from per-participant closeup videos in the AMI corpus. Output feeds directly into the multimodal incongruence computation (Aniket, Step 4).
-
-### Pipeline
-
-```
-Datasets/amicorpus/ESXXXX/video/ESXXXX.Closeup{1-4}.avi
-        |
-        v
-Step 0.5: Speaker-Camera Mapping
-        (lip-movement variance → assigns each SPEAKER_XX to their Closeup camera)
-        |
-        v
-Step 1: Frame Extraction
-        (frames sampled at 1 fps, aligned to segment timestamps)
-        |
-        v
-Step 2a: AU Feature Extraction (py-feat: retinaface + xgb)
-        (AU01, AU02, AU04, AU06, AU12, AU15, AU17, AU25 + head pose)
-        |
-        v
-outputs/video_features/ESXXXX_video_features.csv
-        |
-        v
-Step 2b: Visual Emotion Modeling (rule-based FACS mapping)
-        (AU intensities → softmax over happy, angry, sad, neutral)
-        |
-        v
-outputs/video_emotions/ESXXXX_video_emotions.csv   ← handoff to Aniket
-```
-
-### Emotion Mapping (FACS-based)
+**Pipeline:** Closeup AVI → speaker-camera mapping → frame extraction → OpenFace AU features → FACS rule-based emotion probabilities
 
 ```python
 happy_score   = 0.5 * AU06 + 0.5 * AU12
@@ -480,60 +160,22 @@ neutral_score = max(0.0, 1.0 - 0.15 * total_activation)
 probs = softmax([happy, angry, sad, neutral])
 ```
 
-No-face fallback (face not detected in any frame of a segment): `[0.25, 0.25, 0.25, 0.25]`
-
-### Output Files
-
-| File | Description |
-|------|-------------|
-| `outputs/speaker_camera_map.csv` | meeting_id, speaker_id, camera_id for all 12 meetings |
-| `outputs/video_features/ESXXXX_video_features.csv` | AU intensities + head pose per segment |
-| `outputs/video_emotions/ESXXXX_video_emotions.csv` | p_happy, p_angry, p_sad, p_neutral per segment |
-
-All 12 meetings processed: ES2002a-d, ES2003a-d, ES2004a-d. Zero NaN, zero duplicates, all probability rows sum to 1.0.
-
-### Scripts
-
 | Script | Purpose |
 |--------|---------|
-| `scripts/map_speaker_camera.py` | Automated speaker-to-camera mapping via lip-movement variance |
-| `scripts/extract_video_features.py` | Frame extraction + AU feature extraction using py-feat |
-| `scripts/run_video_emotion.py` | AU → emotion probability mapping |
-| `scripts/validate_video_outputs.py` | Validates output CSVs against reference segments |
-| `scripts/run_openface.sh` | Wrapper to activate venv and run feature extraction |
+| `scripts/map_speaker_camera.py` | Speaker-to-camera mapping via lip-movement variance |
+| `scripts/extract_video_features.py` | Frame extraction + AU feature extraction (py-feat) |
+| `scripts/run_video_emotion.py` | AU intensities → emotion probability distributions |
+| `scripts/validate_video_outputs.py` | Validate output CSVs against reference segments |
 
-### Environment
+All 12 meetings processed. Zero NaN, zero duplicates, all rows sum to 1.0.
 
-Requires Python 3.10 (py-feat incompatible with 3.12):
+---
 
-```bash
-python3.10 -m venv venv_video
-source venv_video/bin/activate
-pip install "py-feat==0.6.2" opencv-python pandas numpy "scipy<1.14" "torch<2.5" "torchvision<0.20"
-```
-
-### Running the Pipeline
+## Environment
 
 ```bash
-source venv_video/bin/activate
-
-# 1. Speaker-camera mapping (all meetings, ~5-10 min)
-python scripts/map_speaker_camera.py --all
-
-# 2. Feature extraction (all meetings, ~3 hours — use nohup)
-nohup bash scripts/run_openface.sh >> logs/features.log 2>&1 &
-
-# 3. Emotion mapping (fast, <1 min total)
-python scripts/run_video_emotion.py --all
-
-# 4. Validate all outputs
-python scripts/validate_video_outputs.py --all
+source venv/bin/activate   # always activate before running anything
 ```
 
-### Phase 2 Deliverables
-
-- [x] Speaker-camera mapping for all 12 meetings
-- [x] AU feature extraction for all 12 meetings (496–1281 segments each)
-- [x] Visual emotion probabilities for all 12 meetings
-- [x] Validated: no NaN, no duplicates, probabilities sum to 1.0
-- [x] No-face fallback logged and applied (uniform distribution)
+- Python 3.11, torch 2.8.0, transformers 4.57.6, librosa, pandas, numpy, soundfile
+- Video pipeline requires Python 3.10 venv (py-feat incompatible with 3.12)

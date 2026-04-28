@@ -2,9 +2,6 @@
 """
 harish_build_pairs.py — Phase 2 Step 3 (Harish)
 
-OWNER: Harish
-STEP : 3 (Day 4) — WAITS for Charan Step 2a + Aaditya Step 2b + Harish Step 2c
-
 Merge the three emotion CSVs and construct synthetic congruent/incongruent
 pairs by mixing audio from one emotion with video from another (for the same
 actor, statement, intensity, repetition).
@@ -13,10 +10,10 @@ actor, statement, intensity, repetition).
     Incongruent pair: audio(happy) + video(angry)   → label = 1
 
 INPUTS:
-    phase2_ravdess/metadata/ravdess_metadata.csv          (from Step 1)
-    phase2_ravdess/emotions/audio_emotions.csv            (from Charan Step 2a)
-    phase2_ravdess/emotions/video_emotions.csv            (from Aaditya Step 2b)
-    phase2_ravdess/emotions/text_emotions.csv             (from Harish Step 2c)
+    phase2_ravdess/metadata/ravdess_metadata.csv
+    phase2_ravdess/emotions/audio_emotions.csv
+    phase2_ravdess/emotions/video_emotions.csv
+    phase2_ravdess/emotions/text_emotions.csv
 
 OUTPUT:
     phase2_ravdess/pairs/incongruence_pairs.csv
@@ -36,8 +33,6 @@ RUN:
         --video    phase2_ravdess/emotions/video_emotions.csv \\
         --text     phase2_ravdess/emotions/text_emotions.csv \\
         --out      phase2_ravdess/pairs/incongruence_pairs.csv
-
-DOWNSTREAM CONSUMER: Charan Step 4 (JSD scoring)
 """
 
 import argparse

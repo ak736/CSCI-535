@@ -2,20 +2,13 @@
 """
 charan_audio_emotion.py — Phase 2 Step 2a (Charan)
 
-OWNER: Charan
-STEP : 2a (Day 2-3) — parallel with Aaditya Step 2b and Harish Step 2c
-
 Run superb/wav2vec2-large-superb-er on every RAVDESS audio-only .wav clip
 (1440 clips total) and output emotion probabilities over our 4-class space.
-
-Model load + predict logic is COPIED DIRECTLY from Phase 1:
-    phase1/aniket/aniket_audio_emotion.py
-The only change: no diarization, no headset mapping, no slicing — each
-.wav IS the segment. Load it whole, resample to 16 kHz, predict.
+Each .wav is loaded whole, resampled to 16 kHz, and passed to the model.
 
 INPUTS:
-    phase2_ravdess/metadata/ravdess_metadata.csv        (from Harish Step 1)
-    Datasets/ravdess/audio_speech/Actor_XX/*.wav        (raw audio files)
+    phase2_ravdess/metadata/ravdess_metadata.csv
+    Datasets/ravdess/audio_speech/Actor_XX/*.wav
 
 OUTPUT:
     phase2_ravdess/emotions/audio_emotions.csv
@@ -29,8 +22,6 @@ RUN:
         --metadata   phase2_ravdess/metadata/ravdess_metadata.csv \\
         --audio_root Datasets/ravdess/audio_speech \\
         --out        phase2_ravdess/emotions/audio_emotions.csv
-
-DOWNSTREAM CONSUMERS: Harish Step 3 (pair building), Charan Step 4 (JSD)
 """
 
 import argparse
@@ -43,7 +34,7 @@ import pandas as pd
 np.random.seed(42)
 
 # ---------------------------------------------------------------------------
-# Constants (copied from phase1/aniket/aniket_audio_emotion.py)
+# Constants
 # ---------------------------------------------------------------------------
 
 MODEL_ID = "superb/wav2vec2-large-superb-er"
@@ -68,7 +59,7 @@ OUTPUT_COLUMNS = [
 
 
 # ---------------------------------------------------------------------------
-# Model loading (VERBATIM from Phase 1)
+# Model loading
 # ---------------------------------------------------------------------------
 
 def load_model():
@@ -76,8 +67,6 @@ def load_model():
     Load superb/wav2vec2-large-superb-er via AutoFeatureExtractor +
     AutoModelForAudioClassification — bypasses HuggingFace pipeline and
     its torchcodec/FFmpeg dependency entirely.
-
-    Copied verbatim from phase1/aniket/aniket_audio_emotion.py.
     """
     try:
         import torch
@@ -105,8 +94,6 @@ def predict_probs(model_bundle, audio_clip: np.ndarray, sr: int = TARGET_SR) -> 
     """
     Run audio emotion classification on a numpy audio clip.
     Returns {p_happy, p_angry, p_sad, p_neutral} summing to 1.0.
-
-    Copied verbatim from phase1/aniket/aniket_audio_emotion.py.
     """
     import torch
 

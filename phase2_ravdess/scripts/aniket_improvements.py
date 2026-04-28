@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
 """
-aniket_improvements.py — Phase 2 Improvement Plan (Aniket)
+aniket_improvements.py — Phase 2 Improvement Pipeline (Aniket)
 
 Runs entirely from pair_scores.csv — no re-running teammates' scripts needed.
 All calibration, feature engineering, balancing, and diagnostics are inline.
 
-Steps implemented (per IMPROVEMENT_PLAN.md):
   1. Temperature calibration sweep (T=1.0,1.5,2.0,2.5,3.0) on audio+video probs
   2. Stratified balancing (100 pairs per emotion-pair cell)
   3. New configs: C2 (audio probs only, no video), E (+ per-emotion diffs + jsd_max)
   4. Drop-happy diagnostic on Config C
 
-Outputs (DO NOT overwrite originals):
+Outputs (does not overwrite originals):
   phase2_ravdess/emotions/audio_emotions_calibrated.csv
   phase2_ravdess/scores/pair_scores_calibrated.csv
   phase2_ravdess/scores/pair_scores_calibrated_balanced.csv
@@ -20,7 +19,7 @@ Outputs (DO NOT overwrite originals):
 
 RUN:
     python3 phase2_ravdess/scripts/aniket_improvements.py
-    python3 phase2_ravdess/scripts/aniket_improvements.py --T 2.0 --n_per_cell 100
+    python3 phase2_ravdess/scripts/aniket_improvements.py --T 2.5 --n_per_cell 100
 """
 
 import argparse
@@ -33,7 +32,7 @@ import pandas as pd
 np.random.seed(42)
 
 # ---------------------------------------------------------------------------
-# JSD math (verbatim from phase1/aniket/aniket_incongruence.py)
+# JSD math
 # ---------------------------------------------------------------------------
 
 def kl_divergence(p: np.ndarray, q: np.ndarray, eps: float = 1e-10) -> float:
@@ -60,7 +59,7 @@ def _safe_norm(vec: np.ndarray) -> np.ndarray:
 def calibrate(probs: np.ndarray, T: float) -> np.ndarray:
     """
     Soften a peaked probability vector with temperature T.
-    T=1.0 → identity. T>1.0 → flatter/softer. T=2.0 is the main target.
+    T=1.0 → identity. T>1.0 → flatter/softer. T=2.5 gave best results in sweep.
     """
     probs = np.clip(probs, 1e-10, 1.0)
     logits = np.log(probs)

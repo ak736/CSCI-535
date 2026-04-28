@@ -2,15 +2,10 @@
 """
 charan_jsd_scoring.py — Phase 2 Step 4 (Charan)
 
-OWNER: Charan
-STEP : 4 (Day 4-5) — WAITS for Harish Step 3 (incongruence_pairs.csv)
-
 Compute Jensen–Shannon divergence between every pair of modalities
 (text, audio, video) for every constructed pair.
 
-JSD function is COPIED VERBATIM from Phase 1:
-    phase1/aniket/aniket_incongruence.py  (kl_divergence + js_divergence)
-Same math as Phase 1 — normalized to [0, 1] by dividing by log(2).
+JSD normalized to [0, 1] by dividing by log(2).
 
 Four score columns per row:
     jsd_text_audio  = JS(P_text,  P_audio)
@@ -19,7 +14,7 @@ Four score columns per row:
     jsd_composite   = mean of the three
 
 INPUT:
-    phase2_ravdess/pairs/incongruence_pairs.csv  (from Harish Step 3)
+    phase2_ravdess/pairs/incongruence_pairs.csv
 
 OUTPUT:
     phase2_ravdess/scores/pair_scores.csv
@@ -29,8 +24,6 @@ RUN:
     python3 phase2_ravdess/scripts/charan_jsd_scoring.py \\
         --pairs phase2_ravdess/pairs/incongruence_pairs.csv \\
         --out   phase2_ravdess/scores/pair_scores.csv
-
-DOWNSTREAM CONSUMER: Aniket Step 5 (classifier)
 """
 
 import argparse
@@ -55,7 +48,7 @@ JSD_COLUMNS = ["jsd_text_audio", "jsd_text_video", "jsd_audio_video", "jsd_compo
 
 
 # ---------------------------------------------------------------------------
-# JSD math (COPIED VERBATIM from phase1/aniket/aniket_incongruence.py)
+# JSD math
 # ---------------------------------------------------------------------------
 
 def kl_divergence(p: np.ndarray, q: np.ndarray, eps: float = 1e-10) -> float:
